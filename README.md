@@ -68,11 +68,11 @@ documentacao_projeto/
 documentacao_inicial_projeto.docx
 
 artefatos_projeto/
-data_card.docx
-model_card.docx
-relatorio_justica.docx
-relatorio_explicabilidade.docx
-relatorio_auditabilidade.docx
+README.md
+data_cards/
+model_cards/
+relatorios_tecnicos/
+
 
 avaliacao_auditor/
 avaliacao_justica.docx
