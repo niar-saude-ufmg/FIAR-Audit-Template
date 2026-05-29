@@ -1,0 +1,56 @@
+name: Build audit document
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-document:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libreoffice qpdf
+
+      - name: Build consolidated PDF
+        run: npm run build:pdf
+
+      - name: Commit generated dist
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        run: |
+          if git diff --quiet -- dist/documento-auditoria-fiar.pdf; then
+            echo "No generated document changes to commit."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dist/documento-auditoria-fiar.pdf
+          git commit -m "docs: atualiza documento consolidado FIAR [skip ci]"
+          git push
+
+      - name: Upload generated document
+        uses: actions/upload-artifact@v4
+        with:
+          name: documento-auditoria-fiar
+          path: dist/documento-auditoria-fiar.pdf
