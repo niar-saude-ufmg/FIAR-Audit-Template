@@ -4,4 +4,3 @@ node_modules/
 package-lock.json
 pdf/.tmp-build/
 pdf/node_modules/
-pdf/package-lock.json
