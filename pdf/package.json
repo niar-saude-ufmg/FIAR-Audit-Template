@@ -4,7 +4,9 @@
   "version": "1.0.0",
   "description": "Build do PDF consolidado para auditoria FIAR",
   "scripts": {
-    "build:pdf": "node scripts/build-document.mjs",
-    "build:pdf:no-cover": "FIAR_DISABLE_COVER=1 node scripts/build-document.mjs"
+    "build:pdf": "node scripts/build-document.mjs"
+  },
+  "dependencies": {
+    "pdf-lib": "^1.17.1"
   }
 }
