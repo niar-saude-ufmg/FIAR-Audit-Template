@@ -1,0 +1,12 @@
+{
+  "name": "fiar-audit-template",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Build do PDF consolidado para auditoria FIAR",
+  "scripts": {
+    "build:pdf": "node scripts/build-document.mjs"
+  },
+  "dependencies": {
+    "pdf-lib": "^1.17.1"
+  }
+}
