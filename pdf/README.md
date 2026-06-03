@@ -55,10 +55,8 @@ relatorio/relatorio-auditoria-fiar-saude.pdf
 O workflow `.github/workflows/build-document.yml` roda em:
 
 - push na `main`
-
--`pull_request`
-
--`workflow_dispatch`
+- `pull_request`
+- `workflow_dispatch`
 
 Na `main`, se o PDF mudar, a pipeline commita automaticamente a nova versão e publica o arquivo como artifact.
 
@@ -71,9 +69,7 @@ Na `main`, se o PDF mudar, a pipeline commita automaticamente a nova versão e p
 pdf/
 
   assets/            # imagens de capa e rodapé
-
   scripts/           # script de build do PDF
-
   package.json       # dependências do build
 
 
