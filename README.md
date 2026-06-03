@@ -1,17 +1,40 @@
 # FIAR-Audit-Template
 
-Template de repositorio para aplicacao do **FIAR - Framework de Auditoria de IA Responsavel em Saude**.
+Template de repositório para aplicação do **FIAR - Framework de Inteligência Artificial para Saúde**.
 
-Este repositorio fornece a estrutura base para documentar um sistema de IA, coletar artefatos tecnicos e realizar a avaliacao de auditoria.
+Este repositório fornece a estrutura base para documentar **uma tarefa de IA**, coletar os artefatos técnicos do pipeline de evidências e realizar o ciclo de auditoria conduzido pelo NIAR.
+
+---
+
+## Antes de começar
+
+O FIAR-Saúde organiza a auditoria em torno de três conceitos centrais:
+
+* **Tarefa** : unidade mínima avaliada, definida pela combinação de modelo + dados + algoritmo orientada a um objetivo clínico ou operacional específico.
+* **Versão Avaliável** : versão da tarefa que introduziu mudança relevante nas dimensões de IAR e que exige novo ciclo de conformidade.
+* **Trilha de Execução** : determina como a tarefa é avaliada e qual o teto de maturidade do projeto.
+  * *Trilha Experimental*: tarefas orientadas à publicação científica. Teto de maturidade: N2.
+  * *Trilha Produção*: tarefas integradas a sistemas em operação ativa. Permite progressão até N4.
+
+A unidade de avaliação de conformidade é sempre a combinação (Tarefa, Versão Avaliável), expressa como Conforme, Pendente ou Não Conforme.
+
+Para mais detalhes, consulte a [documentação oficial do FIAR-Saúde](https://github.com/niar-saude-ufmg/FIAR-Saude).
+
+---
 
 ## Como iniciar uma auditoria
 
 1. Clique em **Use this template**.
-2. Crie um repositorio novo para o sistema auditado.
-3. Preencha a documentacao inicial do projeto.
-4. Inclua os artefatos do projeto (data card, model card, RIPD, relatorios tecnicos).
-5. Realize as avaliacoes do auditor.
-6. Produza o relatorio final.
+2. Crie um repositório novo para o projeto auditado.
+3. Preencha a documentação inicial do projeto em  `documentacao_projeto/`.
+4. Defina a **tarefa** : modelo + dados + algoritmo + objetivo clínico/operacional.
+5. Classifique a tarefa na trilha correspondente (**Experimental** ou  **Produção**).
+6. Produza os artefatos de desenvolvimento em `artefatos_projeto/`: Data Card, Model Card, Fairness Report, Explainability Report, Registro de Decisão Técnica e Relatório Consolidado de IAR.
+7. Se aplicável, inclua o RIPD em `artefatos_projeto/ripd/`.
+8. Se a tarefa for da  **Trilha Produção** , inclua também os artefatos operacionais em `artefatos_projeto/artefatos_operacionais/`.
+9. Produza o relatorio final em  `auditoria_final/`.
+
+---
 
 ## Estrutura esperada
 
@@ -20,85 +43,36 @@ documentacao_projeto/
 artefatos_projeto/
   data_cards/
   model_cards/
+  fairness_reports/
+  explainability_reports/
+  registro_decisao_tecnica/
+  relatorio_consolidado_iar/
   ripd/
-  relatorios_tecnicos/
-avaliacao_auditor/
+  artefatos_operacionais/        # exclusivo Trilha Produção (N3–N4)
+    monitoramento/
+    incidentes/
+    historico_versoes/
+    revisao_periodica/
+
+avaliacao_niar/                  # preenchido pelo NIAR, não pela equipe do projeto
 auditoria_final/
 ```
 
-## PDF consolidado automatico
+---
 
-O build gera **um unico PDF** em `relatorio/documento-auditoria-fiar.pdf` com:
+## Relatório PDF consolidado
 
-- capa automatica;
-- sumario automatico (com pagina inicial de cada documento);
-- cabecalho e rodape em todas as paginas internas;
-- numeracao continua de paginas (no mesmo PDF);
-- consolidacao de todos os `.pdf` e `.docx` salvos nas pastas acima, incluindo subpastas.
+O repositório gera automaticamente um PDF consolidado com todos os artefatos da auditoria. Consulte [`pdf/README.md`](pdf/README.md) para instruções de geração local e configuração do GitHub Actions.
 
-Regras:
+---
 
-- `.pdf`: entra direto.
-- `.docx`: convertido com LibreOffice.
-- `.gitkeep` e temporarios `~$*.docx`: ignorados.
-- Ordem por blocos: `documentacao_projeto` -> `artefatos_projeto` -> `avaliacao_auditor` -> `auditoria_final`.
-- Dentro de cada bloco, leitura recursiva e ordenacao por caminho.
+## Documentação e Referências
 
-## Como gerar o relatorio (passo a passo)
+- Metodologia → [docs/metodologia_fiar.md](https://github.com/niar-saude-ufmg/FIAR-Saude/blob/main/docs/metodologia_fiar.md)
+- Ciclo de Auditoria → [docs/ciclo_auditoria.md](https://github.com/niar-saude-ufmg/FIAR-Saude/blob/main/docs/ciclo_auditoria.md)
+- Dimensões de IAR → [docs/dimensoes_avaliacao.md](https://github.com/niar-saude-ufmg/FIAR-Saude/blob/main/docs/dimensoes_avaliacao.md)
+- Trilhas de Execução → [docs/trilhas_execucao.md](https://github.com/niar-saude-ufmg/FIAR-Saude/blob/main/docs/trilhas_execucao.md)
+- Modelo de Maturidade → [docs/modelo_maturidade.md](https://github.com/niar-saude-ufmg/FIAR-Saude/blob/main/docs/modelo_maturidade.md)
+- Governança → [docs/governanca_auditoria.md](https://github.com/niar-saude-ufmg/FIAR-Saude/blob/main/docs/governanca_auditoria.md)
 
-1. Adicione ou atualize os arquivos da auditoria nas pastas:
-   - `documentacao_projeto/`
-   - `artefatos_projeto/`
-   - `avaliacao_auditor/`
-   - `auditoria_final/`
-2. Execute o build local:
-
-```bash
-npm --prefix pdf install
-npm --prefix pdf run build:pdf
-```
-
-3. Abra o PDF final em:
-   - `relatorio/documento-auditoria-fiar.pdf`
-
-Observacoes:
-
-- O build inclui automaticamente novos `.docx` e `.pdf` nas pastas acima.
-- O sumario e atualizado automaticamente com os itens e paginas.
-- O diretorio `relatorio/` guarda somente o PDF final.
-
-## Execucao local
-
-Pre-requisitos:
-
-- Node.js
-- LibreOffice (binario `libreoffice` ou `soffice`)
-
-Comando:
-
-```bash
-npm --prefix pdf install
-npm --prefix pdf run build:pdf
-```
-
-## GitHub Actions
-
-O workflow `.github/workflows/build-document.yml` roda em:
-
-- push na `main`
-- `pull_request`
-- `workflow_dispatch`
-
-Na `main`, se `relatorio/documento-auditoria-fiar.pdf` mudar, a pipeline commita automaticamente a nova versao e publica o PDF como artifact.
-
-## Estrutura da geracao de relatorio
-
-```text
-pdf/
-  assets/            # imagens de capa e rodape
-  scripts/           # script de build do PDF
-  package.json       # dependencias do build
-
-relatorio/
-  documento-auditoria-fiar.pdf
-```
+---
