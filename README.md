@@ -2,7 +2,7 @@
 
 Template de repositório para aplicação do **FIAR - Framework de Inteligência Artificial para Saúde**.
 
-Este repositório fornece a estrutura base para documentar **uma tarefa de IA**, coletar os artefatos técnicos do pipeline de evidências e realizar o ciclo de auditoria conduzido pelo NIAR.
+Este repositório é um template para criação de instâncias de auditoria utilizando o FIAR-Saúde. Cada repositório criado a partir deste template representa a auditoria de uma Tarefa e uma Versão Avaliável específicas.
 
 ---
 
@@ -26,7 +26,7 @@ Para mais detalhes, consulte a [documentação oficial do FIAR-Saúde](https://g
 
 1. Clique em **Use this template**.
 2. Crie um repositório novo para o projeto auditado.
-3. Preencha a documentação inicial do projeto em  `documentacao_projeto/`.
+3. Preencha os arquivos em `documentacao_projeto/`, incluindo `identificacao_auditoria.md`.
 4. Defina a **tarefa** : modelo + dados + algoritmo + objetivo clínico/operacional.
 5. Classifique a tarefa na trilha correspondente (**Experimental** ou  **Produção**).
 6. Produza os artefatos de desenvolvimento em `artefatos_projeto/`: Data Card, Model Card, Fairness Report, Explainability Report, Registro de Decisão Técnica e Relatório Consolidado de IAR.
@@ -40,6 +40,7 @@ Para mais detalhes, consulte a [documentação oficial do FIAR-Saúde](https://g
 
 ```text
 documentacao_projeto/
+  identificacao_auditoria.md
 artefatos_projeto/
   data_cards/
   model_cards/
@@ -54,9 +55,23 @@ artefatos_projeto/
     historico_versoes/
     revisao_periodica/
 
-avaliacao_niar/                  # preenchido pelo NIAR, não pela equipe do projeto
+avaliacao_niar/                  # preenchido exclusivamente pela equipe auditora do NIAR
 auditoria_final/
 ```
+
+---
+
+## Governança de Versões
+
+Uma nova Versão Avaliável deve ser criada quando houver alterações relevantes em:
+
+- dados utilizados;
+- modelo empregado;
+- algoritmo ou pipeline;
+- objetivo clínico ou operacional;
+- requisitos relacionados às dimensões de IA Responsável.
+
+Cada Versão Avaliável deve possuir sua própria documentação e evidências de conformidade.
 
 ---
 
