@@ -1,8 +1,8 @@
 # FIAR-Audit-Template
 
-Template de repositório para aplicação do **FIAR - Framework de Inteligência Artificial para Saúde**.
+Este repositório define a estrutura padrão para criação de instâncias de auditoria do FIAR-Saúde.
 
-Este repositório é um template para criação de instâncias de auditoria utilizando o FIAR-Saúde. Cada repositório criado a partir deste template representa a auditoria de uma Tarefa e uma Versão Avaliável específicas.
+Cada repositório derivado representa a auditoria de uma Tarefa e uma Versão Avaliável específicas.
 
 ---
 
@@ -16,7 +16,7 @@ O FIAR-Saúde organiza a auditoria em torno de três conceitos centrais:
   * *Trilha Experimental*: tarefas orientadas à publicação científica. Teto de maturidade: N2.
   * *Trilha Produção*: tarefas integradas a sistemas em operação ativa. Permite progressão até N4.
 
-A unidade de avaliação de conformidade é sempre a combinação (Tarefa, Versão Avaliável), expressa como Conforme, Pendente ou Não Conforme.
+A unidade de avaliação de conformidade no FIAR é a combinação (Tarefa, Versão Avaliável), classificada como: Conforme, Pendente ou Não Conforme.
 
 Para mais detalhes, consulte a [documentação oficial do FIAR-Saúde](https://github.com/niar-saude-ufmg/FIAR-Saude).
 
@@ -27,7 +27,7 @@ Para mais detalhes, consulte a [documentação oficial do FIAR-Saúde](https://g
 1. Clique em **Use this template**.
 2. Crie um repositório novo para o projeto auditado.
 3. Preencha os arquivos em `documentacao_projeto/`, incluindo `identificacao_auditoria.md`.
-4. Defina a **tarefa** : modelo + dados + algoritmo + objetivo clínico/operacional.
+4. Defina a **tarefa**: modelo + dados + algoritmo + objetivo clínico/operacional (incluindo escopo e contexto de uso).
 5. Classifique a tarefa na trilha correspondente (**Experimental** ou  **Produção**).
 6. Produza os artefatos de desenvolvimento em `artefatos_projeto/`: Data Card, Model Card, Fairness Report, Explainability Report, Registro de Decisão Técnica e Relatório Consolidado de IAR.
 7. Se aplicável, inclua o RIPD em `artefatos_projeto/ripd/`.
@@ -42,8 +42,8 @@ Para mais detalhes, consulte a [documentação oficial do FIAR-Saúde](https://g
 documentacao_projeto/
   identificacao_auditoria.md
 artefatos_projeto/
-  data_cards/
-  model_cards/
+  data_card/
+  model_card/
   fairness_reports/
   explainability_reports/
   registro_decisao_tecnica/
@@ -55,7 +55,7 @@ artefatos_projeto/
     historico_versoes/
     revisao_periodica/
 
-avaliacao_niar/                  # preenchido exclusivamente pela equipe auditora do NIAR
+avaliacao_niar/                  # preenchido exclusivamente pela equipe do NIAR (não editável pelo projeto)
 auditoria_final/
 ```
 
@@ -71,7 +71,7 @@ Uma nova Versão Avaliável deve ser criada quando houver alterações relevante
 - objetivo clínico ou operacional;
 - requisitos relacionados às dimensões de IA Responsável.
 
-Cada Versão Avaliável deve possuir sua própria documentação e evidências de conformidade.
+Cada **Versão Avaliável** deve possuir documentação e evidências próprias de conformidade.
 
 ---
 
