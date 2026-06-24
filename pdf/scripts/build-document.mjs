@@ -5,15 +5,15 @@ import { spawnSync } from 'node:child_process';
 import { PDFDocument, StandardFonts, rgb } from 'pdf-lib';
 
 const rootDir = path.resolve(path.dirname(new URL(import.meta.url).pathname), '../..');
-const distDir = path.join(rootDir, 'relatorio');
+const distDir = path.join(rootDir, 'pdf','output');
 const tmpDir = path.join(rootDir, 'pdf', '.tmp-build');
-const outputPdf = path.join(distDir, 'documento-auditoria-fiar.pdf');
+const outputPdf = path.join(distDir, 'relatorio_final.pdf');
 const assetsDir = path.join(rootDir, 'pdf', 'assets');
 
 const orderedRoots = [
   'documentacao_projeto',
   'artefatos_projeto',
-  'avaliacao_auditor',
+  'avaliacao_niar',
   'auditoria_final'
 ];
 
@@ -99,9 +99,13 @@ function titleFromFilename(relPath) {
 function classifyToc(relPath) {
   const normalized = relPath.toLowerCase();
 
+  fs.mkdirSync(distDir, { recursive: true });
+
   if (normalized.startsWith('documentacao_projeto/')) {
     return { section: 'Documentação do projeto', item: titleFromFilename(relPath) };
   }
+
+  
 
   if (normalized.startsWith('artefatos_projeto/')) {
     if (normalized.includes('/data_cards/') || normalized.includes('datacard') || normalized.includes('data_card')) {
@@ -113,11 +117,19 @@ function classifyToc(relPath) {
     if (normalized.includes('/ripd/') || normalized.includes('ripd')) {
       return { section: 'Artefatos do projeto', item: 'RIPD' };
     }
+    if (normalized.includes('/consolidated_iar_report/')) {
+      return { section: 'Artefatos do projeto', item: 'Relatório Consolidado de IAR' };
+    }
+
     return { section: 'Artefatos do projeto', item: titleFromFilename(relPath) };
   }
 
-  if (normalized.startsWith('avaliacao_auditor/')) {
-    return { section: 'Avaliação do auditor', item: titleFromFilename(relPath) };
+  if (normalized.startsWith('artefatos_projeto/operational_artifacts/')) {
+    return { section: 'Artefatos operacionais', item: titleFromFilename(relPath)};
+  }
+
+  if (normalized.startsWith('avaliacao_niar/')) {
+    return { section: 'Avaliação do NIAR', item: titleFromFilename(relPath) };
   }
 
   if (normalized.startsWith('auditoria_final/')) {

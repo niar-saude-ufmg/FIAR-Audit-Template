@@ -1,78 +1,53 @@
-# Geração do Relatório PDF
+# Geração do Relatório PDF (FIAR-Saúde)
 
-O build consolida automaticamente todos os artefatos da auditoria em um único PDF: `relatorio/relatorio-auditoria-fiar-saude.pdf`.
+Este módulo gera automaticamente o relatório consolidado da auditoria FIAR-Saúde.
+
+O PDF representa a **visualização final da auditoria** para a combinação:
+
+> (Tarefa, Versão Avaliável)
+
+Ele não contém novos dados ou decisões, apenas consolida os artefatos já validados no fluxo FIAR.
 
 ---
 
 ## O que é incluído
 
-Todos os `.pdf` e `.docx` encontrados nas pastas abaixo, incluindo subpastas, na seguinte ordem:
+O relatório é construído a partir dos seguintes blocos:
 
-```text
-documentacao_projeto/ → artefatos_projeto/ → avaliacao_niar/ → auditoria_final/
-```
+- documentacao_projeto/
+- artefatos_projeto/
+- avaliacao_niar/
+- auditoria_final/
 
-Regras:
-
-- `.pdf`: entra direto.
-- `.docx`: convertido automaticamente com LibreOffice.
-- `.gitkeep` e temporários `~$*.docx`: ignorados.
-- Dentro de cada bloco, ordenação por caminho.
-
-O PDF gerado inclui:
-
-- capa automática;
-- sumário automático com página inicial de cada documento;
-- cabeçalho e rodapé em todas as páginas internas;
-- numeração contínua de páginas.
+A consolidação segue sempre essa ordem.
 
 ---
 
-## Execução local
+## Saída
 
-Pré-requisitos:
+O arquivo final é gerado em:
 
-- Node.js
-- LibreOffice (binário `libreoffice` ou `soffice`)
+```text
+relatorio-auditoria-fiar-saude.pdf
+```
 
-Comando:
+---
 
-```bash
+## Execução
+
+```
 npm --prefix pdf install
 npm --prefix pdf run build:pdf
 ```
 
-O PDF final estará em:
-
-```text
-relatorio/relatorio-auditoria-fiar-saude.pdf
-```
-
 ---
 
-## GitHub Actions
-
-O workflow `.github/workflows/build-document.yml` roda em:
-
-- push na `main`
-- `pull_request`
-- `workflow_dispatch`
-
-Na `main`, se o PDF mudar, a pipeline commita automaticamente a nova versão e publica o arquivo como artifact.
-
----
-
-## Estrutura dos scripts
+## Estrutura do módulo
 
 ```text
-
 pdf/
-
-  assets/            # imagens de capa e rodapé
-  scripts/           # script de build do PDF
-  package.json       # dependências do build
-
-
+  assets/
+  scripts/
+  docs/
+  package.json
 ```
-
----
