@@ -4,3 +4,4 @@ node_modules/
 package-lock.json
 pdf/.tmp-build/
 pdf/node_modules/
+fiar-sync/

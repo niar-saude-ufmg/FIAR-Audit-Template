@@ -42,13 +42,14 @@ Para mais detalhes, consulte a [documentação oficial do FIAR-Saúde](https://g
 documentacao_projeto/
   identificacao_auditoria.md
 artefatos_projeto/
-  data_card/
-  model_card/
+  data_cards/
+  model_cards/
   fairness_reports/
   explainability_reports/
-  registro_decisao_tecnica/
+  decision_records/
   relatorio_consolidado_iar/
-  ripd/
+  compliance/
+    ripd/
   artefatos_operacionais/        # exclusivo Trilha Produção (N3–N4)
     monitoramento/
     incidentes/

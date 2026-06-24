@@ -1,0 +1,51 @@
+{
+  "version": "1.0",
+  "data_cards": {
+    "path": "data_cards",
+    "required_files": ["data_card_v1.docx"]
+  },
+  "model_cards": {
+    "path": "model_cards",
+    "required_files": ["model_card_v1.docx"]
+  },
+  "fairness_reports": {
+    "path": "fairness_reports",
+    "required_files": ["fairness_report_v1.md"]
+  },
+  "explainability_reports": {
+    "path": "explainability_reports",
+    "required_files": ["explainability_report_v1.md"]
+  },
+  "decision_records": {
+    "path": "decision_records",
+    "required_files": ["technical_decision_v1.md"]
+  },
+  "consolidated_iar_report": {
+    "path": "consolidated_iar_report",
+    "required_files": ["consolidated_report_v1.md"]
+  },
+  "compliance": {
+    "ripd": {
+      "path": "compliance/ripd",
+      "required_files": ["ripd.docx"]
+    }
+  },
+  "operational_artifacts": {
+    "path": "operational_artifacts",
+    "subdirs": [
+      "version_history",
+      "incidents",
+      "monitoring",
+      "periodic_review"
+    ]
+  },
+  "legacy": {
+    "dirs": [
+      "artefatos_operacionais",
+      "historico_versoes",
+      "incidentes",
+      "monitoramento",
+      "revisao_periodica"
+    ]
+  }
+}
