@@ -1,30 +1,35 @@
 # Artefatos do Projeto
 
-Este diretório reúne templates e documentos reutilizáveis utilizados nas auditorias FIAR-Saúde.
+
+Este diretório contém os artefatos técnicos produzidos durante a auditoria FIAR-Saúde.
+
+Cada artefato representa evidências associadas à **Tarefa** e à **Versão Avaliável** em análise.
+
+---
 
 ## Artefatos de Desenvolvimento
 
-Obrigatórios para ambas as trilhas (Experimental e Produção).
+Esses artefatos documentam o desenvolvimento e avaliação do sistema de IA.
 
-| Artefato                      | Template                                                                          |
-| ----------------------------- | --------------------------------------------------------------------------------- |
-| Data Card                     | [DataCard_FIAR_Template.docx](DataCard_FIAR_Template.docx)                           |
-| Model Card                    | [ModelCard_FIAR_Template.docx](ModelCard_FIAR_Template.docx)                         |
-| Fairness Report               | [FairnessReport_FIAR_Template.md](artefatos_projeto/FairnessReport_FIAR_Template.md) |
-| Explainability Report         | [ExplainabilityReport_FIAR_Template.md](ExplainabilityReport_FIAR_Template.md)       |
-| Registro de Decisão Técnica | [RegistroDecisaoTecnica_FIAR_Template.md](RegistroDecisaoTecnica_FIAR_Template.md)   |
-| Relatório Consolidado de IAR | [RelatorioConsolidadoIAR_FIAR_Template.md](RelatorioConsolidadoIAR_FIAR_Template.md) |
+| Artefato                      | Descrição                                                        |
+| ----------------------------- | ------------------------------------------------------------------ |
+| Data Card                     | Caracterização e documentação dos dados utilizados na tarefa   |
+| Model Card                    | Descrição do modelo, limitações e contexto de uso              |
+| Fairness Report               | Análise de justiça, vieses e desempenho por subgrupos            |
+| Explainability Report         | Evidências de explicabilidade e interpretabilidade do modelo      |
+| Registro de Decisão Técnica | Registro das decisões de engenharia e modelagem ao longo do ciclo |
+| Relatório Consolidado de IAR | Síntese integrada de conformidade em IA Responsável              |
+
+---
 
 ## RIPD
 
-Obrigatório quando aplicável conforme a LGPD.
+Documento de avaliação de impacto à proteção de dados (LGPD), quando aplicável.
 
-| Artefato | Template                                        |
-| -------- | ----------------------------------------------- |
-| RIPD     | [RIPD_FIAR_Template.docx](RIPD_FIAR_Template.docx) |
+---
 
 ## Artefatos Operacionais
 
-Exclusivos da Trilha Produção (N3–N4). Consulte `artefatos_operacionais/`.
+Evidências de monitoramento e operação do sistema em ambiente produtivo (Trilha Produção N3–N4).
 
 ---
