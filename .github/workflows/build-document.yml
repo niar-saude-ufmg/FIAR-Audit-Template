@@ -39,14 +39,14 @@ jobs:
       - name: Commit generated dist
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         run: |
-          if git diff --quiet -- relatorio/documento-auditoria-fiar.pdf; then
+          if git diff --quiet -- pdf/output/relatorio_final.pdf; then
             echo "No generated document changes to commit."
             exit 0
           fi
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add relatorio/documento-auditoria-fiar.pdf
+          git add pdf/output/relatorio_final.pdf
           git commit -m "docs: atualiza documento consolidado FIAR [skip ci]"
           git push
 
@@ -54,4 +54,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: documento-auditoria-fiar
-          path: relatorio/documento-auditoria-fiar.pdf
+          path: pdf/output/relatorio_final.pdf

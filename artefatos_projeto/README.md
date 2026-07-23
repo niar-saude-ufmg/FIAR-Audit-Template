@@ -1,9 +1,10 @@
 # Artefatos do Projeto
 
-
 Este diretório contém os artefatos técnicos produzidos durante a auditoria FIAR-Saúde.
 
 Cada artefato representa evidências associadas à **Tarefa** e à **Versão Avaliável** em análise.
+
+A conformidade e completude desses artefatos é verificada automaticamente pelo FIAR Validator.
 
 ---
 
@@ -22,14 +23,27 @@ Esses artefatos documentam o desenvolvimento e avaliação do sistema de IA.
 
 ---
 
-## RIPD
+## Compliance (LGPD)
 
-Documento de avaliação de impacto à proteção de dados (LGPD), quando aplicável.
+O diretório `compliance/ripd/` contém o Relatório de Impacto à Proteção de Dados (RIPD), quando aplicável.
 
 ---
 
 ## Artefatos Operacionais
 
-Evidências de monitoramento e operação do sistema em ambiente produtivo (Trilha Produção N3–N4).
+Evidências de monitoramento e operação do sistema em ambiente produtivo.
+
+⚠ Este conjunto de artefatos é obrigatório apenas para sistemas na **Trilha de Produção (N3–N4)**.
+
+Inclui:
+
+- monitoramento contínuo
+- registro de incidentes
+- revisão periódica
+- histórico de versões
 
 ---
+
+## Observação
+
+A ausência ou inconsistência desses artefatos pode resultar em classificação de Não Conformidade na auditoria FIAR-Saúde.

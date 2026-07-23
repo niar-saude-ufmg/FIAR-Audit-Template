@@ -1,13 +1,43 @@
 # Auditoria Final
 
-Este diretório reúne o produto final do ciclo de auditoria da combinação (Tarefa, Versão Avaliável).
+Este diretório contém o resultado oficial do ciclo de auditoria FIAR-Saúde para a combinação:
 
-## O que incluir aqui
+> (Tarefa, Versão Avaliável)
 
-| Documento                         | Responsável | Descrição                                                                                                       |
-| --------------------------------- | ------------ | ----------------------------------------------------------------------------------------------------------------- |
-| Relatório Consolidado de IAR     | Projeto      | Síntese da avaliação de todas as dimensões de IAR, riscos residuais aceitos e classificação de conformidade |
-| Condicionantes e recomendações  | NIAR         | Requisitos para operação e recomendações para o próximo ciclo                                                |
-| Registro de maturidade atribuída | NIAR         | Nível de maturidade inferido (N1 a N4) com justificativa                                                         |
+Ele representa a etapa final do processo de auditoria e consolida a decisão institucional sobre a conformidade do sistema avaliado.
 
-> O nível de maturidade é inferido pelo NIAR a partir do histórico de conformidades das tarefas do projeto. Não é autoproclamado pela equipe. A progressão para N3 e N4 requer tarefas na Trilha Produção com múltiplas versões avaliáveis e evidências operacionais verificáveis.
+---
+
+## Natureza do diretório
+
+Este é o **produto executivo final da auditoria FIAR**, contendo:
+
+- a síntese da avaliação de todas as dimensões de IA Responsável;
+- a decisão de conformidade do sistema;
+- recomendações e condicionantes para operação;
+- a inferência de maturidade do sistema.
+
+---
+
+## Conteúdo
+
+| Documento                         | Responsável | Descrição                                                                          |
+| --------------------------------- | ------------ | ------------------------------------------------------------------------------------ |
+| Relatório Consolidado de IAR     | Projeto      | Síntese das evidências e avaliação de conformidade em todas as dimensões de IAR |
+| Condicionantes e recomendações  | NIAR         | Requisitos obrigatórios e recomendações para operação e evolução do sistema   |
+| Registro de maturidade atribuída | NIAR         | Classificação de maturidade (N1 a N4) com justificativa técnica                   |
+
+
+---
+
+## Princípio de independência
+
+A avaliação e decisão final são conduzidas exclusivamente pelo NIAR.
+
+A equipe do projeto fornece evidências, mas não define o resultado da auditoria.
+
+---
+
+## Observação
+
+O nível de maturidade não é autodeclarado. Ele é inferido a partir de evidências acumuladas ao longo de múltiplas versões avaliáveis e, quando aplicável, da presença de artefatos operacionais na Trilha de Produção.

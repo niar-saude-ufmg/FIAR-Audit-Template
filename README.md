@@ -78,7 +78,35 @@ Cada **Versão Avaliável** deve possuir documentação e evidências próprias 
 
 ## Relatório PDF consolidado
 
-O repositório gera automaticamente um PDF consolidado com todos os artefatos da auditoria. Consulte [`pdf/README.md`](pdf/README.md) para instruções de geração local e configuração do GitHub Actions.
+O repositório gera automaticamente um PDF consolidado com todos os artefatos da auditoria.
+
+Consulte [`pdf/README.md`](pdf/README.md) para instruções de geração local.
+
+O relatório consolidado de IAR é produzido em:
+
+- `artefatos_projeto/relatorio_consolidado_iar/`
+
+e posteriormente integrado ao relatório final em:
+
+- `auditoria_final/`
+
+---
+
+## Automação (GitHub Actions)
+
+O repositório possui um workflow automatizado para geração do PDF:
+
+- Executa em `push` na branch `main`
+- Executa em `pull_request`
+- Pode ser acionado manualmente (`workflow_dispatch`)
+
+O workflow responsável está em:
+
+```text
+.github/workflows/build-document.yml
+```
+
+Quando o PDF é atualizado, o sistema pode regenerar automaticamente o artefato e versioná-lo no repositório como artifact do pipeline.
 
 ---
 
