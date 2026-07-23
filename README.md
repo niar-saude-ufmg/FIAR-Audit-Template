@@ -47,15 +47,14 @@ artefatos_projeto/
   fairness_reports/
   explainability_reports/
   decision_records/
-  relatorio_consolidado_iar/
+  consolidated_iar_report/
   compliance/
     ripd/
-  artefatos_operacionais/        # exclusivo Trilha Produção (N3–N4)
-    monitoramento/
-    incidentes/
-    historico_versoes/
-    revisao_periodica/
-
+ operational_artifacts/         # exclusivo Trilha Produção (N3–N4)
+    monitoring/
+    incidents/
+    version_history/
+    periodic_review/
 avaliacao_niar/                  # preenchido exclusivamente pela equipe do NIAR (não editável pelo projeto)
 auditoria_final/
 ```
