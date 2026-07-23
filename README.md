@@ -31,7 +31,7 @@ Para mais detalhes, consulte a [documentação oficial do FIAR-Saúde](https://g
 5. Classifique a tarefa na trilha correspondente (**Experimental** ou  **Produção**).
 6. Produza os artefatos de desenvolvimento em `artefatos_projeto/`: Data Card, Model Card, Fairness Report, Explainability Report, Registro de Decisão Técnica e Relatório Consolidado de IAR.
 7. Se aplicável, inclua o RIPD em `artefatos_projeto/ripd/`.
-8. Se a tarefa for da  **Trilha Produção** , inclua também os artefatos operacionais em `artefatos_projeto/artefatos_operacionais/`.
+8. Se a tarefa for da **Trilha Produção**, inclua também os artefatos operacionais em `artefatos_projeto/operational_artifacts/`.
 9. Produza o relatorio final em  `auditoria_final/`.
 
 ---
