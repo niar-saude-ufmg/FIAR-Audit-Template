@@ -1,5 +1,6 @@
 .history/
 .DS_Store
+lixo
 node_modules/
 package-lock.json
 pdf/.tmp-build/

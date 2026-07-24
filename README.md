@@ -16,7 +16,7 @@ Este repositório não substitui nem replica a documentação metodológica ofic
 
 A fonte oficial para conceitos, dimensões, trilhas, procedimentos de avaliação, governança e modelo de maturidade está disponível em:
 
-<https://github.com/niar-saude-ufmg/FIAR-Saude>
+[https://github.com/niar-saude-ufmg/FIAR-Saude](https://github.com/niar-saude-ufmg/FIAR-Saude)
 
 Em caso de divergência entre este template e a documentação oficial vigente, prevalece a documentação oficial do FIAR-Saúde.
 
@@ -160,7 +160,9 @@ Não inclua dados pessoais, dados sensíveis, credenciais, chaves, identificador
 
 ```text
 documentacao_projeto/
-  identificacao_auditoria.md
+  identificacao_avaliacao.md
+  historico_validacao.md
+  registro_de_pendencias.md
 
 artefatos_projeto/
   data_cards/
@@ -341,6 +343,6 @@ Dados brutos sensíveis, credenciais e segredos não devem ser armazenados neste
 
 A metodologia e os conceitos do FIAR-Saúde devem ser consultados na documentação oficial:
 
-<https://github.com/niar-saude-ufmg/FIAR-Saude>
+[https://github.com/niar-saude-ufmg/FIAR-Saude](https://github.com/niar-saude-ufmg/FIAR-Saude)
 
 Este template deve permanecer operacional e enxuto, evitando duplicar a documentação metodológica oficial.
