@@ -84,7 +84,7 @@ Consulte [`pdf/README.md`](pdf/README.md) para instruções de geração local.
 
 O relatório consolidado de IAR é produzido em:
 
-- `artefatos_projeto/relatorio_consolidado_iar/`
+- `artefatos_projeto/consolidated_iar_report/`
 
 e posteriormente integrado ao relatório final em:
 
