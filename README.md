@@ -99,8 +99,7 @@ A equipe do projeto é responsável por:
 - fornecer informações factuais sobre dados, modelos, versões e resultados;
 - produzir ou executar as análises técnicas sob sua responsabilidade;
 - registrar responsáveis, limitações, riscos e decisões técnicas;
-- validar e complementar as minutas documentais elaboradas a partir dos
-  artefatos fornecidos.
+- validar e complementar as minutas documentais elaboradas a partir dos artefatos fornecidos.
 
 ### NIAR-Saúde
 
@@ -122,43 +121,47 @@ Questões que ultrapassem o escopo da avaliação técnica, como aceite de risco
 
 Os Registros de Decisão Técnica produzidos pelo projeto não devem ser confundidos com Registros de Decisão Institucional.
 
-
----
-## Antes de começar
-
-O FIAR-Saúde organiza a auditoria em torno de três conceitos centrais:
-
-* **Tarefa** : unidade mínima avaliada, definida pela combinação de modelo + dados + algoritmo orientada a um objetivo clínico ou operacional específico.
-* **Versão Avaliável** : versão da tarefa que introduziu mudança relevante nas dimensões de IAR e que exige novo ciclo de conformidade.
-* **Trilha de Execução** : determina como a tarefa é avaliada e qual o teto de maturidade do projeto.
-  * *Trilha Experimental*: tarefas orientadas à publicação científica. Teto de maturidade: N2.
-  * *Trilha Produção*: tarefas integradas a sistemas em operação ativa. Permite progressão até N4.
-
-A unidade de avaliação de conformidade no FIAR é a combinação (Tarefa, Versão Avaliável), classificada como: Conforme, Pendente ou Não Conforme.
-
-Para mais detalhes, consulte a [documentação oficial do FIAR-Saúde](https://github.com/niar-saude-ufmg/FIAR-Saude).
-
 ---
 
-## Como iniciar uma auditoria
+## Fluxo resumido do ciclo
 
-1. Clique em **Use this template**.
-2. Crie um repositório novo para o projeto auditado.
-3. Preencha os arquivos em `documentacao_projeto/`, incluindo `identificacao_auditoria.md`.
-4. Defina a **tarefa**: modelo + dados + algoritmo + objetivo clínico/operacional (incluindo escopo e contexto de uso).
-5. Classifique a tarefa na trilha correspondente (**Experimental** ou  **Produção**).
-6. Produza os artefatos de desenvolvimento em `artefatos_projeto/`: Data Card, Model Card, Fairness Report, Explainability Report, Registro de Decisão Técnica e Relatório Consolidado de IAR.
-7. Se aplicável, inclua o RIPD em `artefatos_projeto/ripd/`.
-8. Se a tarefa for da **Trilha Produção**, inclua também os artefatos operacionais em `artefatos_projeto/operational_artifacts/`.
-9. Produza o relatorio final em  `auditoria_final/`.
+1. O projeto cria um repositório privado a partir deste template.
+2. A equipe disponibiliza os artefatos e evidências existentes.
+3. O NIAR-Saúde realiza uma inspeção documental inicial.
+4. O NIAR-Saúde prepara uma minuta de identificação da avaliação.
+5. A equipe do projeto valida, corrige ou complementa as informações factuais.
+6. O NIAR-Saúde consolida a Tarefa de IA, a Versão Avaliável, o Contexto de Uso e o enquadramento da trilha.
+7. As pendências documentais e técnicas são registradas e atribuídas.
+8. O projeto produz ou complementa as análises e evidências necessárias.
+9. O NIAR-Saúde realiza a avaliação aplicável.
+10. Questões que exigem deliberação institucional são escalonadas quando necessário.
+11. Os resultados e registros do ciclo são consolidados de forma rastreável.
+
+O detalhamento do protocolo de validação documental fica registrado no `README.md` da pasta `documentacao_projeto/`.
 
 ---
 
-## Estrutura esperada
+## Como criar uma instância
+
+1. Selecione **Use this template**.
+2. Crie um repositório privado para o projeto.
+3. Defina as permissões de acesso conforme a sensibilidade dos documentos e artefatos.
+4. Insira os Data Cards, Model Cards e demais evidências já existentes nas pastas correspondentes.
+5. Preencha ou revise os arquivos de `documentacao_projeto/`.
+6. Registre lacunas, inconsistências e análises pendentes sem preencher informações não sustentadas.
+7. Utilize `avaliacao_niar/` para os instrumentos e registros produzidos pelo NIAR-Saúde.
+8. Preserve o histórico das versões dos documentos e das rodadas de validação.
+
+Não inclua dados pessoais, dados sensíveis, credenciais, chaves, identificadores diretos ou artefatos cujo armazenamento no Git não tenha sido autorizado.
+
+---
+
+## Estrutura atual do repositório
 
 ```text
 documentacao_projeto/
   identificacao_auditoria.md
+
 artefatos_projeto/
   data_cards/
   model_cards/
@@ -168,73 +171,176 @@ artefatos_projeto/
   consolidated_iar_report/
   compliance/
     ripd/
-  operational_artifacts/        # exclusivo Trilha Produção (N3–N4)
+  operational_artifacts/
     monitoring/
     incidents/
     version_history/
     periodic_review/
 
-avaliacao_niar/                  # preenchido exclusivamente pela equipe do NIAR (não editável pelo projeto)
+avaliacao_niar/
+
 auditoria_final/
+
+fiar_sync/
+
+pdf/
 ```
+
+> **Observação:** alguns nomes e arquivos desta estrutura serão atualizados progressivamente para refletir o fluxo de validação documental e a terminologia vigente do FIAR-Saúde. Até que essas alterações sejam concluídas, os caminhos acima correspondem à estrutura atualmente implementada no template.
 
 ---
 
-## Governança de Versões
+## Artefatos do projeto
 
-Uma nova Versão Avaliável deve ser criada quando houver alterações relevantes em:
+Os artefatos de desenvolvimento podem incluir, conforme a tarefa e o ciclo:
 
-- dados utilizados;
-- modelo empregado;
-- algoritmo ou pipeline;
-- objetivo clínico ou operacional;
-- requisitos relacionados às dimensões de IA Responsável.
+- Data Card;
+- Model Card;
+- Fairness Report;
+- Explainability Report;
+- Registro de Decisão Técnica;
+- Relatório Consolidado de IAR;
+- documentação de privacidade e proteção de dados;
+- outros arquivos técnicos ou documentais necessários.
 
-Cada **Versão Avaliável** deve possuir documentação e evidências próprias de conformidade.
+Tarefas na Trilha Produção podem exigir também artefatos operacionais, como:
+
+- relatórios de monitoramento;
+- registros de incidentes;
+- histórico de versões;
+- registros de implantação ou reimplantação;
+- evidências de revisão periódica;
+- planos de contingência e resposta a falhas.
+
+A presença de um artefato, isoladamente, não demonstra suficiência da evidência nem determina conformidade.
+
+---
+
+## Marcadores de pendências
+
+Quando as informações disponíveis não forem suficientes, utilize os seguintes marcadores:
+
+```text
+[INFORMAÇÃO PENDENTE — preencher pelo projeto]
+
+[ANÁLISE PENDENTE — não inferível a partir dos documentos fornecidos]
+
+[INCONSISTÊNCIA IDENTIFICADA — verificar entre os artefatos]
+
+[ENQUADRAMENTO PENDENTE — validar pelo NIAR-Saúde]
+
+[DECISÃO INSTITUCIONAL PENDENTE — requer análise da instância competente]
+```
+
+Informações, resultados, responsáveis, versões, riscos ou decisões não devem ser inventados para completar os arquivos.
+
+---
+
+## Estados documentais
+
+Os documentos podem passar pelos seguintes estados:
+
+- Rascunho interno do NIAR;
+- Minuta para validação do projeto;
+- Em revisão pelo projeto;
+- Retornado pelo projeto;
+- Em consolidação pelo NIAR;
+- Para confirmação final;
+- Validado para início do ciclo;
+- Substituído;
+- Arquivado.
+
+Esses estados descrevem o andamento documental e não equivalem a um resultado de conformidade.
+
+---
+
+## Versionamento e rastreabilidade
+
+Cada documento produzido ou modificado durante o ciclo deve registrar, quando aplicável:
+
+- versão do documento;
+- data de referência;
+- responsável pela elaboração;
+- responsável pela validação factual;
+- fonte das informações;
+- alterações realizadas;
+- pendências remanescentes;
+- documento ou versão substituída.
+
+A Versão Avaliável da tarefa deve estar vinculada, sempre que disponível, a:
+
+- versão dos dados;
+- versão do modelo;
+- versão do código;
+- commit ou tag;
+- configuração da execução;
+- identificador dos pesos ou artefatos;
+- ambiente computacional;
+- resultados e evidências correspondentes.
+
+---
+
+## Avaliação pelo NIAR-Saúde
+
+A pasta `avaliacao_niar/` reúne instrumentos e registros produzidos pelo NIAR-Saúde.
+
+A equipe do projeto não deve alterar diretamente os julgamentos técnicos ou registros exclusivos do NIAR-Saúde.
+
+Quando for necessária validação factual, o NIAR-Saúde encaminhará uma minuta ou um conjunto de perguntas à equipe do projeto. As respostas e alterações serão consolidadas de forma rastreável, preservando-se a independência da avaliação.
+
+A pré-avaliação documental não constitui parecer final e não atribui automaticamente estados de conformidade.
 
 ---
 
 ## Relatório PDF consolidado
 
-O repositório gera automaticamente um PDF consolidado com todos os artefatos da auditoria.
+O repositório possui suporte para geração de um PDF consolidado a partir dos artefatos documentais.
 
-Consulte [`pdf/README.md`](pdf/README.md) para instruções de geração local.
+Consulte [`pdf/README.md`](pdf/README.md) para as instruções de geração local.
 
-O relatório consolidado de IAR é produzido em:
-
-- `artefatos_projeto/consolidated_iar_report/`
-
-e posteriormente integrado ao relatório final em:
-
-- `auditoria_final/`
-
----
-
-## Automação (GitHub Actions)
-
-O repositório possui um workflow automatizado para geração do PDF:
-
-- Executa em `push` na branch `main`
-- Executa em `pull_request`
-- Pode ser acionado manualmente (`workflow_dispatch`)
-
-O workflow responsável está em:
+O workflow automatizado está localizado em:
 
 ```text
 .github/workflows/build-document.yml
 ```
 
-Quando o PDF é atualizado, o sistema pode regenerar automaticamente o artefato e versioná-lo no repositório como artifact do pipeline.
+Antes de renomear pastas ou arquivos utilizados pelo processo de geração, verifique e atualize as referências presentes no workflow, nos scripts de sincronização e na configuração do PDF.
 
 ---
 
-## Documentação e Referências
+## Automação
 
-- Metodologia → [docs/metodologia_fiar.md](https://github.com/niar-saude-ufmg/FIAR-Saude/blob/main/docs/metodologia_fiar.md)
-- Ciclo de Auditoria → [docs/ciclo_auditoria.md](https://github.com/niar-saude-ufmg/FIAR-Saude/blob/main/docs/ciclo_auditoria.md)
-- Dimensões de IAR → [docs/dimensoes_avaliacao.md](https://github.com/niar-saude-ufmg/FIAR-Saude/blob/main/docs/dimensoes_avaliacao.md)
-- Trilhas de Execução → [docs/trilhas_execucao.md](https://github.com/niar-saude-ufmg/FIAR-Saude/blob/main/docs/trilhas_execucao.md)
-- Modelo de Maturidade → [docs/modelo_maturidade.md](https://github.com/niar-saude-ufmg/FIAR-Saude/blob/main/docs/modelo_maturidade.md)
-- Governança → [docs/governanca_auditoria.md](https://github.com/niar-saude-ufmg/FIAR-Saude/blob/main/docs/governanca_auditoria.md)
+A automação de geração documental pode ser executada:
+
+- em atualizações da branch principal;
+- em pull requests;
+- manualmente por `workflow_dispatch`.
+
+Os artefatos gerados pelo workflow devem ser revisados antes de sua utilização como documento oficial do ciclo.
 
 ---
+
+## Segurança e confidencialidade
+
+Recomenda-se que as instâncias de projetos sejam privadas.
+
+Antes de adicionar qualquer arquivo ao repositório, verifique:
+
+- se o armazenamento em Git foi autorizado;
+- se o arquivo contém dados pessoais ou sensíveis;
+- se existem informações protegidas por contrato ou propriedade intelectual;
+- se há credenciais, tokens ou chaves;
+- se o histórico do Git pode preservar conteúdo que deveria ser removido;
+- se o acesso está restrito às pessoas autorizadas.
+
+Dados brutos sensíveis, credenciais e segredos não devem ser armazenados neste repositório.
+
+---
+
+## Documentação oficial
+
+A metodologia e os conceitos do FIAR-Saúde devem ser consultados na documentação oficial:
+
+<https://github.com/niar-saude-ufmg/FIAR-Saude>
+
+Este template deve permanecer operacional e enxuto, evitando duplicar a documentação metodológica oficial.
