@@ -1,51 +1,232 @@
 {
-  "version": "1.0",
-  "data_cards": {
-    "path": "data_cards",
-    "required_files": ["data_card_v1.docx"]
-  },
-  "model_cards": {
-    "path": "model_cards",
-    "required_files": ["model_card_v1.docx"]
-  },
-  "fairness_reports": {
-    "path": "fairness_reports",
-    "required_files": ["fairness_report_v1.md"]
-  },
-  "explainability_reports": {
-    "path": "explainability_reports",
-    "required_files": ["explainability_report_v1.md"]
-  },
-  "decision_records": {
-    "path": "decision_records",
-    "required_files": ["technical_decision_v1.md"]
-  },
-  "consolidated_iar_report": {
-    "path": "consolidated_iar_report",
-    "required_files": ["consolidated_report_v1.md"]
-  },
-  "compliance": {
-    "ripd": {
-      "path": "compliance/ripd",
-      "required_files": ["ripd.docx"]
+  "schema_version": "2.0",
+  "template_name": "FIAR-Audit-Template",
+  "description": "Estrutura operacional de referência para ciclos do FIAR-Saúde.",
+
+  "required_root_files": [
+    "README.md"
+  ],
+
+  "required_root_directories": {
+    "documentacao_projeto": {
+      "required_files": [
+        "README.md",
+        "identificacao_avaliacao.md",
+        "historico_validacao.md",
+        "registro_de_pendencias.md"
+      ]
+    },
+
+    "avaliacao_niar": {
+      "required_files": [
+        "README.md",
+        "pre_avaliacao_documental.md",
+        "perguntas_para_entrevista_inicial.md",
+        "registro_de_inconsistencias.md"
+      ],
+      "required_directories": {
+        "avaliacao_por_dimensao": {
+          "required_files": [
+            "README.md",
+            "template_avaliacao_dimensao.md"
+          ]
+        },
+        "avaliacao_formal": {
+          "required_files": [
+            "README.md",
+            "resultado_avaliacao.md"
+          ]
+        }
+      }
+    },
+
+    "artefatos_projeto": {
+      "required_files": [
+        "README.md"
+      ],
+      "required_directories": {
+        "data_cards": {
+          "required_files": []
+        },
+
+        "model_cards": {
+          "required_files": []
+        },
+
+        "fairness_reports": {
+          "required_files": [
+            "fairness_report_inicial.md"
+          ],
+          "accepted_legacy_files": [
+            "fairness_report_v1.md"
+          ]
+        },
+
+        "explainability_reports": {
+          "required_files": [
+            "explainability_report_inicial.md"
+          ],
+          "accepted_legacy_files": [
+            "explainability_report_v1.md"
+          ]
+        },
+
+        "decision_records": {
+          "required_files": [
+            "DTE-001-template.md"
+          ],
+          "accepted_legacy_files": [
+            "technical_decision_v1.md"
+          ]
+        },
+
+        "relatorio_consolidado_iar": {
+          "required_files": [
+            "relatorio_iar_inicial.md"
+          ],
+          "accepted_legacy_directories": [
+            "consolidated_iar_report"
+          ],
+          "accepted_legacy_files": [
+            "consolidated_report_v1.md"
+          ]
+        },
+
+        "compliance": {
+          "required_files": [
+            "README.md"
+          ],
+          "required_directories": {
+            "ripd": {
+              "required_files": [
+                "README.md"
+              ],
+              "optional_files": [
+                "RIPD.docx",
+                "ripd.docx"
+              ]
+            }
+          }
+        },
+
+        "operational_artifacts": {
+          "required_files": [
+            "README.md"
+          ],
+          "required_directories": {
+            "monitoring": {
+              "required_files": [
+                "README.md",
+                "monitoring_report_template.md"
+              ]
+            },
+            "incidents": {
+              "required_files": [
+                "README.md",
+                "incident_record_template.md"
+              ]
+            },
+            "version_history": {
+              "required_files": [
+                "README.md",
+                "version_change_record_template.md"
+              ]
+            },
+            "periodic_review": {
+              "required_files": [
+                "README.md",
+                "periodic_review_template.md"
+              ]
+            }
+          }
+        }
+      }
+    },
+
+    "decisao_institucional": {
+      "required_files": [
+        "README.md",
+        "registro_decisao_institucional_template.md",
+        "registro_de_condicionantes.md"
+      ]
+    },
+
+    "auditoria_final": {
+      "required_files": [
+        "README.md"
+      ],
+      "optional_files": [
+        "sintese_do_ciclo.md",
+        "referencias_da_avaliacao.md",
+        "indice_de_decisoes_e_condicionantes.md"
+      ],
+      "temporary_name": true
+    },
+
+    "fiar_sync": {
+      "required_files": [
+        "fiar_structure.json",
+        "sync_structure.sh",
+        "validate_structure.py"
+      ]
+    },
+
+    "pdf": {
+      "required_files": [
+        "package.json"
+      ]
     }
   },
-  "operational_artifacts": {
-    "path": "operational_artifacts",
-    "subdirs": [
-      "version_history",
-      "incidents",
-      "monitoring",
-      "periodic_review"
-    ]
+
+  "optional_root_directories": [
+    ".github",
+    "docs",
+    "scripts"
+  ],
+
+  "legacy_paths": {
+    "directories": {
+      "artefatos_operacionais": "artefatos_projeto/operational_artifacts",
+      "artefatos_projeto/consolidated_iar_report": "artefatos_projeto/relatorio_consolidado_iar",
+      "historico_versoes": "version_history",
+      "incidentes": "incidents",
+      "monitoramento": "monitoring",
+      "revisao_periodica": "periodic_review"
+    },
+
+    "files": {
+      "documentacao_projeto/identificacao_auditoria.md": "documentacao_projeto/identificacao_avaliacao.md",
+      "artefatos_projeto/decision_records/technical_decision_v1.md": "artefatos_projeto/decision_records/DTE-001-template.md",
+      "artefatos_projeto/fairness_reports/fairness_report_v1.md": "artefatos_projeto/fairness_reports/fairness_report_inicial.md",
+      "artefatos_projeto/explainability_reports/explainability_report_v1.md": "artefatos_projeto/explainability_reports/explainability_report_inicial.md",
+      "artefatos_projeto/consolidated_iar_report/consolidated_report_v1.md": "artefatos_projeto/relatorio_consolidado_iar/relatorio_iar_inicial.md"
+    }
   },
-  "legacy": {
-    "dirs": [
-      "artefatos_operacionais",
-      "historico_versoes",
-      "incidentes",
-      "monitoramento",
-      "revisao_periodica"
+
+  "validation": {
+    "allow_legacy_paths_during_transition": true,
+    "fail_on_missing_required_path": true,
+    "fail_on_empty_required_template": true,
+    "warn_on_legacy_path": true,
+    "warn_on_unexpected_sensitive_files": true,
+    "ignored_paths": [
+      ".git",
+      "node_modules",
+      "pdf/node_modules",
+      "pdf/output",
+      "__pycache__",
+      ".DS_Store"
+    ],
+    "sensitive_file_patterns": [
+      "*.pem",
+      "*.key",
+      "*.p12",
+      "*.pfx",
+      "*.env",
+      ".env.*",
+      "*credentials*",
+      "*secret*",
+      "*token*"
     ]
   }
 }
