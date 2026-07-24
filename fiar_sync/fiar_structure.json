@@ -74,18 +74,12 @@
         "decision_records": {
           "required_files": [
             "DTE-001-template.md"
-          ],
-          "accepted_legacy_files": [
-            "technical_decision_v1.md"
           ]
         },
 
-        "relatorio_consolidado_iar": {
+        "consolidated_iar_report": {
           "required_files": [
-            "relatorio_iar_inicial.md"
-          ],
-          "accepted_legacy_directories": [
-            "consolidated_iar_report"
+            "consolidated_report_v1.md"
           ],
           "accepted_legacy_files": [
             "consolidated_report_v1.md"
@@ -187,22 +181,19 @@
   "legacy_paths": {
     "directories": {
       "artefatos_operacionais": "artefatos_projeto/operational_artifacts",
-      "artefatos_projeto/consolidated_iar_report": "artefatos_projeto/relatorio_consolidado_iar",
-      "historico_versoes": "version_history",
-      "incidentes": "incidents",
-      "monitoramento": "monitoring",
-      "revisao_periodica": "periodic_review"
+      "artefatos_projeto/historico_versoes": "artefatos_projeto/operational_artifacts/version_history",
+      "artefatos_projeto/incidentes": "artefatos_projeto/operational_artifacts/incidents",
+      "artefatos_projeto/monitoramento": "artefatos_projeto/operational_artifacts/monitoring",
+      "artefatos_projeto/revisao_periodica": "artefatos_projeto/operational_artifacts/periodic_review"
     },
 
     "files": {
       "documentacao_projeto/identificacao_auditoria.md": "documentacao_projeto/identificacao_avaliacao.md",
       "artefatos_projeto/decision_records/technical_decision_v1.md": "artefatos_projeto/decision_records/DTE-001-template.md",
       "artefatos_projeto/fairness_reports/fairness_report_v1.md": "artefatos_projeto/fairness_reports/fairness_report_inicial.md",
-      "artefatos_projeto/explainability_reports/explainability_report_v1.md": "artefatos_projeto/explainability_reports/explainability_report_inicial.md",
-      "artefatos_projeto/consolidated_iar_report/consolidated_report_v1.md": "artefatos_projeto/relatorio_consolidado_iar/relatorio_iar_inicial.md"
+      "artefatos_projeto/explainability_reports/explainability_report_v1.md": "artefatos_projeto/explainability_reports/explainability_report_inicial.md"
     }
   },
-
   "validation": {
     "allow_legacy_paths_during_transition": true,
     "fail_on_missing_required_path": true,

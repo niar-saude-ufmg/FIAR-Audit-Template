@@ -14,6 +14,7 @@ const orderedRoots = [
   'documentacao_projeto',
   'artefatos_projeto',
   'avaliacao_niar',
+  'decisao_institucional',
   'auditoria_final'
 ];
 
@@ -99,44 +100,91 @@ function titleFromFilename(relPath) {
 function classifyToc(relPath) {
   const normalized = relPath.toLowerCase();
 
-  fs.mkdirSync(distDir, { recursive: true });
-
   if (normalized.startsWith('documentacao_projeto/')) {
-    return { section: 'Documentação do projeto', item: titleFromFilename(relPath) };
-  }
-
-  
-
-  if (normalized.startsWith('artefatos_projeto/')) {
-    if (normalized.includes('/data_cards/') || normalized.includes('datacard') || normalized.includes('data_card')) {
-      return { section: 'Artefatos do projeto', item: 'DataCard' };
-    }
-    if (normalized.includes('/model_cards/') || normalized.includes('modelcard') || normalized.includes('model_card')) {
-      return { section: 'Artefatos do projeto', item: 'ModelCard' };
-    }
-    if (normalized.includes('/ripd/') || normalized.includes('ripd')) {
-      return { section: 'Artefatos do projeto', item: 'RIPD' };
-    }
-    if (normalized.includes('/consolidated_iar_report/')) {
-      return { section: 'Artefatos do projeto', item: 'Relatório Consolidado de IAR' };
-    }
-
-    return { section: 'Artefatos do projeto', item: titleFromFilename(relPath) };
+    return {
+      section: 'Documentação do projeto',
+      item: titleFromFilename(relPath)
+    };
   }
 
   if (normalized.startsWith('artefatos_projeto/operational_artifacts/')) {
-    return { section: 'Artefatos operacionais', item: titleFromFilename(relPath)};
+    return {
+      section: 'Artefatos operacionais',
+      item: titleFromFilename(relPath)
+    };
+  }
+
+  if (normalized.startsWith('artefatos_projeto/')) {
+    if (
+      normalized.includes('/data_cards/')
+      || normalized.includes('datacard')
+      || normalized.includes('data_card')
+    ) {
+      return {
+        section: 'Artefatos do projeto',
+        item: 'DataCard'
+      };
+    }
+
+    if (
+      normalized.includes('/model_cards/')
+      || normalized.includes('modelcard')
+      || normalized.includes('model_card')
+    ) {
+      return {
+        section: 'Artefatos do projeto',
+        item: 'ModelCard'
+      };
+    }
+
+    if (
+      normalized.includes('/ripd/')
+      || normalized.includes('ripd')
+    ) {
+      return {
+        section: 'Artefatos do projeto',
+        item: 'RIPD'
+      };
+    }
+
+    if (normalized.includes('/consolidated_iar_report/')) {
+      return {
+        section: 'Artefatos do projeto',
+        item: 'Relatório Consolidado de IAR'
+      };
+    }
+
+    return {
+      section: 'Artefatos do projeto',
+      item: titleFromFilename(relPath)
+    };
   }
 
   if (normalized.startsWith('avaliacao_niar/')) {
-    return { section: 'Avaliação do NIAR', item: titleFromFilename(relPath) };
+    return {
+      section: 'Avaliação do NIAR-Saúde',
+      item: titleFromFilename(relPath)
+    };
+  }
+
+  if (normalized.startsWith('decisao_institucional/')) {
+    return {
+      section: 'Decisões institucionais',
+      item: titleFromFilename(relPath)
+    };
   }
 
   if (normalized.startsWith('auditoria_final/')) {
-    return { section: 'Auditoria final', item: titleFromFilename(relPath) };
+    return {
+      section: 'Resultado consolidado do ciclo',
+      item: titleFromFilename(relPath)
+    };
   }
 
-  return { section: 'Documentos', item: titleFromFilename(relPath) };
+  return {
+    section: 'Documentos',
+    item: titleFromFilename(relPath)
+  };
 }
 
 async function pageCount(pdfPath) {
@@ -192,8 +240,8 @@ function drawCover(page, font, fontBold, nowText, assets) {
   }
 
   const line1 = 'NIAR-SAÚDE/UFMG';
-  const line2 = 'Documento de auditoria';
-  const line3 = 'Consolidado de artefatos e evidências';
+  const line2 = 'Relatório consolidado do ciclo FIAR-Saúde';
+  const line3 = 'Artefatos, avaliação técnica e decisões institucionais';
   const line4 = `Data de geração do relatório: ${ptDate(nowText)}`;
 
   page.drawText(line1, {
