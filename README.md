@@ -1,8 +1,25 @@
-# FIAR-Audit-Template
+# FIAR-Saúde — Template de Ciclo de Avaliação
 
-Este repositório define a estrutura padrão para criação de instâncias de auditoria do FIAR-Saúde.
+Este repositório fornece uma estrutura operacional reutilizável para organizar e documentar um ciclo de avaliação do FIAR-Saúde associado a uma **Tarefa de IA**, uma **Versão Avaliável** e um **Contexto de Uso** específicos.
 
-Cada repositório derivado representa a auditoria de uma Tarefa e uma Versão Avaliável específicas.
+O template pode ser utilizado para criar um repositório privado de um projeto, no qual são organizados:
+
+- a documentação inicial da tarefa;
+- os artefatos e evidências produzidos pelo projeto;
+- as rodadas de validação documental;
+- as avaliações realizadas pelo NIAR-Saúde;
+- os registros de decisões técnicas;
+- as decisões institucionais, quando aplicáveis;
+- os relatórios produzidos ao longo do ciclo.
+
+Este repositório não substitui nem replica a documentação metodológica oficial do FIAR-Saúde.
+
+A fonte oficial para conceitos, dimensões, trilhas, procedimentos de avaliação, governança e modelo de maturidade está disponível em:
+
+<https://github.com/niar-saude-ufmg/FIAR-Saude>
+
+Em caso de divergência entre este template e a documentação oficial vigente, prevalece a documentação oficial do FIAR-Saúde.
+
 
 ---
 
