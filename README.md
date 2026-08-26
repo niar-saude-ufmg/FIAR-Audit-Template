@@ -165,6 +165,15 @@ documentacao_projeto/
   registro_de_pendencias.md
 
 artefatos_projeto/
+Esta pasta reúne os artefatos e evidências produzidos ou mantidos pelo projeto ao longo do ciclo FIAR-Saúde.
+
+> **Importante:** a presença de um diretório ou template nesta estrutura não implica que o artefato correspondente seja obrigatório para todas as tarefas.
+>
+> Os templates representam tipos de evidência que podem ser utilizados quando aplicáveis. A necessidade de cada evidência deve ser determinada pelo NIAR-Saúde considerando a Tarefa de IA, a Versão Avaliável, o Contexto de Uso, a Trilha de Execução, os requisitos aplicáveis e as evidências já disponíveis.
+>
+> Sempre que possível, deve-se evitar duplicação documental. Uma evidência suficientemente registrada e rastreável em outro artefato pode atender ao requisito correspondente.
+
+A estrutura inclui, quando aplicável:
   data_cards/
   model_cards/
   fairness_reports/

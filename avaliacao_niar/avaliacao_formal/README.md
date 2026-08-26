@@ -14,6 +14,8 @@ A avaliação formal somente deve ser preenchida após:
 
 A documentação metodológica oficial do FIAR-Saúde deve orientar os critérios,
 procedimentos e resultados aplicáveis.
+
+
 ---------------------------------------
 
 ## Objeto da avaliação
@@ -85,4 +87,27 @@ instância competente.
 O Registro de Decisão Institucional deve permanecer separado do resultado técnico.
 
 
+---
 
+## Papel deste diretório
+
+Este diretório contém o **resultado formal da avaliação técnica do NIAR-Saúde**.
+
+A análise detalhada que fundamenta esse resultado permanece registrada em:
+
+- `avaliacao_niar/avaliacao_por_requisito/`;
+- `avaliacao_niar/avaliacao_por_dimensao/`;
+- `consolidacao_avaliacao/`.
+
+O documento formal não deve duplicar integralmente essas análises. Seu objetivo é registrar de forma sintética e rastreável:
+
+- o objeto avaliado;
+- o resultado de conformidade;
+- os achados determinantes;
+- as pendências relevantes;
+- os sinais de governança;
+- os condicionantes e recomendações;
+- eventual necessidade de escalonamento;
+- os gatilhos para reavaliação.
+
+Quando houver decisão institucional, ela deve ser registrada separadamente em `decisao_institucional/`.

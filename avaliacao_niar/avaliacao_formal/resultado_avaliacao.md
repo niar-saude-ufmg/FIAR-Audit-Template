@@ -1,20 +1,21 @@
-# Resultado da Avaliação
+# Resultado Formal da Avaliação Técnica
 
 ## Controle do documento
 
-| Campo               | Preenchimento                                        |
-| ------------------- | ---------------------------------------------------- |
-| Versão             | 0.1                                                  |
-| Status              | Rascunho interno do NIAR                             |
-| Projeto             | [INFORMAÇÃO PENDENTE — preencher pelo projeto]    |
-| Tarefa de IA        | [INFORMAÇÃO PENDENTE — preencher pelo projeto]    |
-| Versão Avaliável  | [INFORMAÇÃO PENDENTE — preencher pelo projeto]    |
-| Contexto de Uso     | [INFORMAÇÃO PENDENTE — preencher pelo projeto]    |
-| Trilha              | [ENQUADRAMENTO PENDENTE — validar pelo NIAR-Saúde] |
-| Data de referência | [INFORMAÇÃO PENDENTE — preencher pelo projeto]    |
-| Avaliadores         | [INFORMAÇÃO PENDENTE — preencher pelo projeto]    |
+| Campo | Preenchimento |
+|---|---|
+| ID da avaliação | |
+| Versão do documento | |
+| Status | |
+| Projeto | |
+| Tarefa de IA | |
+| Versão Avaliável | |
+| Contexto de Uso | |
+| Trilha de Execução | |
+| Data da avaliação | |
+| Avaliadores | |
 
-> Este documento registra o resultado pontual da avaliação da tarefa, da versão e do contexto identificados.
+> Este documento registra o resultado formal da avaliação técnica realizada pelo NIAR-Saúde para a combinação **Tarefa de IA + Versão Avaliável + Contexto de Uso**.
 >
 > Não constitui certificação técnica, validação clínica, autorização regulatória ou autorização automática de implantação.
 
@@ -22,178 +23,130 @@
 
 ## 1. Objeto da avaliação
 
-### Tarefa de IA
+**Tarefa de IA:**  
 
-[INFORMAÇÃO PENDENTE — preencher pelo projeto]
+**Versão Avaliável:**  
 
-### Versão Avaliável
+**Contexto de Uso:**  
 
-[INFORMAÇÃO PENDENTE — preencher pelo projeto]
+**Trilha de Execução:**  
 
-### Contexto de Uso
+**Escopo:**  
 
-[INFORMAÇÃO PENDENTE — preencher pelo projeto]
-
-### Escopo
-
-[INFORMAÇÃO PENDENTE — preencher pelo projeto]
-
-### Fora do escopo
-
-[INFORMAÇÃO PENDENTE — preencher pelo projeto]
+**Fora do escopo:**  
 
 ---
 
-## 2. Artefatos considerados
+## 2. Síntese da avaliação
 
-| ID      | Artefato | Versão | Data | Localização |
-| ------- | -------- | ------- | ---- | ------------- |
-| ART-001 |          |         |      |               |
+Apresentar uma síntese dos principais achados derivados da consolidação das sete dimensões.
 
----
-
-## 3. Verificações realizadas
-
-| ID      | Verificação | Método | Responsável | Data | Resultado |
-| ------- | ------------- | ------- | ------------ | ---- | --------- |
-| VER-001 |               |         |              |      |           |
+**Síntese:**
 
 ---
 
-## 4. Resultado por dimensão
+## 3. Resultado de conformidade
 
-| Dimensão           | Síntese da avaliação | Pendências relevantes | Documento relacionado |
-| ------------------- | ----------------------- | ---------------------- | --------------------- |
-| Justiça            |                         |                        |                       |
-| Transparência      |                         |                        |                       |
-| Responsabilização |                         |                        |                       |
-| Privacidade         |                         |                        |                       |
-| Segurança          |                         |                        |                       |
-| Governança         |                         |                        |                       |
-| Rastreabilidade     |                         |                        |                       |
+**Resultado:** Conforme | Pendente | Não Conforme
 
----
+**Justificativa:**
 
-## 5. Inconsistências relevantes
+O resultado deve ser fundamentado nos achados consolidados e nos requisitos determinantes da avaliação.
 
-| ID      | Inconsistência | Impacto | Estado |
-| ------- | --------------- | ------- | ------ |
-| INC-XXX |                 |         |        |
+**Requisitos determinantes:**
+
+- 
+
+**Limitações relevantes:**
+
+- 
 
 ---
 
-## 6. Limitações da avaliação
+## 4. Pendências relevantes
 
-- [ANÁLISE PENDENTE — não inferível a partir dos documentos fornecidos]
+Registrar apenas pendências que permaneçam abertas ao final da avaliação e que tenham impacto relevante sobre o resultado ou acompanhamento.
+
+| ID | Pendência | Impacto | Responsável | Status |
+|---|---|---|---|---|
+| | | | | |
 
 ---
 
-## 7. Pendências
+## 5. Sinais de governança
 
-### Críticas
+| ID | Sinal | Fundamentação | Encaminhamento |
+|---|---|---|---|
+| | | | |
 
-| ID      | Pendência | Impacto | Responsável | Prazo |
-| ------- | ---------- | ------- | ------------ | ----- |
-| PEN-XXX |            |         |              |       |
+Nem todo resultado de avaliação produz sinal de governança.
 
-### Relevantes
+---
 
-| ID      | Pendência | Impacto | Responsável | Prazo |
-| ------- | ---------- | ------- | ------------ | ----- |
-| PEN-XXX |            |         |              |       |
+## 6. Condicionantes e recomendações
+
+### Condicionantes
+
+-
 
 ### Recomendações
 
-| ID      | Recomendação | Responsável sugerido |
-| ------- | -------------- | --------------------- |
-| REC-001 |                |                       |
+-
 
 ---
 
-## 8. Sinais de governança
+## 7. Necessidade de escalonamento institucional
 
-| ID      | Sinal | Origem | Encaminhamento |
-| ------- | ----- | ------ | -------------- |
-| SIG-001 |       |        |                |
+**Há necessidade de escalonamento?** Sim | Não
 
----
+Se sim:
 
-## 9. Pontos para possível escalonamento
+**Questão a ser deliberada:**  
 
-| ID       | Questão                                                                      | Motivo | Instância sugerida | Estado |
-| -------- | ----------------------------------------------------------------------------- | ------ | ------------------- | ------ |
-| INST-001 | [DECISÃO INSTITUCIONAL PENDENTE — requer análise da instância competente] |        |                     |        |
+**Instância competente:**  
 
-A identificação de um possível escalonamento não constitui decisão institucional.
+**Referência à consolidação:**  
+
+A identificação de escalonamento não constitui decisão institucional.
 
 ---
 
-## 10. Resultado formal
+## 8. Gatilhos para reavaliação
 
-Preencher exclusivamente conforme os critérios e procedimentos vigentes na documentação oficial do FIAR-Saúde.
-
-| Campo                         | Preenchimento                                                     |
-| ----------------------------- | ----------------------------------------------------------------- |
-| Resultado                     | [ANÁLISE PENDENTE — preencher somente após avaliação formal] |
-| Data                          |                                                                   |
-| Justificativa                 |                                                                   |
-| Condições ou limites        |                                                                   |
-| Prazo de validade ou revisão |                                                                   |
-| Gatilhos de reavaliação     |                                                                   |
-
-O resultado é restrito à Tarefa de IA, à Versão Avaliável e ao Contexto de Uso identificados neste documento.
+-
 
 ---
 
-## 11. Condições para continuidade
-
-- [ANÁLISE PENDENTE — não inferível a partir dos documentos fornecidos]
-
----
-
-## 12. Gatilhos de nova avaliação
-
-Registrar mudanças relevantes, quando aplicáveis:
-
-- retreinamento;
-- alteração de arquitetura;
-- mudança de dados;
-- mudança de variáveis;
-- mudança de população;
-- mudança de escopo;
-- mudança de Contexto de Uso;
-- alteração de thresholds;
-- incidente;
-- drift;
-- mudança regulatória;
-- mudança operacional relevante.
-
-[INFORMAÇÃO PENDENTE — preencher pelo projeto]
-
----
-
-## 13. Relação com a maturidade
+## 9. Relação com a maturidade
 
 Este resultado não atribui automaticamente nível de maturidade ao projeto.
 
-As evidências deste ciclo poderão compor o histórico longitudinal utilizado em avaliações futuras da maturidade do projeto, conforme a documentação oficial do FIAR-Saúde.
+As evidências deste ciclo poderão compor o histórico longitudinal utilizado na inferência futura de maturidade.
 
 ---
 
-## 14. Declaração dos avaliadores
+## 10. Referências de rastreabilidade
 
-Os avaliadores confirmam que a conclusão registrada está vinculada às evidências, verificações, limitações e pendências identificadas neste documento.
+**Documento de consolidação relacionado:**  
+
+**Avaliações por dimensão relacionadas:**  
+
+**Pendências relacionadas:**  
+
+**Decisões institucionais relacionadas:**  
+
+---
+
+## 11. Declaração dos avaliadores
 
 | Nome | Papel | Data | Registro |
-| ---- | ----- | ---- | -------- |
-|      |       |      |          |
+|---|---|---|---|
+| | | | |
 
 ---
 
-## 15. Histórico de versões
+## 12. Histórico de versões
 
-| Versão | Data | Responsável | Alteração            | Status                   |
-| ------- | ---- | ------------ | ---------------------- | ------------------------ |
-| 0.1     |      | NIAR-Saúde  | Criação do documento | Rascunho interno do NIAR |
-
-
+| Versão | Data | Responsável | Alteração | Status |
+|---|---|---|---|---|
+| 0.1 | | NIAR-Saúde | Criação do documento | Rascunho interno |
