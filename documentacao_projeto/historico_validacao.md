@@ -43,16 +43,12 @@ Os registros deste arquivo podem utilizar, conforme aplicável:
 - `Preparação pelo NIAR`
 - `Verificação pelo NIAR`
 - `Enviado ao projeto`
-- `Em revisão pelo projeto`
 - `Retornado pelo projeto`
 - `Em consolidação pelo NIAR`
 - `Aguardando evidência`
 - `Aguardando esclarecimento`
-- `Aguardando entrevista`
 - `Consolidado`
-- `Encerrado com pendências`
 - `Substituído`
-- `Arquivado`
 
 Esses estados descrevem a evolução documental e não equivalem a resultado de conformidade.
 
@@ -73,6 +69,10 @@ Registrar nova rodada quando ocorrer, por exemplo:
 - entrevista;
 - correção documental;
 - reabertura após mudança relevante.
+
+> Uma rodada não exige necessariamente interação com a equipe do projeto.
+>
+> Verificações documentais internas relevantes realizadas pelo NIAR-Saúde também devem ser registradas como rodada quando alterarem a delimitação, resolverem pendências ou inconsistências, incorporarem novas evidências ou modificarem o estado documental do ciclo.
 
 ---
 
@@ -113,11 +113,13 @@ Registrar, conforme aplicável:
 
 - informações corroboradas;
 - correções incorporadas;
+- correções documentais necessárias;
 - divergências identificadas;
 - pendências abertas ou resolvidas;
 - necessidade de evidência adicional;
 - necessidade de esclarecimento;
 - impacto sobre a delimitação ou continuidade do ciclo.
+
 
 #### 4.6 Resultado da rodada
 
@@ -140,7 +142,9 @@ Registrar, conforme aplicável:
 
 As entrevistas devem ser utilizadas apenas quando necessárias para esclarecer questões que não possam ser suficientemente resolvidas pelas evidências documentais disponíveis.
 
-Informações relevantes confirmadas oralmente devem ser incorporadas, quando necessário, ao artefato ou registro correspondente.
+Informações relevantes confirmadas oralmente devem ser incorporadas, quando necessário, ao artefato ou registro correspondente. 
+
+> A entrevista não constitui etapa obrigatória do ciclo e não deve ser utilizada quando a questão puder ser suficientemente resolvida por evidência documental ou confirmação factual específica.
 
 ---
 
@@ -174,13 +178,13 @@ Não registrar apenas “ajustes gerais”. Descrever a alteração de forma suf
 
 ## 8. Pendências relacionadas às rodadas
 
-| ID | Pendência | Tipo | Impacto | Estado | Rodada de origem | Registro relacionado |
-| -- | ---------- | ---- | ------- | ------ | ---------------- | -------------------- |
-|    |            |      |         |        |                  |                      |
+| ID | Pendência | Tipo | Impacto na continuidade | Estado | Rodada de origem | Registro relacionado |
+|---|---|---|---|---|---|---|
+| | | | | | | |
 
 As pendências devem ser mantidas em detalhe em `registro_de_pendencias.md`.
 
-Este histórico registra apenas sua origem e evolução.
+Este histórico registra apenas sua origem, evolução e efeito sobre a continuidade do ciclo.
 
 ---
 
@@ -201,12 +205,12 @@ Não duplicar neste arquivo toda a análise da inconsistência.
 A documentação de abertura e pré-avaliação pode ser considerada suficientemente consolidada quando:
 
 - a Tarefa de IA estiver suficientemente delimitada;
-- a Versão Avaliável estiver identificada ou suas limitações de rastreabilidade estiverem formalmente registradas;
+- a Versão Avaliável estiver identificada;
 - o Contexto de Uso estiver explícito;
 - a Trilha de Execução estiver definida;
 - os artefatos e evidências verificadas no ciclo estiverem inventariados;
-- inconsistências relevantes estiverem registradas e em tratamento;
-- pendências materiais estiverem registradas;
+- inconsistências relevantes estiverem registradas, com seu estado e forma de tratamento documentados;
+- pendências abertas estiverem registradas e seu impacto sobre a continuidade tiver sido explicitamente determinado;
 - informações que dependam efetivamente da equipe do projeto tenham sido identificadas e, quando necessário, solicitadas;
 - o NIAR-Saúde tiver documentado as bases da delimitação e as condições para continuidade.
 
@@ -226,11 +230,18 @@ A confirmação da equipe do projeto deve ser solicitada quando necessária para
 | Pendências materiais                        |               |
 | Inconsistências relevantes                  |               |
 | Itens ainda dependentes da equipe do projeto |               |
+| Avaliação por requisito pode ser iniciada | Sim / Não |
 | Próxima etapa                               |               |
 
 ### Declaração de estado
 
-Registrar de forma objetiva se a documentação está suficientemente consolidada para continuidade da pré-avaliação ou da avaliação por requisito.
+Registrar de forma objetiva:
+
+- o grau de consolidação documental alcançado;
+- quais pendências permanecem abertas;
+- se essas pendências impedem ou não a continuidade;
+- quais inconsistências permanecem abertas e quais foram resolvidas;
+- se existem condições para iniciar a avaliação por requisito.
 
 Este estado não constitui:
 
@@ -248,3 +259,4 @@ Este estado não constitui:
 | Versão | Data | Responsável | Alteração                                       | Status          |
 | ------- | ---- | ------------ | ------------------------------------------------- | --------------- |
 | 0.1     |      | NIAR-Saúde  | Criação do histórico de validação documental | Em elaboração |
+| 0.2 | 26/08/2026 | NIAR-Saúde | Revisão metodológica do histórico: inclusão de rodadas internas do NIAR, registro do impacto das pendências sobre a continuidade e explicitação da decisão de progressão para avaliação por requisito | Em uso |

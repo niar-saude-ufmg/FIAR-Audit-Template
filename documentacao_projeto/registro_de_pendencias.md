@@ -1,136 +1,73 @@
 # Registro de Pendências
 
-Este arquivo consolida as pendências identificadas durante a inspeção documental, a validação com a equipe do projeto e as etapas posteriores do ciclo FIAR-Saúde.
+Este arquivo consolida as pendências identificadas pelo NIAR-Saúde ao longo do ciclo FIAR-Saúde.
 
-Seu objetivo é permitir o acompanhamento rastreável de:
+Uma pendência representa uma questão ainda não suficientemente resolvida para determinada finalidade do ciclo, podendo envolver confirmação factual, complementação documental, esclarecimento, verificação pelo NIAR-Saúde, análise técnica adicional ou decisão institucional.
 
-- informações faltantes;
-- evidências não fornecidas;
-- análises ainda não realizadas;
-- inconsistências entre artefatos;
-- questões de enquadramento;
-- decisões institucionais pendentes.
+O registro de uma pendência não constitui, por si só:
 
-Este registro apresenta o estado atual das pendências.
+- não conformidade;
+- ausência obrigatória de artefato;
+- recomendação;
+- inconsistência;
+- decisão institucional.
+
+A ausência de um artefato somente deve originar pendência quando houver uma necessidade de evidência previamente identificada que não esteja suficientemente atendida pelas fontes disponíveis.
+
+Pendências podem ser impeditivas ou não impeditivas para a continuidade do ciclo. Essa classificação deve ser explicitamente justificada.
 
 A origem e a evolução de cada pendência ao longo das rodadas devem também ser registradas em:
 
 ```text
 historico_validacao.md
-````
+```
 
 ---
 
 ## 1. Identificação do ciclo
 
-| Campo                      | Preenchimento                                        |
-| -------------------------- | ---------------------------------------------------- |
-| Projeto                    | [INFORMAÇÃO PENDENTE — preencher pelo projeto]    |
-| Tarefa de IA               | [INFORMAÇÃO PENDENTE — preencher pelo projeto]    |
-| Versão Avaliável         | [INFORMAÇÃO PENDENTE — preencher pelo projeto]    |
-| Contexto de Uso            | [INFORMAÇÃO PENDENTE — preencher pelo projeto]    |
-| Trilha                     | [ENQUADRAMENTO PENDENTE — validar pelo NIAR-Saúde] |
-| Responsável pelo registro | [INFORMAÇÃO PENDENTE — preencher pelo projeto]    |
-| Data de abertura           | [INFORMAÇÃO PENDENTE — preencher pelo projeto]    |
-| Última atualização      | [INFORMAÇÃO PENDENTE — preencher pelo projeto]    |
+| Campo                      | Preenchimento                                                     |
+| -------------------------- | ----------------------------------------------------------------- |
+| Projeto                    | [preencher pelo NIAR-Saúde a partir das evidências verificadas] |
+| Tarefa de IA               | [preencher a partir da identificação da avaliação]            |
+| Versão Avaliável         | [preencher a partir da identificação da avaliação]            |
+| Contexto de Uso            | [preencher a partir da identificação da avaliação]            |
+| Trilha de Execução       | [preencher a partir da identificação da avaliação]            |
+| Responsável pelo registro | NIAR-Saúde                                                       |
+| Data de abertura           | [preencher pelo NIAR-Saúde]                                      |
+| Última atualização      | [preencher pelo NIAR-Saúde]                                      |
 
 ---
 
 ## 2. Tipos de pendência
 
-Cada pendência deve ser classificada em um dos tipos abaixo.
+### Complementação documental
 
-### Informação
+Documento existente precisa ser complementado, corrigido ou atualizado para suprir uma necessidade de evidência já identificada.
 
-Informação factual necessária, mas ainda não fornecida ou confirmada.
+### Esclarecimento
 
-Exemplos:
+Informação documental existente é ambígua ou insuficientemente precisa e requer esclarecimento.
 
-* nome do responsável;
-* versão do dataset;
-* data de treinamento;
-* contexto de uso;
-* estágio de implantação.
+### Confirmação factual
 
-Marcador correspondente:
+Fato relevante ainda não foi confirmado por fonte verificável.
 
-```text
-[INFORMAÇÃO PENDENTE — preencher pelo projeto]
-```
+### Verificação pelo NIAR
 
-### Evidência
+Questão que deve ser resolvida primeiramente por análise documental, administrativa ou metodológica realizada pelo NIAR-Saúde antes de eventual solicitação à equipe do projeto.
 
-Documento, arquivo, log, relatório ou outro elemento verificável mencionado, mas ainda não disponibilizado.
+### Análise técnica adicional
 
-Exemplos:
-
-* arquivo de configuração;
-* log de execução;
-* parecer ético;
-* relatório de validação;
-* registro de decisão técnica.
-
-### Análise
-
-Avaliação técnica ainda não realizada ou não inferível a partir dos artefatos existentes.
-
-Exemplos:
-
-* análise de justiça;
-* análise de explicabilidade;
-* validação por subgrupos;
-* avaliação de segurança;
-* análise de drift.
-
-Marcador correspondente:
-
-```text
-[ANÁLISE PENDENTE — não inferível a partir dos documentos fornecidos]
-```
-
-### Inconsistência
-
-Divergência, ambiguidade ou contradição entre documentos, versões ou declarações.
-
-Marcador correspondente:
-
-```text
-[INCONSISTÊNCIA IDENTIFICADA — verificar entre os artefatos]
-```
-
-### Enquadramento
-
-Questão metodológica que exige consolidação pelo NIAR-Saúde.
-
-Exemplos:
-
-* delimitação da Tarefa de IA;
-* definição da Versão Avaliável;
-* separação entre Contextos de Uso;
-* enquadramento da trilha.
-
-Marcador correspondente:
-
-```text
-[ENQUADRAMENTO PENDENTE — validar pelo NIAR-Saúde]
-```
+Questão que exige análise técnica específica além da simples verificação documental.
 
 ### Decisão institucional
 
-Questão que ultrapassa o escopo da avaliação técnica e exige análise da instância competente.
+Questão que ultrapassa o escopo da avaliação técnica e requer deliberação da instância institucional competente.
 
-Exemplos:
-
-* aceite de risco residual;
-* definição de condicionantes;
-* autorização institucional;
-* decisão sobre continuidade, suspensão ou restrição de uso.
-
-Marcador correspondente:
-
-```text
-[DECISÃO INSTITUCIONAL PENDENTE — requer análise da instância competente]
-```
+> Uma inconsistência confirmada deve ser registrada em `avaliacao_niar/registro_de_inconsistencias.md`.
+>
+> Uma inconsistência pode originar uma pendência para seu tratamento, mas inconsistência e pendência não são equivalentes.
 
 ---
 
@@ -138,66 +75,55 @@ Marcador correspondente:
 
 As pendências devem ser classificadas em uma das prioridades abaixo.
 
-### Crítica
-
-Pendência que impede:
-
-* delimitar a Tarefa de IA;
-* identificar a Versão Avaliável;
-* compreender o Contexto de Uso;
-* verificar a origem dos dados ou do modelo;
-* identificar responsáveis;
-* iniciar ou concluir uma avaliação aplicável;
-* avaliar risco relevante;
-* reconstruir resultado técnico essencial.
-
-### Relevante
-
-Pendência que não impede imediatamente o ciclo, mas afeta:
-
-* completude;
-* consistência;
-* rastreabilidade;
-* interpretação dos resultados;
-* avaliação de uma dimensão;
-* planejamento de análises adicionais.
-
-### Recomendação
-
-Melhoria desejável de documentação, organização ou rastreabilidade que não impede a continuidade do ciclo atual.
+| Prioridade | Critério                                                                                                                                 |
+| ---------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| Alta       | Impede a delimitação da unidade de avaliação ou outra condição material necessária para prosseguir com a etapa pertinente do ciclo |
+| Média     | Não impede imediatamente a continuidade, mas afeta suficiência, consistência, rastreabilidade ou interpretação das evidências       |
+| Baixa      | Questão documental, administrativa ou complementar que pode ser tratada durante o ciclo sem impedir sua continuidade                     |
 
 A prioridade não equivale a resultado de conformidade.
+
+Uma recomendação de melhoria não deve ser registrada como pendência apenas por ser desejável.
+
+### Impacto sobre a continuidade
+
+Cada pendência deve ser classificada como:
+
+- `Impeditiva`;
+- `Não impeditiva`;
+- `Ainda não determinado`.
+
+Uma pendência é impeditiva somente quando sua ausência inviabiliza materialmente a etapa que se pretende iniciar ou concluir.
+
+Pendências não impeditivas podem permanecer abertas em paralelo, desde que seu impacto esteja registrado e que sejam resolvidas antes da etapa em que se tornem materiais.
 
 ---
 
 ## 4. Estados das pendências
 
-Utilize um dos seguintes estados:
+- `Aberta`
+- `Aguardando verificação pelo NIAR`
+- `Aguardando projeto`
+- `Em análise`
+- `Parcialmente resolvida`
+- `Resolvida`
+- `Não aplicável`
+- `Escalonada`
+- `Cancelada`
+- `Reaberta`
+- `Respondida — em verificação`
 
-* `Aberta`
-* `Aguardando resposta do projeto`
-* `Aguardando evidência`
-* `Aguardando análise técnica`
-* `Aguardando validação do NIAR`
-* `Aguardando decisão institucional`
-* `Em tratamento pelo projeto`
-* `Em análise pelo NIAR`
-* `Respondida — em verificação`
-* `Resolvida`
-* `Encerrada com limitação registrada`
-* `Não aplicável — justificativa registrada`
-* `Substituída`
-* `Reaberta`
+Uma pendência somente deve ser marcada como `Resolvida` quando sua resolução estiver documentada e rastreável.
 
-Uma pendência somente deve ser marcada como `Resolvida` quando a resolução estiver sustentada por informação, evidência, análise ou decisão registrada.
+Uma pendência pode ser marcada como `Cancelada` quando uma reavaliação metodológica demonstrar que a questão não deveria permanecer como pendência. O registro histórico e a justificativa devem ser preservados. `Respondida — em verificação` indica que a equipe apresentou resposta ou evidência, mas o NIAR-Saúde ainda não concluiu sua suficiência e consistência.
 
 ---
 
 ## 5. Registro consolidado
 
-| ID      | Pendência                                        | Tipo         | Dimensão relacionada | Prioridade | Origem | Responsável | Prazo | Estado | Evidência esperada | Resolução |
-| ------- | ------------------------------------------------- | ------------ | --------------------- | ---------- | ------ | ------------ | ----- | ------ | ------------------- | ----------- |
-| PEN-001 | [INFORMAÇÃO PENDENTE — preencher pelo projeto] | Informação |                       |            |        |              |       | Aberta |                     |             |
+| ID      | Pendência | Tipo | Dimensão ou etapa relacionada | Prioridade | Impacto na continuidade | Origem | Responsável atual | Próxima ação | Estado | Condição de resolução |
+| ------- | ---------- | ---- | ------------------------------ | ---------- | ----------------------- | ------ | ------------------ | --------------- | ------ | ------------------------- |
+| PEN-001 |            |      |                                |            |                         |        |                    |                 |        |                           |
 
 ### Orientações de preenchimento
 
@@ -229,7 +155,7 @@ Preferir:
 Não foi informado o commit do código utilizado para treinar o modelo v1.0.0.
 ```
 
-#### Dimensão relacionada
+#### Dimensão ou etapa relacionada
 
 Quando aplicável, utilizar uma ou mais dimensões:
 
@@ -265,7 +191,7 @@ Exemplos:
 * avaliação por dimensão;
 * revisão do NIAR-Saúde.
 
-#### Responsável
+#### Responsável atual
 
 Indicar a pessoa, equipe ou instância responsável por tratar a pendência.
 
@@ -278,19 +204,22 @@ Exemplos:
 * NIAR-Saúde;
 * instância institucional competente.
 
-#### Evidência esperada
+#### Condição de resolução
 
-Descrever o que será considerado suficiente para o tratamento da pendência.
+Descrever qual condição objetiva será considerada suficiente para encerrar a pendência.
+
+A condição de resolução deve expressar primeiro a informação, evidência, análise ou decisão necessária, sem presumir antecipadamente qual artefato deverá fornecê-la.
 
 Exemplos:
 
-* informar commit e tag;
-* fornecer relatório de execução;
-* atualizar o Model Card;
-* produzir análise de desempenho por grupo;
-* registrar decisão técnica;
-* apresentar confirmação do responsável;
-* registrar decisão institucional.
+- confirmação factual do responsável institucional;
+- identificação verificável do commit e da tag utilizados;
+- evidência suficiente do procedimento de avaliação;
+- esclarecimento de uma informação ambígua;
+- conclusão de análise técnica aplicável;
+- registro de decisão institucional.
+
+Somente após determinar a condição de resolução deve ser definido, quando necessário, qual artefato ou fonte poderá atendê-la.
 
 #### Resolução
 
@@ -304,111 +233,103 @@ Registrar:
 
 ---
 
-## 6. Pendências críticas
+## 6. Pendências que impedem a continuidade
 
-Esta seção apresenta uma visão resumida das pendências que impedem ou condicionam a continuidade do ciclo.
+Esta seção apresenta uma visão resumida das pendências cuja resolução foi considerada necessária para iniciar ou concluir determinada etapa do ciclo.
 
-| ID                                                | Pendência crítica | Impacto | Responsável | Estado | Próximo passo |
-| ------------------------------------------------- | ------------------- | ------- | ------------ | ------ | -------------- |
-| [INFORMAÇÃO PENDENTE — preencher pelo projeto] |                     |         |              |        |                |
+| ID | Pendência | Etapa afetada | Motivo da impeditividade | Responsável | Estado | Próximo passo |
+| -- | ---------- | ------------- | ------------------------ | ------------ | ------ | -------------- |
+|    |            |               |                          |              |        |                |
 
-Quando não houver pendências críticas, registrar:
+Quando não houver pendências impeditivas, registrar:
 
 ```text
-Nenhuma pendência crítica identificada na data de referência.
+Nenhuma pendência impeditiva identificada na data de referência.
 ```
-
-Essa declaração deve ser baseada no registro consolidado e não em ausência de revisão.
 
 ---
 
 ## 7. Pendências por dimensão
 
+> A existência de uma dimensão não implica a existência de pendência.
+>
+> Somente registrar nesta seção pendências efetivamente identificadas após análise de aplicabilidade e suficiência das evidências.
+
 ### 7.1 Justiça
 
-| ID                                                                        | Pendência | Prioridade | Responsável | Estado |
-| ------------------------------------------------------------------------- | ---------- | ---------- | ------------ | ------ |
-| [ANÁLISE PENDENTE — não inferível a partir dos documentos fornecidos] |            |            |              |        |
+| ID | Pendência | Prioridade | Impacto na continuidade | Responsável | Estado |
+| -- | ---------- | ---------- | ----------------------- | ------------ | ------ |
+|    |            |            |                         |              |        |
 
 ### 7.2 Transparência
 
-| ID                                                                        | Pendência | Prioridade | Responsável | Estado |
-| ------------------------------------------------------------------------- | ---------- | ---------- | ------------ | ------ |
-| [ANÁLISE PENDENTE — não inferível a partir dos documentos fornecidos] |            |            |              |        |
+| ID | Pendência | Prioridade | Impacto na continuidade | Responsável | Estado |
+| -- | ---------- | ---------- | ----------------------- | ------------ | ------ |
+|    |            |            |                         |              |        |
 
 ### 7.3 Responsabilização
 
-| ID                                                | Pendência | Prioridade | Responsável | Estado |
-| ------------------------------------------------- | ---------- | ---------- | ------------ | ------ |
-| [INFORMAÇÃO PENDENTE — preencher pelo projeto] |            |            |              |        |
+| ID | Pendência | Prioridade | Impacto na continuidade | Responsável | Estado |
+| -- | ---------- | ---------- | ----------------------- | ------------ | ------ |
+|    |            |            |                         |              |        |
 
 ### 7.4 Privacidade
 
-| ID                                                                        | Pendência | Prioridade | Responsável | Estado |
-| ------------------------------------------------------------------------- | ---------- | ---------- | ------------ | ------ |
-| [ANÁLISE PENDENTE — não inferível a partir dos documentos fornecidos] |            |            |              |        |
+| ID | Pendência | Prioridade | Impacto na continuidade | Responsável | Estado |
+| -- | ---------- | ---------- | ----------------------- | ------------ | ------ |
+|    |            |            |                         |              |        |
 
 ### 7.5 Segurança
 
-| ID                                                                        | Pendência | Prioridade | Responsável | Estado |
-| ------------------------------------------------------------------------- | ---------- | ---------- | ------------ | ------ |
-| [ANÁLISE PENDENTE — não inferível a partir dos documentos fornecidos] |            |            |              |        |
+| ID | Pendência | Prioridade | Impacto na continuidade | Responsável | Estado |
+| -- | ---------- | ---------- | ----------------------- | ------------ | ------ |
+|    |            |            |                         |              |        |
 
 ### 7.6 Governança
 
-| ID                                                | Pendência | Prioridade | Responsável | Estado |
-| ------------------------------------------------- | ---------- | ---------- | ------------ | ------ |
-| [INFORMAÇÃO PENDENTE — preencher pelo projeto] |            |            |              |        |
+| ID | Pendência | Prioridade | Impacto na continuidade | Responsável | Estado |
+| -- | ---------- | ---------- | ----------------------- | ------------ | ------ |
+|    |            |            |                         |              |        |
 
 ### 7.7 Rastreabilidade
 
-| ID                                                | Pendência | Prioridade | Responsável | Estado |
-| ------------------------------------------------- | ---------- | ---------- | ------------ | ------ |
-| [INFORMAÇÃO PENDENTE — preencher pelo projeto] |            |            |              |        |
+| ID | Pendência | Prioridade | Impacto na continuidade | Responsável | Estado |
+| -- | ---------- | ---------- | ----------------------- | ------------ | ------ |
+|    |            |            |                         |              |        |
 
 As tabelas desta seção funcionam como resumo. O registro completo deve permanecer na Seção 5.
 
 ---
 
-## 8. Inconsistências abertas
+## 8. Pendências relacionadas a inconsistências
 
-| ID da pendência | Documentos envolvidos                                          | Descrição da inconsistência | Impacto | Responsável pelo esclarecimento | Estado |
-| ---------------- | -------------------------------------------------------------- | ------------------------------ | ------- | -------------------------------- | ------ |
-| PEN-XXX          | [INCONSISTÊNCIA IDENTIFICADA — verificar entre os artefatos] |                                |         |                                  |        |
+| ID da pendência | ID da inconsistência | Questão a resolver | Próxima ação | Estado |
+| ---------------- | --------------------- | ------------------- | --------------- | ------ |
+|                  |                       |                     |                 |        |
 
-A inconsistência deve permanecer aberta enquanto não houver:
-
-* correção documental;
-* evidência adicional;
-* confirmação do responsável;
-* consolidação de enquadramento pelo NIAR-Saúde;
-* decisão institucional, quando aplicável.
-
-Não escolher silenciosamente uma das versões.
+> A descrição e o histórico da divergência devem permanecer no `registro_de_inconsistencias.md`.
+>
+> Este registro deve conter somente a ação ou questão ainda pendente decorrente da inconsistência.
 
 ---
 
-## 9. Análises pendentes
+## 9. Análises técnicas adicionais pendentes
 
-| ID da pendência | Análise necessária                                                      | Objetivo | Dados ou evidências necessários | Responsável | Prazo | Estado |
-| ---------------- | ------------------------------------------------------------------------- | -------- | --------------------------------- | ------------ | ----- | ------ |
-| PEN-XXX          | [ANÁLISE PENDENTE — não inferível a partir dos documentos fornecidos] |          |                                   |              |       |        |
+Registrar somente análises cuja necessidade tenha sido estabelecida a partir de requisito aplicável, lacuna concreta ou questão técnica identificada.
 
-As análises pendentes devem distinguir:
+| ID da pendência | Análise necessária | Motivo | Evidências disponíveis | Complemento necessário | Responsável | Estado |
+| ---------------- | -------------------- | ------ | ------------------------ | ----------------------- | ------------ | ------ |
+|                  |                      |        |                          |                         |              |        |
 
-* análise inexistente;
-* análise iniciada;
-* análise existente, mas não fornecida;
-* análise fornecida, mas insuficiente;
-* análise que não se aplica, com justificativa.
+> A mera existência de template de Fairness Report, Explainability Report, TDR, RIPD ou outro artefato não estabelece a necessidade da análise correspondente.
 
 ---
 
 ## 10. Questões de enquadramento
 
-| ID da pendência | Questão                                             | Alternativas consideradas | Informação necessária | Responsável pelo enquadramento | Estado |
-| ---------------- | ---------------------------------------------------- | ------------------------- | ------------------------ | ------------------------------- | ------ |
-| PEN-XXX          | [ENQUADRAMENTO PENDENTE — validar pelo NIAR-Saúde] |                           |                          | NIAR-Saúde                     |        |
+| ID da pendência | Questão | Alternativas consideradas | Informação necessária | Responsável pelo enquadramento | Estado |
+| ---------------- | -------- | ------------------------- | ------------------------ | ------------------------------- | ------ |
+|                  |          |                           |                          |                                 |        |
 
 Exemplos de questões de enquadramento:
 
@@ -423,13 +344,11 @@ Exemplos de questões de enquadramento:
 
 ## 11. Questões institucionais
 
-| ID da pendência | Questão institucional                                                        | Motivo do escalonamento | Evidências relacionadas | Instância responsável | Estado | Decisão relacionada |
-| ---------------- | ----------------------------------------------------------------------------- | ----------------------- | ------------------------ | ----------------------- | ------ | -------------------- |
-| PEN-XXX          | [DECISÃO INSTITUCIONAL PENDENTE — requer análise da instância competente] |                         |                          |                         |        |                      |
+| ID da pendência | Questão institucional | Motivo do escalonamento | Evidências relacionadas | Instância responsável | Estado | Decisão relacionada |
+| ---------------- | ---------------------- | ----------------------- | ------------------------ | ----------------------- | ------ | -------------------- |
+|                  |                        |                         |                          |                         |        |                      |
 
 Este registro não substitui o Registro de Decisão Institucional.
-
-Quando houver decisão, indicar sua localização no repositório.
 
 ---
 
@@ -463,46 +382,39 @@ O registro consolidado pode manter o estado `Resolvida`, enquanto esta seção a
 
 ---
 
-## 14. Pendências encerradas com limitação
+## 14. Pendências canceladas ou reenquadradas
 
-Uma pendência pode ser encerrada sem resolução integral quando:
+Uma pendência pode ser cancelada quando uma reavaliação metodológica demonstra que a questão não deve permanecer caracterizada como pendência.
 
-* a informação não existe;
-* a evidência não pode ser recuperada;
-* a análise não pode ser realizada no ciclo atual;
-* há restrição de acesso formalmente justificada;
-* a limitação foi reconhecida e incorporada aos relatórios.
+Exemplos:
 
-| ID      | Limitação | Justificativa | Impacto no ciclo | Responsável pelo aceite da limitação | Data |
-| ------- | ----------- | ------------- | ---------------- | --------------------------------------- | ---- |
-| PEN-XXX |             |               |                  |                                         |      |
+- a ausência de determinado artefato havia sido tratada como pendência, mas posteriormente se verificou que o artefato não era obrigatório;
+- uma análise havia sido presumida necessária antes da determinação da aplicabilidade do requisito;
+- a questão foi absorvida por outro mecanismo de avaliação ou registro mais adequado.
 
-Registrar:
+| ID | Questão original | Motivo do reenquadramento | Estado final | Data | Registrado por |
+| -- | ----------------- | ------------------------- | ------------ | ---- | -------------- |
+|    |                   |                           |              |      |                |
 
-```text
-Encerrada com limitação registrada
-```
+Uma pendência cancelada ou reenquadrada não deve ser apagada.
 
-Esse estado não significa que o risco ou impacto da ausência tenha sido aceito institucionalmente.
-
-Quando houver necessidade de aceite de risco ou condicionante, abrir também uma pendência do tipo `decisão institucional`.
+O registro deve preservar a questão original e justificar por que ela deixou de constituir pendência.
 
 ---
 
 ## 15. Resumo do estado atual
 
-| Categoria                         | Quantidade |
-| --------------------------------- | ---------: |
-| Pendências abertas               |          0 |
-| Pendências críticas             |          0 |
-| Aguardando resposta do projeto    |          0 |
-| Aguardando evidência             |          0 |
-| Aguardando análise técnica      |          0 |
-| Aguardando validação do NIAR    |          0 |
-| Aguardando decisão institucional |          0 |
-| Respondidas — em verificação   |          0 |
-| Resolvidas                        |          0 |
-| Encerradas com limitação        |          0 |
+| Categoria                          | Quantidade |
+| ---------------------------------- | ---------: |
+| Pendências abertas                |          0 |
+| Pendências impeditivas            |          0 |
+| Pendências não impeditivas       |          0 |
+| Aguardando verificação pelo NIAR |          0 |
+| Aguardando projeto                 |          0 |
+| Em análise                        |          0 |
+| Resolvidas                         |          0 |
+| Canceladas ou reenquadradas        |          0 |
+| Escalonadas                        |          0 |
 
 Atualizar este resumo sempre que houver mudança relevante no registro consolidado.
 
@@ -510,18 +422,21 @@ Atualizar este resumo sempre que houver mudança relevante no registro consolida
 
 ## 16. Próximos passos
 
-| Ordem | Ação                                            | Pendências relacionadas | Responsável | Prazo |
-| ----- | ------------------------------------------------- | ------------------------ | ------------ | ----- |
-| 1     | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |                          |              |       |
+| Ordem | Ação | Pendências relacionadas | Responsável | Prazo |
+| ----- | ------ | ------------------------ | ------------ | ----- |
+| 1     |        |                          |              |       |
 
 Os próximos passos devem refletir as pendências abertas e não uma lista genérica de atividades.
+
+> Pendências abertas não bloqueiam automaticamente a continuidade do ciclo.
+>
+> Antes de impedir a progressão para uma nova etapa, o NIAR-Saúde deve registrar qual condição concreta depende da resolução da pendência e por que sua ausência é material naquele momento.
 
 ---
 
 ## 17. Histórico de versões
 
-| Versão | Data | Responsável | Alteração                          | Status   |
-| ------- | ---- | ------------ | ------------------------------------ | -------- |
-| 0.1     |      | NIAR-Saúde  | Criação do registro de pendências | Rascunho |
-
-
+| Versão | Data       | Responsável | Alteração                                                                                                                                                                                             | Status   |
+| ------- | ---------- | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
+| 0.1     |            | NIAR-Saúde  | Criação do registro de pendências                                                                                                                                                                    | Rascunho |
+| 0.2     | 26/08/2026 | NIAR-Saúde  | Revisão metodológica do registro: distinção entre pendência e inconsistência, inclusão de impacto impeditivo/não impeditivo, verificação prévia pelo NIAR e cancelamento por reenquadramento | Em uso   |

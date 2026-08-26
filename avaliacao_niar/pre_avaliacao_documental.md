@@ -28,8 +28,6 @@
 
 A pré-avaliação documental tem como objetivo verificar se a unidade de avaliação está suficientemente delimitada, identificar e organizar as evidências disponíveis, examinar sua consistência e rastreabilidade e registrar pendências que devam ser tratadas antes ou durante a avaliação por requisito.
 
-
-
 A pré-avaliação busca:
 
 - confirmar Tarefa de IA, Versão Avaliável, Contexto de Uso e Trilha de Execução;
@@ -56,7 +54,9 @@ A pré-avaliação busca:
 
 [Registrar apenas questões relevantes à delimitação.]
 
-> Pendências materiais relacionadas à Tarefa de IA, Versão Avaliável, Contexto de Uso ou Trilha devem ser resolvidas antes da avaliação por requisito.
+> Pendências materiais que impeçam a delimitação da Tarefa de IA, da Versão Avaliável, do Contexto de Uso ou da Trilha de Execução devem ser resolvidas antes da avaliação por requisito.
+>
+> Pendências que não impeçam essa delimitação podem permanecer abertas em paralelo, desde que seu impacto esteja explicitamente registrado e que não comprometam os requisitos afetados.
 
 ---
 
@@ -170,6 +170,8 @@ As inconsistências devem ser detalhadas em:
 
 Não selecionar silenciosamente uma das versões conflitantes.
 
+> A resolução de uma inconsistência não elimina seu registro histórico. O estado deve ser atualizado para refletir a forma de resolução, por exemplo: correção documental, nova evidência ou enquadramento metodológico.
+
 ---
 
 ## 7. Pendências identificadas
@@ -180,13 +182,22 @@ Não selecionar silenciosamente uma das versões conflitantes.
 
 Tipos sugeridos:
 
-- informação;
-- evidência;
+- complementação documental;
 - esclarecimento;
-- inconsistência;
-- delimitação;
-- análise metodológica;
+- confirmação factual;
+- verificação pelo NIAR;
+- análise técnica adicional;
 - decisão institucional.
+
+Uma pendência pode ser:
+
+- impeditiva para a continuidade;
+- não impeditiva e tratada em paralelo;
+- resolvida;
+- cancelada por reenquadramento metodológico;
+- escalonada para decisão institucional.
+
+A ausência de um artefato, por si só, não gera automaticamente uma pendência.
 
 As pendências devem ser detalhadas em:
 
@@ -272,28 +283,41 @@ Registrar somente após o NIAR verificar que a questão não pode ser resolvida 
 | Existem verificações internas ainda necessárias    | Sim / Não |
 | Existem itens que precisam ser solicitados ao projeto | Sim / Não |
 | Avaliação por requisito pode ser iniciada           | Sim / Não |
+| Pendências abertas impedem a continuidade? | Sim / Não |
 
 ### Justificativa
 
 [Registrar de forma objetiva as condições para continuidade.]
 
-> Uma pendência não impede automaticamente o início da avaliação por requisito. O impacto deve ser analisado conforme sua materialidade para a delimitação da unidade ou para os requisitos afetados.
+> A existência de pendências não impede automaticamente o início da avaliação por requisito.
+>
+> O NIAR-Saúde deve registrar explicitamente se cada pendência é impeditiva ou não impeditiva e justificar seu impacto sobre a continuidade.
+>
+> Pendências não impeditivas podem permanecer abertas em paralelo, desde que sejam resolvidas antes da etapa em que sua ausência se torne material para a consolidação, decisão institucional ou outro resultado do ciclo.
 
 ---
 
 ## 13. Próximos passos
 
-- [ ] realizar verificações adicionais pelo NIAR-Saúde;
-- [ ] solicitar esclarecimentos específicos à equipe do projeto;
-- [ ] solicitar evidência adicional;
-- [ ] atualizar a identificação da avaliação;
-- [ ] iniciar avaliação por requisito;
-- [ ] outro: __________________.
-
+- [ ] delimitar Tarefa de IA, Versão Avaliável, Contexto de Uso e Trilha de Execução;
+- [ ] verificar os artefatos técnicos necessários à delimitação da unidade;
+- [ ] concluir o inventário documental necessário à pré-avaliação;
+- [ ] concluir as verificações cruzadas necessárias;
+- [ ] registrar divergências confirmadas no `registro_de_inconsistencias.md`;
+- [ ] revisar e consolidar as pendências válidas no ciclo atual;
+- [ ] determinar quais evidências adicionais são efetivamente necessárias;
+- [ ] concluir as verificações que podem ser realizadas internamente pelo NIAR-Saúde;
+- [ ] determinar quais questões dependem efetivamente da equipe do projeto;
+- [ ] classificar as pendências abertas quanto ao impacto na continuidade;
+- [ ] determinar as condições para iniciar a avaliação por requisito;
+- [ ] encaminhar pendências não impeditivas em paralelo, quando aplicável;
+- [ ] iniciar a avaliação por requisito;
+- [ ] registrar formalmente a conclusão da pré-avaliação documental.
 ---
 
 ## 14. Histórico de versões
 
 | Versão | Data | Responsável | Alteração            | Status          |
 | ------- | ---- | ------------ | ---------------------- | --------------- |
-| 0.1     |      | NIAR-Saúde  | Criação do documento | Em elaboração |
+| 0.1     |  24/07/2026    | NIAR-Saúde  | Criação do documento | Em elaboração |
+| 0.2 | 26/08/2026 | NIAR-Saúde | Inclusão da distinção entre pendências impeditivas e não impeditivas, preservação histórica de inconsistências resolvidas e atualização do fluxo de continuidade da pré-avaliação | Em uso |

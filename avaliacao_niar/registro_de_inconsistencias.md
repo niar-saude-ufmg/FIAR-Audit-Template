@@ -7,24 +7,24 @@ Uma inconsistência deve permanecer visível até que seja:
 - corrigida;
 - esclarecida;
 - sustentada por nova evidência;
-- incorporada como limitação;
 - submetida a enquadramento metodológico;
 - encaminhada para decisão institucional, quando aplicável.
 
 Não selecionar silenciosamente uma das versões conflitantes.
---------------------------------------------------------------
+
+---
 
 ## 1. Identificação do ciclo
 
-| Campo                      | Preenchimento                                     |
-| -------------------------- | ------------------------------------------------- |
-| Projeto                    | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-| Tarefa de IA               | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-| Versão Avaliável         | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-| Contexto de Uso            | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-| Responsável pelo registro | NIAR-Saúde                                       |
-| Data de abertura           | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-| Última atualização      | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
+| Campo                      | Preenchimento                                                     |
+| -------------------------- | ----------------------------------------------------------------- |
+| Projeto                    | [preencher pelo NIAR-Saúde a partir das evidências verificadas] |
+| Tarefa de IA               | [preencher a partir da identificação da avaliação]            |
+| Versão Avaliável         | [preencher a partir da identificação da avaliação]            |
+| Contexto de Uso            | [preencher a partir da identificação da avaliação]            |
+| Responsável pelo registro | NIAR-Saúde                                                       |
+| Data de abertura           | [preencher pelo NIAR-Saúde]                                      |
+| Última atualização      | [preencher pelo NIAR-Saúde]                                      |
 
 ---
 
@@ -102,9 +102,9 @@ A gravidade da inconsistência não equivale a um resultado de conformidade.
 
 ## 4. Registro consolidado
 
-| ID      | Tipo | Gravidade | Tema                                                           | Fonte 1 | Informação 1 | Fonte 2 | Informação 2 | Impacto | Estado |
-| ------- | ---- | --------- | -------------------------------------------------------------- | ------- | -------------- | ------- | -------------- | ------- | ------ |
-| INC-001 |      |           | [INCONSISTÊNCIA IDENTIFICADA — verificar entre os artefatos] |         |                |         |                |         | Aberta |
+| ID      | Tipo | Gravidade | Tema                                                                  | Fonte 1 | Informação 1 | Fonte 2 | Informação 2 | Impacto | Estado |
+| ------- | ---- | --------- | --------------------------------------------------------------------- | ------- | -------------- | ------- | -------------- | ------- | ------ |
+| INC-001 |      |           | [descrever objetivamente as informações conflitantes e suas fontes] |         |                |         |                |         | Aberta |
 
 Estados:
 
@@ -116,9 +116,7 @@ Estados:
 - `Resolvida por correção documental`
 - `Resolvida por nova evidência`
 - `Resolvida por enquadramento`
-- `Mantida como limitação`
 - `Encaminhada para decisão institucional`
-- `Não aplicável`
 - `Reaberta`
 
 ---
@@ -129,14 +127,14 @@ Estados:
 
 ### Identificação
 
-| Campo                   | Preenchimento |
-| ----------------------- | ------------- |
-| Tipo                    |               |
-| Gravidade               |               |
-| Data de identificação |               |
-| Identificada por        | NIAR-Saúde   |
-| Pendência relacionada  | PEN-XXX       |
-| Dimensão relacionada   |               |
+| Campo                   | Preenchimento             |
+| ----------------------- | ------------------------- |
+| Tipo                    |                           |
+| Gravidade               |                           |
+| Data de identificação |                           |
+| Identificada por        | NIAR-Saúde               |
+| Pendência relacionada  | [preencher quando houver] |
+| Dimensão relacionada   |                           |
 
 ### Fonte 1
 
@@ -158,7 +156,7 @@ Estados:
 
 ### Descrição da inconsistência
 
-[INCONSISTÊNCIA IDENTIFICADA — verificar entre os artefatos]
+[descrever objetivamente as informações conflitantes e suas fontes]
 
 ### Impacto
 
@@ -173,11 +171,11 @@ Descrever como a inconsistência afeta:
 - responsabilização;
 - decisão institucional.
 
-[ANÁLISE PENDENTE — não inferível a partir dos documentos fornecidos]
+[registrar o impacto identificado pelo NIAR-Saúde]
 
 ### Esclarecimento solicitado
 
-[INFORMAÇÃO PENDENTE — preencher pelo projeto]
+Registrar somente se a divergência não puder ser resolvida pelas evidências já disponíveis ou por verificação adicional justificada pelo NIAR-Saúde.
 
 ### Resposta do projeto
 
@@ -191,19 +189,28 @@ Descrever como a inconsistência afeta:
 
 ### Verificação pelo NIAR-Saúde
 
-[ANÁLISE PENDENTE — não inferível a partir dos documentos fornecidos]
+[registrar o impacto identificado pelo NIAR-Saúde]
+
+Registrar:
+
+- as fontes adicionais verificadas;
+- se a divergência permanece;
+- se uma das descrições foi corroborada por nova evidência;
+- se permanece necessária correção documental;
+- se a inconsistência pode ser considerada resolvida.
 
 ### Resolução
 
-| Campo                       | Preenchimento |
-| --------------------------- | ------------- |
-| Estado final                |               |
-| Versão considerada válida |               |
-| Justificativa               |               |
-| Evidência                  |               |
-| Documento corrigido         |               |
-| Data                        |               |
-| Verificado por              |               |
+| Campo                                              | Preenchimento |
+| -------------------------------------------------- | ------------- |
+| Estado final                                       |               |
+| Informação ou descrição considerada sustentada |               |
+| Justificativa                                      |               |
+| Evidência                                         |               |
+| Documento corrigido                                |               |
+| Correção necessária                             |               |
+| Data                                               |               |
+| Verificado por                                     |               |
 
 ---
 
@@ -261,18 +268,7 @@ Descrever como a inconsistência afeta:
 
 ---
 
-## 8. Inconsistências mantidas como limitação
-
-| ID      | Limitação registrada | Motivo da não resolução | Impacto | Documento de destino |
-| ------- | ---------------------- | -------------------------- | ------- | -------------------- |
-| INC-XXX |                        |                            |         |                      |
-
-Manter uma inconsistência como limitação não significa que seu risco tenha sido
-aceito institucionalmente.
-
----
-
-## 9. Inconsistências com possível escalonamento
+## 8. Inconsistências com possível escalonamento
 
 | ID      | Motivo | Risco ou impacto | Evidência necessária | Estado |
 | ------- | ------ | ---------------- | ---------------------- | ------ |
@@ -286,26 +282,23 @@ Utilizar, quando aplicável:
 
 ---
 
-## 10. Resumo
+## 9. Resumo
 
-| Categoria                                | Quantidade |
-| ---------------------------------------- | ---------: |
-| Abertas                                  |          0 |
-| Críticas                                |          0 |
-| Relevantes                               |          0 |
-| Menores                                  |          0 |
-| Respondidas — em verificação          |          0 |
-| Resolvidas                               |          0 |
-| Mantidas como limitação                |          0 |
-| Encaminhadas para decisão institucional |          0 |
+| Categoria | Quantidade |
+|---|---:|
+| Abertas | 0 |
+| Críticas | 0 |
+| Relevantes | 0 |
+| Menores | 0 |
+| Respondidas — em verificação | 0 |
+| Resolvidas | 0 |
+| Encaminhadas para decisão institucional | 0 |
 
 ---
 
-## 11. Histórico de versões
+## 10. Histórico de versões
 
 | Versão | Data | Responsável | Alteração           | Status                   |
 | ------- | ---- | ------------ | --------------------- | ------------------------ |
 | 0.1     |      | NIAR-Saúde  | Criação do registro | Rascunho interno do NIAR |
-
-
-
+| 0.2 | 26/08/2026 | NIAR-Saúde | Revisão metodológica do registro: resolução por nova evidência, separação entre resolução da inconsistência e correção documental e verificação prévia pelo NIAR-Saúde | Em uso |
