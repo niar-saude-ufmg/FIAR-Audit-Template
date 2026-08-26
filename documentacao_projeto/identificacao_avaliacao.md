@@ -2,498 +2,130 @@
 
 ## Controle do documento
 
-| Campo                                 | Preenchimento                                     |
-| ------------------------------------- | ------------------------------------------------- |
-| Versão do documento                  | 0.1                                               |
-| Status                                | Minuta para validação do projeto                |
-| Elaborado por                         | NIAR-Saúde                                       |
-| Data de elaboração                  | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-| Data de referência das informações | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-| Última atualização                 | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-| Projeto                               | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-| Tarefa de IA                          | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-| Versão Avaliável                    | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
+| Campo | Preenchimento |
+|---|---|
+| ID da avaliação | [preencher pelo NIAR-Saúde] |
+| Versão do documento | 0.1 |
+| Status | Em elaboração |
+| Elaborado por | NIAR-Saúde |
+| Data de elaboração | [preencher pelo NIAR-Saúde] |
+| Última atualização | [preencher pelo NIAR-Saúde] |
+| Projeto | [preencher a partir das evidências verificadas] |
 
-> Este documento pode ser inicialmente preenchido pelo NIAR-Saúde a partir dos artefatos recebidos e submetido à validação factual e técnica da equipe do projeto.
+> Este documento formaliza a delimitação da unidade de avaliação para o ciclo FIAR-Saúde.
 >
-> A validação deste documento não constitui resultado de conformidade, certificação técnica, validação clínica ou autorização de implantação.
+> As informações devem ser preenchidas pelo NIAR-Saúde a partir das fontes verificadas no ciclo atual. Quando uma informação depender de confirmação da equipe do projeto, essa necessidade deve ser registrada como pendência.
+>
+> A identificação da avaliação não constitui resultado de conformidade, validação clínica, certificação técnica, aceite de risco ou autorização de implantação.
 
 ---
 
-## 1. Identificação do projeto
+## 1. Projeto
 
-| Campo                           | Preenchimento                                     |
-| ------------------------------- | ------------------------------------------------- |
-| Nome oficial do projeto         | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-| Nome abreviado                  | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-| Instituição responsável      | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-| Unidade, laboratório ou equipe | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-| Responsável institucional      | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-| Responsável técnico           | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-| Contato principal               | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-| Repositório do projeto         | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-| Estágio atual do projeto       | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
+| Campo | Preenchimento |
+|---|---|
+| Nome do projeto | |
+| Instituição ou unidade responsável | |
+| Estágio atual | |
 
-### Descrição resumida do projeto
+### Descrição resumida
 
-[INFORMAÇÃO PENDENTE — preencher pelo projeto]
+[Preencher a partir das evidências verificadas.]
 
 ---
 
-## 2. Identificação da Tarefa de IA
+## 2. Unidade de avaliação
 
-### 2.1 Nome da tarefa
+### 2.1 Tarefa de IA
 
-[INFORMAÇÃO PENDENTE — preencher pelo projeto]
+[Descrever a tarefa específica avaliada.]
 
-### 2.2 Descrição da tarefa
+### 2.2 Versão Avaliável
 
-Descrever a combinação de:
+[Identificar a configuração da tarefa avaliada, incluindo, quando aplicável, versão do modelo, dados e outros componentes necessários para distingui-la.]
 
-- modelo;
-- dados;
-- procedimentos de treinamento e inferência;
-- objetivo clínico ou operacional;
-- resultado produzido;
-- Contexto de Uso.
+### 2.3 Contexto de Uso
 
-[INFORMAÇÃO PENDENTE — preencher pelo projeto]
+**Uso atual**
 
-### 2.3 Objetivo clínico ou operacional
+[Descrever.]
 
-[INFORMAÇÃO PENDENTE — preencher pelo projeto]
+**Uso pretendido, quando documentado**
 
-### 2.4 Resultado produzido pela tarefa
+[Descrever separadamente do uso atual.]
 
-Descrever o tipo de saída produzido, por exemplo:
+### 2.4 Trilha de Execução
 
-- classificação;
-- predição;
-- recomendação;
-- priorização;
-- geração de conteúdo;
-- apoio à decisão;
-- outro resultado.
+- [ ] Experimental
+- [ ] Produção
 
-[INFORMAÇÃO PENDENTE — preencher pelo projeto]
+**Justificativa do enquadramento**
 
-### 2.5 Unidade de análise
-
-[INFORMAÇÃO PENDENTE — preencher pelo projeto]
-
-### 2.6 População ou grupo afetado
-
-[INFORMAÇÃO PENDENTE — preencher pelo projeto]
-
-### 2.7 Usuários da tarefa
-
-[INFORMAÇÃO PENDENTE — preencher pelo projeto]
-
-### 2.8 Sistemas relacionados
-
-Indicar sistemas, plataformas, interfaces ou processos dos quais a tarefa faça parte.
-
-[INFORMAÇÃO PENDENTE — preencher pelo projeto]
-
-### 2.9 Delimitação da tarefa
-
-Registrar se o projeto contém outras tarefas de IA que não fazem parte deste ciclo.
-
-[INFORMAÇÃO PENDENTE — preencher pelo projeto]
+[Registrar os elementos que sustentam o enquadramento.]
 
 ---
 
-## 3. Contexto de Uso
+## 3. Fundamentação da delimitação
 
-### 3.1 Contexto atual
+Registrar as evidências verificadas que sustentam a definição da Tarefa de IA, da Versão Avaliável, do Contexto de Uso e da Trilha de Execução.
 
-Descrever onde, por quem, para qual finalidade e sob quais condições a tarefa é
-atualmente desenvolvida, avaliada ou utilizada.
+| Elemento delimitado | Evidência ou fonte | Situação |
+|---|---|---|
+| Tarefa de IA | | |
+| Versão Avaliável | | |
+| Contexto de Uso | | |
+| Trilha de Execução | | |
 
-[INFORMAÇÃO PENDENTE — preencher pelo projeto]
-
-### 3.2 Contexto de uso pretendido
-
-Descrever usos futuros explicitamente previstos nos artefatos do projeto.
-
-[INFORMAÇÃO PENDENTE — preencher pelo projeto]
-
-### 3.3 Ambiente de execução
-
-| Campo                       | Preenchimento                                     |
-| --------------------------- | ------------------------------------------------- |
-| Pesquisa ou desenvolvimento | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-| Validação retrospectiva   | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-| Validação prospectiva     | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-| Piloto controlado           | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-| Operação ativa            | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-| Supervisão humana          | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-
-### 3.4 Decisões que podem ser influenciadas
-
-[INFORMAÇÃO PENDENTE — preencher pelo projeto]
-
-### 3.5 Consequências de erro
-
-Descrever, quando disponível, consequências possíveis de:
-
-- falso positivo;
-- falso negativo;
-- erro de priorização;
-- erro de classificação;
-- indisponibilidade;
-- uso fora do escopo;
-- interpretação incorreta.
-
-[INFORMAÇÃO PENDENTE — preencher pelo projeto]
+Quando a informação ainda não estiver suficientemente sustentada, registrar a lacuna no `registro_de_pendencias.md`.
 
 ---
 
 ## 4. Escopo da avaliação
 
-### 4.1 Incluído no escopo
+### 4.1 Incluído
 
-Registrar os componentes, resultados, artefatos e Contextos de Uso incluídos neste ciclo.
-
-- [INFORMAÇÃO PENDENTE — preencher pelo projeto]
+- [ ]
 
 ### 4.2 Fora do escopo
 
-Registrar explicitamente o que não será avaliado neste ciclo.
+- [ ]
 
-- [INFORMAÇÃO PENDENTE — preencher pelo projeto]
+### 4.3 Restrições relevantes
 
-### 4.3 Restrições da avaliação
-
-Registrar restrições de acesso, confidencialidade, propriedade intelectual,
-infraestrutura, disponibilidade de dados ou outras limitações.
-
-[INFORMAÇÃO PENDENTE — preencher pelo projeto]
+[Registrar somente restrições conhecidas e pertinentes ao ciclo.]
 
 ---
 
-## 5. Trilha proposta
+## 5. Estado da delimitação
 
-| Campo                        | Preenchimento                                        |
-| ---------------------------- | ---------------------------------------------------- |
-| Trilha proposta              | [ENQUADRAMENTO PENDENTE — validar pelo NIAR-Saúde] |
-| Proposta elaborada por       | [INFORMAÇÃO PENDENTE — preencher pelo projeto]    |
-| Data da proposta             | [INFORMAÇÃO PENDENTE — preencher pelo projeto]    |
-| Validação pelo NIAR-Saúde | [ENQUADRAMENTO PENDENTE — validar pelo NIAR-Saúde] |
+| Elemento | Situação | Observação |
+|---|---|---|
+| Tarefa de IA | Delimitada / Pendente | |
+| Versão Avaliável | Delimitada / Pendente | |
+| Contexto de Uso | Delimitado / Pendente | |
+| Trilha de Execução | Definida / Pendente | |
+| Escopo | Delimitado / Pendente | |
 
-### 5.1 Justificativa da proposta
+### Pendências materiais para continuidade
 
-Descrever o estágio de desenvolvimento, o destino previsto e a existência ou não
-de integração com sistema em operação ativa.
+| ID | Síntese | Impacto |
+|---|---|---|
+| | | |
 
-[INFORMAÇÃO PENDENTE — preencher pelo projeto]
-
-### 5.2 Elementos considerados no enquadramento
-
-| Elemento                        | Situação                                        |
-| ------------------------------- | ------------------------------------------------- |
-| Pesquisa ou experimentação    | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-| Validação metodológica       | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-| Produção científica          | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-| Piloto operacional              | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-| Integração com sistema ativo  | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-| Uso assistencial ou operacional | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-| Monitoramento contínuo         | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-
-### 5.3 Pendências de enquadramento
-
-- [ENQUADRAMENTO PENDENTE — validar pelo NIAR-Saúde]
+> Pendências detalhadas devem ser mantidas em `registro_de_pendencias.md`.
 
 ---
 
-## 6. Versão Avaliável
+## 6. Próxima etapa
 
-### 6.1 Identificação da versão
-
-| Componente                          | Identificação                                   |
-| ----------------------------------- | ------------------------------------------------- |
-| Identificador da Versão Avaliável | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-| Data de referência                 | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-| Versão do modelo                   | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-| Versão dos dados                   | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-| Versão do código                  | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-| Commit ou tag                       | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-| Identificador dos pesos             | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-| Arquivo de configuração           | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-| Ambiente computacional              | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-| Identificador da execução         | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-
-### 6.2 Descrição da configuração avaliada
-
-[INFORMAÇÃO PENDENTE — preencher pelo projeto]
-
-### 6.3 Mudanças relevantes em relação à versão anterior
-
-Quando este for o primeiro ciclo, registrar essa condição.
-
-[INFORMAÇÃO PENDENTE — preencher pelo projeto]
-
-### 6.4 Justificativa para abertura do ciclo
-
-[INFORMAÇÃO PENDENTE — preencher pelo projeto]
-
-### 6.5 Elementos ainda não rastreáveis
-
-- [INFORMAÇÃO PENDENTE — preencher pelo projeto]
+- [ ] Continuar a pré-avaliação documental
+- [ ] Resolver pendência material de delimitação antes da pré-avaliação
+- [ ] Outro: __________________
 
 ---
 
-## 7. Dados
-
-### 7.1 Dados de treinamento
-
-| Campo                 | Preenchimento                                     |
-| --------------------- | ------------------------------------------------- |
-| Nome do dataset       | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-| Versão               | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-| Período              | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-| População           | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-| Tamanho               | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-| Fonte                 | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-| Data Card relacionado | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-
-### 7.2 Dados de validação
-
-| Campo                                 | Preenchimento                                     |
-| ------------------------------------- | ------------------------------------------------- |
-| Nome do dataset                       | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-| Versão                               | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-| Relação com os dados de treinamento | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-| Data Card relacionado                 | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-
-### 7.3 Dados de teste ou avaliação
-
-| Campo                                      | Preenchimento                                     |
-| ------------------------------------------ | ------------------------------------------------- |
-| Nome do dataset                            | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-| Versão                                    | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-| Independência em relação ao treinamento | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-| Data Card relacionado                      | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-
-### 7.4 Outros dados utilizados
-
-[INFORMAÇÃO PENDENTE — preencher pelo projeto]
-
----
-
-## 8. Modelo e procedimentos
-
-| Campo                               | Preenchimento                                     |
-| ----------------------------------- | ------------------------------------------------- |
-| Nome do modelo                      | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-| Tipo ou arquitetura                 | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-| Tarefa computacional                | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-| Entradas                            | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-| Saídas                             | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-| Procedimentos de pré-processamento | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-| Procedimentos de treinamento        | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-| Procedimentos de inferência        | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-| Model Card relacionado              | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-
----
-
-## 9. Responsáveis
-
-| Papel                                   | Pessoa ou equipe                                  | Instituição | Contato |
-| --------------------------------------- | ------------------------------------------------- | ------------- | ------- |
-| Responsável institucional pelo projeto | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |               |         |
-| Responsável técnico pela tarefa       | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |               |         |
-| Responsável pelos dados                | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |               |         |
-| Responsável pelo modelo                | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |               |         |
-| Responsável pelo código               | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |               |         |
-| Responsável pela validação técnica  | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |               |         |
-| Responsável pela validação clínica  | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |               |         |
-| Responsável pela privacidade           | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |               |         |
-| Responsável pela segurança            | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |               |         |
-| Responsável pelo monitoramento         | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |               |         |
-| Ponto focal junto ao NIAR-Saúde        | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |               |         |
-
-Papéis ainda não aplicáveis ao estágio atual devem ser marcados como:
-
-```text
-NÃO SE APLICA NESTE ESTÁGIO — justificativa:
-```
-
----
-
-## 10. Artefatos recebidos
-
-| ID      | Artefato                                          | Versão | Data | Fonte ou localização | Responsável | Situação |
-| ------- | ------------------------------------------------- | ------- | ---- | ---------------------- | ------------ | ---------- |
-| ART-001 | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |         |      |                        |              |            |
-
-Situações sugeridas:
-
-* recebido;
-* recebido parcialmente;
-* não recebido;
-* substituído;
-* em validação;
-* requer atualização.
-
----
-
-## 11. Evidências e análises existentes
-
-### 11.1 Desempenho
-
-[INFORMAÇÃO PENDENTE — preencher pelo projeto]
-
-### 11.2 Justiça
-
-[INFORMAÇÃO PENDENTE — preencher pelo projeto]
-
-### 11.3 Transparência e explicabilidade
-
-[INFORMAÇÃO PENDENTE — preencher pelo projeto]
-
-### 11.4 Privacidade
-
-[INFORMAÇÃO PENDENTE — preencher pelo projeto]
-
-### 11.5 Segurança
-
-[INFORMAÇÃO PENDENTE — preencher pelo projeto]
-
-### 11.6 Governança
-
-[INFORMAÇÃO PENDENTE — preencher pelo projeto]
-
-### 11.7 Rastreabilidade
-
-[INFORMAÇÃO PENDENTE — preencher pelo projeto]
-
-### 11.8 Responsabilização
-
-[INFORMAÇÃO PENDENTE — preencher pelo projeto]
-
----
-
-## 12. Limitações declaradas
-
-* [INFORMAÇÃO PENDENTE — preencher pelo projeto]
-
----
-
-## 13. Riscos declarados
-
-* [INFORMAÇÃO PENDENTE — preencher pelo projeto]
-
-A inclusão de um risco nesta seção não equivale à avaliação de sua gravidade,
-aceitabilidade ou suficiência das medidas de mitigação.
-
----
-
-## 14. Decisões técnicas já documentadas
-
-| ID                                                | Decisão | Data | Responsável | Fonte | Registro relacionado |
-| ------------------------------------------------- | -------- | ---- | ------------ | ----- | -------------------- |
-| [INFORMAÇÃO PENDENTE — preencher pelo projeto] |          |      |              |       |                      |
-
-Não registrar como decisão uma prática apenas descrita nos artefatos quando não
-for possível confirmar que houve escolha técnica explícita.
-
----
-
-## 15. Pendências de identificação e enquadramento
-
-| ID      | Pendência                                        | Tipo | Prioridade | Responsável | Fonte | Estado |
-| ------- | ------------------------------------------------- | ---- | ---------- | ------------ | ----- | ------ |
-| PEN-001 | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |      |            |              |       |        |
-
-Tipos sugeridos:
-
-* informação;
-* evidência;
-* análise;
-* inconsistência;
-* enquadramento;
-* decisão institucional.
-
-As pendências detalhadas devem também ser registradas em
-`registro_de_pendencias.md`.
-
----
-
-## 16. Inconsistências identificadas
-
-| ID      | Documentos envolvidos                                          | Descrição | Impacto | Encaminhamento |
-| ------- | -------------------------------------------------------------- | ----------- | ------- | -------------- |
-| INC-001 | [INCONSISTÊNCIA IDENTIFICADA — verificar entre os artefatos] |             |         |                |
-
-Uma inconsistência não deve ser resolvida silenciosamente. A versão adotada deve
-ser sustentada por correção documental, evidência ou confirmação do responsável.
-
----
-
-## 17. Questões para validação pela equipe do projeto
-
-1. [INFORMAÇÃO PENDENTE — preencher pelo projeto]
-
-Não incluir perguntas cuja resposta já esteja claramente documentada nos artefatos
-recebidos.
-
----
-
-## 18. Resultado da validação documental
-
-| Item                          | Situação                                           |
-| ----------------------------- | ---------------------------------------------------- |
-| Identificação do projeto    | Em validação                                       |
-| Delimitação da Tarefa de IA | Em validação                                       |
-| Contexto de Uso               | Em validação                                       |
-| Versão Avaliável            | Em validação                                       |
-| Trilha                        | [ENQUADRAMENTO PENDENTE — validar pelo NIAR-Saúde] |
-| Responsáveis                 | Em validação                                       |
-| Artefatos recebidos           | Em validação                                       |
-| Pendências registradas       | Em validação                                       |
-
-Esta seção registra apenas o estado da preparação documental. Ela não atribui
-resultado de conformidade.
-
----
-
-## 19. Registro de validação
-
-### 19.1 Validação pela equipe do projeto
-
-A equipe do projeto confirma que as informações factuais e técnicas deste
-documento correspondem à tarefa, aos dados, ao modelo e ao estágio de
-desenvolvimento na data de referência indicada.
-
-| Campo            | Preenchimento |
-| ---------------- | ------------- |
-| Nome             |               |
-| Papel            |               |
-| Data             |               |
-| Versão validada |               |
-| Observações    |               |
-
-### 19.2 Consolidação pelo NIAR-Saúde
-
-O NIAR-Saúde confirma o enquadramento da Tarefa de IA, da Versão Avaliável,
-do Contexto de Uso e da trilha para fins de organização deste ciclo.
-
-Esta validação não constitui resultado de conformidade, certificação técnica,
-validação clínica ou autorização de implantação.
-
-| Campo               | Preenchimento |
-| ------------------- | ------------- |
-| Nome                |               |
-| Papel               |               |
-| Data                |               |
-| Versão consolidada |               |
-| Observações       |               |
-
----
-
-## 20. Histórico de versões
-
-| Versão | Data | Responsável | Alteração    | Status                             |
-| ------- | ---- | ------------ | -------------- | ---------------------------------- |
-| 0.1     |      | NIAR-Saúde  | Minuta inicial | Minuta para validação do projeto |
+## 7. Histórico de versões
+
+| Versão | Data | Responsável | Alteração | Status |
+|---|---|---|---|---|
+| 0.1 | | NIAR-Saúde | Criação do documento | Em elaboração |
