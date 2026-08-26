@@ -28,6 +28,8 @@
 
 A pré-avaliação documental tem como objetivo verificar se a unidade de avaliação está suficientemente delimitada, identificar e organizar as evidências disponíveis, examinar sua consistência e rastreabilidade e registrar pendências que devam ser tratadas antes ou durante a avaliação por requisito.
 
+
+
 A pré-avaliação busca:
 
 - confirmar Tarefa de IA, Versão Avaliável, Contexto de Uso e Trilha de Execução;
