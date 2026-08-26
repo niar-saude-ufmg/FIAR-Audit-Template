@@ -196,7 +196,6 @@ Inclua uma observação breve, quando necessário:
 [PREENCHER PELO PROJETO]
 ```
 
-
 ### 5.4 Existe aprovação ética ou autorização institucional?
 
 * [ ] Não
@@ -236,6 +235,8 @@ Indique onde os materiais podem ser encontrados ou como serão enviados:
 ```text
 [PREENCHER PELO PROJETO]
 ```
+
+A existência ou ausência desses materiais não determina, por si só, quais evidências serão exigidas no ciclo.
 
 ---
 

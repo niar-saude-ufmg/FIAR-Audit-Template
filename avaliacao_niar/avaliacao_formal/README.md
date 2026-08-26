@@ -8,15 +8,14 @@ A avaliação formal somente deve ser preenchida após:
 - identificação suficiente da Versão Avaliável;
 - confirmação do Contexto de Uso;
 - validação da trilha;
-- inventário dos artefatos;
+- inventário das evidências e artefatos disponíveis e aplicáveis;
 - conclusão das verificações aplicáveis;
 - registro das pendências e inconsistências relevantes.
 
 A documentação metodológica oficial do FIAR-Saúde deve orientar os critérios,
 procedimentos e resultados aplicáveis.
 
-
----------------------------------------
+---
 
 ## Objeto da avaliação
 
@@ -28,7 +27,7 @@ A avaliação recai sobre a combinação entre:
 - Versão Avaliável;
 - Contexto de Uso;
 - artefatos e evidências associados;
-- requisitos aplicáveis à trilha.
+- requisitos aplicáveis à Tarefa de IA, ao Contexto de Uso e à Trilha de Execução.
 
 ---
 
@@ -86,7 +85,6 @@ instância competente.
 
 O Registro de Decisão Institucional deve permanecer separado do resultado técnico.
 
-
 ---
 
 ## Papel deste diretório
@@ -97,7 +95,6 @@ A análise detalhada que fundamenta esse resultado permanece registrada em:
 
 - `avaliacao_niar/avaliacao_por_requisito/`;
 - `avaliacao_niar/avaliacao_por_dimensao/`;
-- `consolidacao_avaliacao/`.
 
 O documento formal não deve duplicar integralmente essas análises. Seu objetivo é registrar de forma sintética e rastreável:
 
@@ -106,7 +103,7 @@ O documento formal não deve duplicar integralmente essas análises. Seu objetiv
 - os achados determinantes;
 - as pendências relevantes;
 - os sinais de governança;
-- os condicionantes e recomendações;
+- recomendações técnicas e referências a condicionantes institucionais, quando existentes;
 - eventual necessidade de escalonamento;
 - os gatilhos para reavaliação.
 

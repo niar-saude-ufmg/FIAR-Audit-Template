@@ -28,3 +28,23 @@ Preferir nomes no formato:
 ```text
 AAAA-MM-DD_descricao_resumida.md
 ```
+
+Exemplos:
+
+```text
+2026-07-28_validacao_formulario_entrada.md
+2026-08-26_confirmacao_responsabilidades.md
+2026-08-26_esclarecimento_thresholds.md
+```
+
+## Registros relacionados
+
+Quando aplicável, manter a rastreabilidade também em:
+
+```text
+documentacao_projeto/historico_validacao.md
+documentacao_projeto/registro_de_pendencias.md
+avaliacao_niar/registro_de_inconsistencias.md
+```
+
+

@@ -17,6 +17,14 @@ A documentação metodológica oficial do FIAR-Saúde está disponível em:
 
 Em caso de divergência entre este template e a documentação oficial vigente, prevalece a documentação oficial do FIAR-Saúde.
 
+Os diretórios deste conjunto fazem parte da estrutura canônica do `FIAR-Audit-Template` e representam classes de registros operacionais previstas pelo FIAR-Saúde.
+
+A presença de um diretório, README ou template não implica que a evidência correspondente seja aplicável ou obrigatória em toda avaliação.
+
+A aplicabilidade deve ser determinada no contexto de cada ciclo, considerando a Tarefa de IA, a Versão Avaliável, o Contexto de Uso, a Trilha de Execução e o requisito analisado.
+
+Artefatos operacionais são particularmente relevantes para tarefas na Trilha Produção e para evidenciar recorrência, rastreabilidade e institucionalização das práticas ao longo do tempo. Um template não preenchido não constitui evidência e sua simples existência não deve gerar automaticamente uma pendência.
+
 ---
 
 ## 1. Finalidade
@@ -57,21 +65,11 @@ Os artefatos operacionais são especialmente relevantes para tarefas:
 - submetidas a monitoramento contínuo;
 - enquadradas na Trilha Produção.
 
-Para tarefas exclusivamente experimentais, sem operação ativa, registrar:
-
-```text
-NÃO SE APLICA NESTE ESTÁGIO — tarefa sem piloto operacional ou operação ativa.
-```
+Para tarefas exclusivamente experimentais ou sem operação ativa, a ausência de registros operacionais não constitui, por si só, pendência. A não aplicabilidade deve ser registrada no processo de avaliação quando relevante para o requisito analisado, sem necessidade de preencher ficticiamente os templates desta pasta.
 
 Não criar dados fictícios de monitoramento, incidentes ou revisão apenas para preencher a estrutura.
 
-A ausência de operação ativa não elimina a necessidade de registrar:
-
-* planejamento operacional;
-* riscos previstos;
-* critérios para futura implantação;
-* gatilhos de monitoramento;
-* responsabilidades futuras, quando já definidas.
+Mesmo sem operação ativa, podem existir evidências de planejamento operacional, riscos previstos, critérios para futura implantação, gatilhos de monitoramento ou responsabilidades futuras. Esses registros devem ser produzidos quando forem aplicáveis ao estágio, ao contexto e aos requisitos analisados.
 
 ---
 
@@ -119,7 +117,7 @@ Pode conter:
 * violações de limites;
 * registros de revisão.
 
-Cada relatório deve indicar:
+Quando aplicável, os relatórios de monitoramento devem indicar:
 
 * período;
 * versão;
@@ -151,7 +149,7 @@ Reúne registros de eventos que tenham causado ou possam causar:
 * degradação relevante;
 * descumprimento de condicionante.
 
-O registro de incidente deve preservar:
+Quando houver incidente registrado, o registro deve preservar, conforme aplicável:
 
 * data e horário;
 * tarefa e versão;
@@ -197,7 +195,7 @@ Podem ser registradas alterações em:
 * monitoramento;
 * responsáveis.
 
-Cada mudança deve indicar:
+Cada mudança registrada deve indicar, quando aplicável:
 
 * versão anterior;
 * versão nova;
@@ -242,7 +240,7 @@ A revisão periódica não substitui uma nova avaliação quando houver mudança
 
 ## 8. Vinculação à operação
 
-Cada artefato deve indicar:
+Cada artefato operacional deve indicar, quando aplicável:
 
 | Campo                 | Conteúdo esperado                              |
 | --------------------- | ----------------------------------------------- |
@@ -260,11 +258,7 @@ Cada artefato deve indicar:
 
 A versão implantada deve poder ser associada à versão avaliada.
 
-Quando isso não for possível, registrar:
-
-```text
-[INCONSISTÊNCIA IDENTIFICADA — versão em operação não associada de forma suficiente à Versão Avaliável]
-```
+Quando a associação entre a versão em operação e a Versão Avaliável for necessária para o requisito analisado e não puder ser estabelecida de forma suficiente, o NIAR-Saúde deve registrar a limitação e determinar se ela constitui pendência de rastreabilidade ou inconsistência documental confirmada.
 
 ---
 
@@ -284,7 +278,7 @@ A equipe responsável pela operação deve:
 
 O NIAR-Saúde pode:
 
-* verificar a existência dos registros;
+* verificar, quando aplicável, a existência dos registros;
 * avaliar suficiência e consistência;
 * verificar associação entre versão e operação;
 * analisar evidências longitudinais;
@@ -356,6 +350,8 @@ controlados, conforme as regras institucionais aplicáveis.
 
 ## 12. Alertas e limites
 
+Esta seção aplica-se apenas quando houver métricas, thresholds ou limites operacionais definidos para a tarefa.
+
 Quando houver limites de monitoramento, registrar:
 
 | Campo                         | Preenchimento                                     |
@@ -396,7 +392,7 @@ Podem constituir gatilhos:
 * aumento de automação;
 * redução da supervisão humana.
 
-O gatilho identificado deve ser associado a um encaminhamento.
+Quando um gatilho relevante for identificado, ele deve ser associado ao encaminhamento correspondente no processo de avaliação, monitoramento ou governança.
 
 ---
 
@@ -413,7 +409,6 @@ Podem ser utilizados:
 * `Encerrado`
 * `Substituído`
 * `Arquivado`
-* `Não aplicável neste estágio`
 
 Esses estados não equivalem a resultado formal de conformidade.
 
@@ -421,7 +416,7 @@ Esses estados não equivalem a resultado formal de conformidade.
 
 ## 15. Pendências
 
-Pendências relacionadas aos artefatos operacionais devem ser registradas em:
+Quando identificadas, pendências relacionadas aos artefatos operacionais devem ser registradas em:
 
 ```text
 documentacao_projeto/registro_de_pendencias.md
@@ -473,4 +468,3 @@ Questões como:
 devem ser registradas separadamente como decisões institucionais.
 
 Os artefatos desta pasta podem fornecer evidências para a decisão, mas não a substituem.
-

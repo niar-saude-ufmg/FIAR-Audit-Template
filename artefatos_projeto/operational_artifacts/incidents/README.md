@@ -2,11 +2,11 @@
 
 Esta pasta reúne registros de incidentes relacionados à Tarefa de IA, aos dados, ao modelo, à integração, à infraestrutura ou ao Contexto de Uso.
 
-O registro de incidente deve ser factual, rastreável e preservado, inclusive após a resolução.
+Quando houver incidente registrado, o registro deve ser factual, rastreável e preservado, inclusive após a resolução.
 
 ---
 
-## 1. O que deve ser registrado
+## 1. Eventos que podem constituir incidente
 
 Pode constituir incidente:
 
@@ -34,13 +34,13 @@ Não limitar incidentes apenas a falhas de segurança da informação.
 
 ## 2. Estrutura dos arquivos
 
-Utilizar:
+Quando houver incidente aplicável ao escopo desta pasta, pode ser utilizado:
 
 ```text
 incident_record_template.md
-````
+```
 
-Criar um arquivo por incidente:
+Recomenda-se manter um arquivo por incidente, com identificador próprio, por exemplo:
 
 ```text
 INC-OP-001-descricao-resumida.md
@@ -53,7 +53,7 @@ Não reutilizar identificadores.
 
 ## 3. Severidade
 
-A classificação deve seguir critérios institucionais quando existentes.
+Quando houver classificação de severidade, devem ser priorizados os critérios institucionais vigentes, quando existentes.
 
 Na ausência de escala institucional, pode-se utilizar provisoriamente:
 
@@ -81,7 +81,7 @@ A classificação técnica não substitui decisão institucional.
 
 ## 4. Etapas
 
-O tratamento deve registrar:
+O tratamento do incidente deve registrar, quando aplicável, as etapas relevantes do seu ciclo, que podem incluir:
 
 1. detecção;
 2. contenção;
@@ -149,7 +149,7 @@ sua referência.
 
 ## 8. Comunicação
 
-O incidente deve indicar quem foi comunicado:
+Quando houver necessidade de comunicação, o registro do incidente deve indicar, quando aplicável, as partes comunicadas, que podem incluir:
 
 * equipe técnica;
 * responsável institucional;
@@ -163,4 +163,3 @@ O incidente deve indicar quem foi comunicado:
 * autoridade competente, quando aplicável.
 
 Não presumir comunicação realizada sem evidência.
-

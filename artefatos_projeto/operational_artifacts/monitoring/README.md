@@ -2,7 +2,7 @@
 
 Esta pasta reúne os registros de monitoramento de uma Tarefa de IA durante piloto operacional ou operação ativa.
 
-O monitoramento deve estar associado explicitamente a:
+Quando aplicável, os registros de monitoramento devem estar associados a:
 
 - uma Tarefa de IA;
 - uma versão efetivamente implantada;
@@ -44,19 +44,16 @@ O monitoramento operacional pode acompanhar:
 
 ## 2. Aplicabilidade
 
-Para tarefas sem piloto operacional ou operação ativa, registrar:
+Para tarefas sem piloto operacional ou operação ativa, a ausência de registros de monitoramento não constitui, por si só, pendência. A não aplicabilidade deve ser registrada no processo de avaliação quando relevante para o requisito analisado.
 
-```text
-NÃO SE APLICA NESTE ESTÁGIO — tarefa sem piloto operacional ou operação ativa.
-```
 
-A ausência de operação ativa não impede a elaboração de um plano de monitoramento para uso futuro.
+Mesmo sem operação ativa, pode existir um plano de monitoramento futuro, quando aplicável ao estágio e ao contexto da tarefa.
 
 ---
 
 ## 3. Arquivos
 
-Utilizar o template:
+Quando houver monitoramento aplicável, pode ser utilizado o template:
 
 ```text
 monitoring_report_template.md
@@ -76,7 +73,7 @@ Evitar sobrescrever relatórios anteriores.
 
 ## 4. Frequência
 
-A frequência deve ser definida de acordo com:
+Quando houver monitoramento recorrente, a frequência deve ser definida de acordo com:
 
 * risco;
 * volume de uso;
@@ -105,7 +102,7 @@ Não utilizar frequência genérica sem justificativa.
 
 ## 5. Métricas
 
-As métricas devem ser relacionadas ao Contexto de Uso.
+As métricas selecionadas para monitoramento devem ser relacionadas ao Contexto de Uso.
 
 Podem incluir:
 
@@ -197,7 +194,7 @@ Não comparar diretamente métricas calculadas com rótulos incompletos com mét
 
 ## 8. Responsabilidades
 
-Devem estar definidos:
+Quando aplicáveis ao arranjo operacional da tarefa, devem ser identificadas as responsabilidades relevantes para o monitoramento e resposta.
 
 | Papel                           | Responsabilidade                        |
 | ------------------------------- | --------------------------------------- |
@@ -209,7 +206,7 @@ Devem estar definidos:
 | Responsável institucional      | Encaminhamentos institucionais          |
 | Ponto focal do NIAR-Saúde      | Comunicação e reavaliação           |
 
-Papéis não aplicáveis devem ser justificados.
+A ausência de determinado papel da tabela não constitui, por si só, pendência; o NIAR-Saúde deve avaliar se as responsabilidades necessárias ao requisito estão suficientemente definidas.
 
 ---
 
@@ -274,7 +271,7 @@ Não armazenar logs sensíveis no Git.
 
 ## 12. Rastreabilidade
 
-Cada relatório deve indicar:
+Cada relatório deve indicar, quando aplicável e disponível:
 
 * versão implantada;
 * versão avaliada;
@@ -287,17 +284,15 @@ Cada relatório deve indicar:
 * dashboard;
 * responsáveis.
 
-Quando não houver correspondência suficiente:
+``commit``, ``scripts``, ``dashboard`` e outros identificadores são mecanismos possíveis de rastreabilidade, não requisitos universais.
 
-```text
-[INCONSISTÊNCIA IDENTIFICADA — versão monitorada não associada de forma suficiente à Versão Avaliável]
-```
+Quando a associação entre a versão monitorada e a Versão Avaliável for necessária e não puder ser estabelecida de forma suficiente, o NIAR-Saúde deve registrar a limitação e determinar se ela constitui pendência de rastreabilidade ou inconsistência documental confirmada.
 
 ---
 
 ## 13. Gatilhos de reavaliação
 
-Podem exigir reavaliação:
+Podem constituir gatilhos para análise de necessidade de reavaliação:
 
 * queda relevante de desempenho;
 * disparidade relevante;
@@ -314,7 +309,6 @@ Podem exigir reavaliação:
 * mudança regulatória;
 * descumprimento de condicionante.
 
-O relatório deve registrar o encaminhamento, não apenas o evento.
+Quando um gatilho relevante for identificado, o relatório deve registrar o encaminhamento correspondente.
 
 ---
-

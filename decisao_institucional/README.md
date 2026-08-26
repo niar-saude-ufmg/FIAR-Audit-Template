@@ -61,9 +61,9 @@ decisao_institucional/
 ├── README.md
 ├── registro_decisao_institucional_template.md
 └── registro_de_condicionantes.md
-````
+```
 
-Cada decisão efetivamente tomada deve gerar um novo arquivo.
+Cada decisão institucional efetivamente formalizada deve ser registrada em arquivo próprio, com identificador rastreável.
 
 Exemplo:
 
@@ -93,7 +93,7 @@ Comitê Gestor ou a outra instância competente, conforme:
 
 Não presumir que toda decisão institucional seja tomada pelo Comitê Gestor.
 
-O registro deve indicar explicitamente quem deliberou e com qual competência.
+Quando aplicável, o registro deve indicar explicitamente a instância que deliberou e a competência institucional correspondente.
 
 ---
 
@@ -103,7 +103,7 @@ Podem exigir deliberação:
 
 * risco residual relevante;
 * disparidade material;
-* ausência de evidência considerada essencial;
+* insuficiência de evidência considerada relevante para uma decisão institucional;
 * impossibilidade de mitigação imediata;
 * limitação relevante de privacidade;
 * limitação relevante de segurança;
@@ -144,7 +144,7 @@ A decisão pode considerar:
 * condicionantes anteriores;
 * manifestação da equipe do projeto.
 
-As fontes devem ser identificadas por versão e localização.
+As fontes utilizadas devem ser identificadas, quando aplicável, por versão, data e localização ou referência de rastreabilidade.
 
 ---
 
@@ -210,7 +210,7 @@ Não inferir aceite de risco a partir de ausência de objeção ou continuidade 
 
 ## 9. Validade
 
-Toda decisão deve indicar:
+Toda decisão institucional formalizada deve indicar, quando aplicável:
 
 * data;
 * versão;
@@ -289,4 +289,3 @@ decisao_institucional/
 ```
 
 Não duplicar integralmente os documentos de origem.
-

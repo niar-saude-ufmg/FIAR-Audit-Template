@@ -17,6 +17,14 @@ A documentação metodológica oficial do FIAR-Saúde está disponível em:
 
 Em caso de divergência entre este template e a documentação oficial vigente, prevalece a documentação oficial do FIAR-Saúde.
 
+Os diretórios deste conjunto fazem parte da estrutura canônica do `FIAR-Audit-Template` e representam classes de artefatos e evidências que podem ser utilizadas ao longo do ciclo do FIAR-Saúde.
+
+A presença de um diretório, README ou template não implica que a evidência correspondente seja aplicável ou obrigatória em toda avaliação.
+
+A aplicabilidade deve ser determinada no contexto de cada ciclo, considerando a Tarefa de IA, a Versão Avaliável, o Contexto de Uso, a Trilha de Execução e o requisito analisado.
+
+Artefatos operacionais são particularmente relevantes para tarefas na Trilha Produção e para evidenciar recorrência, rastreabilidade e institucionalização das práticas ao longo do tempo. Um template não preenchido não constitui evidência e sua simples existência não deve gerar automaticamente uma pendência.
+
 ---
 
 ## 1. Finalidade da pasta
@@ -65,7 +73,7 @@ A equipe do projeto é responsável por:
 O NIAR-Saúde é responsável por:
 
 - orientar a organização das evidências;
-- verificar presença, suficiência, consistência e rastreabilidade;
+- verificar, quando aplicável, a presença, suficiência, consistência e rastreabilidade das evidências;
 - identificar lacunas e inconsistências;
 - solicitar complementações;
 - avaliar a relação entre os artefatos e as dimensões do FIAR-Saúde;
@@ -94,7 +102,6 @@ artefatos_projeto/
     ├── version_history/
     └── periodic_review/
 ```
-
 
 ---
 
@@ -176,7 +183,7 @@ Métricas globais não devem ser usadas como conclusão sobre justiça.
 
 A ausência de análise por grupos não permite afirmar ausência de disparidade.
 
-Quando ainda não houver análise suficiente, o arquivo deve funcionar como plano de avaliação de justiça.
+Quando uma avaliação de justiça for aplicável e necessária, mas ainda não tiver sido executada, essa condição deve ser registrada como análise pendente no processo de avaliação. Um template não preenchido não deve ser considerado, por si só, evidência de avaliação nem pendência automática.
 
 ### `explainability_reports/`
 
@@ -200,7 +207,7 @@ Importância de variável não deve ser tratada como causalidade.
 
 Não devem ser inventados resultados de SHAP, LIME, mapas de ativação ou outros métodos.
 
-Quando não houver análise suficiente, o arquivo deve funcionar como plano de explicabilidade.
+Quando uma análise de explicabilidade for aplicável e necessária, mas ainda não tiver sido executada, essa condição deve ser registrada como análise pendente no processo de avaliação. Um template não preenchido não constitui evidência de explicabilidade nem gera, por si só, uma pendência automática.
 
 ### `decision_records/`
 
@@ -237,7 +244,7 @@ Os Registros de Decisão Técnica não devem ser confundidos com Registros de De
 
 Decisões institucionais, como aceite de risco, definição de condicionantes ou restrições de uso, devem ser armazenadas separadamente.
 
-### `relatorio_consolidado_iar/`
+### `consolidated_iar_report/`
 
 Contém relatórios que sintetizam o estado das evidências e análises das dimensões do FIAR-Saúde.
 
@@ -331,11 +338,7 @@ Pode conter:
 
 Artefatos operacionais não devem ser preenchidos ficticiamente em tarefas ainda não implantadas.
 
-Quando não se aplicarem ao estágio atual, registrar:
-
-```text
-NÃO SE APLICA NESTE ESTÁGIO — tarefa sem operação ativa.
-```
+A existência desses diretórios na estrutura canônica não implica que devam conter registros em todas as tarefas. A aplicabilidade das evidências operacionais deve ser determinada no ciclo de avaliação, especialmente em função da Trilha de Execução e do estágio de operação da tarefa. Para tarefas sem operação ativa, a ausência desses registros não constitui, por si só, pendência.
 
 ---
 
@@ -355,11 +358,7 @@ Cada artefato deve indicar, quando aplicável:
 | Fontes               | Dados, código, execução ou documento relacionado |
 | Estado               | Rascunho, em validação, validado ou substituído  |
 
-Quando o artefato não puder ser associado de forma suficiente à Versão Avaliável, registrar a limitação em:
-
-```text
-documentacao_projeto/registro_de_pendencias.md
-```
+Quando a vinculação à Versão Avaliável for necessária para o requisito analisado e não puder ser estabelecida de forma suficiente, o NIAR-Saúde deve registrar a limitação e determinar se ela constitui uma pendência de rastreabilidade.
 
 ---
 
@@ -377,7 +376,7 @@ tarefa:
 versao_avaliavel:
 contexto_de_uso:
 elaborado_por:
-responsavel_tecnico:
+responsavel_pelo_artefato:
 data_de_referencia:
 ultima_atualizacao:
 ---
@@ -468,15 +467,16 @@ Segundo os experimentos.
 Preferir:
 
 ```text
-Resultado obtido na execução RUN-2026-001, associada ao commit abc123,
-à configuração config_v1.yaml e ao dataset CODE-II v1.0.
+Resultado obtido na execução RUN-2026-001, associada ao commit abc123...
 ```
+
+Os identificadores acima são exemplos de mecanismos de rastreabilidade e devem ser utilizados somente quando existentes, aplicáveis e verificáveis.
 
 ---
 
 ## 11. Atualização dos artefatos
 
-Os artefatos devem ser atualizados quando ocorrer mudança relevante em:
+Os artefatos aplicáveis devem ser revisados e, quando necessário, atualizados em função de mudanças relevantes que afetem seu conteúdo, suas evidências ou o escopo da avaliação, tais como:
 
 * modelo;
 * dados;
@@ -576,4 +576,3 @@ Os artefatos desta pasta não devem ser usados isoladamente para afirmar que:
 * o sistema está autorizado para implantação.
 
 Essas conclusões dependem dos processos de avaliação, governança e decisão aplicáveis.
-

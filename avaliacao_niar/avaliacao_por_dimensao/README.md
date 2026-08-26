@@ -12,19 +12,23 @@ As sete dimensões são:
 - Justiça;
 - Transparência.
 
-A avaliação por dimensão sintetiza os achados produzidos nos requisitos aplicáveis e considera:
+A avaliação por dimensão consolida os resultados das avaliações dos requisitos aplicáveis e considera:
 
+- requisitos aplicáveis;
+- requisitos não aplicáveis e respectivas justificativas;
 - suficiência global das evidências;
 - consistência entre requisitos e evidências;
-- rastreabilidade dos achados;
+- rastreabilidade dos resultados;
 - contextualização dos resultados;
-- pendências relevantes;
+- pendências e inconsistências relevantes;
 - sinais de governança.
 
 A dimensão não recebe nível de maturidade próprio.
 
 A consolidação não resulta de soma, média, percentual ou regra de maioria.
 
+A consolidação por dimensão deve preservar a rastreabilidade até as avaliações por requisito e não deve reclassificar automaticamente ausência de evidência como não conformidade.
+
 O template está disponível em:
 
-`template_avaliacao_dimensao.md`
+[`template_avaliacao_dimensao.md`](template_avaliacao_dimensao.md)

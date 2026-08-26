@@ -1,8 +1,8 @@
 # Revisões Periódicas
 
-Esta pasta reúne revisões realizadas em intervalos definidos ou após gatilhos relevantes.
+Esta pasta reúne registros de revisões periódicas realizadas, quando aplicáveis, em intervalos definidos ou após gatilhos relevantes.
 
-A revisão periódica avalia se a tarefa continua:
+Quando realizada, a revisão periódica pode avaliar se a tarefa continua:
 
 - dentro do escopo;
 - adequadamente documentada;
@@ -13,10 +13,12 @@ A revisão periódica avalia se a tarefa continua:
 - compatível com o Contexto de Uso.
 
 A revisão periódica não substitui uma nova avaliação quando houver mudança relevante.
+
 ---
+
 ## 1. Frequência
 
-A frequência deve ser definida conforme:
+Quando houver revisão periódica prevista, sua frequência deve ser definida conforme:
 
 - risco;
 - impacto;
@@ -32,7 +34,7 @@ A frequência deve ser definida conforme:
 
 ## 2. Gatilhos extraordinários
 
-Realizar revisão adicional quando houver:
+Os seguintes eventos podem constituir gatilhos para análise da necessidade de revisão adicional:
 
 - incidente;
 - mudança de versão;
@@ -47,11 +49,13 @@ Realizar revisão adicional quando houver:
 - decisão institucional;
 - mudança de infraestrutura.
 
+A ocorrência de um gatilho não implica automaticamente revisão periódica ou nova avaliação. O encaminhamento deve considerar sua relevância, impacto, Contexto de Uso, Trilha de Execução e requisitos aplicáveis.
+
 ---
 
 ## 3. Arquivos
 
-Utilizar:
+Quando houver revisão periódica a registrar, pode ser utilizado:
 
 ```text
 periodic_review_template.md
@@ -82,4 +86,3 @@ A revisão pode recomendar:
 * escalonamento institucional.
 
 A recomendação técnica não substitui decisão institucional.
-

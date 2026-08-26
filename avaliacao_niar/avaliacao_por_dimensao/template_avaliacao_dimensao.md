@@ -2,17 +2,17 @@
 
 ## Controle do documento
 
-| Campo               | Preenchimento                                        |
-| ------------------- | ---------------------------------------------------- |
-| Versão             | 0.1                                                  |
-| Status              | Rascunho interno do NIAR                             |
-| Projeto             | [INFORMAÇÃO PENDENTE — preencher pelo projeto]    |
-| Tarefa de IA        | [INFORMAÇÃO PENDENTE — preencher pelo projeto]    |
-| Versão Avaliável  | [INFORMAÇÃO PENDENTE — preencher pelo projeto]    |
-| Contexto de Uso     | [INFORMAÇÃO PENDENTE — preencher pelo projeto]    |
-| Trilha              | [ENQUADRAMENTO PENDENTE — validar pelo NIAR-Saúde] |
-| Avaliador           | [INFORMAÇÃO PENDENTE — preencher pelo projeto]    |
-| Data de referência | [INFORMAÇÃO PENDENTE — preencher pelo projeto]    |
+| Campo               | Preenchimento                                         |
+| ------------------- | ----------------------------------------------------- |
+| Versão             | 0.1                                                   |
+| Status              | Rascunho interno do NIAR                              |
+| Projeto             | [INFORMAÇÃO PENDENTE — preencher pelo projeto]     |
+| Tarefa de IA        | [INFORMAÇÃO PENDENTE — preencher pelo projeto]     |
+| Versão Avaliável  | [INFORMAÇÃO PENDENTE — preencher pelo projeto]     |
+| Contexto de Uso     | [INFORMAÇÃO PENDENTE — preencher pelo projeto]     |
+| Trilha              | [ENQUADRAMENTO PENDENTE — validar pelo NIAR-Saúde]  |
+| Avaliador           | [INFORMAÇÃO PENDENTE — preencher pelo NIAR-Saúde] |
+| Data de referência | [INFORMAÇÃO PENDENTE — preencher pelo NIAR-Saúde] |
 
 > Esta avaliação refere-se exclusivamente à Tarefa de IA, à Versão Avaliável e ao Contexto de Uso identificados.
 >
@@ -46,7 +46,7 @@ Descrever o objetivo da avaliação desta dimensão no contexto específico da t
 
 ## 3. Questões avaliadas
 
-| ID      | Questão de avaliação                           | Aplicável | Justificativa |
+| ID      | Requisito                                         | Aplicável | Justificativa |
 | ------- | ------------------------------------------------- | ---------- | ------------- |
 | DIM-001 | [INFORMAÇÃO PENDENTE — preencher pelo projeto] | Sim / Não |               |
 
@@ -56,13 +56,13 @@ Uma questão marcada como não aplicável exige justificativa.
 
 ## 4. Evidências esperadas
 
-| ID      | Evidência esperada | Relação com a questão | Obrigatória neste contexto | Justificativa |
-| ------- | ------------------- | ------------------------ | --------------------------- | ------------- |
-| EVE-001 |                     |                          | Sim / Não                  |               |
+| ID      | Evidência esperada | Relação com a questão | Relevância para o requisito | Justificativa |
+| ------- | ------------------- | ------------------------ | ---------------------------- | ------------- |
+| EVE-001 |                     |                          | Sim / Não                   |               |
 
 ---
 
-## 5. Evidências apresentadas
+## 5. Evidências disponíveis
 
 | ID      | Artefato | Versão | Localização | Responsável | Questão relacionada |
 | ------- | -------- | ------- | ------------- | ------------ | -------------------- |
@@ -71,6 +71,8 @@ Uma questão marcada como não aplicável exige justificativa.
 ---
 
 ## 6. Verificações realizadas
+
+Esta seção consolida os mecanismos de verificação registrados nas avaliações por requisito e não substitui os respectivos registros detalhados.
 
 | ID      | Verificação | Método | Evidência utilizada | Resultado |
 | ------- | ------------- | ------- | -------------------- | --------- |
@@ -89,11 +91,11 @@ Distinguir claramente:
 
 ---
 
-## 7. Resultados técnicos
+## 7. Síntese dos resultados das verificações
 
-| ID      | Resultado | Evidência | Interpretação permitida | Limitação |
-| ------- | --------- | ---------- | ------------------------- | ----------- |
-| RES-001 |           |            |                           |             |
+| ID do requisito | Resultado sintetizado | Evidência principal | Limitação |
+| --------------- | --------------------- | -------------------- | ----------- |
+| RES-001         |                       |                      |             |
 
 Não extrapolar a conclusão para contextos não avaliados.
 
@@ -111,6 +113,8 @@ Não extrapolar a conclusão para contextos não avaliados.
 
 ### Inconsistências
 
+Registrar apenas inconsistências já confirmadas e rastreáveis aos registros correspondentes.
+
 | ID      | Descrição                                                    | Impacto | Registro relacionado |
 | ------- | -------------------------------------------------------------- | ------- | -------------------- |
 | INC-XXX | [INCONSISTÊNCIA IDENTIFICADA — verificar entre os artefatos] |         |                      |
@@ -119,7 +123,7 @@ Não extrapolar a conclusão para contextos não avaliados.
 
 ## 9. Suficiência da evidência
 
-Classificação preparatória:
+A classificação é descritiva e consolidada a partir dos requisitos aplicáveis; não corresponde a score, média ou resultado de conformidade.
 
 ```text
 Evidência disponível
@@ -139,8 +143,6 @@ Não aplicável — requer justificativa
 
 [ANÁLISE PENDENTE — não inferível a partir dos documentos fornecidos]
 
-Essa classificação não equivale a resultado formal de conformidade.
-
 ---
 
 ## 10. Limitações
@@ -150,6 +152,8 @@ Essa classificação não equivale a resultado formal de conformidade.
 ---
 
 ## 11. Riscos ou impactos identificados
+
+Registrar somente riscos ou impactos já identificados nas avaliações por requisito ou em evidências diretamente relacionadas à dimensão.
 
 | ID      | Risco ou impacto | Evidência | Contexto | Tratamento existente | Risco residual |
 | ------- | ---------------- | ---------- | -------- | -------------------- | -------------- |
@@ -161,13 +165,15 @@ Não atribuir aceitabilidade ao risco sem decisão correspondente.
 
 ## 12. Pendências
 
-| ID      | Pendência | Prioridade | Responsável | Evidência esperada | Estado |
-| ------- | ---------- | ---------- | ------------ | ------------------- | ------ |
-| PEN-XXX |            |            |              |                     |        |
+| ID      | Pendência | Requisito relacionado | Prioridade | Responsável | Estado |
+| ------- | ---------- | --------------------- | ---------- | ------------ | ------ |
+| PEN-XXX |            |                       |            |              |        |
 
 ---
 
-## 13. Análises adicionais necessárias
+## 13. Necessidades adicionais de análise
+
+Registrar apenas necessidades decorrentes das avaliações dos requisitos aplicáveis.
 
 * [ANÁLISE PENDENTE — não inferível a partir dos documentos fornecidos]
 
@@ -185,6 +191,8 @@ Um sinal de governança não constitui decisão institucional.
 
 ## 15. Conclusão da dimensão
 
+A conclusão da dimensão não deve atribuir nível de maturidade nem resultar de soma, média, percentual ou maioria dos requisitos.
+
 [ANÁLISE PENDENTE — não inferível a partir dos documentos fornecidos]
 
 A conclusão deve explicitar:
@@ -198,13 +206,13 @@ A conclusão deve explicitar:
 
 ## 16. Revisão
 
-| Campo               | Preenchimento |
-| ------------------- | ------------- |
-| Elaborado por       |               |
-| Revisado por        |               |
-| Data                |               |
-| Próxima revisão   |               |
-| Gatilho de revisão |               |
+| Campo               | Preenchimento     |
+| ------------------- | ----------------- |
+| Elaborado por       |                   |
+| Revisado por        |                   |
+| Data                |                   |
+| Próxima revisão   | quando aplicável |
+| Gatilho de revisão | quando aplicável |
 
 ---
 
@@ -213,6 +221,3 @@ A conclusão deve explicitar:
 | Versão | Data | Responsável | Alteração              | Status                   |
 | ------- | ---- | ------------ | ------------------------ | ------------------------ |
 | 0.1     |      | NIAR-Saúde  | Criação da avaliação | Rascunho interno do NIAR |
-
-
-

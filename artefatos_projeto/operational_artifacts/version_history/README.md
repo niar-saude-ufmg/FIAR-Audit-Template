@@ -6,18 +6,18 @@ O objetivo é permitir reconstruir:
 
 - o que mudou;
 - por que mudou;
-- quem autorizou e implementou;
+- quem implementou e, quando aplicável, quem autorizou;
 - quais versões foram afetadas;
 - quais testes foram realizados;
 - quais riscos foram considerados;
-- se a mudança exige nova Versão Avaliável;
-- se a mudança exige nova avaliação.
+- se a mudança **pode caracterizar** nova Versão Avaliável;
+- se a mudança **pode exigir** nova avaliação.
 
 ---
 
-## 1. Mudanças que devem ser registradas
+## 1. Mudanças que podem requerer registro
 
-Registrar alterações em:
+Podem requerer registro alterações relevantes em:
 
 - dados;
 - fontes;
@@ -45,13 +45,13 @@ Registrar alterações em:
 
 ## 2. Identificação
 
-Utilizar:
+Quando houver mudança relevante a registrar, pode ser utilizado:
 
 ```text
 version_change_record_template.md
 ```
 
-Criar um arquivo por mudança:
+Recomenda-se manter um registro individual por mudança relevante, por exemplo:
 
 ```text
 MUD-001-atualizacao-thresholds.md
@@ -80,7 +80,7 @@ Podem constituir mudança relevante:
 * alteração regulatória;
 * modificação de condicionante.
 
-A classificação deve ser validada pelo NIAR-Saúde quando houver dúvida.
+Quando houver dúvida sobre se a alteração caracteriza uma mudança relevante para fins de avaliação, o enquadramento deve ser validado pelo NIAR-Saúde.
 
 ---
 
@@ -102,7 +102,7 @@ O número da versão, sozinho, não determina se há nova Versão Avaliável.
 
 Uma mudança pode implementar uma decisão técnica.
 
-Nesse caso, indicar:
+Nesse caso, indicar, quando aplicável e disponível:
 
 * ID da decisão;
 * versão;
@@ -132,5 +132,4 @@ Registrar separadamente:
 
 Não apagar registros de versões substituídas.
 
-O histórico deve permitir identificar qual versão estava em operação em cada período.
-
+Para tarefas em operação ativa, o histórico deve permitir identificar, quando aplicável, qual versão esteve em operação em cada período relevante.

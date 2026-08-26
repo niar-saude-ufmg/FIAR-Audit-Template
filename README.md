@@ -24,7 +24,9 @@ Em caso de divergência entre este template e a documentação oficial vigente, 
 
 ## Escopo do template
 
-Cada repositório criado a partir deste template corresponde a uma instância documental e técnica de um ciclo FIAR-Saúde.
+O repositório pode ser iniciado antes da realização de uma avaliação formal. Nesse caso, os primeiros passos consistem no registro das informações iniciais fornecidas pela equipe do projeto, na triagem pelo NIAR-Saúde e na delimitação da Tarefa de IA, da Versão Avaliável, do Contexto de Uso e da Trilha de Execução. A partir dessa delimitação, o NIAR-Saúde define quais artefatos e evidências são necessários para o ciclo.
+
+Cada repositório criado a partir deste template constitui a estrutura documental e técnica de um projeto acompanhado pelo FIAR-Saúde, na qual são registrados seus ciclos de avaliação.
 
 O ciclo é delimitado por:
 
@@ -33,7 +35,7 @@ O ciclo é delimitado por:
 - um Contexto de Uso;
 - uma trilha de execução aplicável.
 
-O repositório pode ser iniciado antes da realização de uma avaliação formal. Nesse caso, os primeiros passos consistem na inspeção dos artefatos existentes, na delimitação preliminar da tarefa e na validação das informações junto à equipe do projeto.
+**Estrutura canônica e aplicabilidade.** Este template mantém previamente diretórios, registros e modelos destinados a suportar as diferentes etapas do ciclo FIAR-Saúde. A existência desses elementos na estrutura não significa que todos sejam aplicáveis ou devam ser preenchidos em toda avaliação. A aplicabilidade é determinada no contexto de cada ciclo, considerando a Tarefa de IA, a Versão Avaliável, o Contexto de Uso, a Trilha de Execução e os requisitos analisados. Um template não preenchido não constitui evidência e sua simples existência não deve gerar automaticamente uma pendência, inconsistência ou não conformidade.
 
 A criação do repositório, o preenchimento dos documentos ou a validação factual das informações não constituem:
 
@@ -125,17 +127,21 @@ Os Registros de Decisão Técnica produzidos pelo projeto não devem ser confund
 
 ## Fluxo resumido do ciclo
 
-1. O projeto cria um repositório privado a partir deste template.
-2. A equipe disponibiliza os artefatos e evidências existentes.
-3. O NIAR-Saúde realiza uma inspeção documental inicial.
-4. O NIAR-Saúde prepara uma minuta de identificação da avaliação.
-5. A equipe do projeto valida, corrige ou complementa as informações factuais.
-6. O NIAR-Saúde consolida a Tarefa de IA, a Versão Avaliável, o Contexto de Uso e o enquadramento da trilha.
-7. As pendências documentais e técnicas são registradas e atribuídas.
-8. O projeto produz ou complementa as análises e evidências necessárias.
-9. O NIAR-Saúde realiza a avaliação aplicável.
-10. Questões que exigem deliberação institucional são escalonadas quando necessário.
-11. Os resultados e registros do ciclo são consolidados de forma rastreável.
+1. O repositório privado é criado a partir deste template.
+2. O NIAR-Saúde encaminha o Formulário de Entrada à equipe do projeto.
+3. A equipe do projeto fornece as informações iniciais disponíveis.
+4. O NIAR-Saúde realiza a triagem inicial.
+5. O NIAR-Saúde delimita preliminarmente a Tarefa de IA, a Versão Avaliável,
+   o Contexto de Uso e a Trilha de Execução.
+6. Quando necessário, dúvidas factuais são esclarecidas com a equipe do projeto.
+7. O NIAR-Saúde consolida a Identificação da Avaliação.
+8. O NIAR-Saúde determina e solicita os artefatos e evidências necessários ao ciclo.
+9. A equipe do projeto produz, preenche, atualiza ou fornece os artefatos solicitados.
+10. O NIAR-Saúde registra o recebimento e realiza a pré-avaliação documental.
+11. Pendências e inconsistências são registradas e tratadas.
+12. O NIAR-Saúde realiza a avaliação aplicável.
+13. Questões que exigem deliberação institucional são escalonadas quando necessário.
+14. Os resultados e registros do ciclo são consolidados de forma rastreável.
 
 O detalhamento do protocolo de validação documental fica registrado no `README.md` da pasta `documentacao_projeto/`.
 
@@ -146,8 +152,8 @@ O detalhamento do protocolo de validação documental fica registrado no `README
 1. Selecione **Use this template**.
 2. Crie um repositório privado para o projeto.
 3. Defina as permissões de acesso conforme a sensibilidade dos documentos e artefatos.
-4. Insira os Data Cards, Model Cards e demais evidências já existentes nas pastas correspondentes.
-5. Preencha ou revise os arquivos de `documentacao_projeto/`.
+4. Utilize `documentacao_projeto/` para registrar as informações iniciais e delimitar o ciclo de avaliação.
+5. Após a identificação da Tarefa de IA, da Versão Avaliável, do Contexto de Uso e da Trilha de Execução, produza, preencha, atualize ou forneça os artefatos e evidências solicitados pelo NIAR-Saúde nas pastas correspondentes.
 6. Registre lacunas, inconsistências e análises pendentes sem preencher informações não sustentadas.
 7. Utilize `avaliacao_niar/` para os instrumentos e registros produzidos pelo NIAR-Saúde.
 8. Preserve o histórico das versões dos documentos e das rodadas de validação.
@@ -160,43 +166,43 @@ Não inclua dados pessoais, dados sensíveis, credenciais, chaves, identificador
 
 ```text
 documentacao_projeto/
-  identificacao_avaliacao.md
-  historico_validacao.md
-  registro_de_pendencias.md
+	README.md
+    formulario_entrada.md
+    identificacao_avaliacao.md
+  	controle_artefatos.md
+  	historico_validacao.md
+  	registro_de_pendencias.md
+  	comunicacoes/
 
 artefatos_projeto/
-Esta pasta reúne os artefatos e evidências produzidos ou mantidos pelo projeto ao longo do ciclo FIAR-Saúde.
-
-> **Importante:** a presença de um diretório ou template nesta estrutura não implica que o artefato correspondente seja obrigatório para todas as tarefas.
->
-> Os templates representam tipos de evidência que podem ser utilizados quando aplicáveis. A necessidade de cada evidência deve ser determinada pelo NIAR-Saúde considerando a Tarefa de IA, a Versão Avaliável, o Contexto de Uso, a Trilha de Execução, os requisitos aplicáveis e as evidências já disponíveis.
->
-> Sempre que possível, deve-se evitar duplicação documental. Uma evidência suficientemente registrada e rastreável em outro artefato pode atender ao requisito correspondente.
-
-A estrutura inclui, quando aplicável:
-  data_cards/
-  model_cards/
-  fairness_reports/
-  explainability_reports/
-  decision_records/
-  consolidated_iar_report/
-  compliance/
-    ripd/
-  operational_artifacts/
-    monitoring/
-    incidents/
-    version_history/
-    periodic_review/
+	data_cards/
+  	model_cards/
+  	fairness_reports/
+  	explainability_reports/
+  	decision_records/
+  	consolidated_iar_report/
+  	compliance/
+    	ripd/
+  	operational_artifacts/
+    	monitoring/
+    	incidents/
+    	version_history/
+    	periodic_review/
 
 avaliacao_niar/
+	avaliacao_por_requisito/
+  	avaliacao_por_dimensao/
+  	avaliacao_formal/
 
-auditoria_final/
+decisao_institucional/
 
 fiar_sync/
 
 pdf/
 ```
 
+> A estrutura mantém diretórios e templates mesmo quando ainda não há conteúdo produzido. Sua presença tem função estrutural e orientadora e não implica, por si só, aplicabilidade ou obrigatoriedade da evidência correspondente.
+>
 > **Observação:** alguns nomes e arquivos desta estrutura serão atualizados progressivamente para refletir o fluxo de validação documental e a terminologia vigente do FIAR-Saúde. Até que essas alterações sejam concluídas, os caminhos acima correspondem à estrutura atualmente implementada no template.
 
 ---
@@ -222,6 +228,8 @@ Tarefas na Trilha Produção podem exigir também artefatos operacionais, como:
 - registros de implantação ou reimplantação;
 - evidências de revisão periódica;
 - planos de contingência e resposta a falhas.
+
+A enumeração acima apresenta exemplos de evidências operacionais previstas pelo framework e não corresponde necessariamente a uma relação de diretórios ou artefatos obrigatórios do template.
 
 A presença de um artefato, isoladamente, não demonstra suficiência da evidência nem determina conformidade.
 
@@ -288,6 +296,8 @@ A Versão Avaliável da tarefa deve estar vinculada, sempre que disponível, a:
 - identificador dos pesos ou artefatos;
 - ambiente computacional;
 - resultados e evidências correspondentes.
+
+Esses elementos constituem mecanismos possíveis de rastreabilidade quando aplicáveis e disponíveis. A ausência de um identificador específico não deve ser interpretada automaticamente como pendência ou não conformidade; deve ser avaliada em relação ao requisito e às demais evidências disponíveis.
 
 ---
 
