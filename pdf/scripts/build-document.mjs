@@ -375,12 +375,15 @@ async function main() {
   const font = await finalDoc.embedFont(StandardFonts.Helvetica);
   const fontBold = await finalDoc.embedFont(StandardFonts.HelveticaBold);
   const assets = {};
-  const coverTopPath = path.join(assetsDir, 'capa-niar.jpeg');
-  const coverBottomPath = path.join(assetsDir, 'capa-ufmg.jpeg');
+  const coverTopPath = path.join(assetsDir, 'capa-niar.png');
+  const coverBottomPath = path.join(assetsDir, 'capa-ufmg.png');
   const footerLogoPath = path.join(assetsDir, 'rodape-ufmg.png');
-  if (fs.existsSync(coverTopPath)) assets.coverTop = await finalDoc.embedJpg(fs.readFileSync(coverTopPath));
-  if (fs.existsSync(coverBottomPath)) assets.coverBottom = await finalDoc.embedJpg(fs.readFileSync(coverBottomPath));
+  if (fs.existsSync(coverTopPath)) assets.coverTop = await finalDoc.embedPng(fs.readFileSync(coverTopPath));
+  if (fs.existsSync(coverBottomPath)) assets.coverBottom = await finalDoc.embedPng(fs.readFileSync(coverBottomPath));
   if (fs.existsSync(footerLogoPath)) assets.footerLogo = await finalDoc.embedPng(fs.readFileSync(footerLogoPath));
+  // if (fs.existsSync(coverTopPath)) assets.coverTop = await finalDoc.embedJpg(fs.readFileSync(coverTopPath));
+  // if (fs.existsSync(coverBottomPath)) assets.coverBottom = await finalDoc.embedJpg(fs.readFileSync(coverBottomPath));
+  // if (fs.existsSync(footerLogoPath)) assets.footerLogo = await finalDoc.embedPng(fs.readFileSync(footerLogoPath));
 
   const coverPage = finalDoc.addPage([A4.width, A4.height]);
   drawCover(coverPage, font, fontBold, nowText, assets);
