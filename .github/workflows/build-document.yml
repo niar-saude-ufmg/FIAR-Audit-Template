@@ -17,6 +17,9 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v5
+        with:
+          # Baixa todo o histórico para permitir o rebase de forma limpa
+          fetch-depth: 0
 
       - name: Setup Node.js
         uses: actions/setup-node@v5
@@ -48,6 +51,9 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add pdf/output/relatorio_final.pdf
           git commit -m "docs: atualiza documento consolidado FIAR [skip ci]"
+          
+          # Baixa as alterações remotas mais recentes antes do push
+          git pull --rebase origin main
           git push
 
       - name: Upload generated document
