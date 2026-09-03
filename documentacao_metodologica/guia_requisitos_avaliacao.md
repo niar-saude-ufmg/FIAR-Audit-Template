@@ -1279,7 +1279,7 @@ A conformidade é consolidada para a combinação **Tarefa de IA + Versão Avali
 ### Documentação operacional relacionada do FIAR-Audit-Template
 
 - `documentacao_metodologica/guia_operacional_pre_avaliacao_pilotos.md`
-- `avaliacao_niar/avaliacao_por_dimensao/template_avaliacao_requisito.md`
+- `avaliacao_niar/avaliacao_por_requisito/template_avaliacao_requisito.md`
 
 > Este guia deve referenciar prioritariamente a documentação canônica do FIAR-Saúde. Referências externas, como normas, legislação ou literatura científica, devem ser incorporadas somente quando a documentação normativa do FIAR-Saúde estabelecer explicitamente esse vínculo ou quando forem necessárias para fundamentar uma orientação metodológica específica.
 
