@@ -22,7 +22,7 @@ Para cada requisito a ser analisado:
 2. consultar as orientações operacionais em:
    `documentacao_metodologica/guia_requisitos_avaliacao.md`;
 3. utilizar:
-   `template_avaliacao_requisito.md`;
+   `../avaliacao_por_requisito/template_avaliacao_requisito.md`;
 4. determinar a aplicabilidade antes da análise das evidências;
 5. registrar somente evidências efetivamente verificadas no ciclo;
 6. registrar os mecanismos de verificação efetivamente utilizados;
@@ -79,7 +79,7 @@ Ela não deve:
 
 Para avaliação individual de requisito:
 
-[`template_avaliacao_requisito.md`](template_avaliacao_requisito.md)
+[`template_avaliacao_requisito.md`](../avaliacao_por_requisito/template_avaliacao_requisito.md)
 
 Para consolidação da dimensão:
 
