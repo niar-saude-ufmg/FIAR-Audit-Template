@@ -1,6 +1,4 @@
-# Prompt 1
-
-```text
+ 
 
 # Prompt 1
 
@@ -24,6 +22,8 @@ Use como referência obrigatória:
 - `avaliacao_niar/registro_de_inconsistencias.md`;
 - `documentacao_projeto/controle_artefatos.md`;
 - `documentacao_projeto/historico_validacao.md`.
+- `documentacao_metodologica/guia_requisitos_avaliacao.md`;
+- `avaliacao_niar/perguntas_para_entrevista_inicial.md`, quando houver necessidade de esclarecimentos com a equipe.
 
 Regras de trabalho:
 
@@ -36,9 +36,10 @@ Regras de trabalho:
 - informação ausente não é, por si só, inconsistência;
 - antes de classificar uma divergência como inconsistência, verifique se as fontes se referem ao mesmo fato, versão, período, população e contexto;
 - divergência confirmada deve ser registrada em `registro_de_inconsistencias.md`;
-- pendência deve representar uma questão efetivamente não resolvida;
+- pendência deve representar uma questão efetivamente não resolvida e material para alguma etapa, requisito ou decisão do ciclo;
 - antes de solicitar algo à equipe do projeto, verifique se a questão pode ser resolvida com evidências já disponíveis ou por verificação interna do NIAR;
 - classifique cada pendência quanto ao impacto na continuidade: impeditiva, não impeditiva ou ainda não determinado;
+- registre em qual etapa o impacto da pendência deverá ser reavaliado;
 - não atribua resultado de conformidade nesta etapa.
 
 
@@ -64,8 +65,8 @@ Execute a pré-avaliação nesta ordem:
 5. Faça verificações cruzadas entre as fontes relevantes.
 
 6. Ao identificar um possível problema, classifique-o antes de registrá-lo:
-   - informação não localizada ou não confirmada → possível pendência;
-   - evidência insuficiente para sustentar uma afirmação → lacuna de evidência / possível pendência;
+   - informação não localizada ou não confirmada → lacuna a analisar; somente registrar como pendência se for necessária e material para o ciclo;
+   - evidência insuficiente para sustentar uma afirmação → lacuna de evidência; avaliar sua materialidade antes de registrar pendência;
    - afirmações aparentemente divergentes → verificar primeiro escopo, versão, período e contexto;
    - afirmações incompatíveis sobre o mesmo fato, após verificação → inconsistência confirmada;
    - questão solucionável pelo próprio NIAR → verificação interna, não pendência do projeto;
@@ -77,15 +78,15 @@ Execute a pré-avaliação nesta ordem:
 
 9. Determine se existem verificações internas adicionais que o NIAR pode realizar antes de contatar a equipe.
 
-10. Determine quais evidências adicionais são realmente necessárias.
+10. Determine quais evidências adicionais são realmente necessárias. Para cada evidência adicional, registre qual requisito, etapa ou decisão do ciclo justifica sua necessidade.
 
-11. Identifique quais questões dependem efetivamente da equipe do projeto.
+11. Identifique quais questões dependem efetivamente da equipe do projeto. Quando houver necessidade de esclarecimento com a equipe, formule somente perguntas derivadas das lacunas efetivamente identificadas. Não utilize o roteiro de entrevista como checklist obrigatório.
 
 12. Determine se as pendências abertas impedem ou não o início da avaliação por requisito.
 
 13. Atualize a síntese e o estado de continuidade da pré-avaliação.
 
-Não avance para avaliação por requisito até concluir esta sequência.
+Não avance para avaliação por requisito até que a pré-avaliação tenha condições de continuidade explicitamente registradas.
 
 Trabalhe de forma incremental. Não solicite todos os artefatos de uma vez. 
 
@@ -93,7 +94,7 @@ Quando identificar necessidade de evidência adicional:
 - verifique primeiro se ela pode ser obtida a partir das fontes já disponíveis ou por verificação interna do NIAR;
 - se for necessário solicitar algo à equipe do projeto, indique exatamente qual informação ou evidência é necessária;
 - explicite qual questão essa evidência deve responder;
-- quando houver necessidade de um arquivo específico, indique qual arquivo deve ser solicitado e por que ele é necessário.
+- quando uma lacuna exigir evidência adicional, determine primeiro o conteúdo necessário; somente depois indique um arquivo ou registro específico, quando essa forma de evidência for realmente necessária.
 ```
 
 # Prompt 2
@@ -106,10 +107,10 @@ Revise a pré-avaliação documental concluída e verifique:
 2. se o inventário documental necessário foi concluído;
 3. se as verificações cruzadas necessárias foram realizadas;
 4. se todas as divergências confirmadas estão registradas;
-5. se todas as pendências abertas têm impacto sobre a continuidade explicitamente classificado;
+5. se todas as pendências abertas têm seu impacto sobre a continuidade explicitamente classificado e a etapa de reavaliação identificada;
 6. se ainda existem verificações internas do NIAR;
 7. quais questões dependem efetivamente da equipe do projeto;
-8. se existem evidências adicionais realmente necessárias;
+8. se existem evidências adicionais realmente necessárias e qual requisito, etapa ou decisão do ciclo justifica cada necessidade;
 9. se a avaliação por requisito pode ser iniciada.
 
 Não crie novas pendências apenas por ausência de templates ou artefatos.
@@ -117,6 +118,10 @@ Não crie novas pendências apenas por ausência de templates ou artefatos.
 Não atribua resultado de conformidade.
 
 Não reabra questões já resolvidas ou canceladas sem nova evidência que justifique isso.
+
+Não transforme automaticamente informação ausente ou evidência insuficiente em pendência.
+
+Não trate divergência aparente como inconsistência antes de verificar se as fontes se referem ao mesmo fato, versão, período, população e contexto.
 
 Gere apenas os ajustes necessários nos registros da pré-avaliação e indique de forma objetiva o estado final para continuidade.
 ```
