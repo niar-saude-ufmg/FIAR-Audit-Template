@@ -6,7 +6,7 @@ Uma inconsistência deve permanecer visível até que seja:
 
 - corrigida;
 - esclarecida;
-- sustentada por nova evidência;
+- resolvida por nova evidência;
 - submetida a enquadramento metodológico;
 - encaminhada para decisão institucional, quando aplicável.
 
@@ -86,6 +86,8 @@ A inconsistência impede identificar ou avaliar adequadamente:
 - responsável;
 - risco relevante.
 
+A gravidade deve refletir o impacto da inconsistência sobre a avaliação, e não apenas a importância geral do tema.
+
 ### Relevante
 
 Afeta consistência, interpretação, rastreabilidade ou avaliação de uma dimensão,
@@ -163,7 +165,7 @@ Estados:
 Descrever como a inconsistência afeta:
 
 - delimitação da tarefa;
-- Versionamento;
+- versionamento;
 - Contexto de Uso;
 - avaliação técnica;
 - interpretação de resultados;
@@ -189,7 +191,7 @@ Registrar somente se a divergência não puder ser resolvida pelas evidências j
 
 ### Verificação pelo NIAR-Saúde
 
-[registrar o impacto identificado pelo NIAR-Saúde]
+[registrar a verificação realizada pelo NIAR-Saúde e seu resultado]
 
 Registrar:
 
@@ -201,16 +203,16 @@ Registrar:
 
 ### Resolução
 
-| Campo                                              | Preenchimento |
-| -------------------------------------------------- | ------------- |
-| Estado final                                       |               |
-| Informação ou descrição considerada sustentada |               |
-| Justificativa                                      |               |
-| Evidência                                         |               |
-| Documento corrigido                                |               |
-| Correção necessária                             |               |
-| Data                                               |               |
-| Verificado por                                     |               |
+| Campo                                                    | Preenchimento |
+| -------------------------------------------------------- | ------------- |
+| Estado final                                             |               |
+| Informação ou descrição sustentada pelas evidências |               |
+| Justificativa                                            |               |
+| Evidência                                               |               |
+| Documento corrigido                                      |               |
+| Correção necessária                                   |               |
+| Data                                                     |               |
+| Verificado por                                           |               |
 
 ---
 
@@ -270,9 +272,9 @@ Registrar:
 
 ## 8. Inconsistências com possível escalonamento
 
-| ID      | Motivo | Risco ou impacto | Evidência necessária | Estado |
-| ------- | ------ | ---------------- | ---------------------- | ------ |
-| INC-XXX |        |                  |                        |        |
+| ID      | Motivo | Risco ou impacto | Questão a deliberar / evidência relevante  | Estado |
+| ------- | ------ | ---------------- | -------------------------------------------- | ------ |
+| INC-XXX |        |                  |                                              |        |
 
 Utilizar, quando aplicável:
 
@@ -284,21 +286,21 @@ Utilizar, quando aplicável:
 
 ## 9. Resumo
 
-| Categoria | Quantidade |
-|---|---:|
-| Abertas | 0 |
-| Críticas | 0 |
-| Relevantes | 0 |
-| Menores | 0 |
-| Respondidas — em verificação | 0 |
-| Resolvidas | 0 |
-| Encaminhadas para decisão institucional | 0 |
+| Categoria                                | Quantidade |
+| ---------------------------------------- | ---------: |
+| Abertas                                  |          0 |
+| Críticas                                |          0 |
+| Relevantes                               |          0 |
+| Menores                                  |          0 |
+| Respondidas — em verificação          |          0 |
+| Resolvidas                               |          0 |
+| Encaminhadas para decisão institucional |          0 |
 
 ---
 
 ## 10. Histórico de versões
 
-| Versão | Data | Responsável | Alteração           | Status                   |
-| ------- | ---- | ------------ | --------------------- | ------------------------ |
-| 0.1     |      | NIAR-Saúde  | Criação do registro | Rascunho interno do NIAR |
-| 0.2 | 26/08/2026 | NIAR-Saúde | Revisão metodológica do registro: resolução por nova evidência, separação entre resolução da inconsistência e correção documental e verificação prévia pelo NIAR-Saúde | Em uso |
+| Versão | Data       | Responsável | Alteração                                                                                                                                                                            | Status                   |
+| ------- | ---------- | ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
+| 0.1     |            | NIAR-Saúde  | Criação do registro                                                                                                                                                                  | Rascunho interno do NIAR |
+| 0.2     | 26/08/2026 | NIAR-Saúde  | Revisão metodológica do registro: resolução por nova evidência, separação entre resolução da inconsistência e correção documental e verificação prévia pelo NIAR-Saúde | Em uso                   |

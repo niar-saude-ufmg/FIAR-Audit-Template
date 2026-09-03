@@ -42,7 +42,7 @@ documentacao_projeto/
 avaliacao_niar/
 ├── pre_avaliacao_documental.md
 └── registro_de_inconsistencias.md
-````
+```
 
 Os artefatos técnicos do projeto devem ser analisados apenas quando necessários para responder às questões da pré-avaliação.
 
@@ -198,7 +198,7 @@ Pode envolver:
 * confirmação factual;
 * verificação pelo NIAR-Saúde;
 * análise técnica adicional;
-* decisão institucional.
+* decisão institucional pendente.
 
 Antes de abrir uma pendência por ausência de artefato, verificar:
 
@@ -260,7 +260,7 @@ Exemplo:
 
 Pendências não impeditivas podem permanecer abertas em paralelo.
 
-O registro deve indicar em qual etapa sua resolução se tornará necessária.
+O registro deve indicar em qual etapa seu impacto deverá ser reavaliado e se sua resolução será necessária para permitir a continuidade ou a conclusão dessa etapa.
 
 ---
 
@@ -324,6 +324,8 @@ Antes de iniciar a avaliação por requisito, verificar se:
 
 A existência de pendências abertas não impede automaticamente o início da avaliação por requisito.
 
+Pendências não impeditivas podem permanecer abertas em paralelo, desde que seu impacto seja reavaliado antes da etapa em que se tornem materiais para a consolidação por dimensão, para o resultado formal da avaliação ou para eventual decisão institucional.
+
 O NIAR-Saúde deve registrar explicitamente se existem condições para continuidade.
 
 ---
@@ -338,8 +340,8 @@ Para cada requisito:
 2. registrar `Aplicável` ou `Não aplicável`;
 3. justificar a decisão;
 4. identificar as evidências pertinentes;
-5. analisar suficiência, consistência, rastreabilidade e contextualização;
-6. somente então atribuir o resultado previsto pela metodologia.
+5. analisar suficiência, consistência, rastreabilidade e contextualização.
+6. registrar o achado, as limitações, pendências, inconsistências e eventual sinal de governança sustentados pela análise.
 
 A existência de um artefato não substitui a análise de aplicabilidade e suficiência das evidências.
 
@@ -367,9 +369,9 @@ Antes de encerrar a pré-avaliação:
 
 ## 14. Controle de versão
 
-Ao concluir um bloco metodológico relevante, realizar commit antes de iniciar a etapa seguinte.
+Mudanças metodológicas ou documentais relevantes devem ser versionadas de forma rastreável.
 
-Exemplos de marcos:
+Quando o Git for utilizado como mecanismo de versionamento, commits podem registrar marcos relevantes do ciclo, como:
 
 * conclusão da delimitação da unidade de avaliação;
 * conclusão da pré-avaliação documental;
@@ -386,7 +388,7 @@ historico_validacao.md
 
 ## 15. Registros relacionados
 
-Utilizar em conjunto:
+Utilizar, conforme aplicável ao ciclo:
 
 ```text
 documentacao_projeto/identificacao_avaliacao.md
@@ -396,10 +398,8 @@ documentacao_projeto/registro_de_pendencias.md
 
 avaliacao_niar/pre_avaliacao_documental.md
 avaliacao_niar/registro_de_inconsistencias.md
-
+avaliacao_niar/perguntas_para_entrevista_inicial.md
+avaliacao_niar/avaliacao_por_requisito/template_avaliacao_requisito.md
 ```
 
 Este guia deve ser utilizado como roteiro operacional. As regras e definições formais permanecem nos documentos metodológicos e templates correspondentes.
-
-
-

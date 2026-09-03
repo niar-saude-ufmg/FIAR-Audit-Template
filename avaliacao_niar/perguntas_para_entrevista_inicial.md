@@ -2,17 +2,17 @@
 
 ## Controle do documento
 
-| Campo                       | Preenchimento                                     |
-| --------------------------- | ------------------------------------------------- |
-| Versão do documento        | 0.1                                               |
-| Status                      | Rascunho interno do NIAR                          |
-| Elaborado por               | NIAR-Saúde                                       |
-| Projeto                     | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-| Tarefa de IA                | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-| Versão Avaliável          | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-| Contexto de Uso             | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-| Data prevista da entrevista | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-| Participantes esperados     | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
+| Campo                       | Preenchimento                                                     |
+| --------------------------- | ----------------------------------------------------------------- |
+| Versão do documento        | 0.1                                                               |
+| Status                      | Rascunho interno do NIAR                                          |
+| Elaborado por               | NIAR-Saúde                                                       |
+| Projeto                     | [preencher pelo NIAR-Saúde a partir das evidências verificadas] |
+| Tarefa de IA                | [preencher pelo NIAR-Saúde a partir das evidências verificadas] |
+| Versão Avaliável          | [preencher pelo NIAR-Saúde a partir das evidências verificadas] |
+| Contexto de Uso             | [preencher pelo NIAR-Saúde a partir das evidências verificadas] |
+| Data prevista da entrevista | [preencher pelo NIAR-Saúde a partir das evidências verificadas] |
+| Participantes esperados     | [preencher pelo NIAR-Saúde a partir das evidências verificadas] |
 
 > Este documento deve conter perguntas específicas, derivadas das lacunas e inconsistências identificadas nos artefatos recebidos.
 >
@@ -24,17 +24,11 @@
 
 A entrevista tem como objetivo esclarecer questões que não puderam ser resolvidas por meio da inspeção documental.
 
-A entrevista não substitui:
+A entrevista não substitui evidências documentais, técnicas ou institucionais quando estas forem necessárias e aplicáveis à questão analisada.
 
-- atualização de Data Card;
-- atualização de Model Card;
-- fornecimento de evidência;
-- registro de decisão técnica;
-- identificação de versão;
-- definição formal de responsável;
-- produção de análise técnica.
+Quando uma informação confirmada oralmente precisar de registro persistente, deve-se identificar o artefato ou registro adequado para incorporá-la.
 
-Informações confirmadas oralmente devem ser incorporadas ao artefato correspondente sempre que aplicável.
+Informações confirmadas oralmente devem ser registradas de forma rastreável e, quando necessário, incorporadas ao artefato ou registro pertinente.
 
 ---
 
@@ -42,29 +36,31 @@ Informações confirmadas oralmente devem ser incorporadas ao artefato correspon
 
 ### Artefatos revisados antes da entrevista
 
-| ID      | Artefato                                          | Versão | Data | Observação |
-| ------- | ------------------------------------------------- | ------- | ---- | ------------ |
-| ART-001 | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |         |      |              |
+| ID      | Artefato                                                          | Versão | Data | Observação |
+| ------- | ----------------------------------------------------------------- | ------- | ---- | ------------ |
+| ART-001 | [preencher pelo NIAR-Saúde a partir das evidências verificadas] |         |      |              |
 
 ### Pendências relacionadas
 
-| ID      | Pendência                                         | Tipo | Prioridade |
-| ------- | -------------------------------------------------- | ---- | ---------- |
-| PEN-001 | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |      |            |
+| ID      | Pendência                                                         | Tipo | Prioridade |
+| ------- | ------------------------------------------------------------------ | ---- | ---------- |
+| PEN-001 | [registrar somente pendências já identificadas pelo NIAR-Saúde] |      |            |
 
 ### Inconsistências relacionadas
 
-| ID      | Inconsistência                                                | Documentos envolvidos |
-| ------- | -------------------------------------------------------------- | --------------------- |
-| INC-001 | [INCONSISTÊNCIA IDENTIFICADA — verificar entre os artefatos] |                       |
+| ID      | Inconsistência                                  | Documentos envolvidos |
+| ------- | ------------------------------------------------ | --------------------- |
+| INC-001 | [registrar somente inconsistências confirmadas] |                       |
 
 ---
 
 ## 3. Tarefa de IA e Contexto de Uso
 
-| ID        | Pergunta                                          | Motivo | Fonte da dúvida | Resposta | Evidência ou atualização necessária |
-| --------- | ------------------------------------------------- | ------ | ---------------- | -------- | --------------------------------------- |
-| Q-TAR-001 | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |        |                  |          |                                         |
+| ID        | Pergunta                                                          | Motivo | Fonte da dúvida | Resposta | Evidência ou atualização necessária |
+| --------- | ----------------------------------------------------------------- | ------ | ---------------- | -------- | --------------------------------------- |
+| Q-TAR-001 | [preencher pelo NIAR-Saúde a partir das evidências verificadas] |        |                  |          |                                         |
+
+As questões apresentadas nas seções seguintes são exemplos de perguntas possíveis. Não constituem checklist obrigatório e não devem ser feitas quando a informação já estiver suficientemente estabelecida pelas evidências verificadas.
 
 Questões possíveis, somente quando aplicáveis:
 
@@ -84,9 +80,9 @@ Questões possíveis, somente quando aplicáveis:
 
 ## 4. Dados
 
-| ID        | Pergunta                                          | Motivo | Fonte da dúvida | Resposta | Evidência ou atualização necessária |
-| --------- | ------------------------------------------------- | ------ | ---------------- | -------- | --------------------------------------- |
-| Q-DAD-001 | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |        |                  |          |                                         |
+| ID        | Pergunta                                                          | Motivo | Fonte da dúvida | Resposta | Evidência ou atualização necessária |
+| --------- | ----------------------------------------------------------------- | ------ | ---------------- | -------- | --------------------------------------- |
+| Q-DAD-001 | [preencher pelo NIAR-Saúde a partir das evidências verificadas] |        |                  |          |                                         |
 
 Questões possíveis:
 
@@ -105,9 +101,9 @@ Questões possíveis:
 
 ## 5. Modelo
 
-| ID        | Pergunta                                          | Motivo | Fonte da dúvida | Resposta | Evidência ou atualização necessária |
-| --------- | ------------------------------------------------- | ------ | ---------------- | -------- | --------------------------------------- |
-| Q-MOD-001 | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |        |                  |          |                                         |
+| ID        | Pergunta                                                          | Motivo | Fonte da dúvida | Resposta | Evidência ou atualização necessária |
+| --------- | ----------------------------------------------------------------- | ------ | ---------------- | -------- | --------------------------------------- |
+| Q-MOD-001 | [preencher pelo NIAR-Saúde a partir das evidências verificadas] |        |                  |          |                                         |
 
 Questões possíveis:
 
@@ -126,9 +122,9 @@ Questões possíveis:
 
 ## 6. Validação
 
-| ID        | Pergunta                                          | Motivo | Fonte da dúvida | Resposta | Evidência ou atualização necessária |
-| --------- | ------------------------------------------------- | ------ | ---------------- | -------- | --------------------------------------- |
-| Q-VAL-001 | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |        |                  |          |                                         |
+| ID        | Pergunta                                                          | Motivo | Fonte da dúvida | Resposta | Evidência ou atualização necessária |
+| --------- | ----------------------------------------------------------------- | ------ | ---------------- | -------- | --------------------------------------- |
+| Q-VAL-001 | [preencher pelo NIAR-Saúde a partir das evidências verificadas] |        |                  |          |                                         |
 
 Questões possíveis:
 
@@ -147,9 +143,9 @@ Questões possíveis:
 
 ## 7. Justiça
 
-| ID        | Pergunta                                          | Motivo | Fonte da dúvida | Resposta | Evidência ou atualização necessária |
-| --------- | ------------------------------------------------- | ------ | ---------------- | -------- | --------------------------------------- |
-| Q-JUS-001 | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |        |                  |          |                                         |
+| ID        | Pergunta                                                          | Motivo | Fonte da dúvida | Resposta | Evidência ou atualização necessária |
+| --------- | ----------------------------------------------------------------- | ------ | ---------------- | -------- | --------------------------------------- |
+| Q-JUS-001 | [preencher pelo NIAR-Saúde a partir das evidências verificadas] |        |                  |          |                                         |
 
 Questões possíveis:
 
@@ -171,9 +167,9 @@ Não transformar ausência de evidência em ausência de disparidade.
 
 ## 8. Transparência e explicabilidade
 
-| ID        | Pergunta                                          | Motivo | Fonte da dúvida | Resposta | Evidência ou atualização necessária |
-| --------- | ------------------------------------------------- | ------ | ---------------- | -------- | --------------------------------------- |
-| Q-TRA-001 | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |        |                  |          |                                         |
+| ID        | Pergunta                                                          | Motivo | Fonte da dúvida | Resposta | Evidência ou atualização necessária |
+| --------- | ----------------------------------------------------------------- | ------ | ---------------- | -------- | --------------------------------------- |
+| Q-TRA-001 | [preencher pelo NIAR-Saúde a partir das evidências verificadas] |        |                  |          |                                         |
 
 Questões possíveis:
 
@@ -192,15 +188,15 @@ Questões possíveis:
 
 ## 9. Privacidade
 
-| ID        | Pergunta                                          | Motivo | Fonte da dúvida | Resposta | Evidência ou atualização necessária |
-| --------- | ------------------------------------------------- | ------ | ---------------- | -------- | --------------------------------------- |
-| Q-PRI-001 | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |        |                  |          |                                         |
+| ID        | Pergunta                                                          | Motivo | Fonte da dúvida | Resposta | Evidência ou atualização necessária |
+| --------- | ----------------------------------------------------------------- | ------ | ---------------- | -------- | --------------------------------------- |
+| Q-PRI-001 | [preencher pelo NIAR-Saúde a partir das evidências verificadas] |        |                  |          |                                         |
 
 Questões possíveis:
 
 - Quem é responsável pelo tratamento dos dados?
-- Qual é a base legal registrada?
-- Que aprovação ética cobre o uso realizado?
+- Qual base legal ou fundamento para o tratamento está documentado, quando aplicável?
+- Existe aprovação ética aplicável ao uso realizado? Em caso afirmativo, qual é seu escopo?
 - O escopo atual corresponde ao escopo aprovado?
 - Que técnicas de anonimização ou pseudonimização foram aplicadas?
 - Quem possui acesso?
@@ -214,9 +210,9 @@ Questões possíveis:
 
 ## 10. Segurança
 
-| ID        | Pergunta                                          | Motivo | Fonte da dúvida | Resposta | Evidência ou atualização necessária |
-| --------- | ------------------------------------------------- | ------ | ---------------- | -------- | --------------------------------------- |
-| Q-SEG-001 | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |        |                  |          |                                         |
+| ID        | Pergunta                                                          | Motivo | Fonte da dúvida | Resposta | Evidência ou atualização necessária |
+| --------- | ----------------------------------------------------------------- | ------ | ---------------- | -------- | --------------------------------------- |
+| Q-SEG-001 | [preencher pelo NIAR-Saúde a partir das evidências verificadas] |        |                  |          |                                         |
 
 Questões possíveis:
 
@@ -239,13 +235,13 @@ sistema implantado.
 
 ## 11. Governança
 
-| ID        | Pergunta                                          | Motivo | Fonte da dúvida | Resposta | Evidência ou atualização necessária |
-| --------- | ------------------------------------------------- | ------ | ---------------- | -------- | --------------------------------------- |
-| Q-GOV-001 | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |        |                  |          |                                         |
+| ID        | Pergunta                                                          | Motivo | Fonte da dúvida | Resposta | Evidência ou atualização necessária |
+| --------- | ----------------------------------------------------------------- | ------ | ---------------- | -------- | --------------------------------------- |
+| Q-GOV-001 | [preencher pelo NIAR-Saúde a partir das evidências verificadas] |        |                  |          |                                         |
 
 Questões possíveis:
 
-- Quem aprovou o objetivo e o escopo?
+- Há registro de aprovação, validação ou definição institucional do objetivo e do escopo? Quem é responsável por essa definição?
 - Quem pode autorizar mudanças?
 - Quais condicionantes já foram definidos?
 - Existe processo de revisão?
@@ -260,9 +256,9 @@ Questões possíveis:
 
 ## 12. Rastreabilidade
 
-| ID        | Pergunta                                          | Motivo | Fonte da dúvida | Resposta | Evidência ou atualização necessária |
-| --------- | ------------------------------------------------- | ------ | ---------------- | -------- | --------------------------------------- |
-| Q-RAS-001 | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |        |                  |          |                                         |
+| ID        | Pergunta                                                          | Motivo | Fonte da dúvida | Resposta | Evidência ou atualização necessária |
+| --------- | ----------------------------------------------------------------- | ------ | ---------------- | -------- | --------------------------------------- |
+| Q-RAS-001 | [preencher pelo NIAR-Saúde a partir das evidências verificadas] |        |                  |          |                                         |
 
 Questões possíveis:
 
@@ -280,9 +276,9 @@ Questões possíveis:
 
 ## 13. Responsabilização
 
-| ID        | Pergunta                                          | Motivo | Fonte da dúvida | Resposta | Evidência ou atualização necessária |
-| --------- | ------------------------------------------------- | ------ | ---------------- | -------- | --------------------------------------- |
-| Q-RES-001 | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |        |                  |          |                                         |
+| ID        | Pergunta                                                          | Motivo | Fonte da dúvida | Resposta | Evidência ou atualização necessária |
+| --------- | ----------------------------------------------------------------- | ------ | ---------------- | -------- | --------------------------------------- |
+| Q-RES-001 | [preencher pelo NIAR-Saúde a partir das evidências verificadas] |        |                  |          |                                         |
 
 Questões possíveis:
 
@@ -290,7 +286,7 @@ Questões possíveis:
 - Quem responde pelos dados?
 - Quem responde pelo modelo?
 - Quem responde pela validação?
-- Quem responderá pela implantação?
+- Quem responderá pela implantação, caso a implantação esteja no escopo atual ou previsto?
 - Quem responderá pelo monitoramento?
 - Quem pode aceitar ou rejeitar uma mudança?
 - Os papéis estão formalmente registrados?
@@ -300,9 +296,9 @@ Questões possíveis:
 
 ## 14. Mudanças futuras e versionamento
 
-| ID        | Pergunta                                          | Motivo | Fonte da dúvida | Resposta | Evidência ou atualização necessária |
-| --------- | ------------------------------------------------- | ------ | ---------------- | -------- | --------------------------------------- |
-| Q-VER-001 | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |        |                  |          |                                         |
+| ID        | Pergunta                                                          | Motivo | Fonte da dúvida | Resposta | Evidência ou atualização necessária |
+| --------- | ----------------------------------------------------------------- | ------ | ---------------- | -------- | --------------------------------------- |
+| Q-VER-001 | [preencher pelo NIAR-Saúde a partir das evidências verificadas] |        |                  |          |                                         |
 
 Questões possíveis:
 
@@ -321,23 +317,23 @@ Questões possíveis:
 
 ## 15. Confirmações orais
 
-| ID      | Informação confirmada oralmente | Confirmada por | Data | Artefato que deve ser atualizado | Estado |
+| ID      | Informação confirmada oralmente | Confirmada por | Data | Registro ou artefato relacionado | Estado |
 | ------- | --------------------------------- | -------------- | ---- | -------------------------------- | ------ |
 | ORA-001 |                                   |                |      |                                  |        |
 
 Utilizar:
 
 ```text
-[CONFIRMAÇÃO ORAL — requer incorporação ao artefato correspondente]
+[CONFIRMAÇÃO ORAL — avaliar necessidade de registro documental complementar]
 ```
 
 ---
 
-## 16. Novas evidências solicitadas
+## 16. Evidências ou esclarecimentos adicionais
 
-| ID      | Evidência solicitada | Responsável | Prazo | Pendência relacionada | Estado |
-| ------- | --------------------- | ------------ | ----- | ---------------------- | ------ |
-| SOL-001 |                       |              |       |                        |        |
+| ID      | Evidência ou esclarecimento | Motivo | Requisito / etapa relacionada | Responsável | Prazo | Pendência relacionada | Estado |
+| ------- | ---------------------------- | ------ | ----------------------------- | ------------ | ----- | ---------------------- | ------ |
+| SOL-001 |                              |        |                               |              |       |                        |        |
 
 ---
 
@@ -353,23 +349,23 @@ Utilizar:
 
 ### Pontos esclarecidos
 
-* [INFORMAÇÃO PENDENTE — preencher pelo projeto]
+* [preencher pelo NIAR-Saúde a partir das evidências verificadas]
 
 ### Pontos parcialmente esclarecidos
 
-* [INFORMAÇÃO PENDENTE — preencher pelo projeto]
+* [preencher pelo NIAR-Saúde a partir das evidências verificadas]
 
 ### Pontos não esclarecidos
 
-* [INFORMAÇÃO PENDENTE — preencher pelo projeto]
+* [preencher pelo NIAR-Saúde a partir das evidências verificadas]
 
-### Novas inconsistências
+### Inconsistências confirmadas durante ou após a entrevista
 
 * [INCONSISTÊNCIA IDENTIFICADA — verificar entre os artefatos]
 
 ### Próximo passo
 
-[INFORMAÇÃO PENDENTE — preencher pelo projeto]
+[preencher pelo NIAR-Saúde a partir das evidências verificadas]
 
 ---
 
@@ -378,6 +374,3 @@ Utilizar:
 | Versão | Data | Responsável | Alteração                                    | Status                   |
 | ------- | ---- | ------------ | ---------------------------------------------- | ------------------------ |
 | 0.1     |      | NIAR-Saúde  | Criação do roteiro específico da entrevista | Rascunho interno do NIAR |
-
-
-
