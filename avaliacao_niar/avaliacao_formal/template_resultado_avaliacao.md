@@ -16,7 +16,9 @@
 | Avaliadores          |               |
 
 > Este documento registra o resultado formal da avaliação técnica realizada pelo NIAR-Saúde para a combinação **Tarefa de IA + Versão Avaliável + Contexto de Uso**.
->
+
+> O resultado consolida as avaliações por requisito e por dimensão realizadas no ciclo correspondente.
+
 > Não constitui certificação técnica, validação clínica, autorização regulatória ou autorização automática de implantação.
 
 ---
@@ -37,57 +39,141 @@
 
 ---
 
-## 2. Síntese da avaliação
+## 2. Síntese das dimensões avaliadas
 
-Apresentar uma síntese dos resultados das dimensões aplicáveis, incluindo achados, limitações, pendências e inconsistências relevantes.
+Esta seção consolida os resultados das avaliações por dimensão e não substitui os respectivos registros detalhados.
+
+| Dimensão           | Cobertura dos requisitos | Síntese | Limitações relevantes | Pendências / inconsistências | Sinal de governança |
+| ------------------- | ------------------------ | -------- | ----------------------- | ------------------------------ | -------------------- |
+| Governança         |                          |          |                         |                                |                      |
+| Segurança          |                          |          |                         |                                |                      |
+| Privacidade         |                          |          |                         |                                |                      |
+| Responsabilização |                          |          |                         |                                |                      |
+| Rastreabilidade     |                          |          |                         |                                |                      |
+| Justiça            |                          |          |                         |                                |                      |
+| Transparência      |                          |          |                         |                                |                      |
+
+A síntese deve preservar a rastreabilidade até as avaliações por dimensão e por requisito.
+
+**Cobertura dos requisitos** deve indicar, de forma sintética, quais requisitos da dimensão foram avaliados como aplicáveis ou não aplicáveis no ciclo. A aplicabilidade é determinada no nível de cada requisito e não deve ser atribuída automaticamente à dimensão como um todo.
+
+---
+
+## 3. Síntese da avaliação
+
+Apresentar uma síntese integrada dos resultados do ciclo, considerando:
+
+- achados relevantes;
+- limitações materiais;
+- pendências abertas;
+- inconsistências confirmadas;
+- riscos ou impactos relevantes;
+- sinais de governança;
+- aspectos que sustentam ou impedem o fechamento da avaliação.
 
 **Síntese:**
 
 ---
 
-## 3. Resultado de conformidade
+## 4. Resultado de conformidade
+
+### Critérios para atribuição do resultado
+
+A classificação deve seguir os estados de conformidade do FIAR-Saúde:
+
+- **Conforme:** os requisitos aplicáveis estão suficientemente atendidos pelas evidências verificadas no ciclo, consideradas adequadas, consistentes e rastreáveis. Podem permanecer questões não materiais de acompanhamento, desde que não impeçam a conclusão sobre o atendimento dos requisitos aplicáveis;
+- **Pendente:** permanecem lacunas, inconsistências ou questões materiais cuja resolução é necessária para concluir sobre o atendimento de um ou mais requisitos aplicáveis, sendo possível tratá-las dentro do ciclo de adequação;
+- **Não Conforme:** as evidências disponíveis são suficientes para concluir que existe falha material, ausência crítica ou inconsistência estrutural que impede o atendimento de um ou mais requisitos aplicáveis no escopo avaliado.
+
+A classificação deve considerar a materialidade dos achados e não deve ser determinada por contagem, média, percentual ou maioria de requisitos.
+
+A existência de uma pendência registrada não determina automaticamente o resultado `Pendente`. Deve-se avaliar se a questão aberta é material para a conclusão da avaliação.
+
+O fato de uma falha ser potencialmente corrigível em um ciclo futuro não impede, por si só, a classificação `Não Conforme` quando as evidências já permitem concluir que um requisito aplicável não está atendido no estado avaliado.
 
 **Resultado:** Conforme | Pendente | Não Conforme
 
-O resultado refere-se exclusivamente à Tarefa de IA, à Versão Avaliável e ao Contexto de Uso identificados neste documento e não deve ser inferido por contagem, média ou maioria dos resultados dos requisitos ou dimensões.
+O resultado refere-se exclusivamente à Tarefa de IA, à Versão Avaliável e ao Contexto de Uso identificados neste documento.
+
+O resultado não deve ser inferido por:
+
+- soma de requisitos;
+- média;
+- percentual;
+- maioria dos resultados;
+- mera presença ou ausência de artefatos.
 
 **Justificativa:**
 
-O resultado deve ser fundamentado nos achados consolidados e nos requisitos determinantes da avaliação.
+A justificativa deve explicitar os fundamentos que determinaram o resultado e preservar a rastreabilidade até as avaliações correspondentes.
 
-**Requisitos determinantes:**
+### Fundamentos determinantes do resultado
 
-**Limitações relevantes:**
+Registrar os requisitos, achados, limitações, pendências ou inconsistências que foram materialmente relevantes para a conclusão.
 
----
+- ...
 
-## 4. Pendências relevantes
+### Limitações relevantes para o resultado
 
-Registrar apenas pendências que permaneçam abertas ao final da avaliação e que tenham impacto relevante sobre o resultado ou acompanhamento.
-
-| ID | Pendência | Impacto | Responsável | Status |
-| -- | ---------- | ------- | ------------ | ------ |
-|    |            |         |              |        |
+- ...
 
 ---
 
-## 5. Sinais de governança
+## 5. Pendências e inconsistências relevantes
 
-| ID | Sinal | Fundamentação | Encaminhamento |
-| -- | ----- | --------------- | -------------- |
-|    |       |                 |                |
+### Pendências
+
+Registrar somente pendências que permaneçam abertas ao final da avaliação e que tenham impacto relevante sobre o resultado ou acompanhamento.
+
+| ID | Pendência | Impacto | Requisito / dimensão relacionada | Responsável | Estado |
+| -- | ---------- | ------- | --------------------------------- | ------------ | ------ |
+|    |            |         |                                   |              |        |
+
+### Inconsistências
+
+Registrar somente inconsistências confirmadas que permaneçam relevantes para a interpretação ou para ações posteriores.
+
+| ID | Inconsistência | Impacto | Requisito / dimensão relacionada | Estado |
+| -- | --------------- | ------- | --------------------------------- | ------ |
+|    |                 |         |                                   |        |
+
+Não criar novos registros nesta seção quando a questão já possuir ID no registro correspondente.
+
+---
+
+## 6. Sinais de governança
+
+| ID | Sinal | Origem | Fundamentação | Encaminhamento sugerido |
+| -- | ----- | ------ | --------------- | ----------------------- |
+|    |       |        |                 |                         |
 
 Nem todo resultado de avaliação produz sinal de governança.
 
+Pendências, inconsistências ou limitações não geram automaticamente sinal de governança.
+
+Um sinal de governança não constitui decisão institucional.
+
 ---
 
-## 6. Recomendações técnicas e condicionantes institucionais
+## 7. Recomendações técnicas e condicionantes institucionais
 
 ### Recomendações técnicas
 
+Registrar recomendações decorrentes da avaliação técnica.
+
+As recomendações:
+
+- não alteram automaticamente o resultado de conformidade;
+- não constituem condicionantes institucionais;
+- devem estar vinculadas aos achados ou limitações que as fundamentam.
+
+**Recomendações:**
+
+- ...
+
 ### Condicionantes institucionais
 
-Registrar apenas condicionantes já formalizados pela instância institucional competente.
+Registrar somente condicionantes já formalizados pela instância institucional competente.
 
 Se ainda não houve deliberação:
 
@@ -95,7 +181,7 @@ Se ainda não houve deliberação:
 
 ---
 
-## 7. Necessidade de escalonamento institucional
+## 8. Necessidade de escalonamento institucional
 
 **Há necessidade de escalonamento?** Sim | Não
 
@@ -105,43 +191,77 @@ Se sim:
 
 **Instância competente:**
 
-**Fundamentação técnica / referências de rastreabilidade:**
+**Fundamentação técnica:**
 
-A identificação de escalonamento não constitui decisão institucional.
+**Referências de rastreabilidade:**
 
----
-
-## 8. Gatilhos para reavaliação
-
-Registrar apenas gatilhos sustentados pelos resultados deste ciclo ou definidos pela documentação metodológica ou institucional aplicável.
+A indicação de necessidade de escalonamento é resultado da avaliação técnica e não constitui decisão institucional.
 
 ---
 
-## 9. Relação com a maturidade
+## 9. Gatilhos para reavaliação
+
+Registrar gatilhos de reavaliação sustentados:
+
+- pelos resultados deste ciclo;
+- pela natureza da Tarefa de IA;
+- pela Trilha de Execução;
+- por condicionantes institucionais já formalizados;
+- pela documentação metodológica aplicável.
+
+### Gatilhos identificados
+
+- ...
+
+Não transformar toda alteração técnica em gatilho automático de nova avaliação. A relevância da mudança deve ser considerada conforme a metodologia vigente.
+
+---
+
+## 10. Relação com a maturidade
 
 Este resultado não atribui automaticamente nível de maturidade ao projeto.
 
-As evidências deste ciclo poderão compor o histórico longitudinal utilizado na inferência futura de maturidade.
+A conformidade é um resultado referente à **Tarefa de IA + Versão Avaliável + Contexto de Uso**.
+
+A maturidade é uma propriedade longitudinal do projeto, inferida a partir da recorrência, continuidade e rastreabilidade das práticas de IA Responsável ao longo de múltiplos ciclos.
+
+As evidências deste ciclo poderão compor o histórico longitudinal utilizado em avaliações futuras de maturidade.
 
 ---
 
-## 10. Referências de rastreabilidade
+## 11. Referências de rastreabilidade
 
-**Avaliações por requisito relacionadas:**
+### Avaliações por requisito
 
-**Avaliações por dimensão relacionadas:**
+- ...
 
-**Pendências relacionadas:**
+### Avaliações por dimensão
 
-**Inconsistências relacionadas:**
+- ...
 
-**Registros de decisão técnica relacionados:**
+### Pendências relacionadas
 
-**Decisões institucionais relacionadas:**
+- ...
+
+### Inconsistências relacionadas
+
+- ...
+
+### Registros de decisão técnica relacionados
+
+- ...
+
+### Decisões institucionais relacionadas
+
+- ...
+
+### Outros registros utilizados
+
+- ...
 
 ---
 
-## 11. Declaração dos avaliadores
+## 12. Declaração dos avaliadores
 
 | Nome | Papel | Data | Registro |
 | ---- | ----- | ---- | -------- |
@@ -149,7 +269,7 @@ As evidências deste ciclo poderão compor o histórico longitudinal utilizado n
 
 ---
 
-## 12. Histórico de versões
+## 13. Histórico de versões
 
 | Versão | Data | Responsável | Alteração            | Status           |
 | ------- | ---- | ------------ | ---------------------- | ---------------- |

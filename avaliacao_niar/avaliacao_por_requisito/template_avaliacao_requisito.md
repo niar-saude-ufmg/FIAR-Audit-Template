@@ -7,6 +7,9 @@
 **ID do requisito:**
 **Requisito:**
 
+**Referência operacional:**
+`documentacao_metodologica/guia_requisitos_avaliacao.md`
+
 ---
 
 ## Aplicabilidade
@@ -17,23 +20,27 @@
 
 > A aplicabilidade deve ser determinada antes da análise das evidências, considerando a Tarefa de IA, a Versão Avaliável, o Contexto de Uso, a Trilha de Execução e o escopo do requisito.
 
-Se o requisito for classificado como **Não aplicável**, registrar a justificativa e encerrar a análise do requisito, salvo quando houver alguma observação de rastreabilidade relevante.
+Utilizar os aspectos de aplicabilidade descritos no `guia_requisitos_avaliacao.md` como orientação, sem tratá-los como critérios automáticos.
+
+Se o requisito for classificado como **Não aplicável**, registrar a justificativa e encerrar a análise do requisito, salvo quando houver observação de rastreabilidade relevante.
 
 ---
 
-## Evidências esperadas
+## Evidências pertinentes para este requisito
 
-Registrar quais tipos de evidência seriam adequados para analisar o requisito no contexto desta avaliação.
+Registrar quais tipos de evidência são pertinentes para analisar o requisito no contexto desta avaliação.
 
-A presença de um template ou diretório no repositório não implica, por si só, que a evidência correspondente seja obrigatória.
+Utilizar como orientação os exemplos apresentados no `guia_requisitos_avaliacao.md`, selecionando apenas os que forem adequados à Tarefa de IA, à Versão Avaliável, ao Contexto de Uso e à Trilha de Execução.
 
-**Evidências esperadas:**
+A presença de um template, diretório ou tipo de artefato no repositório não implica, por si só, que essa evidência seja obrigatória.
+
+**Evidências pertinentes:**
 
 ---
 
 ## Evidências disponíveis
 
-Registrar somente evidências efetivamente localizadas ou fornecidas.
+Registrar somente evidências efetivamente localizadas, fornecidas ou verificadas no ciclo atual.
 
 Para cada evidência, indicar, quando possível:
 
@@ -41,7 +48,8 @@ Para cada evidência, indicar, quando possível:
 * versão;
 * data;
 * seção, página, tabela ou trecho relevante;
-* vínculo com a Tarefa de IA e a Versão Avaliável.
+* vínculo com a Tarefa de IA e a Versão Avaliável;
+* questão do requisito que a evidência ajuda a responder.
 
 **Evidências disponíveis:**
 
@@ -49,7 +57,9 @@ Para cada evidência, indicar, quando possível:
 
 ## Mecanismos de verificação utilizados
 
-Registrar os mecanismos efetivamente utilizados na análise deste requisito.
+Registrar somente os mecanismos efetivamente utilizados na análise deste requisito.
+
+Os mecanismos descritos no `guia_requisitos_avaliacao.md` são possibilidades de verificação e não precisam ser executados integralmente em todos os casos.
 
 Exemplos, quando aplicáveis:
 
@@ -69,7 +79,9 @@ Exemplos, quando aplicáveis:
 
 ## Resultado da verificação
 
-Registrar os resultados factuais ou técnicos obtidos pelos mecanismos de verificação, sem atribuir ainda resultado de conformidade.
+Registrar os resultados factuais, documentais ou técnicos obtidos pelos mecanismos de verificação.
+
+Esta seção deve descrever o que foi efetivamente constatado, sem atribuir ainda resultado de conformidade.
 
 **Resultado:**
 
@@ -79,25 +91,25 @@ Registrar os resultados factuais ou técnicos obtidos pelos mecanismos de verifi
 
 ### Suficiência
 
-As evidências disponíveis são suficientes para analisar o requisito?
+As evidências disponíveis são suficientes para analisar o requisito no escopo desta avaliação?
 
 **Análise:**
 
 ### Consistência
 
-As evidências são consistentes entre si?
+As evidências consideradas são compatíveis entre si quanto aos fatos, versões, períodos e escopo relevantes?
 
 **Análise:**
 
 ### Rastreabilidade
 
-É possível vincular as evidências à tarefa, versão, contexto ou decisão correspondente?
+É possível vincular as evidências à Tarefa de IA, à Versão Avaliável, ao Contexto de Uso, à decisão ou ao evento correspondente?
 
 **Análise:**
 
 ### Contextualização
 
-As evidências são adequadas ao Contexto de Uso, à Trilha de Execução e ao escopo do requisito?
+As evidências e os resultados da verificação são adequados ao Contexto de Uso, à Trilha de Execução, ao estágio da tarefa e ao escopo do requisito?
 
 **Análise:**
 
@@ -105,7 +117,9 @@ As evidências são adequadas ao Contexto de Uso, à Trilha de Execução e ao e
 
 ## Achado
 
-Registrar achado apenas quando houver conclusão sustentada pelas evidências.
+Registrar um achado apenas quando houver uma conclusão sustentada pelas evidências e pela análise realizada.
+
+O achado deve sintetizar o que pode ser concluído no escopo do requisito, sem extrapolar para outros requisitos, dimensões ou para a conformidade global da avaliação.
 
 **Achado:**
 
@@ -113,7 +127,13 @@ Registrar achado apenas quando houver conclusão sustentada pelas evidências.
 
 ## Limitações
 
-Registrar limitações da análise, inclusive restrições de acesso, escopo ou evidência.
+Registrar limitações que afetem o alcance ou a interpretação da análise, incluindo, quando pertinentes:
+
+- evidência parcial;
+- restrições de acesso;
+- limitações metodológicas;
+- limitações de escopo;
+- ausência de informação necessária para determinada conclusão.
 
 **Limitações:**
 
@@ -121,9 +141,11 @@ Registrar limitações da análise, inclusive restrições de acesso, escopo ou 
 
 ## Pendências
 
-Registrar apenas pendências efetivamente identificadas após a análise de aplicabilidade e suficiência.
+Registrar somente pendências efetivamente identificadas após a análise de aplicabilidade, evidências e suficiência.
 
-A ausência de uma evidência não constitui automaticamente pendência ou Não Conformidade.
+A ausência de uma evidência ou de um artefato não constitui automaticamente pendência ou Não Conformidade.
+
+Quando a questão já estiver registrada em `documentacao_projeto/registro_de_pendencias.md`, referenciar o respectivo ID em vez de abrir uma nova pendência.
 
 **Pendências:**
 
@@ -131,9 +153,11 @@ A ausência de uma evidência não constitui automaticamente pendência ou Não 
 
 ## Inconsistências
 
-Registrar apenas divergências documentais ou técnicas efetivamente confirmadas.
+Registrar somente divergências documentais ou técnicas efetivamente confirmadas.
 
-Dúvidas, ausência de informação ou evidência ainda não fornecida não constituem, por si só, inconsistência.
+Dúvidas, ausência de informação, evidência insuficiente ou informação ainda não confirmada não constituem, por si só, inconsistência.
+
+Quando a divergência já estiver registrada em `avaliacao_niar/registro_de_inconsistencias.md`, referenciar o respectivo ID.
 
 **Inconsistências:**
 
@@ -141,16 +165,29 @@ Dúvidas, ausência de informação ou evidência ainda não fornecida não cons
 
 ## Sinal de governança
 
+Preencher esta seção somente para requisitos classificados como **Aplicável**.
+
 **Sinal de governança:** Sim | Não
 
 **Descrição e justificativa:**
 
-Preencher somente quando o resultado do requisito indicar necessidade de acompanhamento, escalonamento, condicionante ou outra ação de governança.
+Um sinal de governança deve ser registrado quando o resultado da análise indicar necessidade de acompanhamento, escalonamento, condicionante, restrição, revisão, tratamento ou outra ação de governança.
+
+A existência de pendência ou inconsistência não gera automaticamente um sinal de governança.
 
 ---
 
 ## Referências de rastreabilidade
 
-Registrar as fontes utilizadas na avaliação deste requisito.
+Registrar todas as fontes efetivamente utilizadas na avaliação deste requisito.
+
+Quando aplicável, incluir:
+
+- arquivo ou registro;
+- versão;
+- data;
+- seção, página ou trecho;
+- ID de pendência ou inconsistência relacionada;
+- registro administrativo ou institucional utilizado.
 
 **Referências:**

@@ -2,29 +2,33 @@
 
 ## Controle do documento
 
-| Campo               | Preenchimento                                         |
-| ------------------- | ----------------------------------------------------- |
-| Versão             | 0.1                                                   |
-| Status              | Rascunho interno do NIAR                              |
-| Projeto             | [INFORMAÇÃO PENDENTE — preencher pelo projeto]     |
-| Tarefa de IA        | [INFORMAÇÃO PENDENTE — preencher pelo projeto]     |
-| Versão Avaliável  | [INFORMAÇÃO PENDENTE — preencher pelo projeto]     |
-| Contexto de Uso     | [INFORMAÇÃO PENDENTE — preencher pelo projeto]     |
-| Trilha              | [ENQUADRAMENTO PENDENTE — validar pelo NIAR-Saúde]  |
-| Avaliador           | [INFORMAÇÃO PENDENTE — preencher pelo NIAR-Saúde] |
-| Data de referência | [INFORMAÇÃO PENDENTE — preencher pelo NIAR-Saúde] |
+| Campo                | Preenchimento                                        |
+| -------------------- | ---------------------------------------------------- |
+| Versão              | 0.1                                                  |
+| Status               | Rascunho interno do NIAR                             |
+| Projeto              | [INFORMAÇÃO PENDENTE]                              |
+| Tarefa de IA         | [INFORMAÇÃO PENDENTE]                              |
+| Versão Avaliável   | [INFORMAÇÃO PENDENTE]                              |
+| Contexto de Uso      | [INFORMAÇÃO PENDENTE]                              |
+| Trilha de Execução | [ENQUADRAMENTO PENDENTE — validar pelo NIAR-Saúde] |
+| Avaliador            | [INFORMAÇÃO PENDENTE]                              |
+| Data de referência  | [INFORMAÇÃO PENDENTE]                              |
 
-> Esta avaliação refere-se exclusivamente à Tarefa de IA, à Versão Avaliável e ao Contexto de Uso identificados.
+> Esta avaliação consolida os resultados dos requisitos da dimensão aplicáveis à Tarefa de IA, à Versão Avaliável e ao Contexto de Uso identificados.
 >
-> Não constitui certificação geral da propriedade avaliada.
+> A consolidação não substitui as avaliações individuais dos requisitos e deve preservar a rastreabilidade até esses registros.
+>
+> Esta avaliação não constitui certificação geral da propriedade avaliada e não atribui nível de maturidade ao projeto.
 
 ---
 
 ## 1. Objetivo
 
-Descrever o objetivo da avaliação desta dimensão no contexto específico da tarefa.
+Descrever, de forma contextualizada, o objetivo da avaliação da dimensão para a Tarefa de IA analisada.
 
-[ANÁLISE PENDENTE — não inferível a partir dos documentos fornecidos]
+A descrição deve ser compatível com a definição da dimensão e com os requisitos aplicáveis, sem criar objetivos adicionais.
+
+**Objetivo:**
 
 ---
 
@@ -32,175 +36,216 @@ Descrever o objetivo da avaliação desta dimensão no contexto específico da t
 
 ### Incluído
 
-- [INFORMAÇÃO PENDENTE — preencher pelo projeto]
+Registrar os elementos da Tarefa de IA, da Versão Avaliável e do Contexto de Uso efetivamente abrangidos por esta avaliação.
 
 ### Fora do escopo
 
-- [INFORMAÇÃO PENDENTE — preencher pelo projeto]
+Registrar elementos explicitamente não avaliados.
 
-### Limitações de acesso
+### Limitações de acesso ou escopo
 
-- [INFORMAÇÃO PENDENTE — preencher pelo projeto]
-
----
-
-## 3. Questões avaliadas
-
-| ID      | Requisito                                         | Aplicável | Justificativa |
-| ------- | ------------------------------------------------- | ---------- | ------------- |
-| DIM-001 | [INFORMAÇÃO PENDENTE — preencher pelo projeto] | Sim / Não |               |
-
-Uma questão marcada como não aplicável exige justificativa.
+Registrar restrições que condicionem a interpretação dos resultados consolidados.
 
 ---
 
-## 4. Evidências esperadas
+## 3. Requisitos da dimensão
 
-| ID      | Evidência esperada | Relação com a questão | Relevância para o requisito | Justificativa |
-| ------- | ------------------- | ------------------------ | ---------------------------- | ------------- |
-| EVE-001 |                     |                          | Sim / Não                   |               |
+Esta seção consolida o estado das avaliações individuais dos requisitos.
 
----
+| ID do requisito | Requisito | Aplicabilidade               | Avaliação individual | Estado                |
+| --------------- | --------- | ---------------------------- | ---------------------- | --------------------- |
+| [DIM-01]        |           | Aplicável / Não aplicável | `[arquivo.md]`       | Concluída / Pendente |
 
-## 5. Evidências disponíveis
+Requisitos classificados como **Não aplicáveis** devem preservar a justificativa registrada na avaliação individual correspondente.
 
-| ID      | Artefato | Versão | Localização | Responsável | Questão relacionada |
-| ------- | -------- | ------- | ------------- | ------------ | -------------------- |
-| ART-001 |          |         |               |              |                      |
+A aplicabilidade não deve ser redefinida nesta etapa sem nova evidência ou justificativa metodológica documentada.
 
 ---
 
-## 6. Verificações realizadas
+## 4. Síntese das evidências utilizadas
 
-Esta seção consolida os mecanismos de verificação registrados nas avaliações por requisito e não substitui os respectivos registros detalhados.
+Registrar somente as evidências que tiveram relevância para a consolidação da dimensão.
 
-| ID      | Verificação | Método | Evidência utilizada | Resultado |
-| ------- | ------------- | ------- | -------------------- | --------- |
-| VER-001 |               |         |                      |           |
+Não é necessário reproduzir integralmente as listas de evidências de cada requisito.
 
-Distinguir claramente:
+| Evidência | Requisitos relacionados | Função na consolidação |
+| ---------- | ----------------------- | -------------------------- |
+|            |                         |                            |
 
-- leitura documental;
+A presença de um artefato não implica, por si só, suficiência da evidência nem atendimento de requisito.
+
+---
+
+## 5. Síntese dos mecanismos de verificação
+
+Esta seção consolida os mecanismos efetivamente utilizados nas avaliações individuais dos requisitos.
+
+| Mecanismo | Requisitos relacionados | Síntese do uso |
+| --------- | ----------------------- | --------------- |
+|           |                         |                 |
+
+Exemplos, quando aplicáveis:
+
+- verificação documental;
 - consistência cruzada;
-- entrevista;
-- inspeção de log;
-- reprodução;
-- teste;
-- amostragem;
-- outra forma de verificação.
+- rastreabilidade e versionamento;
+- revisão metodológica;
+- revisão de métricas;
+- testes técnicos;
+- análise de evidências operacionais;
+- entrevista ou confirmação factual;
+- verificação institucional.
+
+A consolidação não deve registrar mecanismos que não tenham sido efetivamente utilizados.
 
 ---
 
-## 7. Síntese dos resultados das verificações
+## 6. Síntese dos resultados por requisito
 
-| ID do requisito | Resultado sintetizado | Evidência principal | Limitação |
-| --------------- | --------------------- | -------------------- | ----------- |
-| RES-001         |                       |                      |             |
+| ID do requisito | Síntese do resultado | Achado principal | Limitação | Pendência / inconsistência relacionada | Sinal de governança |
+| --------------- | --------------------- | ---------------- | ----------- | ---------------------------------------- | -------------------- |
+|                 |                       |                  |             |                                          |                      |
 
-Não extrapolar a conclusão para contextos não avaliados.
-
----
-
-## 8. Consistência
-
-### Consistência interna
-
-[ANÁLISE PENDENTE — não inferível a partir dos documentos fornecidos]
-
-### Consistência com outros artefatos
-
-[ANÁLISE PENDENTE — não inferível a partir dos documentos fornecidos]
-
-### Inconsistências
-
-Registrar apenas inconsistências já confirmadas e rastreáveis aos registros correspondentes.
-
-| ID      | Descrição                                                    | Impacto | Registro relacionado |
-| ------- | -------------------------------------------------------------- | ------- | -------------------- |
-| INC-XXX | [INCONSISTÊNCIA IDENTIFICADA — verificar entre os artefatos] |         |                      |
+Esta tabela deve sintetizar os arquivos individuais, sem substituir ou reinterpretar silenciosamente suas conclusões.
 
 ---
 
-## 9. Suficiência da evidência
+## 7. Análise transversal da dimensão
 
-A classificação é descritiva e consolidada a partir dos requisitos aplicáveis; não corresponde a score, média ou resultado de conformidade.
+### Suficiência global das evidências
 
-```text
-Evidência disponível
+Avaliar se, consideradas em conjunto, as evidências dos requisitos aplicáveis permitem sustentar uma conclusão sobre a dimensão no escopo avaliado.
 
-Evidência parcial
+**Análise:**
 
-Evidência não identificada
+### Consistência transversal
 
-Não aplicável — requer justificativa
-```
+Avaliar se as conclusões, evidências e resultados dos diferentes requisitos da dimensão são compatíveis entre si.
 
-### Classificação
+**Análise:**
 
-[ANÁLISE PENDENTE — não inferível a partir dos documentos fornecidos]
+### Rastreabilidade
 
-### Justificativa
+Avaliar se os resultados consolidados podem ser rastreados até:
 
-[ANÁLISE PENDENTE — não inferível a partir dos documentos fornecidos]
+- os requisitos correspondentes;
+- as evidências utilizadas;
+- a Tarefa de IA;
+- a Versão Avaliável;
+- o Contexto de Uso;
+- decisões ou eventos relevantes, quando aplicável.
 
----
+**Análise:**
 
-## 10. Limitações
+### Contextualização
 
-* [ANÁLISE PENDENTE — não inferível a partir dos documentos fornecidos]
+Avaliar se a interpretação consolidada é adequada à Trilha de Execução, ao estágio da tarefa e ao Contexto de Uso.
 
----
-
-## 11. Riscos ou impactos identificados
-
-Registrar somente riscos ou impactos já identificados nas avaliações por requisito ou em evidências diretamente relacionadas à dimensão.
-
-| ID      | Risco ou impacto | Evidência | Contexto | Tratamento existente | Risco residual |
-| ------- | ---------------- | ---------- | -------- | -------------------- | -------------- |
-| RSK-001 |                  |            |          |                      |                |
-
-Não atribuir aceitabilidade ao risco sem decisão correspondente.
+**Análise:**
 
 ---
 
-## 12. Pendências
+## 8. Inconsistências relevantes para a dimensão
 
-| ID      | Pendência | Requisito relacionado | Prioridade | Responsável | Estado |
-| ------- | ---------- | --------------------- | ---------- | ------------ | ------ |
-| PEN-XXX |            |                       |            |              |        |
+Registrar somente inconsistências já confirmadas e formalmente registradas.
 
----
+| ID      | Descrição | Requisito relacionado | Impacto na dimensão | Registro relacionado |
+| ------- | ----------- | --------------------- | -------------------- | -------------------- |
+| INC-XXX |             |                       |                      |                      |
 
-## 13. Necessidades adicionais de análise
-
-Registrar apenas necessidades decorrentes das avaliações dos requisitos aplicáveis.
-
-* [ANÁLISE PENDENTE — não inferível a partir dos documentos fornecidos]
+Não criar nova inconsistência apenas porque duas avaliações possuem níveis diferentes de evidência ou limitações distintas.
 
 ---
 
-## 14. Sinais de governança
+## 9. Limitações consolidadas
 
-| ID      | Sinal | Evidência de origem | Encaminhamento sugerido | Escalonamento potencial |
-| ------- | ----- | -------------------- | ----------------------- | ----------------------- |
-| SIG-001 |       |                      |                         | Sim / Não              |
+Registrar limitações que afetem a interpretação global da dimensão.
+
+- ...
+
+Não repetir automaticamente todas as limitações dos requisitos; incluir apenas aquelas materialmente relevantes para a conclusão da dimensão.
+
+---
+
+## 10. Riscos ou impactos identificados
+
+Registrar somente riscos ou impactos sustentados pelas avaliações dos requisitos ou por evidências diretamente relacionadas à dimensão.
+
+| ID      | Risco ou impacto | Requisito de origem | Evidência | Tratamento existente | Risco residual |
+| ------- | ---------------- | ------------------- | ---------- | -------------------- | -------------- |
+| RSK-001 |                  |                     |            |                      |                |
+
+Não atribuir aceitabilidade ao risco sem decisão correspondente da instância competente.
+
+---
+
+## 11. Pendências relevantes para a dimensão
+
+| ID      | Pendência | Requisito relacionado | Impacto na conclusão da dimensão | Responsável | Estado |
+| ------- | ---------- | --------------------- | ---------------------------------- | ------------ | ------ |
+| PEN-XXX |            |                       |                                    |              |        |
+
+Não duplicar pendências já registradas. Referenciar seus IDs existentes.
+
+---
+
+## 12. Necessidades adicionais de análise
+
+Registrar apenas análises adicionais que decorram das avaliações dos requisitos aplicáveis e que sejam necessárias para concluir ou aprofundar a dimensão.
+
+- ...
+
+---
+
+## 13. Sinais de governança
+
+Consolidar somente sinais registrados nas avaliações dos requisitos ou diretamente sustentados pela análise transversal da dimensão.
+
+| ID      | Sinal | Requisito ou evidência de origem | Encaminhamento sugerido | Escalonamento potencial |
+| ------- | ----- | --------------------------------- | ----------------------- | ----------------------- |
+| SIG-001 |       |                                   |                         | Sim / Não              |
 
 Um sinal de governança não constitui decisão institucional.
 
+A existência de pendência, limitação ou inconsistência não gera automaticamente um sinal de governança.
+
 ---
 
-## 15. Conclusão da dimensão
+## 14. Conclusão da dimensão
 
-A conclusão da dimensão não deve atribuir nível de maturidade nem resultar de soma, média, percentual ou maioria dos requisitos.
-
-[ANÁLISE PENDENTE — não inferível a partir dos documentos fornecidos]
+A conclusão deve sintetizar o que a avaliação dos requisitos aplicáveis permite afirmar sobre a dimensão no escopo considerado.
 
 A conclusão deve explicitar:
 
-* o que a evidência sustenta;
-* o que não pode ser concluído;
-* quais limitações permanecem;
-* quais pendências precisam ser tratadas.
+- o que as evidências sustentam;
+- quais aspectos permanecem apenas parcialmente sustentados;
+- o que não pode ser concluído;
+- quais limitações materiais permanecem;
+- quais pendências ou inconsistências afetam a dimensão;
+- se existem sinais de governança relevantes.
+
+A conclusão da dimensão:
+
+- não resulta de soma, média, percentual ou maioria dos requisitos;
+- não substitui as avaliações individuais;
+- não deve transformar ausência de evidência em Não Conformidade automaticamente;
+- não atribui nível de maturidade;
+- não extrapola para outras tarefas, versões ou contextos.
+
+**Conclusão:**
+
+---
+
+## 15. Referências de rastreabilidade
+
+Listar:
+
+- avaliações individuais dos requisitos utilizadas;
+- evidências centrais para a consolidação;
+- pendências e inconsistências referenciadas;
+- outros registros relevantes.
+
+**Referências:**
 
 ---
 
