@@ -187,7 +187,7 @@ Tipos sugeridos:
 - confirmação factual;
 - verificação pelo NIAR;
 - análise técnica adicional;
-- decisão institucional.
+- decisão institucional pendente.
 
 Uma pendência pode ser:
 
@@ -212,7 +212,7 @@ As pendências devem ser detalhadas em:
 Antes de solicitar novos artefatos, o NIAR-Saúde deve verificar:
 
 1. qual informação ou evidência é necessária;
-2. qual requisito futuro depende dessa evidência;
+2. qual requisito aplicável, etapa posterior ou decisão do ciclo depende dessa evidência;
 3. se a evidência já está suficientemente registrada em alguma fonte existente;
 4. se há uma lacuna real;
 5. qual artefato ou registro seria adequado para suprir essa lacuna.
@@ -283,7 +283,7 @@ Registrar somente após o NIAR verificar que a questão não pode ser resolvida 
 | Existem verificações internas ainda necessárias    | Sim / Não |
 | Existem itens que precisam ser solicitados ao projeto | Sim / Não |
 | Avaliação por requisito pode ser iniciada           | Sim / Não |
-| Pendências abertas impedem a continuidade? | Sim / Não |
+| Pendências abertas impedem a continuidade?           | Sim / Não |
 
 ### Justificativa
 
@@ -293,7 +293,7 @@ Registrar somente após o NIAR verificar que a questão não pode ser resolvida 
 >
 > O NIAR-Saúde deve registrar explicitamente se cada pendência é impeditiva ou não impeditiva e justificar seu impacto sobre a continuidade.
 >
-> Pendências não impeditivas podem permanecer abertas em paralelo, desde que sejam resolvidas antes da etapa em que sua ausência se torne material para a consolidação, decisão institucional ou outro resultado do ciclo.
+> Pendências não impeditivas podem permanecer abertas em paralelo, desde que seu impacto seja reavaliado antes da etapa em que a questão se torne material para a consolidação da dimensão, para o resultado formal da avaliação ou para eventual decisão institucional.
 
 ---
 
@@ -306,6 +306,7 @@ Registrar somente após o NIAR verificar que a questão não pode ser resolvida 
 - [ ] registrar divergências confirmadas no `registro_de_inconsistencias.md`;
 - [ ] revisar e consolidar as pendências válidas no ciclo atual;
 - [ ] determinar quais evidências adicionais são efetivamente necessárias;
+- [ ] relacionar as evidências adicionais necessárias aos requisitos ou etapas do ciclo que justificam sua solicitação;
 - [ ] concluir as verificações que podem ser realizadas internamente pelo NIAR-Saúde;
 - [ ] determinar quais questões dependem efetivamente da equipe do projeto;
 - [ ] classificar as pendências abertas quanto ao impacto na continuidade;
@@ -313,11 +314,12 @@ Registrar somente após o NIAR verificar que a questão não pode ser resolvida 
 - [ ] encaminhar pendências não impeditivas em paralelo, quando aplicável;
 - [ ] iniciar a avaliação por requisito;
 - [ ] registrar formalmente a conclusão da pré-avaliação documental.
+
 ---
 
 ## 14. Histórico de versões
 
-| Versão | Data | Responsável | Alteração            | Status          |
-| ------- | ---- | ------------ | ---------------------- | --------------- |
-| 0.1     |  24/07/2026    | NIAR-Saúde  | Criação do documento | Em elaboração |
-| 0.2 | 26/08/2026 | NIAR-Saúde | Inclusão da distinção entre pendências impeditivas e não impeditivas, preservação histórica de inconsistências resolvidas e atualização do fluxo de continuidade da pré-avaliação | Em uso |
+| Versão | Data       | Responsável | Alteração                                                                                                                                                                                     | Status          |
+| ------- | ---------- | ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------- |
+| 0.1     | 24/07/2026 | NIAR-Saúde  | Criação do documento                                                                                                                                                                          | Em elaboração |
+| 0.2     | 26/08/2026 | NIAR-Saúde  | Inclusão da distinção entre pendências impeditivas e não impeditivas, preservação histórica de inconsistências resolvidas e atualização do fluxo de continuidade da pré-avaliação | Em uso          |
