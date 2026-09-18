@@ -842,7 +842,7 @@ Para tarefas em produção, ou quando os riscos de segurança pertinentes à tar
 `FIAR-Saude/docs/avaliacao/seguranca.md` — SEG-06
 
 **O que o requisito busca verificar:**
-Verificar se, quando o estágio da tarefa ou os riscos de segurança pertinentes à tarefa e ao seu Contexto de Uso  exigirem capacidade de acompanhamento de eventos de Segurança, existem mecanismos proporcionais para detectar ocorrências relevantes, preservar registros suficientes e realizar resposta técnica adequada.
+Verificar se, quando o estágio da tarefa ou os riscos de segurança pertinentes à tarefa e ao seu Contexto de Uso exigirem capacidade de acompanhamento de eventos de Segurança, existem mecanismos proporcionais para detectar ocorrências relevantes, preservar registros suficientes e realizar resposta técnica adequada.
 
 O requisito não torna monitoramento contínuo ou gestão formal de incidentes obrigatórios para toda tarefa. Sua aplicabilidade e profundidade dependem da Trilha de Execução e do risco.
 
