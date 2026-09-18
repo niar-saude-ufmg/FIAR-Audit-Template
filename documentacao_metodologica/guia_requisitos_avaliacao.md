@@ -14,7 +14,6 @@ As orientações deste guia apoiam o preenchimento do template de avaliação de
 
 As formulações dos requisitos reproduzem a documentação canônica vigente do FIAR-Saúde. As explicações, exemplos e cautelas deste guia têm função operacional e não criam requisitos adicionais.
 
-
 ## Fontes normativas e natureza das orientações
 
 Os requisitos reproduzidos neste guia têm como fonte normativa a documentação vigente do FIAR-Saúde.
@@ -25,6 +24,7 @@ Fontes principais:
 - `FIAR-Saude/docs/avaliacao/governanca.md`
 - `FIAR-Saude/docs/avaliacao/privacidade.md`
 - `FIAR-Saude/docs/avaliacao/justica.md`
+- `FIAR-Saude/docs/avaliacao/rastreabilidade.md`
 
 As formulações identificadas como **Requisito** são reproduzidas da documentação canônica do FIAR-Saúde.
 
@@ -40,24 +40,26 @@ A dimensão de Governança avalia as estruturas, processos, responsabilidades, c
 
 ### GOV-01
 
-**Requisito:**  
+**Requisito:**
 As estruturas, papéis e competências institucionais relevantes para a tarefa estão identificados?
 
-**Fonte normativa:**  
+**Fonte normativa:**
 `FIAR-Saude/docs/avaliacao/governanca.md` — GOV-01
 
-**O que o requisito busca verificar:**  
+**O que o requisito busca verificar:**
 Verificar se estão suficientemente identificadas as estruturas institucionais e os papéis relevantes para a Tarefa de IA no escopo da avaliação, incluindo as responsabilidades necessárias para compreender quem desenvolve, responde tecnicamente, acompanha, avalia, supervisiona ou toma decisões relacionadas à tarefa, quando esses papéis forem pertinentes ao contexto analisado.
 
 O requisito busca assegurar que responsabilidades relevantes não permaneçam implícitas ou sejam inferidas apenas a partir de autoria, participação técnica ou vínculo institucional.
 
 **Aspectos a considerar na aplicabilidade:**
+
 - O requisito é aplicável às tarefas avaliadas pelo FIAR-Saúde, inclusive na Trilha Experimental.
 - A extensão dos papéis a identificar depende da Tarefa de IA, da Versão Avaliável, do Contexto de Uso, da Trilha de Execução e das estruturas efetivamente envolvidas.
 - Tarefas em produção podem exigir papéis adicionais relacionados à operação, supervisão, monitoramento, incidentes ou decisão institucional.
 - Não devem ser exigidos papéis que não sejam pertinentes ao estágio e ao escopo da tarefa.
 
 **Exemplos de evidências pertinentes:**
+
 - registros de identificação do projeto e da avaliação;
 - registros institucionais ou administrativos que identifiquem responsáveis e atribuições;
 - documentação de papéis e responsabilidades;
@@ -69,6 +71,7 @@ O requisito busca assegurar que responsabilidades relevantes não permaneçam im
 Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências equivalentes podem ser utilizadas quando forem suficientes, consistentes, rastreáveis e adequadas ao contexto.
 
 **Mecanismos de verificação possíveis:**
+
 - verificação documental;
 - consistência cruzada entre documentos e registros;
 - verificação de rastreabilidade das atribuições à tarefa e à Versão Avaliável;
@@ -76,6 +79,7 @@ Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências 
 - confirmação factual quando a evidência disponível for insuficiente;
 
 **Observações metodológicas:**
+
 - Autoria de artigo, código, modelo, Data Card, Model Card ou outro artefato não estabelece automaticamente responsabilidade institucional ou técnica.
 - Participação no desenvolvimento não equivale automaticamente à competência para decidir, supervisionar ou aceitar riscos.
 - A existência de um template de papéis e responsabilidades não torna seu preenchimento obrigatório se outras evidências forem suficientes e rastreáveis.
@@ -86,24 +90,26 @@ Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências 
 
 ### GOV-02
 
-**Requisito:**  
+**Requisito:**
 Existem processos definidos para decisões técnicas, operacionais ou institucionais relevantes à tarefa?
 
-**Fonte normativa:**  
+**Fonte normativa:**
 `FIAR-Saude/docs/avaliacao/governanca.md` — GOV-02
 
-**O que o requisito busca verificar:**  
+**O que o requisito busca verificar:**
 Verificar se decisões relevantes para a tarefa são tomadas por meio de processos identificáveis e rastreáveis, com clareza sobre quem decide, em que situações, com base em quais informações e como a decisão é registrada quando necessário.
 
 O requisito não exige um fluxo burocrático único, mas busca evitar que decisões relevantes permaneçam informais, sem atribuição de competência ou sem possibilidade de reconstrução posterior.
 
 **Aspectos a considerar na aplicabilidade:**
+
 - O grau de formalização esperado depende do estágio da tarefa e da natureza das decisões.
 - Na Trilha Experimental, decisões metodológicas relevantes podem exigir registro sem que exista um processo operacional de produção.
 - Na Trilha Produção, decisões operacionais, mudanças, incidentes, restrições de uso e escalonamentos podem requerer processos adicionais.
 - Somente decisões materialmente relevantes para a tarefa e seu contexto devem ser consideradas.
 
 **Exemplos de evidências pertinentes:**
+
 - fluxos ou procedimentos de decisão;
 - Registros de Decisão Técnica;
 - atas, pareceres ou decisões institucionais;
@@ -114,12 +120,14 @@ O requisito não exige um fluxo burocrático único, mas busca evitar que decis�
 Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências equivalentes podem ser utilizadas quando forem suficientes, consistentes, rastreáveis e adequadas ao contexto.
 
 **Mecanismos de verificação possíveis:**
+
 - verificação documental;
 - rastreabilidade entre decisão, responsável e evidência utilizada;
 - consistência cruzada entre registros técnicos e institucionais;
 - verificação institucional quando a competência decisória precisar ser confirmada;
 
 **Observações metodológicas:**
+
 - A ausência de um artefato denominado Registro de Decisão Técnica não implica, por si só, descumprimento; deve-se verificar se as decisões relevantes estão suficientemente documentadas em fonte equivalente.
 - Não confundir o processo decisório do projeto com o processo de avaliação conduzido pelo NIAR-Saúde.
 - Decisões triviais ou de rotina não precisam receber o mesmo nível de formalização que decisões capazes de alterar risco, escopo, uso ou comportamento da tarefa.
@@ -129,24 +137,26 @@ Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências 
 
 ### GOV-03
 
-**Requisito:**  
+**Requisito:**
 A finalidade, as condições e os limites de uso da tarefa estão definidos?
 
-**Fonte normativa:**  
+**Fonte normativa:**
 `FIAR-Saude/docs/avaliacao/governanca.md` — GOV-03
 
-**O que o requisito busca verificar:**  
+**O que o requisito busca verificar:**
 Verificar se está claro para que a tarefa foi desenvolvida ou avaliada, em quais condições seu uso é considerado e quais usos, populações, ambientes ou situações estão fora do escopo avaliado ou não são recomendados.
 
 O requisito delimita o objeto de governança e reduz o risco de extrapolar resultados obtidos em um contexto para usos não avaliados.
 
 **Aspectos a considerar na aplicabilidade:**
+
 - Aplicável a todas as tarefas, mas o nível de detalhamento depende do estágio e do Contexto de Uso.
 - Uso atual e uso pretendido devem ser distinguidos quando não forem equivalentes.
 - Tarefas experimentais podem ter finalidade limitada a pesquisa, desenvolvimento ou validação.
 - Tarefas em produção devem explicitar condições operacionais, usuários, população, ambiente e eventuais restrições relevantes.
 
 **Exemplos de evidências pertinentes:**
+
 - Formulário de Entrada;
 - Identificação da Avaliação;
 - Model Card ou documentação equivalente;
@@ -157,12 +167,14 @@ O requisito delimita o objeto de governança e reduz o risco de extrapolar resul
 Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências equivalentes podem ser utilizadas quando forem suficientes, consistentes, rastreáveis e adequadas ao contexto.
 
 **Mecanismos de verificação possíveis:**
+
 - verificação documental;
 - consistência cruzada entre finalidade, contexto, dados e documentação do modelo;
 - contextualização;
 - rastreabilidade de restrições e decisões;
 
 **Observações metodológicas:**
+
 - Descrever uma possibilidade futura não equivale a definir o Contexto de Uso atual.
 - O bom desempenho em determinada avaliação não autoriza inferir adequação para usos fora do escopo documentado.
 - Limitações técnicas e limites institucionais de uso devem ser distinguidos quando necessário.
@@ -172,24 +184,26 @@ Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências 
 
 ### GOV-04
 
-**Requisito:**  
+**Requisito:**
 A necessidade e a forma de supervisão humana foram determinadas de acordo com a natureza da tarefa e o Contexto de Uso?
 
-**Fonte normativa:**  
+**Fonte normativa:**
 `FIAR-Saude/docs/avaliacao/governanca.md` — GOV-04
 
-**O que o requisito busca verificar:**  
+**O que o requisito busca verificar:**
 Verificar se o projeto determinou, de maneira contextualizada, se a tarefa requer supervisão humana e, quando requer, qual é a finalidade dessa supervisão e como ela se relaciona ao uso da saída da IA.
 
 O requisito não presume que toda Tarefa de IA exija o mesmo tipo de supervisão nem que a simples presença de uma pessoa no fluxo seja suficiente.
 
 **Aspectos a considerar na aplicabilidade:**
+
 - A aplicabilidade da supervisão depende do tipo de tarefa, do grau de autonomia, das consequências dos resultados e do contexto de uso.
 - Em tarefas exclusivamente experimentais, pode não existir ainda um fluxo de supervisão operacional, mas o uso pretendido pode exigir que essa necessidade seja considerada.
 - Em produção, devem ser considerados os pontos concretos em que revisão, intervenção ou decisão humana são necessárias.
 - A supervisão deve ser proporcional ao risco e à função da saída da IA.
 
 **Exemplos de evidências pertinentes:**
+
 - Model Card;
 - descrição do fluxo operacional;
 - procedimentos de revisão humana;
@@ -200,12 +214,14 @@ O requisito não presume que toda Tarefa de IA exija o mesmo tipo de supervisão
 Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências equivalentes podem ser utilizadas quando forem suficientes, consistentes, rastreáveis e adequadas ao contexto.
 
 **Mecanismos de verificação possíveis:**
+
 - contextualização;
 - verificação documental;
 - consistência entre uso declarado e supervisão prevista;
 - análise do fluxo de decisão;
 
 **Observações metodológicas:**
+
 - Supervisão humana não deve ser presumida como mecanismo eficaz apenas porque existe formalmente.
 - Distinguir supervisão da execução técnica do projeto e da avaliação pelo NIAR-Saúde.
 - A forma de supervisão deve permitir compreender a função real do humano no fluxo.
@@ -215,24 +231,26 @@ Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências 
 
 ### GOV-05
 
-**Requisito:**  
+**Requisito:**
 Quando aplicável, os responsáveis pela supervisão possuem informações e mecanismos adequados para intervir ou revisar o uso da tarefa?
 
-**Fonte normativa:**  
+**Fonte normativa:**
 `FIAR-Saude/docs/avaliacao/governanca.md` — GOV-05
 
-**O que o requisito busca verificar:**  
+**O que o requisito busca verificar:**
 Verificar se a supervisão humana definida no requisito anterior é operacionalmente viável: os responsáveis precisam dispor das informações, competências e possibilidades de ação necessárias para revisar, questionar, interromper ou substituir a saída ou o uso da tarefa, conforme o contexto.
 
 O foco não é apenas a existência nominal de um supervisor, mas a capacidade efetiva de exercer a supervisão prevista.
 
 **Aspectos a considerar na aplicabilidade:**
+
 - Aplicável somente quando houver supervisão humana pertinente ao uso da tarefa.
 - A análise depende da função atribuída ao supervisor e das decisões que ele pode tomar.
 - Em tarefas ainda não operacionais, pode ser prematuro exigir interfaces ou procedimentos completos; deve-se avaliar o estágio real.
 - Em produção, mecanismos efetivos de intervenção e revisão tendem a ser materialmente relevantes.
 
 **Exemplos de evidências pertinentes:**
+
 - procedimentos de supervisão;
 - interfaces ou materiais de uso;
 - documentação das informações apresentadas ao supervisor;
@@ -243,6 +261,7 @@ O foco não é apenas a existência nominal de um supervisor, mas a capacidade e
 Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências equivalentes podem ser utilizadas quando forem suficientes, consistentes, rastreáveis e adequadas ao contexto.
 
 **Mecanismos de verificação possíveis:**
+
 - revisão documental;
 - análise contextual;
 - inspeção do fluxo operacional;
@@ -250,6 +269,7 @@ Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências 
 - análise de evidências operacionais, quando disponíveis;
 
 **Observações metodológicas:**
+
 - Não concluir que há supervisão efetiva apenas porque o sistema é descrito como 'human-in-the-loop'.
 - A adequação das informações deve ser julgada em relação à decisão que o supervisor precisa tomar.
 - Evitar exigir mecanismos de intervenção inexistentes em tarefas puramente experimentais quando o uso operacional ainda não ocorre.
@@ -259,24 +279,26 @@ Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências 
 
 ### GOV-06
 
-**Requisito:**  
+**Requisito:**
 Riscos, limitações ou achados relevantes possuem processo definido de tratamento ou escalonamento?
 
-**Fonte normativa:**  
+**Fonte normativa:**
 `FIAR-Saude/docs/avaliacao/governanca.md` — GOV-06
 
-**O que o requisito busca verificar:**  
+**O que o requisito busca verificar:**
 Verificar se riscos, limitações ou achados com relevância para a tarefa não permanecem apenas registrados, mas possuem uma forma definida de tratamento, acompanhamento ou escalonamento compatível com sua natureza.
 
 O requisito conecta a produção de evidência à governança: identificar um problema é diferente de possuir um processo para decidir o que fazer a respeito.
 
 **Aspectos a considerar na aplicabilidade:**
+
 - Aplicável quando houver riscos, limitações ou achados que demandem tratamento ou decisão.
 - O tipo de resposta pode variar entre correção técnica, investigação, monitoramento, restrição de uso, registro de risco residual ou escalonamento institucional.
 - Na Trilha Experimental, o tratamento pode ocorrer dentro do ciclo de desenvolvimento.
 - Na Trilha Produção, podem ser necessários fluxos de resposta, prazos, responsáveis e escalonamento operacional ou institucional.
 
 **Exemplos de evidências pertinentes:**
+
 - registros de risco;
 - Fairness/Explainability Reports ou outros relatórios com achados relevantes;
 - Registros de Decisão Técnica;
@@ -288,12 +310,14 @@ O requisito conecta a produção de evidência à governança: identificar um pr
 Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências equivalentes podem ser utilizadas quando forem suficientes, consistentes, rastreáveis e adequadas ao contexto.
 
 **Mecanismos de verificação possíveis:**
+
 - rastreabilidade entre achado, decisão e ação;
 - verificação documental;
 - consistência cruzada;
 - verificação institucional quando houver escalonamento;
 
 **Observações metodológicas:**
+
 - Nem todo risco exige mitigação técnica; a resposta deve ser contextualizada e fundamentada.
 - Registrar uma limitação não demonstra, sozinho, que ela foi tratada.
 - Não abrir automaticamente uma nova pendência se o risco já estiver adequadamente tratado em outro registro.
@@ -303,24 +327,26 @@ Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências 
 
 ### GOV-07
 
-**Requisito:**  
+**Requisito:**
 Condicionantes, restrições ou decisões institucionais estão documentados e associados à tarefa quando aplicáveis?
 
-**Fonte normativa:**  
+**Fonte normativa:**
 `FIAR-Saude/docs/avaliacao/governanca.md` — GOV-07
 
-**O que o requisito busca verificar:**  
+**O que o requisito busca verificar:**
 Verificar se condicionantes, restrições de uso e decisões institucionais relevantes são preservadas de forma rastreável e vinculadas à tarefa, à versão e ao contexto a que se referem.
 
 O requisito busca evitar que decisões institucionais se desvinculem do objeto avaliado ou se percam ao longo de mudanças de versão e uso.
 
 **Aspectos a considerar na aplicabilidade:**
+
 - Aplicável quando houver condicionantes, restrições ou decisões institucionais relacionadas à tarefa.
 - Nem toda avaliação exige uma decisão institucional adicional.
 - A ausência de deliberação formal não deve ser tratada como lacuna quando nenhuma questão exigiu escalonamento.
 - Em produção, decisões sobre autorização, restrição, suspensão ou risco residual podem ser especialmente relevantes.
 
 **Exemplos de evidências pertinentes:**
+
 - atas ou registros institucionais;
 - pareceres;
 - condicionantes de uso;
@@ -332,12 +358,14 @@ O requisito busca evitar que decisões institucionais se desvinculem do objeto a
 Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências equivalentes podem ser utilizadas quando forem suficientes, consistentes, rastreáveis e adequadas ao contexto.
 
 **Mecanismos de verificação possíveis:**
+
 - verificação institucional;
 - rastreabilidade;
 - consistência entre decisão e estado da tarefa;
 - verificação documental;
 
 **Observações metodológicas:**
+
 - Não presumir que toda decisão técnica constitui decisão institucional.
 - Uma decisão institucional deve ser atribuída à instância competente e não à autoria de um documento.
 - Condicionantes devem permanecer vinculados ao escopo para o qual foram definidos.
@@ -347,24 +375,26 @@ Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências 
 
 ### GOV-08
 
-**Requisito:**  
+**Requisito:**
 Existem mecanismos adequados de monitoramento, revisão e atualização para o estágio da tarefa?
 
-**Fonte normativa:**  
+**Fonte normativa:**
 `FIAR-Saude/docs/avaliacao/governanca.md` — GOV-08
 
-**O que o requisito busca verificar:**  
+**O que o requisito busca verificar:**
 Verificar se a tarefa possui mecanismos de acompanhamento proporcionais ao seu estágio, capazes de apoiar revisão de desempenho, riscos, limitações, dados, modelo ou condições de uso quando pertinente.
 
 O requisito não impõe monitoramento contínuo uniforme a todas as tarefas; exige adequação ao estágio e à Trilha de Execução.
 
 **Aspectos a considerar na aplicabilidade:**
+
 - Na Trilha Experimental, podem ser suficientes mecanismos associados aos ciclos previstos de desenvolvimento e avaliação.
 - Na Trilha Produção, normalmente são relevantes monitoramento operacional, revisão periódica e atualização de evidências.
 - O que deve ser acompanhado depende dos riscos e propriedades relevantes da tarefa.
 - Mecanismos inexistentes ou ainda não exigíveis no estágio atual não devem ser tratados como não conformidade sem análise de aplicabilidade.
 
 **Exemplos de evidências pertinentes:**
+
 - planos de monitoramento;
 - registros de revisão;
 - histórico de atualizações;
@@ -376,12 +406,14 @@ O requisito não impõe monitoramento contínuo uniforme a todas as tarefas; exi
 Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências equivalentes podem ser utilizadas quando forem suficientes, consistentes, rastreáveis e adequadas ao contexto.
 
 **Mecanismos de verificação possíveis:**
+
 - análise de evidências operacionais;
 - contextualização;
 - verificação documental;
 - rastreabilidade longitudinal;
 
 **Observações metodológicas:**
+
 - Não confundir monitoramento de desempenho com monitoramento integral de governança.
 - A existência de dashboards ou métricas não demonstra, por si só, que existe processo de revisão e resposta.
 - A frequência e o escopo devem ser proporcionais à tarefa e ao risco.
@@ -391,24 +423,26 @@ Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências 
 
 ### GOV-09
 
-**Requisito:**  
+**Requisito:**
 Existem critérios ou gatilhos para reavaliação quando mudanças relevantes ocorrerem?
 
-**Fonte normativa:**  
+**Fonte normativa:**
 `FIAR-Saude/docs/avaliacao/governanca.md` — GOV-09
 
-**O que o requisito busca verificar:**  
+**O que o requisito busca verificar:**
 Verificar se o projeto consegue reconhecer mudanças capazes de alterar materialmente a avaliação da tarefa e se existem critérios para decidir quando uma nova avaliação, integral ou parcial, deve ser iniciada.
 
 O requisito sustenta a governança longitudinal e evita que mudanças relevantes sejam tratadas como simples manutenção sem reconsideração das evidências afetadas.
 
 **Aspectos a considerar na aplicabilidade:**
+
 - Aplicável em qualquer tarefa sujeita a evolução, embora a formalização esperada varie por trilha.
 - Podem ser relevantes mudanças no modelo, dados, procedimentos, população, finalidade, integração ou Contexto de Uso.
 - Nem toda alteração técnica constitui nova Versão Avaliável.
 - Em produção, incidentes, drift ou mudanças operacionais podem funcionar como gatilhos adicionais.
 
 **Exemplos de evidências pertinentes:**
+
 - política ou registro de gestão de mudanças;
 - histórico de versões;
 - Registros de Decisão Técnica;
@@ -419,12 +453,14 @@ O requisito sustenta a governança longitudinal e evita que mudanças relevantes
 Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências equivalentes podem ser utilizadas quando forem suficientes, consistentes, rastreáveis e adequadas ao contexto.
 
 **Mecanismos de verificação possíveis:**
+
 - verificação documental;
 - rastreabilidade longitudinal;
 - consistência entre mudança e decisão de reavaliar;
 - revisão de histórico de versões;
 
 **Observações metodológicas:**
+
 - Não assumir que toda nova versão de software ou correção menor exige avaliação completa.
 - A relação entre mudança e dimensões potencialmente afetadas deve ser explicitada.
 - Mudança de finalidade ou Contexto de Uso pode ser mais relevante que uma alteração de arquitetura interna.
@@ -434,24 +470,26 @@ Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências 
 
 ### GOV-10
 
-**Requisito:**  
+**Requisito:**
 Para tarefas em produção, existem mecanismos para restringir, suspender, corrigir ou descontinuar o uso quando necessário?
 
-**Fonte normativa:**  
+**Fonte normativa:**
 `FIAR-Saude/docs/avaliacao/governanca.md` — GOV-10
 
-**O que o requisito busca verificar:**  
+**O que o requisito busca verificar:**
 Verificar se tarefas em operação possuem mecanismos de resposta capazes de reduzir ou interromper sua utilização quando riscos, incidentes, falhas ou mudanças tornarem o uso inadequado.
 
 O requisito trata da capacidade operacional de agir, e não apenas de reconhecer um problema.
 
 **Aspectos a considerar na aplicabilidade:**
+
 - Específico da Trilha Produção.
 - Deve considerar a forma real de integração da tarefa ao sistema e as consequências de interrupção ou restrição.
 - Os mecanismos podem variar entre rollback, desativação, restrição de funcionalidades, fallback manual, suspensão temporária ou descontinuação.
 - A aplicabilidade e a robustez esperada dependem da criticidade e do Contexto de Uso.
 
 **Exemplos de evidências pertinentes:**
+
 - procedimentos operacionais;
 - planos de contingência;
 - mecanismos de rollback ou desativação;
@@ -462,12 +500,14 @@ O requisito trata da capacidade operacional de agir, e não apenas de reconhecer
 Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências equivalentes podem ser utilizadas quando forem suficientes, consistentes, rastreáveis e adequadas ao contexto.
 
 **Mecanismos de verificação possíveis:**
+
 - análise de evidências operacionais;
 - verificação institucional;
 - revisão documental;
 - testes ou demonstração de mecanismos, quando aplicável;
 
 **Observações metodológicas:**
+
 - Não aplicável a tarefas que não estejam em produção.
 - A simples possibilidade técnica de desligar um componente não demonstra que existe um processo governado de restrição ou suspensão.
 - Devem ser considerados responsáveis, condições de acionamento e consequências operacionais.
@@ -477,7 +517,7 @@ Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências 
 
 ## Segurança
 
-**Fonte normativa da dimensão:**  
+**Fonte normativa da dimensão:**
 `FIAR-Saude/docs/dimensoes_avaliacao.md`
 
 A dimensão de Segurança é uma das sete dimensões canônicas do FIAR-Saúde. Na documentação vigente consultada, o arquivo detalhado de avaliação de Segurança ainda não foi criado. Portanto, este guia **não cria identificadores ou requisitos operacionais de Segurança**.
@@ -494,21 +534,23 @@ A dimensão de Privacidade avalia como os dados utilizados pela Tarefa de IA sã
 
 ### PRI-01
 
-**Requisito:**  
+**Requisito:**
 A origem, a natureza e a finalidade dos dados utilizados na tarefa estão documentadas?
 
-**Fonte normativa:**  
+**Fonte normativa:**
 `FIAR-Saude/docs/avaliacao/privacidade.md` — PRI-01
 
-**O que o requisito busca verificar:**  
+**O que o requisito busca verificar:**
 Verificar se é possível compreender de onde vêm os dados, que tipo de informação contêm e para que são utilizados na Tarefa de IA, de modo a sustentar a análise de privacidade e a coerência com o Contexto de Uso.
 
 **Aspectos a considerar na aplicabilidade:**
+
 - Aplicável a todas as tarefas que utilizam dados.
 - A profundidade depende da natureza, sensibilidade, proveniência e condições de acesso.
 - Dados públicos, agregados ou anonimizados continuam exigindo documentação suficiente de origem e finalidade.
 
 **Exemplos de evidências pertinentes:**
+
 - Data Card ou documentação equivalente;
 - Formulário de Entrada;
 - documentação de acesso ou proveniência;
@@ -517,11 +559,13 @@ Verificar se é possível compreender de onde vêm os dados, que tipo de informa
 Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências equivalentes podem ser utilizadas quando forem suficientes, consistentes, rastreáveis e adequadas ao contexto.
 
 **Mecanismos de verificação possíveis:**
+
 - verificação documental;
 - consistência cruzada;
 - rastreabilidade da fonte e finalidade;
 
 **Observações metodológicas:**
+
 - Não inferir natureza ou sensibilidade apenas pelo nome do dataset.
 - Distinguir finalidade original de coleta da finalidade de uso na tarefa quando relevante.
 - A existência do Data Card não garante suficiência; o conteúdo precisa sustentar a conclusão.
@@ -530,22 +574,24 @@ Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências 
 
 ### PRI-02
 
-**Requisito:**  
+**Requisito:**
 Está identificado se a tarefa trata dados pessoais, sensíveis, anonimizados, pseudonimizados ou agregados?
 
-**Fonte normativa:**  
+**Fonte normativa:**
 `FIAR-Saude/docs/avaliacao/privacidade.md` — PRI-02
 
-**O que o requisito busca verificar:**  
+**O que o requisito busca verificar:**
 Verificar se a natureza dos dados quanto à possibilidade de identificação e sensibilidade está explicitamente caracterizada, permitindo avaliar controles e riscos pertinentes.
 
 **Aspectos a considerar na aplicabilidade:**
+
 - Aplicabilidade depende dos dados efetivamente tratados.
 - A classificação pode variar entre etapas do pipeline.
 - Dados pseudonimizados não devem ser tratados automaticamente como anônimos.
 - Dados agregados podem manter riscos residuais dependendo da granularidade.
 
 **Exemplos de evidências pertinentes:**
+
 - Data Card;
 - documentação técnica do pipeline;
 - esquema de dados;
@@ -554,11 +600,13 @@ Verificar se a natureza dos dados quanto à possibilidade de identificação e s
 Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências equivalentes podem ser utilizadas quando forem suficientes, consistentes, rastreáveis e adequadas ao contexto.
 
 **Mecanismos de verificação possíveis:**
+
 - verificação documental;
 - análise de suficiência;
 - revisão metodológica quando necessário;
 
 **Observações metodológicas:**
+
 - Não presumir anonimização apenas porque identificadores diretos foram removidos.
 - Registrar incerteza quando a evidência não permite caracterizar adequadamente o dado.
 - A avaliação FIAR não substitui determinação jurídica formal da natureza do dado.
@@ -567,22 +615,24 @@ Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências 
 
 ### PRI-03
 
-**Requisito:**  
+**Requisito:**
 O tratamento dos dados é consistente com a finalidade e o Contexto de Uso declarados?
 
-**Fonte normativa:**  
+**Fonte normativa:**
 `FIAR-Saude/docs/avaliacao/privacidade.md` — PRI-03
 
-**O que o requisito busca verificar:**  
+**O que o requisito busca verificar:**
 Verificar se coleta, seleção, transformação, acesso e uso dos dados permanecem coerentes com a finalidade declarada da tarefa e com o contexto efetivamente avaliado.
 
 **Aspectos a considerar na aplicabilidade:**
+
 - Aplicável sempre que dados sejam tratados.
 - Considerar diferenças entre uso atual e uso pretendido.
 - Mudanças de finalidade, população ou integração podem exigir nova análise.
 - Restrições éticas, contratuais ou institucionais devem ser consideradas quando pertinentes.
 
 **Exemplos de evidências pertinentes:**
+
 - Data Card;
 - Model Card;
 - aprovação ética quando aplicável;
@@ -593,11 +643,13 @@ Verificar se coleta, seleção, transformação, acesso e uso dos dados permanec
 Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências equivalentes podem ser utilizadas quando forem suficientes, consistentes, rastreáveis e adequadas ao contexto.
 
 **Mecanismos de verificação possíveis:**
+
 - consistência cruzada;
 - contextualização;
 - verificação institucional;
 
 **Observações metodológicas:**
+
 - A presença de uma aprovação ética não demonstra automaticamente coerência de todo o tratamento.
 - Comparar escopo, período, população, fontes e finalidade entre registros.
 - Não atribuir não conformidade jurídica; registrar inconsistências e riscos no escopo do FIAR.
@@ -606,22 +658,24 @@ Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências 
 
 ### PRI-04
 
-**Requisito:**  
+**Requisito:**
 Restrições de acesso, uso, compartilhamento, armazenamento e retenção estão documentadas quando aplicáveis?
 
-**Fonte normativa:**  
+**Fonte normativa:**
 `FIAR-Saude/docs/avaliacao/privacidade.md` — PRI-04
 
-**O que o requisito busca verificar:**  
+**O que o requisito busca verificar:**
 Verificar se as condições que limitam quem pode acessar, utilizar, compartilhar, armazenar ou manter os dados estão identificadas e rastreáveis quando relevantes para a tarefa.
 
 **Aspectos a considerar na aplicabilidade:**
+
 - Aplicabilidade varia conforme natureza e governança dos dados.
 - Dados restritos ou sensíveis tendem a exigir maior formalização.
 - Dados públicos podem não demandar os mesmos controles, mas condições específicas ainda podem existir.
 - Em produção, mudanças de acesso podem exigir acompanhamento operacional.
 
 **Exemplos de evidências pertinentes:**
+
 - políticas de acesso;
 - termos de uso ou compartilhamento;
 - registros de autorização;
@@ -632,11 +686,13 @@ Verificar se as condições que limitam quem pode acessar, utilizar, compartilha
 Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências equivalentes podem ser utilizadas quando forem suficientes, consistentes, rastreáveis e adequadas ao contexto.
 
 **Mecanismos de verificação possíveis:**
+
 - verificação documental;
 - rastreabilidade;
 - consistência com práticas declaradas;
 
 **Observações metodológicas:**
+
 - Não confundir ausência de restrição com ausência de documentação quando a natureza do dado exige clareza.
 - Evitar exigir o mesmo conjunto de controles para dados públicos e dados sensíveis.
 - Se a política existir apenas em nível institucional, verificar se ela é aplicável à tarefa concreta.
@@ -645,21 +701,23 @@ Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências 
 
 ### PRI-05
 
-**Requisito:**  
+**Requisito:**
 As medidas de proteção adotadas são compatíveis com a natureza dos dados e os riscos identificados?
 
-**Fonte normativa:**  
+**Fonte normativa:**
 `FIAR-Saude/docs/avaliacao/privacidade.md` — PRI-05
 
-**O que o requisito busca verificar:**  
+**O que o requisito busca verificar:**
 Verificar se as salvaguardas técnicas, organizacionais e institucionais adotadas são proporcionais aos dados tratados e aos riscos relevantes identificados.
 
 **Aspectos a considerar na aplicabilidade:**
+
 - A aplicabilidade e intensidade dos controles dependem da sensibilidade, granularidade, acesso, ambiente e finalidade.
 - Nenhuma técnica específica é universalmente obrigatória.
 - Medidas podem incluir anonimização, pseudonimização, minimização, controle de acesso, criptografia, segregação ou armazenamento seguro.
 
 **Exemplos de evidências pertinentes:**
+
 - documentação de anonimização/pseudonimização;
 - controles de acesso;
 - documentação de segurança dos dados;
@@ -670,12 +728,14 @@ Verificar se as salvaguardas técnicas, organizacionais e institucionais adotada
 Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências equivalentes podem ser utilizadas quando forem suficientes, consistentes, rastreáveis e adequadas ao contexto.
 
 **Mecanismos de verificação possíveis:**
+
 - revisão documental;
 - revisão metodológica;
 - contextualização;
 - verificação técnica quando aplicável;
 
 **Observações metodológicas:**
+
 - A presença de uma medida não demonstra adequação por si só.
 - Avaliar o risco que a medida pretende tratar e suas limitações.
 - Não transformar preferências técnicas do avaliador em requisitos universais.
@@ -685,21 +745,23 @@ Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências 
 
 ### PRI-06
 
-**Requisito:**  
+**Requisito:**
 As limitações das medidas de proteção estão documentadas, quando relevantes?
 
-**Fonte normativa:**  
+**Fonte normativa:**
 `FIAR-Saude/docs/avaliacao/privacidade.md` — PRI-06
 
-**O que o requisito busca verificar:**  
+**O que o requisito busca verificar:**
 Verificar se o projeto reconhece limitações, riscos residuais ou condições sob as quais as medidas de proteção podem não ser suficientes.
 
 **Aspectos a considerar na aplicabilidade:**
+
 - Aplicável quando as medidas possuem limitações materialmente relevantes.
 - A necessidade de detalhamento cresce com sensibilidade e impacto potencial.
 - Pode ser não aplicável quando não houver limitação relevante identificável no escopo, desde que justificado.
 
 **Exemplos de evidências pertinentes:**
+
 - Data Card;
 - documentação técnica;
 - Registro de Decisão Técnica;
@@ -709,11 +771,13 @@ Verificar se o projeto reconhece limitações, riscos residuais ou condições s
 Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências equivalentes podem ser utilizadas quando forem suficientes, consistentes, rastreáveis e adequadas ao contexto.
 
 **Mecanismos de verificação possíveis:**
+
 - verificação documental;
 - consistência entre medida e limitação declarada;
 - revisão metodológica;
 
 **Observações metodológicas:**
+
 - Não presumir que uma técnica como anonimização elimina todo risco.
 - Limitações podem ser técnicas, procedimentais ou institucionais.
 - Ausência de seção intitulada 'limitações' não implica ausência de evidência se a informação estiver adequadamente registrada em outra fonte.
@@ -722,22 +786,24 @@ Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências 
 
 ### PRI-07
 
-**Requisito:**  
+**Requisito:**
 Aprovações éticas, registros institucionais ou outras condições aplicáveis são coerentes com o tratamento realizado?
 
-**Fonte normativa:**  
+**Fonte normativa:**
 `FIAR-Saude/docs/avaliacao/privacidade.md` — PRI-07
 
-**O que o requisito busca verificar:**  
+**O que o requisito busca verificar:**
 Verificar se aprovações, termos, autorizações e condições institucionais aplicáveis correspondem ao escopo real do tratamento de dados associado à tarefa.
 
 **Aspectos a considerar na aplicabilidade:**
+
 - Aplicável apenas quando esses registros ou condições forem pertinentes ao projeto e ao tratamento.
 - Aprovação ética não deve ser exigida universalmente apenas por se tratar de saúde.
 - Comparar população, finalidade, fontes, período e procedimentos quando esses elementos forem relevantes.
 - Mudanças substanciais podem exigir revisão pelas instâncias competentes.
 
 **Exemplos de evidências pertinentes:**
+
 - parecer ou aprovação ética;
 - termos institucionais;
 - Data Card;
@@ -748,11 +814,13 @@ Verificar se aprovações, termos, autorizações e condições institucionais a
 Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências equivalentes podem ser utilizadas quando forem suficientes, consistentes, rastreáveis e adequadas ao contexto.
 
 **Mecanismos de verificação possíveis:**
+
 - verificação institucional;
 - consistência cruzada;
 - rastreabilidade;
 
 **Observações metodológicas:**
+
 - O NIAR verifica coerência documental; não substitui CEP, DPO, jurídico ou outra instância competente.
 - Menção a um número de aprovação não equivale à verificação do documento quando o requisito depender do conteúdo.
 - Ausência do documento deve primeiro ser analisada quanto à aplicabilidade e necessidade.
@@ -761,21 +829,23 @@ Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências 
 
 ### PRI-08
 
-**Requisito:**  
+**Requisito:**
 Quando aplicável, a necessidade de RIPD ou de consulta à instância institucional responsável por proteção de dados foi considerada?
 
-**Fonte normativa:**  
+**Fonte normativa:**
 `FIAR-Saude/docs/avaliacao/privacidade.md` — PRI-08
 
-**O que o requisito busca verificar:**  
+**O que o requisito busca verificar:**
 Verificar se, nos contextos em que a natureza do tratamento ou as regras institucionais tornam a questão relevante, foi considerada a necessidade de RIPD ou consulta à instância responsável por proteção de dados.
 
 **Aspectos a considerar na aplicabilidade:**
+
 - Não é universalmente aplicável.
 - A decisão formal sobre RIPD pode pertencer ao controlador ou à instância institucional competente.
 - A avaliação deve considerar natureza dos dados, riscos, tipo de tratamento e orientação institucional disponível.
 
 **Exemplos de evidências pertinentes:**
+
 - RIPD quando existente;
 - registro de consulta ao DPO/Encarregado;
 - decisão ou orientação institucional;
@@ -784,10 +854,12 @@ Verificar se, nos contextos em que a natureza do tratamento ou as regras institu
 Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências equivalentes podem ser utilizadas quando forem suficientes, consistentes, rastreáveis e adequadas ao contexto.
 
 **Mecanismos de verificação possíveis:**
+
 - verificação institucional;
 - verificação documental;
 
 **Observações metodológicas:**
+
 - Não transformar o RIPD em artefato obrigatório para todas as tarefas.
 - O NIAR não deve substituir a competência institucional do controlador, DPO ou jurídico.
 - Uma decisão documentada de não elaborar RIPD pode constituir evidência pertinente quando emitida pela instância competente.
@@ -796,21 +868,23 @@ Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências 
 
 ### PRI-09
 
-**Requisito:**  
+**Requisito:**
 Riscos residuais ou limitações de privacidade relevantes estão registrados e associados a decisões ou medidas de tratamento?
 
-**Fonte normativa:**  
+**Fonte normativa:**
 `FIAR-Saude/docs/avaliacao/privacidade.md` — PRI-09
 
-**O que o requisito busca verificar:**  
+**O que o requisito busca verificar:**
 Verificar se riscos que permanecem após as medidas de proteção e limitações relevantes estão documentados e conectados às decisões, condicionantes, monitoramentos ou outras respostas adotadas.
 
 **Aspectos a considerar na aplicabilidade:**
+
 - Aplicável quando houver risco residual ou limitação relevante.
 - A resposta pode ser técnica, organizacional, institucional ou de restrição de uso.
 - O nível de formalização depende do risco e da trilha.
 
 **Exemplos de evidências pertinentes:**
+
 - Registro de Decisão Técnica;
 - documentação de riscos;
 - condicionantes;
@@ -820,11 +894,13 @@ Verificar se riscos que permanecem após as medidas de proteção e limitações
 Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências equivalentes podem ser utilizadas quando forem suficientes, consistentes, rastreáveis e adequadas ao contexto.
 
 **Mecanismos de verificação possíveis:**
+
 - rastreabilidade entre risco e decisão;
 - verificação documental;
 - consistência cruzada;
 
 **Observações metodológicas:**
+
 - Registrar um risco não é o mesmo que tratá-lo.
 - Nem todo risco residual exige eliminação; pode haver decisão fundamentada de aceitar, monitorar ou restringir.
 - Aceite institucional de risco deve ser atribuído à instância competente.
@@ -833,22 +909,24 @@ Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências 
 
 ### PRI-10
 
-**Requisito:**  
+**Requisito:**
 Para tarefas em produção, mudanças relevantes no tratamento dos dados, incidentes ou alterações de acesso são acompanhados e documentados?
 
-**Fonte normativa:**  
+**Fonte normativa:**
 `FIAR-Saude/docs/avaliacao/privacidade.md` — PRI-10
 
-**O que o requisito busca verificar:**  
+**O que o requisito busca verificar:**
 Verificar se, durante a operação, mudanças materialmente relevantes no tratamento, incidentes de privacidade ou alterações de acesso geram registros e acompanhamento apropriados.
 
 **Aspectos a considerar na aplicabilidade:**
+
 - Específico da Trilha Produção.
 - A profundidade depende da natureza dos dados e do impacto potencial.
 - Mudanças menores sem efeito no tratamento podem não exigir novo ciclo completo.
 - Incidentes podem acionar outros requisitos e dimensões.
 
 **Exemplos de evidências pertinentes:**
+
 - registros de incidentes;
 - histórico de versões;
 - monitoramento;
@@ -859,11 +937,13 @@ Verificar se, durante a operação, mudanças materialmente relevantes no tratam
 Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências equivalentes podem ser utilizadas quando forem suficientes, consistentes, rastreáveis e adequadas ao contexto.
 
 **Mecanismos de verificação possíveis:**
+
 - análise de evidências operacionais;
 - rastreabilidade longitudinal;
 - consistência entre evento e resposta;
 
 **Observações metodológicas:**
+
 - Não aplicável a tarefas sem operação ativa.
 - Distinguir evento administrativo sem impacto de mudança relevante no tratamento.
 - A existência de logs não basta; deve ser possível relacionar eventos relevantes a análise e resposta quando necessário.
@@ -872,7 +952,7 @@ Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências 
 
 ## Responsabilização
 
-**Fonte normativa da dimensão:**  
+**Fonte normativa da dimensão:**
 `FIAR-Saude/docs/dimensoes_avaliacao.md`
 
 A dimensão de Responsabilização é uma das sete dimensões canônicas do FIAR-Saúde. Na documentação vigente consultada, o arquivo detalhado de avaliação de Responsabilização ainda não foi criado. Portanto, este guia **não cria identificadores ou requisitos operacionais de Responsabilização**.
@@ -885,14 +965,417 @@ Esses aspectos não devem ser convertidos em uma lista local de requisitos numer
 
 ## Rastreabilidade
 
-**Fonte normativa da dimensão:**  
+**Fonte normativa da dimensão:**
 `FIAR-Saude/docs/dimensoes_avaliacao.md`
 
-A dimensão de Rastreabilidade é uma das sete dimensões canônicas do FIAR-Saúde. Na documentação vigente consultada, o arquivo detalhado de avaliação de Rastreabilidade ainda não foi criado. Portanto, este guia **não cria identificadores ou requisitos operacionais de Rastreabilidade**.
+## Rastreabilidade
 
-Até a publicação dos requisitos canônicos, devem ser tratados como aspectos orientadores o versionamento de dados e modelos, o histórico de decisões técnicas, os registros de execução e logs e a disponibilidade de artefatos técnicos ao longo do tempo.
+A dimensão de Rastreabilidade avalia se os estados relevantes da Tarefa de IA, suas evidências, mudanças e relações entre componentes podem ser reconstruídos de forma verificável ao longo do ciclo de vida.
 
-A análise concreta desses aspectos pode apoiar outros requisitos já vigentes, mas não deve produzir requisitos locais que concorram com a documentação canônica.
+Os requisitos canônicos vigentes são RAS-01 a RAS-07.
+
+A aplicação desta dimensão deve distinguir a rastreabilidade das práticas, componentes e registros da própria Tarefa de IA da rastreabilidade produzida pelo NIAR-Saúde durante o processo de avaliação. Esta última constitui uma propriedade transversal do processo avaliativo e não substitui a análise dos requisitos da dimensão.
+
+O nível de detalhamento esperado deve ser proporcional à Tarefa de IA, à Versão Avaliável, ao Contexto de Uso e à Trilha de Execução. A dimensão não pressupõe, como regra geral, rastreamento individual de cada entrada até cada saída, ferramentas específicas de linhagem, logs automatizados ou reprodução integral do ambiente computacional.
+
+---
+
+### RAS-01
+
+**Requisito:**
+A Tarefa de IA e os componentes ou versões relevantes ao estado avaliado podem ser identificados de forma inequívoca?
+
+**Fonte normativa:**
+`FIAR-Saude/docs/avaliacao/rastreabilidade.md` — RAS-01
+
+**O que o requisito busca verificar:**
+Verificar se o estado concreto da Tarefa de IA considerado no ciclo pode ser identificado sem ambiguidade e relacionado aos componentes cuja versão ou configuração seja relevante para interpretar corretamente as evidências utilizadas na avaliação.
+
+O requisito busca evitar que documentos, resultados ou análises sejam atribuídos genericamente ao projeto ou ao sistema sem ser possível determinar a qual estado da tarefa eles efetivamente correspondem.
+
+**Aspectos a considerar na aplicabilidade:**
+
+- O requisito é aplicável às tarefas avaliadas pelo FIAR-Saúde, inclusive na Trilha Experimental.
+- A Versão Avaliável deve constituir a referência principal do ciclo, mas outros identificadores podem ser necessários para distinguir dados, modelo, procedimentos ou componentes relevantes.
+- Nem todo componente técnico precisa possuir versionamento próprio; devem ser considerados aqueles necessários para caracterizar de forma inequívoca o estado avaliado.
+- Nem toda alteração técnica produz uma nova Versão Avaliável.
+- O nível de granularidade necessário depende da possibilidade de uma alteração modificar evidências, resultados ou conclusões relevantes para o ciclo.
+- Na Trilha Produção, pode também ser necessário distinguir versões implantadas ou utilizadas em períodos diferentes.
+
+**Exemplos de evidências pertinentes:**
+
+- Identificação da Avaliação;
+- Model Card ou documentação equivalente;
+- Data Card ou documentação equivalente;
+- documentação técnica da tarefa;
+- identificadores de versão de modelos, dados, código ou configurações relevantes;
+- registros de experimentos;
+- registros de implantação, quando aplicáveis;
+- sistemas ou históricos de versionamento;
+
+Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências equivalentes podem ser utilizadas quando forem suficientes, consistentes, rastreáveis e adequadas ao contexto.
+
+**Mecanismos de verificação possíveis:**
+
+- verificação documental;
+- consistência cruzada entre artefatos;
+- comparação de identificadores de versão;
+- verificação de versionamento;
+- rastreabilidade entre a Versão Avaliável e os componentes relevantes;
+
+**Observações metodológicas:**
+
+- Não presumir que o nome de um modelo ou arquivo identifica, por si só, uma versão de forma inequívoca.
+- O requisito não exige que todos os componentes técnicos sejam versionados com o mesmo mecanismo.
+- A ausência de Git, hash, identificador automatizado ou ferramenta específica de versionamento não implica automaticamente falha.
+- Deve-se verificar se os registros existentes permitem distinguir o estado efetivamente avaliado de outros estados da tarefa.
+- Diferenças entre identificadores em documentos distintos somente devem ser tratadas como inconsistência quando houver evidência suficiente de que deveriam se referir ao mesmo estado.
+
+---
+
+### RAS-02
+
+**Requisito:**
+A origem, versão, data ou período e relação das evidências com a unidade de avaliação podem ser identificadas?
+
+**Fonte normativa:**
+`FIAR-Saude/docs/avaliacao/rastreabilidade.md` — RAS-02
+
+**O que o requisito busca verificar:**
+Verificar se as evidências utilizadas para sustentar a avaliação podem ser relacionadas à combinação de Tarefa de IA, Versão Avaliável e Contexto de Uso considerada no ciclo.
+
+O requisito busca evitar que documentos ou resultados sejam utilizados apenas porque estão disponíveis no repositório ou pertencem ao projeto, sem que seja possível estabelecer sua origem, seu período, sua versão ou sua pertinência ao objeto efetivamente avaliado.
+
+**Aspectos a considerar na aplicabilidade:**
+
+- O requisito é aplicável às evidências materialmente relevantes para a avaliação.
+- Nem toda fonte precisa conter todos os metadados no próprio documento, desde que sua origem e relação com a unidade de avaliação possam ser reconstruídas por registros complementares.
+- O nível de identificação necessário depende da natureza da evidência.
+- Evidências históricas podem ser utilizadas quando sua validade para o estado atual da tarefa estiver demonstrada.
+- Evidências produzidas para outra versão, população, período ou Contexto de Uso não devem ser automaticamente transferidas para o ciclo atual.
+- Na Trilha Produção, a dimensão temporal pode ser particularmente relevante para evidências de monitoramento ou operação.
+
+**Exemplos de evidências pertinentes:**
+
+- Controle de Artefatos;
+- histórico de validação;
+- Identificação da Avaliação;
+- artefatos com versão ou data;
+- registros de experimentos;
+- relatórios técnicos identificados por período;
+- histórico de alterações;
+- registros de monitoramento;
+- registros de implantação;
+- referências documentais que permitam relacionar a evidência à unidade de avaliação;
+
+Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências equivalentes podem ser utilizadas quando forem suficientes, consistentes, rastreáveis e adequadas ao contexto.
+
+**Mecanismos de verificação possíveis:**
+
+- verificação documental;
+- consistência cruzada;
+- verificação de metadados e identificadores;
+- rastreabilidade entre evidência e unidade de avaliação;
+- comparação de datas, períodos e versões;
+- verificação de pertinência ao Contexto de Uso;
+
+**Observações metodológicas:**
+
+- A presença de um arquivo no repositório do projeto não demonstra automaticamente sua pertinência ao ciclo.
+- Data de criação ou modificação do arquivo não deve ser confundida automaticamente com o período ao qual a evidência se refere.
+- Evidência sem identificação suficiente deve ser tratada como possível insuficiência de evidência, e não automaticamente como não conformidade.
+- Uma mesma evidência pode sustentar diferentes requisitos ou dimensões, desde que sua relação com cada análise seja demonstrável.
+- A rastreabilidade aqui avaliada pertence à evidência produzida ou mantida no contexto da tarefa; o NIAR-Saúde deve, adicionalmente, preservar a rastreabilidade de como utilizou essa evidência em sua avaliação.
+
+---
+
+### RAS-03
+
+**Requisito:**
+Mudanças relevantes na tarefa ou em seus componentes estão registradas de forma que sua evolução possa ser reconstruída?
+
+**Fonte normativa:**
+`FIAR-Saude/docs/avaliacao/rastreabilidade.md` — RAS-03
+
+**O que o requisito busca verificar:**
+Verificar se alterações materialmente relevantes na Tarefa de IA ou em seus componentes permanecem registradas em nível suficiente para compreender como o estado atual foi alcançado e quais elementos foram modificados ao longo do tempo.
+
+O requisito não busca exigir registro exaustivo de cada alteração realizada durante o desenvolvimento, mas assegurar que mudanças capazes de afetar evidências, resultados, riscos ou conclusões anteriores possam ser identificadas e reconstruídas.
+
+**Aspectos a considerar na aplicabilidade:**
+
+- Aplicável quando a tarefa ou seus componentes tenham passado por mudanças relevantes para o escopo avaliado.
+- Podem ser consideradas mudanças em dados, preparação dos dados, modelo, arquitetura, parâmetros, treinamento, validação, métricas, thresholds, software, dependências, interfaces ou Contexto de Uso.
+- A relevância da mudança deve ser julgada em relação aos requisitos e evidências potencialmente afetados.
+- Nem toda alteração técnica exige nova Versão Avaliável.
+- Na Trilha Experimental, o histórico pode estar concentrado na evolução metodológica e experimental.
+- Na Trilha Produção, mudanças implantadas e sua sequência temporal podem exigir rastreabilidade adicional.
+
+**Exemplos de evidências pertinentes:**
+
+- histórico de versões;
+- changelog;
+- registros de alterações;
+- commits ou releases;
+- Registros de Decisão Técnica;
+- documentação técnica comparativa;
+- registros de experimentos;
+- atualização de Model Card ou Data Card;
+- registros de mudança de configuração;
+- registros de implantação;
+
+Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências equivalentes podem ser utilizadas quando forem suficientes, consistentes, rastreáveis e adequadas ao contexto.
+
+**Mecanismos de verificação possíveis:**
+
+- comparação entre versões;
+- análise de histórico;
+- verificação documental;
+- consistência cruzada;
+- rastreabilidade longitudinal;
+- associação entre mudança e evidências afetadas;
+
+**Observações metodológicas:**
+
+- Não exigir registro de alterações irrelevantes apenas porque são tecnicamente detectáveis.
+- O avaliador deve considerar impacto potencial sobre o objeto avaliado, e não apenas tamanho aparente da alteração.
+- A ausência de um changelog formal não implica falha quando o histórico puder ser reconstruído por fontes equivalentes.
+- Registro de uma mudança não demonstra, por si só, que seus impactos foram adequadamente avaliados; essa análise pode pertencer a outros requisitos.
+- Quando documentos descrevem mudanças diferentes para o mesmo período ou versão, verificar primeiro se se referem efetivamente ao mesmo objeto antes de registrar inconsistência.
+
+---
+
+### RAS-04
+
+**Requisito:**
+Evidências, achados, decisões e ações relacionadas podem ser vinculados quando essa relação for necessária para reconstruir o ciclo avaliado?
+
+**Fonte normativa:**
+`FIAR-Saude/docs/avaliacao/rastreabilidade.md` — RAS-04
+
+**O que o requisito busca verificar:**
+Verificar se, quando necessário para compreender determinado aspecto do ciclo, é possível reconstruir a relação entre uma evidência ou achado relevante, a decisão decorrente e eventual ação tomada.
+
+O requisito avalia a existência dessa cadeia de associação. Ele não determina se a decisão foi adequada, quem deveria tê-la tomado ou se a ação adotada foi suficiente, aspectos que podem pertencer a Governança, Responsabilização ou outras dimensões.
+
+**Aspectos a considerar na aplicabilidade:**
+
+- Aplicável quando existam achados, decisões ou ações cuja relação seja material para reconstruir o ciclo.
+- Nem toda evidência produz necessariamente uma decisão ou ação.
+- Nem toda decisão exige uma cadeia formal complexa de registros.
+- O grau de formalização esperado depende da relevância do achado e de suas possíveis consequências.
+- Decisões técnicas, metodológicas e institucionais devem ser distinguidas quando necessário.
+- Na Trilha Produção, incidentes, mudanças, restrições ou ações corretivas podem tornar essa rastreabilidade especialmente relevante.
+
+**Exemplos de evidências pertinentes:**
+
+- Registros de Decisão Técnica;
+- relatórios técnicos contendo achados;
+- Fairness Reports ou Explainability Reports;
+- registros de riscos ou limitações;
+- registro de pendências;
+- registro de inconsistências;
+- atas ou decisões institucionais;
+- registros de ações corretivas;
+- histórico de mudanças;
+- condicionantes;
+- documentação de reavaliação;
+
+Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências equivalentes podem ser utilizadas quando forem suficientes, consistentes, rastreáveis e adequadas ao contexto.
+
+**Mecanismos de verificação possíveis:**
+
+- rastreamento entre registros;
+- consistência cruzada;
+- verificação documental;
+- associação entre achado, decisão e ação;
+- verificação de referências ou identificadores comuns;
+- análise temporal da sequência de registros;
+
+**Observações metodológicas:**
+
+- O requisito não exige que toda evidência resulte em uma decisão formal.
+- Não avaliar neste requisito a correção substantiva da decisão; verificar se a relação pode ser reconstruída.
+- A identificação do responsável por determinada decisão pertence principalmente à dimensão de Responsabilização ou Governança, embora o nome do responsável possa compor a evidência de rastreabilidade.
+- Não criar artificialmente uma cadeia `evidência → decisão → ação` quando o contexto não a exige.
+- A ausência de um Registro de Decisão Técnica específico não implica falha se a associação estiver adequadamente preservada em outra fonte.
+- Registros produzidos pelo próprio NIAR-Saúde durante a avaliação não devem ser confundidos com evidências de que o projeto já mantinha essa rastreabilidade.
+
+---
+
+### RAS-05
+
+**Requisito:**
+Quando necessário à avaliação, é possível reconstruir a relação entre dados, modelo, procedimentos e resultados relevantes?
+
+**Fonte normativa:**
+`FIAR-Saude/docs/avaliacao/rastreabilidade.md` — RAS-05
+
+**O que o requisito busca verificar:**
+Verificar se existe informação suficiente para relacionar os principais elementos técnicos que deram origem a um resultado ou evidência relevante para a avaliação.
+
+Conforme a tarefa, isso pode incluir identificar quais dados, versão do modelo, procedimentos de preparação, configuração, parâmetros, método de avaliação e métricas estão associados ao resultado analisado.
+
+O requisito busca garantir reconstrução suficiente para interpretação e verificação da evidência, e não impor reprodução integral do experimento ou linhagem individual de cada registro.
+
+**Aspectos a considerar na aplicabilidade:**
+
+- A profundidade necessária depende do resultado que precisa ser interpretado ou verificado.
+- Nem todo requisito exige reconstrução completa de toda a cadeia técnica.
+- A necessidade pode ser maior quando diferentes versões de dados, modelos ou configurações produzem resultados distintos.
+- Em tarefas experimentais, registros de treinamento, validação e testes podem constituir a principal fonte.
+- Em produção, também podem ser relevantes configurações e versões efetivamente implantadas.
+- Rastreamento individual entre cada registro de entrada e saída somente deve ser exigido quando necessário ao requisito, ao contexto técnico ou a obrigação externa aplicável.
+- Reexecução integral de análises não constitui exigência automática deste requisito.
+
+**Exemplos de evidências pertinentes:**
+
+- Data Card ou documentação equivalente;
+- Model Card ou documentação equivalente;
+- documentação de pipelines;
+- registros de experimentos;
+- scripts ou notebooks, quando pertinentes;
+- documentação de preparação dos dados;
+- identificadores de datasets;
+- parâmetros ou configurações relevantes;
+- documentação de treinamento e validação;
+- relatórios de resultados e métricas;
+- registros de execução;
+- documentação metodológica;
+
+Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências equivalentes podem ser utilizadas quando forem suficientes, consistentes, rastreáveis e adequadas ao contexto.
+
+**Mecanismos de verificação possíveis:**
+
+- revisão documental;
+- revisão metodológica;
+- consistência cruzada;
+- rastreabilidade técnica;
+- comparação entre registros experimentais e resultados reportados;
+- verificação de identificadores, versões e configurações;
+- teste técnico específico, somente quando necessário e viável;
+
+**Observações metodológicas:**
+
+- Não transformar reprodutibilidade ou reexecução integral em requisito universal de Rastreabilidade.
+- Código-fonte, pesos do modelo ou acesso direto aos dados não são necessariamente exigidos se a relação relevante puder ser demonstrada de outra forma.
+- A presença de um pipeline automatizado não demonstra, por si só, que a cadeia está suficientemente documentada.
+- A análise deve se concentrar nos componentes necessários para compreender os resultados utilizados na avaliação.
+- Se um resultado não puder ser associado inequivocamente aos dados, modelo ou procedimento que o produziu, deve-se registrar a limitação concreta sem presumir qual configuração foi utilizada.
+
+---
+
+### RAS-06
+
+**Requisito:**
+Substituições, correções ou atualizações relevantes preservam histórico suficiente para distinguir estados anteriores e atuais da tarefa e das evidências?
+
+**Fonte normativa:**
+`FIAR-Saude/docs/avaliacao/rastreabilidade.md` — RAS-06
+
+**O que o requisito busca verificar:**
+Verificar se atualizações de artefatos, dados, modelos ou registros não eliminam informações necessárias para compreender qual era o estado anterior, qual passou a ser o estado vigente e quais elementos materialmente relevantes foram alterados.
+
+O requisito busca impedir que a simples substituição de documentos ou componentes apague o histórico necessário para interpretar avaliações, evidências ou decisões anteriores.
+
+**Aspectos a considerar na aplicabilidade:**
+
+- Aplicável quando tenham ocorrido substituições, correções ou atualizações materialmente relevantes.
+- Correções puramente editoriais podem não exigir preservação detalhada quando não alterarem informação utilizada na avaliação.
+- Correções que modifiquem métricas, limitações, dados, versões, responsabilidades ou outras informações utilizadas no ciclo podem exigir preservação de histórico.
+- O grau de retenção deve ser proporcional à necessidade de reconstruir estados relevantes.
+- Não se exige manutenção indefinida de toda versão intermediária produzida durante o desenvolvimento.
+- Em ciclos sucessivos, deve ser possível distinguir evidência válida para cada estado ou Versão Avaliável.
+
+**Exemplos de evidências pertinentes:**
+
+- histórico de versões;
+- Controle de Artefatos;
+- histórico de validação;
+- changelog;
+- registros de substituição;
+- commits ou releases;
+- versões anteriores de documentos relevantes;
+- registros de correção;
+- documentação de mudanças;
+- registros de aprovação ou validação de atualização;
+
+Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências equivalentes podem ser utilizadas quando forem suficientes, consistentes, rastreáveis e adequadas ao contexto.
+
+**Mecanismos de verificação possíveis:**
+
+- comparação entre versões;
+- verificação de histórico;
+- análise de registros de substituição;
+- consistência cruzada;
+- rastreabilidade temporal;
+- análise da relação entre versão anterior e versão atual;
+
+**Observações metodológicas:**
+
+- Não exigir retenção indiscriminada de arquivos intermediários sem relevância para a avaliação.
+- O importante é preservar informação suficiente para distinguir estados materialmente diferentes.
+- A versão mais recente de um artefato não deve apagar silenciosamente uma informação relevante utilizada em avaliação anterior.
+- Quando uma correção resolver uma inconsistência, o histórico da correção pode ser necessário para preservar a rastreabilidade do ciclo.
+- O Controle de Artefatos possui função administrativa; sua existência ajuda na reconstrução do histórico, mas não substitui evidência técnica sobre o conteúdo da mudança.
+
+---
+
+### RAS-07
+
+**Requisito:**
+Para tarefas em produção, eventos operacionais relevantes podem ser associados à versão da tarefa e ao período correspondentes?
+
+**Fonte normativa:**
+`FIAR-Saude/docs/avaliacao/rastreabilidade.md` — RAS-07
+
+**O que o requisito busca verificar:**
+Verificar se, durante a operação, eventos materialmente relevantes podem ser relacionados ao estado da tarefa que estava efetivamente em uso e ao período em que ocorreram.
+
+Isso permite reconstruir, quando necessário, qual versão estava implantada diante de um incidente, alteração, monitoramento, ação corretiva, rollback ou outro evento operacional relevante.
+
+**Aspectos a considerar na aplicabilidade:**
+
+- O requisito é direcionado à Trilha Produção.
+- Para tarefas exclusivamente na Trilha Experimental, sua não aplicabilidade pode decorrer diretamente da ausência de operação ativa, desde que devidamente justificada.
+- Nem todo evento operacional precisa ser registrado com o mesmo nível de detalhamento.
+- Devem ser considerados eventos capazes de afetar interpretação de resultados, riscos, operação, disponibilidade, segurança, desempenho ou decisões de acompanhamento.
+- A frequência e granularidade dos registros dependem da Tarefa de IA e do Contexto de Uso.
+- A mudança para Trilha Produção pode tornar este requisito aplicável mesmo que não tenha sido aplicável em ciclos anteriores.
+
+**Exemplos de evidências pertinentes:**
+
+- registros de implantação;
+- histórico de versões em produção;
+- registros de monitoramento;
+- registros de incidentes;
+- logs operacionais pertinentes;
+- registros de rollback;
+- registros de suspensão ou reativação;
+- histórico de configuração;
+- registros de atualização;
+- relatórios de operação ou manutenção;
+- documentação de reavaliações;
+
+Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências equivalentes podem ser utilizadas quando forem suficientes, consistentes, rastreáveis e adequadas ao contexto.
+
+**Mecanismos de verificação possíveis:**
+
+- análise de evidências operacionais;
+- rastreabilidade longitudinal;
+- verificação de versão implantada;
+- correlação temporal entre eventos e versões;
+- consistência cruzada entre monitoramento, incidentes e registros de implantação;
+- revisão documental ou técnica de logs pertinentes;
+
+**Observações metodológicas:**
+
+- Não aplicar automaticamente este requisito a tarefas sem operação ativa.
+- A existência de logs não demonstra, por si só, que eventos podem ser associados à versão correta da tarefa.
+- O requisito não exige registro de todo evento técnico de baixa relevância.
+- Registros operacionais podem também sustentar requisitos de Segurança ou Governança; seu uso transversal não torna os requisitos equivalentes.
+- A análise deve verificar associação entre evento, período e versão, e não julgar neste requisito se o incidente foi adequadamente tratado.
+- A inexistência de determinado tipo de log não implica automaticamente Não Conformidade quando a rastreabilidade necessária for demonstrada por mecanismo equivalente.
 
 ---
 
@@ -902,21 +1385,23 @@ A dimensão de Justiça examina evidências de possíveis disparidades relevante
 
 ### JUS-01
 
-**Requisito:**  
+**Requisito:**
 Os grupos, populações, territórios ou unidades relevantes para o contexto de uso foram identificados e justificados?
 
-**Fonte normativa:**  
+**Fonte normativa:**
 `FIAR-Saude/docs/avaliacao/justica.md` — JUS-01
 
-**O que o requisito busca verificar:**  
+**O que o requisito busca verificar:**
 Verificar se os recortes relevantes para analisar possíveis disparidades foram escolhidos com base na tarefa e no Contexto de Uso, e não apenas porque determinados atributos estavam disponíveis nos dados.
 
 **Aspectos a considerar na aplicabilidade:**
+
 - Aplicável quando diferenças entre grupos, populações, territórios ou unidades possam ser relevantes para impacto ou desempenho.
 - A seleção deve considerar população afetada, finalidade, desigualdades conhecidas, dados e consequências dos erros.
 - Nem todas as categorias demográficas são aplicáveis a toda tarefa.
 
 **Exemplos de evidências pertinentes:**
+
 - Contexto de Uso;
 - Formulário de Entrada;
 - Data Card;
@@ -926,11 +1411,13 @@ Verificar se os recortes relevantes para analisar possíveis disparidades foram 
 Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências equivalentes podem ser utilizadas quando forem suficientes, consistentes, rastreáveis e adequadas ao contexto.
 
 **Mecanismos de verificação possíveis:**
+
 - verificação documental;
 - consistência cruzada;
 - contextualização;
 
 **Observações metodológicas:**
+
 - Disponibilidade de atributo não é justificativa suficiente.
 - Ausência de dado para grupo relevante deve ser registrada como limitação, não preenchida por inferência.
 - Grupos relevantes podem ser territoriais, institucionais ou clínicos, e não apenas demográficos.
@@ -939,21 +1426,23 @@ Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências 
 
 ### JUS-02
 
-**Requisito:**  
+**Requisito:**
 Existem limitações de cobertura, representação ou qualidade dos dados relevantes para esses grupos?
 
-**Fonte normativa:**  
+**Fonte normativa:**
 `FIAR-Saude/docs/avaliacao/justica.md` — JUS-02
 
-**O que o requisito busca verificar:**  
+**O que o requisito busca verificar:**
 Verificar se foram identificadas limitações dos dados capazes de afetar de forma desigual os grupos relevantes, incluindo sub-representação, cobertura, completude, qualidade ou diferenças de medição.
 
 **Aspectos a considerar na aplicabilidade:**
+
 - Aplicável quando os dados permitirem ou exigirem análise de representação/qualidade por grupos relevantes.
 - A impossibilidade de avaliar por ausência de informação pode ser uma limitação material.
 - O nível de análise depende da tarefa e das consequências potenciais.
 
 **Exemplos de evidências pertinentes:**
+
 - Data Card;
 - análises descritivas;
 - documentação de preparação dos dados;
@@ -963,11 +1452,13 @@ Verificar se foram identificadas limitações dos dados capazes de afetar de for
 Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências equivalentes podem ser utilizadas quando forem suficientes, consistentes, rastreáveis e adequadas ao contexto.
 
 **Mecanismos de verificação possíveis:**
+
 - revisão documental;
 - revisão metodológica;
 - consistência cruzada;
 
 **Observações metodológicas:**
+
 - Não inferir representatividade apenas pelo tamanho total do dataset.
 - Distinguir representação numérica de adequação substantiva ao contexto.
 - Limitações identificadas não significam automaticamente que o sistema seja injusto.
@@ -976,21 +1467,23 @@ Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências 
 
 ### JUS-03
 
-**Requisito:**  
+**Requisito:**
 O desempenho ou impacto foi avaliado entre grupos relevantes quando aplicável?
 
-**Fonte normativa:**  
+**Fonte normativa:**
 `FIAR-Saude/docs/avaliacao/justica.md` — JUS-03
 
-**O que o requisito busca verificar:**  
+**O que o requisito busca verificar:**
 Verificar se diferenças relevantes de desempenho ou impacto foram examinadas entre os grupos identificados quando esse tipo de análise é pertinente à tarefa.
 
 **Aspectos a considerar na aplicabilidade:**
+
 - Nem toda tarefa permite a mesma análise de grupos.
 - A aplicabilidade depende de disponibilidade de dados, função da tarefa e consequências dos resultados.
 - Métricas devem ser adequadas ao tipo de problema e podem incluir desempenho, erro ou outro impacto pertinente.
 
 **Exemplos de evidências pertinentes:**
+
 - Fairness Report ou equivalente;
 - métricas estratificadas;
 - resultados experimentais;
@@ -1000,11 +1493,13 @@ Verificar se diferenças relevantes de desempenho ou impacto foram examinadas en
 Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências equivalentes podem ser utilizadas quando forem suficientes, consistentes, rastreáveis e adequadas ao contexto.
 
 **Mecanismos de verificação possíveis:**
+
 - revisão metodológica;
 - revisão de métricas e resultados;
 - reprodução ou testes quando aplicável;
 
 **Observações metodológicas:**
+
 - Métrica global não substitui análise por grupo quando esta for materialmente relevante.
 - A ausência de análise deve ser interpretada à luz da aplicabilidade e da disponibilidade dos dados.
 - Diferença numérica observada ainda precisa ser contextualizada.
@@ -1013,22 +1508,24 @@ Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências 
 
 ### JUS-04
 
-**Requisito:**  
+**Requisito:**
 As métricas e métodos utilizados são adequados à tarefa e aos grupos avaliados?
 
-**Fonte normativa:**  
+**Fonte normativa:**
 `FIAR-Saude/docs/avaliacao/justica.md` — JUS-04
 
-**O que o requisito busca verificar:**  
+**O que o requisito busca verificar:**
 Verificar se as escolhas de métricas, comparações, agregações e métodos de análise de disparidade são tecnicamente adequadas ao tipo de tarefa, tamanho dos grupos e finalidade da avaliação.
 
 **Aspectos a considerar na aplicabilidade:**
+
 - Aplicável quando houver análise quantitativa ou metodológica de justiça.
 - Métricas devem ser selecionadas conforme classificação, regressão, previsão ou outra tarefa.
 - Tamanho e estabilidade dos grupos podem afetar a interpretação.
 - A ausência de uma métrica padronizada universal deve ser tratada por justificativa metodológica.
 
 **Exemplos de evidências pertinentes:**
+
 - Fairness Report;
 - protocolo experimental;
 - Model Card;
@@ -1038,11 +1535,13 @@ Verificar se as escolhas de métricas, comparações, agregações e métodos de
 Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências equivalentes podem ser utilizadas quando forem suficientes, consistentes, rastreáveis e adequadas ao contexto.
 
 **Mecanismos de verificação possíveis:**
+
 - revisão metodológica;
 - revisão de métricas;
 - análise de suficiência e estabilidade;
 
 **Observações metodológicas:**
+
 - Não impor uma única definição de fairness a todas as tarefas.
 - Evitar interpretar diferenças pequenas sem considerar incerteza, tamanho de amostra e relevância prática.
 - Métrica tecnicamente correta pode ser inadequada ao objetivo decisório se não capturar o dano relevante.
@@ -1051,21 +1550,23 @@ Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências 
 
 ### JUS-05
 
-**Requisito:**  
+**Requisito:**
 Disparidades identificadas foram adequadamente interpretadas no contexto de uso?
 
-**Fonte normativa:**  
+**Fonte normativa:**
 `FIAR-Saude/docs/avaliacao/justica.md` — JUS-05
 
-**O que o requisito busca verificar:**  
+**O que o requisito busca verificar:**
 Verificar se diferenças observadas foram interpretadas considerando magnitude, estabilidade, composição dos grupos, consequências potenciais e contexto, evitando conclusões automáticas de injustiça ou irrelevância.
 
 **Aspectos a considerar na aplicabilidade:**
+
 - Aplicável quando houver disparidades identificadas.
 - A interpretação depende da função da tarefa e de quem pode ser afetado.
 - Pode exigir conhecimento contextual ou institucional além da métrica.
 
 **Exemplos de evidências pertinentes:**
+
 - Fairness Report;
 - documentação de limitações;
 - análises contextuais;
@@ -1075,11 +1576,13 @@ Verificar se diferenças observadas foram interpretadas considerando magnitude, 
 Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências equivalentes podem ser utilizadas quando forem suficientes, consistentes, rastreáveis e adequadas ao contexto.
 
 **Mecanismos de verificação possíveis:**
+
 - contextualização;
 - consistência entre evidências;
 - revisão de resultados;
 
 **Observações metodológicas:**
+
 - Disparidade não equivale automaticamente a discriminação ou injustiça.
 - Ausência de significância estatística não torna automaticamente uma diferença irrelevante.
 - Consequências potenciais e contexto de uso devem participar da interpretação.
@@ -1088,21 +1591,23 @@ Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências 
 
 ### JUS-06
 
-**Requisito:**  
+**Requisito:**
 Quando necessário, possíveis causas das disparidades foram investigadas?
 
-**Fonte normativa:**  
+**Fonte normativa:**
 `FIAR-Saude/docs/avaliacao/justica.md` — JUS-06
 
-**O que o requisito busca verificar:**  
+**O que o requisito busca verificar:**
 Verificar se, diante de disparidades materialmente relevantes, o projeto investigou fatores plausíveis relacionados aos dados, medição, seleção, modelagem, contexto ou mudanças de distribuição.
 
 **Aspectos a considerar na aplicabilidade:**
+
 - Aplicável quando a magnitude ou relevância do achado justificar investigação adicional.
 - Nem toda diferença exige investigação causal completa.
 - A capacidade de investigar depende das evidências e do desenho disponível.
 
 **Exemplos de evidências pertinentes:**
+
 - análises adicionais;
 - documentação dos dados;
 - registros técnicos;
@@ -1112,11 +1617,13 @@ Verificar se, diante de disparidades materialmente relevantes, o projeto investi
 Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências equivalentes podem ser utilizadas quando forem suficientes, consistentes, rastreáveis e adequadas ao contexto.
 
 **Mecanismos de verificação possíveis:**
+
 - revisão metodológica;
 - consistência cruzada;
 - análise exploratória adicional quando aplicável;
 
 **Observações metodológicas:**
+
 - Hipótese sobre causa não deve ser apresentada como causalidade demonstrada.
 - Estruturas sociais ou epidemiológicas podem contribuir para disparidades sem que o modelo seja a única causa.
 - Quando a origem não puder ser estabelecida, a limitação deve permanecer explícita.
@@ -1125,22 +1632,24 @@ Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências 
 
 ### JUS-07
 
-**Requisito:**  
+**Requisito:**
 Medidas de mitigação, monitoramento, restrição ou outra resposta foram consideradas quando os achados justificaram ação?
 
-**Fonte normativa:**  
+**Fonte normativa:**
 `FIAR-Saude/docs/avaliacao/justica.md` — JUS-07
 
-**O que o requisito busca verificar:**  
+**O que o requisito busca verificar:**
 Verificar se achados relevantes resultaram em consideração explícita de respostas proporcionais, que podem incluir investigação, mudança de dados ou modelo, monitoramento, restrição de uso ou decisão institucional.
 
 **Aspectos a considerar na aplicabilidade:**
+
 - Aplicável quando os achados justificarem alguma ação.
 - A ação adequada depende da causa provável, da magnitude, do Contexto de Uso e dos trade-offs.
 - Mitigação técnica não é a única resposta possível.
 - Em produção, monitoramento ou condicionantes podem ser especialmente relevantes.
 
 **Exemplos de evidências pertinentes:**
+
 - Registro de Decisão Técnica;
 - Fairness Report;
 - planos de mitigação;
@@ -1151,11 +1660,13 @@ Verificar se achados relevantes resultaram em consideração explícita de respo
 Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências equivalentes podem ser utilizadas quando forem suficientes, consistentes, rastreáveis e adequadas ao contexto.
 
 **Mecanismos de verificação possíveis:**
+
 - verificação documental;
 - rastreabilidade entre achado e decisão;
 - revisão de efeitos da mitigação;
 
 **Observações metodológicas:**
+
 - Ausência de mitigação técnica não implica automaticamente inadequação.
 - A decisão de não mitigar deve ser fundamentada quando o achado for relevante.
 - Medidas podem introduzir trade-offs que precisam ser avaliados e documentados.
@@ -1164,21 +1675,23 @@ Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências 
 
 ### JUS-08
 
-**Requisito:**  
+**Requisito:**
 Riscos residuais, limitações e trade-offs relevantes foram documentados?
 
-**Fonte normativa:**  
+**Fonte normativa:**
 `FIAR-Saude/docs/avaliacao/justica.md` — JUS-08
 
-**O que o requisito busca verificar:**  
+**O que o requisito busca verificar:**
 Verificar se limitações persistentes, riscos residuais e efeitos colaterais das escolhas de mitigação ou operação estão registrados e vinculados às decisões correspondentes.
 
 **Aspectos a considerar na aplicabilidade:**
+
 - Aplicável quando existirem riscos residuais, limitações ou trade-offs materialmente relevantes.
 - A profundidade depende do impacto potencial e da resposta adotada.
 - Pode incluir trade-offs entre grupos, desempenho global e redução de disparidade.
 
 **Exemplos de evidências pertinentes:**
+
 - Registro de Decisão Técnica;
 - Model Card;
 - Fairness Report;
@@ -1188,11 +1701,13 @@ Verificar se limitações persistentes, riscos residuais e efeitos colaterais da
 Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências equivalentes podem ser utilizadas quando forem suficientes, consistentes, rastreáveis e adequadas ao contexto.
 
 **Mecanismos de verificação possíveis:**
+
 - verificação documental;
 - consistência;
 - rastreabilidade entre limitação, decisão e uso;
 
 **Observações metodológicas:**
+
 - Não apagar risco residual após uma mitigação parcial.
 - Trade-offs devem ser descritos de forma compatível com as métricas efetivamente observadas.
 - Aceite de risco é uma decisão institucional quando assim definido pela governança, não conclusão do avaliador isolado.
@@ -1201,21 +1716,23 @@ Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências 
 
 ### JUS-09
 
-**Requisito:**  
+**Requisito:**
 Para tarefas em produção, disparidades relevantes são acompanhadas longitudinalmente quando necessário?
 
-**Fonte normativa:**  
+**Fonte normativa:**
 `FIAR-Saude/docs/avaliacao/justica.md` — JUS-09
 
-**O que o requisito busca verificar:**  
+**O que o requisito busca verificar:**
 Verificar se disparidades materialmente relevantes continuam sendo acompanhadas após implantação, permitindo identificar persistência, agravamento, melhora ou surgimento de novos padrões ao longo de versões e mudanças de contexto.
 
 **Aspectos a considerar na aplicabilidade:**
+
 - Específico da Trilha Produção.
 - Aplicável quando a análise anterior indicar grupos ou disparidades relevantes para acompanhamento.
 - A frequência e as métricas devem ser proporcionais ao risco e ao ritmo de mudança da tarefa.
 
 **Exemplos de evidências pertinentes:**
+
 - relatórios de monitoramento;
 - histórico de versões;
 - métricas por grupo ao longo do tempo;
@@ -1225,11 +1742,13 @@ Verificar se disparidades materialmente relevantes continuam sendo acompanhadas 
 Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências equivalentes podem ser utilizadas quando forem suficientes, consistentes, rastreáveis e adequadas ao contexto.
 
 **Mecanismos de verificação possíveis:**
+
 - análise de evidências operacionais;
 - rastreabilidade longitudinal;
 - comparação entre versões;
 
 **Observações metodológicas:**
+
 - Não aplicável à Trilha Experimental sem operação ativa.
 - Monitorar somente a métrica global pode ser insuficiente quando o risco relevante é distributivo.
 - Mudanças na composição dos grupos ou nos dados podem alterar a interpretação longitudinal.
@@ -1238,7 +1757,7 @@ Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências 
 
 ## Transparência
 
-**Fonte normativa da dimensão:**  
+**Fonte normativa da dimensão:**
 `FIAR-Saude/docs/dimensoes_avaliacao.md`
 
 A dimensão de Transparência é uma das sete dimensões canônicas do FIAR-Saúde. Na documentação vigente consultada, o arquivo detalhado de avaliação de Transparência ainda não foi criado. Portanto, este guia **não cria identificadores ou requisitos operacionais de Transparência**.
@@ -1265,7 +1784,6 @@ Para cada requisito canônico aplicável:
 A conformidade é consolidada para a combinação **Tarefa de IA + Versão Avaliável + Contexto de Uso**. A maturidade é inferida separadamente, de forma longitudinal, no nível do projeto.
 
 ---
-
 
 ## Referências
 
