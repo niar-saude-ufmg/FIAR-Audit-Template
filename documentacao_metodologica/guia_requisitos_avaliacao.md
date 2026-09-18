@@ -10,6 +10,8 @@ A inclusão de um tipo de evidência neste guia não implica que determinado art
 
 A aplicabilidade deve ser determinada individualmente para cada requisito, considerando a Tarefa de IA, a Versão Avaliável, o Contexto de Uso e a Trilha de Execução.
 
+Um requisito deve ser considerado Não aplicável somente quando a condição objetiva pressuposta por sua formulação não estiver presente no objeto avaliado. A ausência de prática, mecanismo, capacidade, procedimento, registro ou evidência que o próprio requisito busca avaliar não constitui justificativa de não aplicabilidade e deve ser refletida posteriormente na análise e no resultado do requisito. Quando a presença da condição objetiva ainda não puder ser determinada, a aplicabilidade não deve ser presumida como Não aplicável.
+
 As orientações deste guia apoiam o preenchimento do template de avaliação de requisito. O guia apresenta possibilidades de interpretação, evidências e verificação; a avaliação concreta deve registrar somente aquilo que for aplicável e efetivamente verificado no ciclo correspondente.
 
 As formulações dos requisitos reproduzem a documentação canônica vigente do FIAR-Saúde. As explicações, exemplos e cautelas deste guia têm função operacional e não criam requisitos adicionais.
@@ -204,7 +206,7 @@ O requisito não presume que toda Tarefa de IA exija o mesmo tipo de supervisão
 
 **Aspectos a considerar na aplicabilidade:**
 
-- A aplicabilidade da supervisão depende do tipo de tarefa, do grau de autonomia, das consequências dos resultados e do contexto de uso.
+- O requisito é aplicável quando, pela natureza da tarefa, pelo grau de autonomia, pelas consequências de seus resultados ou pelo Contexto de Uso, for pertinente determinar a necessidade de supervisão humana. A inexistência de supervisão atualmente definida ou implementada não constitui justificativa de não aplicabilidade.
 - Em tarefas exclusivamente experimentais, pode não existir ainda um fluxo de supervisão operacional, mas o uso pretendido pode exigir que essa necessidade seja considerada.
 - Em produção, devem ser considerados os pontos concretos em que revisão, intervenção ou decisão humana são necessárias.
 - A supervisão deve ser proporcional ao risco e à função da saída da IA.
@@ -251,7 +253,7 @@ O foco não é apenas a existência nominal de um supervisor, mas a capacidade e
 
 **Aspectos a considerar na aplicabilidade:**
 
-- Aplicável somente quando houver supervisão humana pertinente ao uso da tarefa.
+- Aplicável quando, conforme a análise de GOV-04, a supervisão humana for pertinente ao uso da tarefa. A inexistência de responsáveis, informações ou mecanismos de intervenção não torna o requisito não aplicável.
 - A análise depende da função atribuída ao supervisor e das decisões que ele pode tomar.
 - Em tarefas ainda não operacionais, pode ser prematuro exigir interfaces ou procedimentos completos; deve-se avaliar o estágio real.
 - Em produção, mecanismos efetivos de intervenção e revisão tendem a ser materialmente relevantes.
@@ -299,7 +301,7 @@ O requisito conecta a produção de evidência à governança: identificar um pr
 
 **Aspectos a considerar na aplicabilidade:**
 
-- Aplicável quando houver riscos, limitações ou achados que demandem tratamento ou decisão.
+- Aplicável quando as características da tarefa, de seu Contexto de Uso ou os achados do ciclo indicarem riscos, limitações ou questões materialmente relevantes que demandem tratamento ou decisão. A ausência de processo de tratamento ou escalonamento não constitui justificativa de não aplicabilidade.
 - O tipo de resposta pode variar entre correção técnica, investigação, monitoramento, restrição de uso, registro de risco residual ou escalonamento institucional.
 - Na Trilha Experimental, o tratamento pode ocorrer dentro do ciclo de desenvolvimento.
 - Na Trilha Produção, podem ser necessários fluxos de resposta, prazos, responsáveis e escalonamento operacional ou institucional.
@@ -347,7 +349,7 @@ O requisito busca evitar que decisões institucionais se desvinculem do objeto a
 
 **Aspectos a considerar na aplicabilidade:**
 
-- Aplicável quando houver condicionantes, restrições ou decisões institucionais relacionadas à tarefa.
+- Aplicável quando existirem condicionantes, restrições ou decisões institucionais pertinentes à tarefa, independentemente de estarem adequadamente documentados. A ausência de registro não demonstra, por si só, a ausência dessa condição.
 - Nem toda avaliação exige uma decisão institucional adicional.
 - A ausência de deliberação formal não deve ser tratada como lacuna quando nenhuma questão exigiu escalonamento.
 - Em produção, decisões sobre autorização, restrição, suspensão ou risco residual podem ser especialmente relevantes.
@@ -398,7 +400,7 @@ O requisito não impõe monitoramento contínuo uniforme a todas as tarefas; exi
 - Na Trilha Experimental, podem ser suficientes mecanismos associados aos ciclos previstos de desenvolvimento e avaliação.
 - Na Trilha Produção, normalmente são relevantes monitoramento operacional, revisão periódica e atualização de evidências.
 - O que deve ser acompanhado depende dos riscos e propriedades relevantes da tarefa.
-- Mecanismos inexistentes ou ainda não exigíveis no estágio atual não devem ser tratados como não conformidade sem análise de aplicabilidade.
+- A natureza e a intensidade dos mecanismos esperados devem ser proporcionais ao estágio da tarefa e à Trilha de Execução. A inexistência de mecanismos de monitoramento, revisão ou atualização que sejam pertinentes ao estágio da tarefa deve ser tratada no resultado da avaliação, e não como justificativa de não aplicabilidade.
 
 **Exemplos de evidências pertinentes:**
 
@@ -443,7 +445,7 @@ O requisito sustenta a governança longitudinal e evita que mudanças relevantes
 
 **Aspectos a considerar na aplicabilidade:**
 
-- Aplicável em qualquer tarefa sujeita a evolução, embora a formalização esperada varie por trilha.
+- Aplicável quando a tarefa, seus dados, modelo, procedimentos, finalidade, integração ou Contexto de Uso forem passíveis de mudanças relevantes para a avaliação. A inexistência de critérios ou gatilhos previamente definidos não demonstra que a tarefa não esteja sujeita a evolução.
 - Podem ser relevantes mudanças no modelo, dados, procedimentos, população, finalidade, integração ou Contexto de Uso.
 - Nem toda alteração técnica constitui nova Versão Avaliável.
 - Em produção, incidentes, drift ou mudanças operacionais podem funcionar como gatilhos adicionais.
@@ -834,13 +836,13 @@ Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências 
 ### SEG-06
 
 **Requisito:**
-Para tarefas em produção, ou quando o risco identificado justificar, existem mecanismos proporcionais para detectar, registrar e responder a eventos ou incidentes de segurança relevantes?
+Para tarefas em produção, ou quando os riscos de segurança pertinentes à tarefa e ao seu Contexto de Uso justificarem, existem mecanismos proporcionais para detectar, registrar e responder a eventos ou incidentes de segurança relevantes?
 
 **Fonte normativa:**
 `FIAR-Saude/docs/avaliacao/seguranca.md` — SEG-06
 
 **O que o requisito busca verificar:**
-Verificar se, quando o estágio da tarefa ou os riscos identificados exigirem capacidade de acompanhamento de eventos de Segurança, existem mecanismos proporcionais para detectar ocorrências relevantes, preservar registros suficientes e realizar resposta técnica adequada.
+Verificar se, quando o estágio da tarefa ou os riscos de segurança pertinentes à tarefa e ao seu Contexto de Uso  exigirem capacidade de acompanhamento de eventos de Segurança, existem mecanismos proporcionais para detectar ocorrências relevantes, preservar registros suficientes e realizar resposta técnica adequada.
 
 O requisito não torna monitoramento contínuo ou gestão formal de incidentes obrigatórios para toda tarefa. Sua aplicabilidade e profundidade dependem da Trilha de Execução e do risco.
 
@@ -848,7 +850,7 @@ O requisito não torna monitoramento contínuo ou gestão formal de incidentes o
 
 - Em tarefas na Trilha Produção, o requisito tende a ser aplicável porque há operação ativa, mas seu nível de formalização continua dependente dos riscos concretos.
 - Em tarefas experimentais, o requisito pode ser aplicável quando riscos específicos justifiquem detecção, registro e resposta mesmo sem operação ativa.
-- A expressão “quando o risco identificado justificar” impede interpretar SEG-06 como requisito exclusivamente de produção.
+- A referência aos riscos de segurança pertinentes à tarefa e ao seu Contexto de Uso impede interpretar SEG-06 como requisito exclusivamente de produção.
 - Devem ser definidos quais eventos são materialmente relevantes para a tarefa antes de determinar mecanismo de monitoramento.
 - Monitoramento contínuo não é universal; monitoramento periódico, registros de execução ou mecanismos reativos podem ser suficientes em determinados contextos.
 - Logs operacionais são uma possível fonte de evidência, não requisito em si.
@@ -1038,7 +1040,7 @@ Verificar se as condições que limitam quem pode acessar, utilizar, compartilha
 
 **Aspectos a considerar na aplicabilidade:**
 
-- Aplicabilidade varia conforme natureza e governança dos dados.
+- Aplicável quando a natureza dos dados, sua governança ou as condições de tratamento implicarem restrições pertinentes de acesso, uso, compartilhamento, armazenamento ou retenção. A ausência de documentação dessas restrições não constitui justificativa de não aplicabilidade.
 - Dados restritos ou sensíveis tendem a exigir maior formalização.
 - Dados públicos podem não demandar os mesmos controles, mas condições específicas ainda podem existir.
 - Em produção, mudanças de acesso podem exigir acompanhamento operacional.
@@ -1129,7 +1131,7 @@ Verificar se o projeto reconhece limitações, riscos residuais ou condições s
 
 - Aplicável quando as medidas possuem limitações materialmente relevantes.
 - A necessidade de detalhamento cresce com sensibilidade e impacto potencial.
-- Pode ser não aplicável quando não houver limitação relevante identificável no escopo, desde que justificado.
+- Pode ser não aplicável quando, consideradas a natureza das medidas de proteção e as condições do tratamento, não houver limitação materialmente relevante no escopo. A ausência de análise ou de documentação de limitações não demonstra sua inexistência.
 
 **Exemplos de evidências pertinentes:**
 
@@ -1168,7 +1170,7 @@ Verificar se aprovações, termos, autorizações e condições institucionais a
 
 **Aspectos a considerar na aplicabilidade:**
 
-- Aplicável apenas quando esses registros ou condições forem pertinentes ao projeto e ao tratamento.
+- Aplicável quando a natureza do tratamento, o contexto institucional ou as regras aplicáveis tornarem pertinentes aprovações éticas, registros institucionais ou outras condições. A inexistência ou indisponibilidade do registro correspondente não constitui justificativa de não aplicabilidade.
 - Aprovação ética não deve ser exigida universalmente apenas por se tratar de saúde.
 - Comparar população, finalidade, fontes, período e procedimentos quando esses elementos forem relevantes.
 - Mudanças substanciais podem exigir revisão pelas instâncias competentes.
@@ -1201,7 +1203,7 @@ Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências 
 ### PRI-08
 
 **Requisito:**
-Quando aplicável, a necessidade de RIPD ou de consulta à instância institucional responsável por proteção de dados foi considerada?
+Quando a natureza do tratamento dos dados, os riscos de privacidade ou as regras institucionais aplicáveis tornarem a questão pertinente, a necessidade de RIPD ou de consulta à instância institucional responsável por proteção de dados foi considerada?
 
 **Fonte normativa:**
 `FIAR-Saude/docs/avaliacao/privacidade.md` — PRI-08
@@ -1250,7 +1252,7 @@ Verificar se riscos que permanecem após as medidas de proteção e limitações
 
 **Aspectos a considerar na aplicabilidade:**
 
-- Aplicável quando houver risco residual ou limitação relevante.
+- Aplicável quando, consideradas a natureza dos dados, as medidas de proteção e as condições do tratamento, existirem riscos residuais ou limitações materialmente relevantes. A ausência de seu registro não demonstra que esses riscos ou limitações não existam.
 - A resposta pode ser técnica, organizacional, institucional ou de restrição de uso.
 - O nível de formalização depende do risco e da trilha.
 
@@ -1857,7 +1859,7 @@ O requisito avalia a existência dessa cadeia de associação. Ele não determin
 
 **Aspectos a considerar na aplicabilidade:**
 
-- Aplicável quando existam achados, decisões ou ações cuja relação seja material para reconstruir o ciclo.
+- A aplicabilidade decorre da necessidade de reconstruir relações entre evidências, achados, decisões e ações relevantes para o ciclo avaliado. A inexistência ou insuficiência dos vínculos necessários deve aparecer no resultado da avaliação e não constitui justificativa de não aplicabilidade.
 - Nem toda evidência produz necessariamente uma decisão ou ação.
 - Nem toda decisão exige uma cadeia formal complexa de registros.
 - O grau de formalização esperado depende da relevância do achado e de suas possíveis consequências.
@@ -1909,6 +1911,7 @@ Quando necessário à avaliação, é possível reconstruir a relação entre da
 `FIAR-Saude/docs/avaliacao/rastreabilidade.md` — RAS-05
 
 **O que o requisito busca verificar:**
+
 Verificar se existe informação suficiente para relacionar os principais elementos técnicos que deram origem a um resultado ou evidência relevante para a avaliação.
 
 Conforme a tarefa, isso pode incluir identificar quais dados, versão do modelo, procedimentos de preparação, configuração, parâmetros, método de avaliação e métricas estão associados ao resultado analisado.
@@ -1917,6 +1920,7 @@ O requisito busca garantir reconstrução suficiente para interpretação e veri
 
 **Aspectos a considerar na aplicabilidade:**
 
+- A necessidade de reconstruir a relação entre dados, modelo, procedimentos e resultados deve ser determinada a partir da Tarefa de IA, da Versão Avaliável e do objetivo da avaliação. A ausência dos registros ou vínculos necessários não torna o requisito não aplicável.
 - A profundidade necessária depende do resultado que precisa ser interpretado ou verificado.
 - Nem todo requisito exige reconstrução completa de toda a cadeia técnica.
 - A necessidade pode ser maior quando diferentes versões de dados, modelos ou configurações produzem resultados distintos.
@@ -2134,7 +2138,7 @@ Verificar se foram identificadas limitações dos dados capazes de afetar de for
 
 **Aspectos a considerar na aplicabilidade:**
 
-- Aplicável quando os dados permitirem ou exigirem análise de representação/qualidade por grupos relevantes.
+- Aplicável quando cobertura, representação ou qualidade dos dados em relação aos grupos relevantes puderem afetar materialmente a tarefa ou seu Contexto de Uso. A indisponibilidade de informações necessárias para realizar essa análise constitui uma limitação da avaliação, e não justificativa de não aplicabilidade.
 - A impossibilidade de avaliar por ausência de informação pode ser uma limitação material.
 - O nível de análise depende da tarefa e das consequências potenciais.
 
@@ -2176,7 +2180,7 @@ Verificar se diferenças relevantes de desempenho ou impacto foram examinadas en
 **Aspectos a considerar na aplicabilidade:**
 
 - Nem toda tarefa permite a mesma análise de grupos.
-- A aplicabilidade depende de disponibilidade de dados, função da tarefa e consequências dos resultados.
+- A aplicabilidade depende da função da tarefa, dos grupos relevantes, das consequências dos resultados e da pertinência de comparar desempenho ou impacto entre esses grupos. A indisponibilidade de dados necessários pode limitar ou impedir a análise, mas não determina, por si só, a não aplicabilidade.
 - Métricas devem ser adequadas ao tipo de problema e podem incluir desempenho, erro ou outro impacto pertinente.
 
 **Exemplos de evidências pertinentes:**
@@ -2216,7 +2220,7 @@ Verificar se as escolhas de métricas, comparações, agregações e métodos de
 
 **Aspectos a considerar na aplicabilidade:**
 
-- Aplicável quando houver análise quantitativa ou metodológica de justiça.
+- Aplicável quando uma análise quantitativa ou metodológica de Justiça for pertinente à tarefa e aos grupos avaliados, independentemente de essa análise já ter sido realizada. A ausência da análise não constitui justificativa de não aplicabilidade.
 - Métricas devem ser selecionadas conforme classificação, regressão, previsão ou outra tarefa.
 - Tamanho e estabilidade dos grupos podem afetar a interpretação.
 - A ausência de uma métrica padronizada universal deve ser tratada por justificativa metodológica.
@@ -2258,7 +2262,7 @@ Verificar se diferenças observadas foram interpretadas considerando magnitude, 
 
 **Aspectos a considerar na aplicabilidade:**
 
-- Aplicável quando houver disparidades identificadas.
+- Aplicável quando a análise de Justiça estabelecer disparidades cuja interpretação contextual seja pertinente. A ausência de disparidade identificada somente sustenta a não aplicabilidade quando houver base suficiente para concluir que a condição não está presente; ausência ou insuficiência da análise anterior não deve ser tratada como ausência de disparidade.
 - A interpretação depende da função da tarefa e de quem pode ser afetado.
 - Pode exigir conhecimento contextual ou institucional além da métrica.
 
@@ -2299,7 +2303,7 @@ Verificar se, diante de disparidades materialmente relevantes, o projeto investi
 
 **Aspectos a considerar na aplicabilidade:**
 
-- Aplicável quando a magnitude ou relevância do achado justificar investigação adicional.
+- Aplicável quando uma disparidade ou achado estabelecido na análise anterior possuir magnitude ou relevância que justifique investigação adicional. A ausência de investigação não constitui justificativa de não aplicabilidade; quando a materialidade do achado ainda não puder ser determinada, a não aplicabilidade não deve ser presumida.
 - Nem toda diferença exige investigação causal completa.
 - A capacidade de investigar depende das evidências e do desenho disponível.
 
@@ -2340,7 +2344,7 @@ Verificar se achados relevantes resultaram em consideração explícita de respo
 
 **Aspectos a considerar na aplicabilidade:**
 
-- Aplicável quando os achados justificarem alguma ação.
+- Aplicável quando a natureza, magnitude ou consequências dos achados de Justiça justificarem considerar alguma resposta. A ausência de mitigação, monitoramento, restrição ou outra resposta não constitui justificativa de não aplicabilidade.
 - A ação adequada depende da causa provável, da magnitude, do Contexto de Uso e dos trade-offs.
 - Mitigação técnica não é a única resposta possível.
 - Em produção, monitoramento ou condicionantes podem ser especialmente relevantes.
@@ -2383,7 +2387,7 @@ Verificar se limitações persistentes, riscos residuais e efeitos colaterais da
 
 **Aspectos a considerar na aplicabilidade:**
 
-- Aplicável quando existirem riscos residuais, limitações ou trade-offs materialmente relevantes.
+- Aplicável quando a análise de Justiça indicar riscos residuais, limitações ou trade-offs materialmente relevantes. A ausência de documentação desses elementos não demonstra sua inexistência e deve ser tratada no resultado da avaliação.
 - A profundidade depende do impacto potencial e da resposta adotada.
 - Pode incluir trade-offs entre grupos, desempenho global e redução de disparidade.
 
@@ -2713,6 +2717,7 @@ Quando aplicável, a análise deve permitir compreender por que determinado meca
 
 **Aspectos a considerar na aplicabilidade:**
 
+- A necessidade de mecanismos de explicabilidade deve ser determinada em razão da natureza da tarefa, da função de suas saídas, dos públicos pertinentes e do Contexto de Uso, independentemente da existência de método, relatório ou prática de explicabilidade já implementados.
 - A aplicabilidade não deve ser presumida apenas porque a tarefa utiliza um modelo de IA.
 - A necessidade depende do tipo de modelo, da tarefa, do Contexto de Uso, do papel da saída, das decisões que ela pode apoiar e do público que necessita da explicação.
 - Modelos intrinsecamente interpretáveis podem exigir tratamento diferente de modelos para os quais métodos adicionais são necessários.
