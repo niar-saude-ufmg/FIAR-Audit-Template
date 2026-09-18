@@ -23,9 +23,11 @@ Fontes principais:
 - `FIAR-Saude/docs/dimensoes_avaliacao.md`
 - `FIAR-Saude/docs/avaliacao/governanca.md`
 - `FIAR-Saude/docs/avaliacao/privacidade.md`
-- `FIAR-Saude/docs/avaliacao/justica.md`
 - `FIAR-Saude/docs/avaliacao/responsabilizacao.md`
 - `FIAR-Saude/docs/avaliacao/rastreabilidade.md`
+- `FIAR-Saude/docs/avaliacao/justica.md`
+- `FIAR-Saude/docs/avaliacao/transparencia.md`
+
 
 
 As formulações identificadas como **Requisito** são reproduzidas da documentação canônica do FIAR-Saúde.
@@ -2085,14 +2087,379 @@ Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências 
 
 ## Transparência
 
-**Fonte normativa da dimensão:**
-`FIAR-Saude/docs/dimensoes_avaliacao.md`
+A dimensão de Transparência avalia se informações relevantes sobre a Tarefa de IA estão documentadas, disponíveis ou comunicadas em nível e forma adequados aos públicos pertinentes, permitindo compreender sua finalidade, características, capacidades, limitações, condições de uso, resultados e incertezas.
 
-A dimensão de Transparência é uma das sete dimensões canônicas do FIAR-Saúde. Na documentação vigente consultada, o arquivo detalhado de avaliação de Transparência ainda não foi criado. Portanto, este guia **não cria identificadores ou requisitos operacionais de Transparência**.
+Os requisitos canônicos vigentes são TRA-01 a TRA-06.
 
-Até a publicação dos requisitos canônicos, devem ser tratados como aspectos orientadores os relatórios de explicabilidade local e global, justificativas e documentação sobre resultados ou decisões apoiadas pelo sistema quando aplicável, mecanismos de interpretação do modelo e comunicação de limitações a públicos não técnicos.
+A aplicação desta dimensão deve distinguir Transparência de outras dimensões relacionadas:
 
-Esses aspectos podem orientar a preparação de evidências, mas não devem ser convertidos em requisitos numerados não oficiais.
+- **Rastreabilidade** verifica se versões, evidências, mudanças e relações relevantes podem ser reconstruídas ao longo do ciclo de vida;
+- **Responsabilização** verifica quem responde por decisões, ações e consequências e se existem elementos suficientes para prestação de contas;
+- **Governança** verifica estruturas, competências, processos de decisão, supervisão, condições de uso e mecanismos de escalonamento;
+- **Justiça** verifica diferenças relevantes de desempenho, impacto ou tratamento entre grupos ou contextos pertinentes.
+
+Uma mesma evidência pode contribuir para diferentes dimensões, mas deve ser analisada de acordo com a pergunta específica do requisito.
+
+Explicabilidade constitui um possível componente da Transparência quando necessária à compreensão da tarefa ou de determinado aspecto de seu comportamento. Ela não deve ser presumida como requisito uniforme para todas as tarefas, modelos ou públicos.
+
+A avaliação também não deve presumir que toda informação deva ser pública. O público pertinente, o nível de detalhamento, a linguagem, o canal e eventuais restrições de acesso ou divulgação dependem da Tarefa de IA, da Versão Avaliável, do Contexto de Uso, da Trilha de Execução e da finalidade da informação.
+
+---
+
+### TRA-01
+
+**Requisito:**
+As informações necessárias para compreender a finalidade, o escopo, o Contexto de Uso e as condições relevantes de uso da tarefa estão documentadas e disponíveis aos públicos pertinentes?
+
+**Fonte normativa:**
+`FIAR-Saude/docs/avaliacao/transparencia.md` — TRA-01
+
+**O que o requisito busca verificar:**
+Verificar se existe informação suficiente para que os públicos pertinentes compreendam o que a Tarefa de IA pretende realizar, em qual escopo ela foi desenvolvida ou avaliada, em quais condições seus resultados devem ser interpretados e quais usos ou situações estão dentro ou fora do contexto considerado.
+
+O requisito não busca redefinir a finalidade, o Contexto de Uso ou os limites da tarefa. Esses elementos são delimitados ou definidos em outras etapas e dimensões. Em Transparência, a questão é se as informações necessárias para compreendê-los estão adequadamente documentadas e disponíveis para quem delas necessita.
+
+**Aspectos a considerar na aplicabilidade:**
+
+- O requisito é aplicável às tarefas avaliadas pelo FIAR-Saúde.
+- O conteúdo necessário depende da Tarefa de IA, da Versão Avaliável, do Contexto de Uso e da Trilha de Execução.
+- Uso atual e uso apenas pretendido devem ser distinguidos quando não forem equivalentes.
+- Na Trilha Experimental, pode ser necessário deixar explícito que a tarefa se encontra em pesquisa, desenvolvimento, experimentação ou validação e que não existe integração ativa a um fluxo operacional.
+- Na Trilha Produção, podem ser relevantes informações adicionais sobre usuários, ambiente, condições operacionais e restrições concretas de uso.
+- Públicos técnicos, institucionais, profissionais ou externos podem necessitar de níveis distintos de informação.
+- Nem toda informação pertinente precisa estar concentrada em um único documento.
+
+**Exemplos de evidências pertinentes:**
+
+- Formulário de Entrada;
+- Identificação da Avaliação;
+- Model Card ou documentação equivalente;
+- documentação técnica;
+- protocolos ou instruções de uso;
+- documentação institucional;
+- materiais destinados a usuários ou profissionais;
+- descrição de usos previstos, usos não avaliados ou restrições de uso;
+- materiais externos ou públicos, quando aplicáveis;
+
+Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências equivalentes podem ser utilizadas quando forem suficientes, consistentes, rastreáveis e adequadas ao público e ao contexto.
+
+**Mecanismos de verificação possíveis:**
+
+- verificação documental;
+- consistência cruzada entre fontes;
+- contextualização;
+- análise de suficiência da informação;
+- comparação entre uso declarado, Contexto de Uso e materiais disponibilizados aos públicos pertinentes;
+
+**Observações metodológicas:**
+
+- Não confundir definição do Contexto de Uso com comunicação do Contexto de Uso. A primeira pertence à delimitação da avaliação e pode envolver Governança; TRA-01 verifica se essa informação está adequadamente disponível.
+- Uma descrição geral do projeto não é necessariamente suficiente para compreender a Tarefa de IA específica avaliada.
+- Não presumir que informação disponível para a equipe de desenvolvimento esteja automaticamente disponível para todos os demais públicos pertinentes.
+- Não exigir divulgação pública quando o Contexto de Uso não a tornar pertinente.
+- Ausência de um Model Card não implica descumprimento se as informações necessárias estiverem adequadamente registradas em outras fontes.
+- Se diferentes materiais apresentam finalidades ou condições de uso incompatíveis para a mesma tarefa e versão, a divergência pode exigir registro de inconsistência; simples ausência de detalhe constitui inicialmente insuficiência de evidência.
+
+---
+
+### TRA-02
+
+**Requisito:**
+Os dados, o modelo, os procedimentos e as características técnicas relevantes estão documentados em nível suficiente para compreensão e revisão pelos públicos técnicos ou institucionais pertinentes?
+
+**Fonte normativa:**
+`FIAR-Saude/docs/avaliacao/transparencia.md` — TRA-02
+
+**O que o requisito busca verificar:**
+Verificar se os públicos que necessitam compreender ou revisar tecnicamente a tarefa dispõem de informação suficiente sobre seus principais elementos técnicos.
+
+O requisito não exige exposição irrestrita de todos os detalhes internos do sistema. Busca verificar se aquilo que é materialmente necessário para compreender as evidências, métodos, resultados e limitações da tarefa está documentado em nível adequado à finalidade da revisão.
+
+**Aspectos a considerar na aplicabilidade:**
+
+- O requisito é aplicável às tarefas que necessitam de compreensão ou revisão técnica no ciclo.
+- A profundidade esperada varia conforme a complexidade da tarefa e o tipo de avaliação.
+- Podem ser relevantes informações sobre dados, preparação, arquitetura ou classe do modelo, procedimentos de treinamento, validação e teste, métricas e configurações materialmente relevantes.
+- Modelos simples e tarefas complexas podem exigir níveis diferentes de documentação.
+- Informação necessária para avaliadores pode ser mais detalhada do que aquela necessária para usuários finais.
+- Restrições relacionadas a privacidade, segurança, confidencialidade, propriedade intelectual ou acesso institucional devem ser consideradas.
+- A necessidade de informação técnica não implica automaticamente acesso a dados brutos, código-fonte, pesos do modelo ou ambientes protegidos.
+
+**Exemplos de evidências pertinentes:**
+
+- Data Card ou documentação equivalente;
+- Model Card ou documentação equivalente;
+- artigos ou relatórios técnicos;
+- documentação de pipelines;
+- documentação metodológica;
+- registros de treinamento, validação ou teste;
+- esquemas de dados;
+- documentação de métricas e procedimentos experimentais;
+- registros técnicos equivalentes;
+
+Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências equivalentes podem ser utilizadas quando forem suficientes, consistentes, rastreáveis e adequadas ao contexto.
+
+**Mecanismos de verificação possíveis:**
+
+- verificação documental;
+- revisão técnica;
+- análise de suficiência;
+- consistência cruzada entre documentação dos dados, modelo e resultados;
+- contextualização da informação ao público técnico ou institucional;
+
+**Observações metodológicas:**
+
+- Não transformar acesso ao código-fonte, aos dados ou aos pesos do modelo em exigência universal.
+- A existência de Data Card e Model Card não demonstra, por si só, que a documentação técnica seja suficiente.
+- Deve-se avaliar o conteúdo efetivamente necessário para compreender as evidências relevantes ao ciclo.
+- Não utilizar TRA-02 para avaliar se versões e mudanças podem ser reconstruídas; essa é uma questão de Rastreabilidade.
+- Não utilizar TRA-02 para avaliar se a escolha técnica foi adequada; a análise substantiva pode pertencer a outros requisitos.
+- Informação tecnicamente detalhada, mas desconectada da Tarefa de IA e da Versão Avaliável, pode não ser pertinente à avaliação.
+
+---
+
+### TRA-03
+
+**Requisito:**
+As capacidades, limitações, pressupostos, condições de uso e incertezas relevantes da tarefa estão documentados de forma clara?
+
+**Fonte normativa:**
+`FIAR-Saude/docs/avaliacao/transparencia.md` — TRA-03
+
+**O que o requisito busca verificar:**
+Verificar se a documentação permite distinguir aquilo que a tarefa demonstrou ser capaz de realizar daquilo que permanece limitado, incerto, não avaliado ou fora de seu escopo.
+
+O requisito busca reduzir interpretações excessivas ou inadequadas dos resultados, especialmente quando limitações, pressupostos ou incertezas são relevantes para compreender o comportamento da tarefa.
+
+**Aspectos a considerar na aplicabilidade:**
+
+- O requisito é aplicável às tarefas avaliadas pelo FIAR-Saúde.
+- O conteúdo relevante depende do tipo de tarefa, dos dados, do modelo, da população e do Contexto de Uso.
+- Devem ser consideradas limitações já identificadas nas fontes disponíveis, sem criar limitações hipotéticas não demonstradas.
+- Podem ser pertinentes limitações relacionadas a dados, generalização, desempenho, população, ambiente, procedimento experimental ou condições operacionais.
+- Incerteza deve ser considerada quando materialmente relevante para interpretação dos resultados.
+- Na Trilha Experimental, pode ser especialmente importante distinguir capacidade demonstrada experimentalmente de capacidade ainda não validada em uso real.
+- Na Trilha Produção, limitações conhecidas do uso real ou de monitoramento podem também ser relevantes.
+
+**Exemplos de evidências pertinentes:**
+
+- Model Card ou documentação equivalente;
+- Data Card ou documentação equivalente;
+- artigos e relatórios técnicos;
+- documentação de limitações;
+- resultados de validação;
+- análise de erros;
+- Fairness Report, quando fornecer limitações pertinentes;
+- documentação de incerteza;
+- registros de riscos ou restrições de uso;
+
+Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências equivalentes podem ser utilizadas quando forem suficientes, consistentes, rastreáveis e adequadas ao contexto.
+
+**Mecanismos de verificação possíveis:**
+
+- verificação documental;
+- consistência cruzada entre capacidades declaradas e resultados disponíveis;
+- análise de suficiência;
+- contextualização;
+- revisão metodológica quando necessária;
+
+**Observações metodológicas:**
+
+- Não inferir ausência de limitações porque nenhum documento possui seção intitulada “Limitações”.
+- Não exigir que toda incerteza possível seja quantificada; determinar primeiro quais formas de incerteza são materialmente relevantes para a tarefa e seus resultados.
+- Alegações sobre capacidade devem permanecer proporcionais às evidências disponíveis.
+- Limitações identificadas em Justiça, Privacidade, Segurança ou outras dimensões podem exigir comunicação em Transparência quando forem relevantes para a compreensão da tarefa, mas TRA-03 não reavalia substantivamente esses achados.
+- Não confundir limitação técnica com restrição institucional de uso; ambas podem precisar ser comunicadas, mas possuem naturezas diferentes.
+- A omissão de uma limitação conhecida e materialmente relevante pode ser mais importante que a ausência de detalhes secundários.
+
+---
+
+### TRA-04
+
+**Requisito:**
+Os resultados relevantes da tarefa estão apresentados com informação suficiente sobre as condições em que foram obtidos, seu significado e seus limites de interpretação?
+
+**Fonte normativa:**
+`FIAR-Saude/docs/avaliacao/transparencia.md` — TRA-04
+
+**O que o requisito busca verificar:**
+Verificar se resultados e métricas relevantes não são apresentados de forma isolada ou descontextualizada, mas acompanhados das informações necessárias para compreender o que representam, em quais condições foram produzidos e até onde podem ser interpretados.
+
+O requisito não determina quais métricas devem ser utilizadas nem se o desempenho é adequado. Ele verifica a transparência da apresentação e interpretação dos resultados.
+
+**Aspectos a considerar na aplicabilidade:**
+
+- Aplicável quando resultados técnicos, experimentais ou operacionais forem utilizados para caracterizar a tarefa.
+- A informação necessária depende do tipo de resultado e da finalidade de sua comunicação.
+- Podem ser relevantes população ou conjunto de avaliação, período, procedimento experimental, métricas, baseline, variabilidade, intervalos ou outras informações de incerteza.
+- Resultados globais podem exigir contextualização quando existirem resultados desagregados ou análises específicas relevantes para sua interpretação.
+- A exigência de produzir determinada estratificação não decorre de TRA-04; quando pertinente, essa obrigação pertence principalmente à dimensão de Justiça.
+- Na Trilha Experimental, deve-se evitar apresentar resultados experimentais como evidência de desempenho operacional não avaliado.
+- Na Trilha Produção, evidências de desempenho real podem precisar ser distinguidas de resultados de validação prévia.
+
+**Exemplos de evidências pertinentes:**
+
+- relatórios de avaliação;
+- resultados experimentais;
+- Model Card;
+- artigos técnicos;
+- documentação de métricas;
+- tabelas e figuras de resultados;
+- resultados estratificados disponíveis;
+- análises de erro;
+- relatórios de monitoramento, quando aplicáveis;
+
+Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências equivalentes podem ser utilizadas quando forem suficientes, consistentes, rastreáveis e adequadas ao contexto.
+
+**Mecanismos de verificação possíveis:**
+
+- revisão documental;
+- revisão metodológica;
+- análise de suficiência;
+- consistência cruzada entre métricas e descrições;
+- contextualização dos resultados;
+- comparação entre resultados globais e análises específicas disponíveis quando pertinente;
+
+**Observações metodológicas:**
+
+- A presença de uma métrica não demonstra transparência suficiente sobre o comportamento da tarefa.
+- Não avaliar neste requisito se o valor da métrica é aceitável para o uso; isso pode depender de Governança, Segurança, Justiça ou análise técnica específica.
+- Não exigir análises de grupos apenas para satisfazer Transparência. Justiça determina quando análises de grupos são necessárias; Transparência verifica se resultados relevantes disponíveis são apresentados adequadamente.
+- Não extrapolar resultados de uma população, período ou ambiente para outro sem evidência.
+- Quando diferentes fontes apresentam valores incompatíveis da mesma métrica para a mesma configuração, verificar versão, dataset e procedimento antes de classificar a situação como inconsistência.
+- Resultados publicados em artigo não devem ser automaticamente atribuídos à Versão Avaliável sem verificar sua correspondência.
+
+---
+
+### TRA-05
+
+**Requisito:**
+Quando mecanismos de explicabilidade forem necessários, sua finalidade, método, resultados e limitações estão documentados e apresentados de forma adequada à tarefa e ao público pertinente?
+
+**Fonte normativa:**
+`FIAR-Saude/docs/avaliacao/transparencia.md` — TRA-05
+
+**O que o requisito busca verificar:**
+Verificar, primeiro, se mecanismos específicos de explicabilidade são necessários para a tarefa, o Contexto de Uso e o público considerado e, quando forem necessários, se seu uso está adequadamente documentado e contextualizado.
+
+Quando aplicável, a análise deve permitir compreender por que determinado mecanismo foi utilizado, que questão pretende responder, como foi aplicado, quais resultados produziu e quais limitações possui.
+
+**Aspectos a considerar na aplicabilidade:**
+
+- A aplicabilidade não deve ser presumida apenas porque a tarefa utiliza um modelo de IA.
+- A necessidade depende do tipo de modelo, da tarefa, do Contexto de Uso, do papel da saída, das decisões que ela pode apoiar e do público que necessita da explicação.
+- Modelos intrinsecamente interpretáveis podem exigir tratamento diferente de modelos para os quais métodos adicionais são necessários.
+- Explicações globais e locais respondem a perguntas diferentes e não são intercambiáveis.
+- Nem todo público necessita do mesmo tipo de explicação.
+- Na Trilha Experimental, explicabilidade pode ser necessária para análise técnica ou compreensão de comportamento mesmo sem uso operacional.
+- Em produção, explicações podem também ser relevantes para usuários, supervisores ou processos específicos, conforme o Contexto de Uso.
+
+**Exemplos de evidências pertinentes:**
+
+- Explainability Report ou documentação equivalente;
+- Model Card;
+- análise de importância de variáveis;
+- análise de sensibilidade;
+- métodos de atribuição;
+- explicações globais;
+- explicações locais;
+- visualizações;
+- documentação metodológica;
+- registros das limitações dos métodos utilizados;
+- estudos ou testes internos de explicabilidade;
+
+Esses exemplos não constituem uma lista obrigatória de artefatos. A existência de um `Explainability Report` não é exigência universal e evidências equivalentes podem ser utilizadas quando adequadas.
+
+**Mecanismos de verificação possíveis:**
+
+- revisão metodológica;
+- contextualização;
+- análise de suficiência;
+- verificação documental;
+- consistência entre finalidade declarada e método escolhido;
+- análise das limitações do mecanismo de explicabilidade;
+- revisão técnica específica quando necessária;
+
+**Observações metodológicas:**
+
+- Não confundir Transparência com Explicabilidade.
+- Não presumir que métodos como SHAP, LIME, feature importance ou saliency são obrigatórios ou adequados para toda tarefa.
+- A presença de um gráfico ou método pós-hoc não demonstra, por si só, explicabilidade adequada.
+- Uma explicação deve ser avaliada em relação à pergunta que pretende responder e ao público para o qual é relevante.
+- Não interpretar a saída de um método de explicabilidade como explicação causal sem base metodológica para isso.
+- As limitações conhecidas do método utilizado fazem parte da informação necessária para interpretar a explicação.
+- A não aplicação de mecanismo específico de explicabilidade não constitui automaticamente uma lacuna; primeiro deve ser estabelecida sua necessidade.
+- Quando a necessidade de explicabilidade depender de uma decisão metodológica do NIAR-Saúde, essa decisão deve ser registrada como tal e não transferida automaticamente ao projeto como ausência de evidência.
+- O requisito não exige que o avaliador reproduza tecnicamente toda análise de explicabilidade; o mecanismo de verificação utilizado deve ser proporcional ao que precisa ser demonstrado.
+
+---
+
+### TRA-06
+
+**Requisito:**
+As informações relevantes são disponibilizadas ou comunicadas em nível, forma e canal adequados aos diferentes públicos pertinentes, considerando eventuais restrições aplicáveis de acesso ou divulgação?
+
+**Fonte normativa:**
+`FIAR-Saude/docs/avaliacao/transparencia.md` — TRA-06
+
+**O que o requisito busca verificar:**
+Verificar se a transparência é adaptada aos públicos que efetivamente necessitam da informação.
+
+O requisito considera que transparência técnica, transparência institucional, informação para profissionais ou usuários e eventual comunicação externa possuem finalidades diferentes. Portanto, não basta que a informação exista: quando sua comunicação for necessária, ela deve ser disponibilizada em nível, linguagem, forma e canal compatíveis com o público pertinente e com as condições aplicáveis de acesso.
+
+**Aspectos a considerar na aplicabilidade:**
+
+- O requisito é aplicável considerando os públicos efetivamente pertinentes à Tarefa de IA e ao Contexto de Uso.
+- Nem toda tarefa possui os mesmos públicos.
+- Na Trilha Experimental sem operação ativa, podem não existir ainda usuários finais ou profissionais utilizando resultados da tarefa.
+- Avaliadores e equipes técnicas podem necessitar de documentação detalhada.
+- Instâncias institucionais podem necessitar de síntese adequada para decisão e supervisão.
+- Profissionais ou usuários podem necessitar principalmente de informação sobre finalidade, capacidades, limitações, condições de uso, incertezas e interpretação das saídas.
+- Comunicação externa ou pública somente deve ser considerada quando pertinente ao contexto.
+- Restrições aplicáveis de privacidade, segurança, confidencialidade, propriedade intelectual, contratos ou proteção de informações institucionais podem limitar acesso ou divulgação.
+- Uma restrição a determinado público não elimina necessariamente a necessidade de disponibilizar informação suficiente a outro público autorizado.
+
+**Exemplos de evidências pertinentes:**
+
+- documentação técnica para desenvolvedores ou avaliadores;
+- documentação institucional;
+- materiais de uso;
+- manuais;
+- interfaces;
+- alertas, mensagens ou informações exibidas aos usuários;
+- materiais destinados a profissionais de saúde;
+- protocolos ou instruções operacionais;
+- relatórios ou sínteses destinados a instâncias de governança;
+- materiais externos ou públicos, quando aplicáveis;
+- registros das condições de acesso a documentação restrita;
+
+Esses exemplos não constituem uma lista obrigatória de artefatos. A evidência adequada depende do público e da informação cuja comunicação precisa ser demonstrada.
+
+**Mecanismos de verificação possíveis:**
+
+- verificação documental;
+- contextualização por público;
+- análise da adequação da linguagem e do nível de detalhe;
+- análise do canal de comunicação;
+- consistência entre materiais destinados a públicos diferentes;
+- inspeção de interfaces ou materiais de uso quando pertinente;
+- confirmação factual sobre disponibilização da informação quando não puder ser estabelecida documentalmente;
+
+**Observações metodológicas:**
+
+- Não presumir que toda informação deve ser pública.
+- Não avaliar todos os públicos possíveis; identificar aqueles efetivamente pertinentes à tarefa e ao Contexto de Uso.
+- Informação tecnicamente correta pode ser insuficiente se apresentada em nível inadequado ao público que precisa utilizá-la.
+- Da mesma forma, simplificação para determinado público não deve eliminar informações materialmente necessárias à interpretação adequada.
+- Não exigir materiais destinados a usuários finais para uma tarefa exclusivamente experimental que ainda não possua esse tipo de usuário.
+- Não transformar restrições de acesso em falha automática de Transparência; verificar se o público que necessita da informação consegue obtê-la de forma adequada.
+- O NIAR-Saúde não deve determinar neste requisito a validade jurídica de restrições contratuais, de propriedade intelectual ou de confidencialidade. Quando necessário, a questão deve ser encaminhada à instância competente.
+- Não duplicar Governança: TRA-06 verifica comunicação da informação, não o desenho dos processos institucionais de decisão ou supervisão.
+- Não duplicar Responsabilização: identificar quem deve responder por uma decisão é questão de RES; comunicar ao público pertinente informações sobre a tarefa é questão de TRA.
+- Não duplicar Rastreabilidade: o fato de um material estar associado à versão correta é relevante à análise da evidência, mas TRA-06 pergunta se a informação adequada chegou ou está disponível ao público pertinente.
+- Não duplicar Justiça: quando uma análise de justiça identifica disparidade ou limitação relevante, TRA-06 pode avaliar sua comunicação aos públicos pertinentes, mas não decide quais grupos devem ser analisados nem se a disparidade exige mitigação.
+
+---
 
 ---
 
