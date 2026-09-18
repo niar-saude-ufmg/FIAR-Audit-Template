@@ -88,6 +88,7 @@ Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências 
 - A existência de um template de papéis e responsabilidades não torna seu preenchimento obrigatório se outras evidências forem suficientes e rastreáveis.
 - Uma responsabilidade não confirmada deve ser tratada como insuficiência de evidência ou pendência factual, e não como inconsistência, salvo quando houver fontes efetivamente incompatíveis.
 - Os papéis avaliados devem estar vinculados ao escopo concreto da Tarefa de IA e não apenas ao projeto de forma genérica.
+- GOV-01 verifica a existência e a identificação dos papéis e competências institucionais necessários à governança da tarefa. A atribuição de responsabilidade por decisões, ações ou resultados concretos é analisada em RES-01.
 
 ---
 
@@ -135,6 +136,9 @@ Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências 
 - Não confundir o processo decisório do projeto com o processo de avaliação conduzido pelo NIAR-Saúde.
 - Decisões triviais ou de rotina não precisam receber o mesmo nível de formalização que decisões capazes de alterar risco, escopo, uso ou comportamento da tarefa.
 - Uma decisão deve ser analisada juntamente com seu contexto, evidências e versão correspondente.
+- GOV-02 verifica se existe processo identificável para as categorias de decisão relevantes à tarefa.
+- A associação de uma decisão concreta ao responsável e ao seu fundamento é analisada em RES-02.
+- A capacidade de reconstruir a relação entre evidência, achado, decisão e ação é analisada em RAS-04.
 
 ---
 
@@ -1061,6 +1065,7 @@ Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências 
 - Não confundir ausência de restrição com ausência de documentação quando a natureza do dado exige clareza.
 - Evitar exigir o mesmo conjunto de controles para dados públicos e dados sensíveis.
 - Se a política existir apenas em nível institucional, verificar se ela é aplicável à tarefa concreta.
+- Em Privacidade, controles de acesso são analisados quanto às condições de tratamento e proteção dos dados. Em SEG-02, são analisados quanto à proteção dos ativos relevantes da Tarefa de IA contra acesso indevido.
 
 ---
 
@@ -1105,6 +1110,7 @@ Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências 
 - Avaliar o risco que a medida pretende tratar e suas limitações.
 - Não transformar preferências técnicas do avaliador em requisitos universais.
 - O FIAR não certifica conformidade jurídica nem segurança absoluta.
+- Quando a medida analisada também constituir controle de Segurança, distinguir a proteção dos dados tratada em Privacidade da proteção mais ampla dos ativos da tarefa tratada em SEG-02.
 
 ---
 
