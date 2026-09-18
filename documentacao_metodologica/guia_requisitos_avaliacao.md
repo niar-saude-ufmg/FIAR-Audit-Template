@@ -24,7 +24,9 @@ Fontes principais:
 - `FIAR-Saude/docs/avaliacao/governanca.md`
 - `FIAR-Saude/docs/avaliacao/privacidade.md`
 - `FIAR-Saude/docs/avaliacao/justica.md`
+- `FIAR-Saude/docs/avaliacao/responsabilizacao.md`
 - `FIAR-Saude/docs/avaliacao/rastreabilidade.md`
+
 
 As formulações identificadas como **Requisito** são reproduzidas da documentação canônica do FIAR-Saúde.
 
@@ -952,21 +954,347 @@ Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências 
 
 ## Responsabilização
 
-**Fonte normativa da dimensão:**
-`FIAR-Saude/docs/dimensoes_avaliacao.md`
+A dimensão de Responsabilização avalia se responsabilidades por decisões, ações e consequências relevantes associadas à Tarefa de IA estão atribuídas de forma clara e verificável, permitindo identificar quem responde por elas e preservar base suficiente para prestação de contas.
 
-A dimensão de Responsabilização é uma das sete dimensões canônicas do FIAR-Saúde. Na documentação vigente consultada, o arquivo detalhado de avaliação de Responsabilização ainda não foi criado. Portanto, este guia **não cria identificadores ou requisitos operacionais de Responsabilização**.
+Os requisitos canônicos vigentes são RES-01 a RES-06.
 
-Até a publicação dos requisitos canônicos, devem ser tratados apenas como aspectos orientadores os elementos já indicados pelo FIAR-Saúde, como registros nominais de decisão, registros de aceite de risco e condicionantes quando aplicáveis, atribuição clara de responsabilidades por etapa do ciclo de vida e rastreabilidade de aprovações institucionais.
+A aplicação desta dimensão deve distinguir a atribuição de responsabilidade da definição das estruturas e competências institucionais. A dimensão de Governança avalia, entre outros aspectos, quais estruturas, papéis, processos decisórios, mecanismos de supervisão e formas de escalonamento devem existir. A Responsabilização avalia quem responde por decisões, ações e consequências concretas produzidas nesses processos.
 
-Esses aspectos não devem ser convertidos em uma lista local de requisitos numerados antes de sua consolidação no FIAR-Saúde.
+Também deve ser distinguida da Rastreabilidade. A existência de registros que permitam reconstruir decisões, mudanças ou relações entre evidências não demonstra, por si só, que esteja claro quem responde pelas decisões ou ações reconstruídas. Uma mesma evidência pode apoiar ambas as dimensões, mas deve responder a perguntas distintas em cada análise.
 
 ---
 
-## Rastreabilidade
+### RES-01
 
-**Fonte normativa da dimensão:**
-`FIAR-Saude/docs/dimensoes_avaliacao.md`
+**Requisito:**
+As responsabilidades por decisões, ações e resultados relevantes associados à tarefa estão atribuídas de forma clara e identificável?
+
+**Fonte normativa:**
+`FIAR-Saude/docs/avaliacao/responsabilizacao.md` — RES-01
+
+**O que o requisito busca verificar:**
+Verificar se é possível identificar, para as decisões, ações e resultados materialmente relevantes no escopo avaliado, quem responde por eles de forma suficientemente clara.
+
+A responsabilidade pode estar atribuída a uma pessoa, papel, função, equipe, unidade organizacional ou instância institucional, conforme a natureza da atividade. O requisito não exige atribuição nominal a uma pessoa física em todos os casos, mas exige que a atribuição seja específica o suficiente para evitar responsabilidade implícita, ambígua ou diluída.
+
+**Aspectos a considerar na aplicabilidade:**
+
+- O requisito é aplicável às tarefas avaliadas pelo FIAR-Saúde, inclusive na Trilha Experimental.
+- As responsabilidades pertinentes dependem da Tarefa de IA, da Versão Avaliável, do Contexto de Uso, da Trilha de Execução e das atividades efetivamente realizadas.
+- Nem toda participação no projeto constitui uma responsabilidade relevante para este requisito.
+- Na Trilha Experimental, podem ser particularmente relevantes responsabilidades por decisões técnicas, produção ou manutenção de evidências, validações e resultados experimentais.
+- Na Trilha Produção, podem existir responsabilidades adicionais associadas à operação, monitoramento, resposta a eventos e acompanhamento de ações.
+- A análise deve considerar responsabilidades concretas associadas ao escopo da tarefa, e não apenas descrições genéricas de cargos ou da estrutura do projeto.
+
+**Exemplos de evidências pertinentes:**
+
+- documentação de papéis e responsabilidades;
+- Identificação da Avaliação;
+- registros institucionais ou administrativos de designação;
+- termos de responsabilidade ou atribuição funcional;
+- Registros de Decisão Técnica;
+- registros de decisões institucionais;
+- planos, registros ou documentos que atribuam ações a responsáveis;
+- confirmações factuais específicas quando a responsabilidade necessária não puder ser estabelecida documentalmente;
+
+Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências equivalentes podem ser utilizadas quando forem suficientes, consistentes, rastreáveis e adequadas ao contexto.
+
+**Mecanismos de verificação possíveis:**
+
+- verificação documental;
+- consistência cruzada entre fontes;
+- verificação institucional ou administrativa;
+- rastreabilidade entre responsabilidade e objeto correspondente;
+- confirmação factual quando a evidência documental for insuficiente;
+
+**Observações metodológicas:**
+
+- Não inferir responsabilidade a partir de autoria de artigo, código, Model Card, Data Card, relatório técnico ou outro artefato.
+- Participação no desenvolvimento não implica automaticamente responsabilidade técnica, institucional ou decisória.
+- A autoria de um documento demonstra, no máximo, participação em sua produção, salvo quando houver evidência adicional que estabeleça a responsabilidade correspondente.
+- Quando a responsabilidade necessária não estiver explicitamente documentada, primeiro registrar a insuficiência da evidência. Se a informação depender de confirmação pelo projeto ou pela instituição, pode ser aberta uma pendência factual específica.
+- Ausência de evidência não é inconsistência. Uma inconsistência somente existe quando duas ou mais fontes que deveriam ser compatíveis atribuem responsabilidades de maneira efetivamente divergente.
+- Não duplicar GOV-01: Governança verifica estruturas, papéis e competências institucionais; RES-01 verifica atribuição de responsabilidade por decisões, ações ou resultados concretos.
+
+---
+
+### RES-02
+
+**Requisito:**
+Decisões relevantes podem ser associadas ao responsável que as tomou ou aprovou e à justificativa ou fundamento correspondente?
+
+**Fonte normativa:**
+`FIAR-Saude/docs/avaliacao/responsabilizacao.md` — RES-02
+
+**O que o requisito busca verificar:**
+Verificar se decisões materialmente relevantes podem ser relacionadas a quem as tomou ou aprovou e se existe base suficiente para compreender o fundamento ou a justificativa registrada para a decisão.
+
+O requisito operacionaliza o vínculo entre decisão, responsável e prestação de contas. Seu foco não é verificar se o processo decisório institucional foi corretamente desenhado nem decidir se o responsável possuía competência formal para tomar a decisão; esses aspectos pertencem principalmente à Governança.
+
+**Aspectos a considerar na aplicabilidade:**
+
+- Aplicável quando existam decisões relevantes para a Tarefa de IA ou para o ciclo avaliado.
+- O grau de formalização esperado deve ser proporcional à materialidade da decisão.
+- Decisões rotineiras ou de baixo impacto não precisam receber o mesmo nível de registro que decisões capazes de afetar dados, modelo, resultados, riscos, limitações, escopo ou condições de uso.
+- Deve-se distinguir quem elaborou uma recomendação, quem tomou a decisão e quem a aprovou quando esses papéis forem distintos.
+- Decisões técnicas e decisões institucionais podem utilizar mecanismos de registro diferentes.
+- A justificativa pode estar distribuída entre diferentes fontes, desde que sua relação com a decisão seja reconstruível.
+
+**Exemplos de evidências pertinentes:**
+
+- Registro de Decisão Técnica;
+- Registro de Decisão Institucional;
+- atas;
+- pareceres;
+- registros de aprovação;
+- documentação de escolha de modelo, dados, parâmetros ou estratégia;
+- relatórios técnicos que registrem decisão e justificativa;
+- histórico de mudanças associado à decisão;
+- registros eletrônicos ou administrativos equivalentes;
+
+Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências equivalentes podem ser utilizadas quando forem suficientes, consistentes, rastreáveis e adequadas ao contexto.
+
+**Mecanismos de verificação possíveis:**
+
+- verificação documental;
+- rastreabilidade entre decisão, responsável e fundamento;
+- consistência cruzada;
+- verificação de autoria ou aprovação quando pertinente;
+- confirmação factual específica quando a atribuição da decisão permanecer não demonstrada;
+
+**Observações metodológicas:**
+
+- Não confundir autoria do documento que registra uma decisão com autoria da própria decisão.
+- Não exigir um artefato denominado `Registro de Decisão Técnica` quando fonte equivalente preservar decisão, responsável e fundamento.
+- A qualidade substantiva ou adequação da decisão pode ser analisada em outros requisitos; RES-02 verifica principalmente sua atribuição e possibilidade de prestação de contas.
+- Se diferentes fontes atribuírem a mesma decisão a responsáveis incompatíveis, deve-se verificar primeiro se realmente descrevem a mesma decisão e o mesmo estágio antes de registrar inconsistência.
+- Não duplicar GOV-02: Governança verifica se existe um processo de decisão adequado; RES-02 verifica se uma decisão concreta pode ser associada ao responsável e ao seu fundamento.
+- Não duplicar Rastreabilidade: a reconstrução da existência e sequência da decisão pode sustentar a análise, mas o elemento distintivo aqui é a atribuição de responsabilidade.
+
+---
+
+### RES-03
+
+**Requisito:**
+Quando responsabilidades são compartilhadas, delegadas ou transferidas, permanecem claros os limites de responsabilidade entre as partes envolvidas?
+
+**Fonte normativa:**
+`FIAR-Saude/docs/avaliacao/responsabilizacao.md` — RES-03
+
+**O que o requisito busca verificar:**
+Verificar se a participação de múltiplas pessoas, equipes, unidades ou instituições não torna ambígua a atribuição de responsabilidade por decisões ou ações relevantes.
+
+O requisito busca identificar se, mesmo quando a execução é compartilhada, delegada ou transferida, é possível compreender quais responsabilidades permanecem com cada parte e quais foram efetivamente delegadas ou assumidas por outra.
+
+**Aspectos a considerar na aplicabilidade:**
+
+- Aplicável quando houver responsabilidades distribuídas entre mais de uma pessoa, equipe, unidade ou instituição.
+- Pode ser pouco relevante em tarefas pequenas nas quais uma única estrutura concentra de forma explícita as responsabilidades pertinentes.
+- Devem ser considerados limites entre responsabilidade técnica, execução, aprovação, acompanhamento e responsabilidade institucional quando essas distinções forem materialmente relevantes.
+- Delegação de uma atividade não deve ser interpretada automaticamente como transferência da responsabilidade final.
+- Mudanças de equipe, responsáveis ou instituições ao longo do ciclo podem tornar este requisito especialmente relevante.
+- A granularidade deve ser proporcional ao risco de ambiguidade ou diluição da responsabilidade.
+
+**Exemplos de evidências pertinentes:**
+
+- documentação de papéis e responsabilidades;
+- registros de designação ou delegação;
+- acordos entre equipes ou instituições;
+- registros administrativos;
+- atas ou decisões que distribuam responsabilidades;
+- planos de ação com responsáveis distintos;
+- histórico de alterações de responsabilidade;
+- termos de colaboração ou operação, quando pertinentes;
+
+Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências equivalentes podem ser utilizadas quando forem suficientes, consistentes, rastreáveis e adequadas ao contexto.
+
+**Mecanismos de verificação possíveis:**
+
+- verificação documental;
+- consistência cruzada entre atribuições;
+- análise dos limites de responsabilidade;
+- confirmação factual quando as fronteiras entre responsabilidades não estiverem claras;
+- verificação institucional quando pertinente;
+
+**Observações metodológicas:**
+
+- Evitar expressões genéricas como “responsabilidade da equipe” quando a análise exigir saber qual equipe, função ou instância responde pelo elemento concreto.
+- Não assumir que colaboração implica responsabilidade igual de todos os participantes.
+- Não inferir transferência de responsabilidade a partir da simples execução de uma atividade por outra pessoa ou equipe.
+- Se uma responsabilidade mudou ao longo do tempo, verificar qual atribuição correspondia ao período ou à Versão Avaliável relevante.
+- Divergências entre fontes sobre limites de responsabilidade podem configurar inconsistência quando se referirem inequivocamente ao mesmo objeto e período.
+- Não utilizar RES-03 para redesenhar a estrutura de competências da organização; essa análise pertence à Governança.
+
+---
+
+### RES-04
+
+**Requisito:**
+Ações ou encaminhamentos decorrentes de decisões relevantes possuem responsável identificável por sua execução ou acompanhamento?
+
+**Fonte normativa:**
+`FIAR-Saude/docs/avaliacao/responsabilizacao.md` — RES-04
+
+**O que o requisito busca verificar:**
+Verificar se, uma vez estabelecida uma ação ou encaminhamento relevante, é possível identificar quem responde por executá-lo ou acompanhar sua realização.
+
+O requisito busca evitar que decisões produzam ações sem responsável atribuível, especialmente quando envolvem correção, complementação, mitigação, revisão ou acompanhamento.
+
+**Aspectos a considerar na aplicabilidade:**
+
+- Aplicável quando decisões relevantes gerarem ações ou encaminhamentos.
+- Nem toda decisão produz necessariamente uma ação posterior.
+- A materialidade da ação determina o nível de formalização esperado.
+- Podem ser relevantes ações técnicas, documentais, de monitoramento, mitigação, complementação de evidência ou atendimento de condicionantes.
+- Deve-se distinguir, quando pertinente, quem executa a ação de quem acompanha ou responde por sua conclusão.
+- Na Trilha Produção, ações decorrentes de incidentes, monitoramento ou alterações operacionais podem exigir maior clareza de acompanhamento.
+
+**Exemplos de evidências pertinentes:**
+
+- planos de ação;
+- registros de encaminhamentos;
+- Registro de Decisão Técnica;
+- registro de pendências;
+- condicionantes;
+- registros de acompanhamento;
+- tickets ou sistemas institucionais equivalentes;
+- atas;
+- registros de correção ou mitigação;
+
+Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências equivalentes podem ser utilizadas quando forem suficientes, consistentes, rastreáveis e adequadas ao contexto.
+
+**Mecanismos de verificação possíveis:**
+
+- rastreabilidade entre decisão, ação e responsável;
+- verificação documental;
+- consistência cruzada;
+- verificação de acompanhamento;
+- confirmação factual específica quando a atribuição da ação não puder ser estabelecida;
+
+**Observações metodológicas:**
+
+- Não confundir a existência de uma recomendação com a atribuição de responsabilidade por executá-la.
+- Não criar uma obrigação de ação onde o requisito ou a decisão correspondente não a estabeleça.
+- O registro de uma ação pendente não constitui, por si só, falha de Responsabilização se o responsável estiver adequadamente identificado; o estado da execução deve ser tratado separadamente conforme o requisito pertinente.
+- Pendências produzidas pelo próprio NIAR-Saúde possuem sua própria lógica operacional; não devem ser usadas automaticamente como evidência de que o projeto possui mecanismo interno de responsabilização.
+- Não duplicar GOV-06 ou GOV-07: Governança verifica processo de tratamento, escalonamento e condicionantes; RES-04 verifica quem responde pela ação ou encaminhamento concreto que decorreu desse processo.
+- A Rastreabilidade pode permitir reconstruir a sequência `achado → decisão → ação`; Responsabilização acrescenta a identificação de quem responde pela ação.
+
+---
+
+### RES-05
+
+**Requisito:**
+Existem registros suficientes para que os responsáveis possam prestar contas sobre decisões e ações relevantes sob sua responsabilidade?
+
+**Fonte normativa:**
+`FIAR-Saude/docs/avaliacao/responsabilizacao.md` — RES-05
+
+**O que o requisito busca verificar:**
+Verificar se existem registros suficientes para que uma decisão ou ação relevante possa ser explicada e sustentada posteriormente pelo responsável correspondente.
+
+A prestação de contas pressupõe mais do que saber o nome ou papel do responsável: deve existir base verificável suficiente para compreender o que foi decidido ou realizado, em qual contexto, com qual fundamento e, quando pertinente, quais encaminhamentos decorreram dessa atuação.
+
+**Aspectos a considerar na aplicabilidade:**
+
+- O requisito é aplicável às decisões e ações materialmente relevantes para o escopo avaliado.
+- O nível de documentação esperado deve ser proporcional à relevância da decisão ou ação.
+- Nem toda prestação de contas exige um relatório específico ou documento único.
+- Os registros podem estar distribuídos em diferentes fontes, desde que possam ser relacionados de forma suficiente.
+- Decisões históricas podem exigir preservação dos registros necessários à sua interpretação.
+- Na Trilha Produção, a recorrência de decisões e ações operacionais pode exigir mecanismos mais sistemáticos de preservação de registros.
+
+**Exemplos de evidências pertinentes:**
+
+- Registros de Decisão Técnica;
+- Registros de Decisão Institucional;
+- atas e pareceres;
+- justificativas técnicas;
+- documentação das evidências consideradas na decisão;
+- registros de ações;
+- histórico de mudanças;
+- relatórios de acompanhamento;
+- registros administrativos ou sistemas equivalentes;
+
+Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências equivalentes podem ser utilizadas quando forem suficientes, consistentes, rastreáveis e adequadas ao contexto.
+
+**Mecanismos de verificação possíveis:**
+
+- verificação documental;
+- análise de suficiência;
+- rastreabilidade entre responsável, decisão, fundamento e ação;
+- consistência cruzada;
+- revisão do histórico correspondente;
+
+**Observações metodológicas:**
+
+- A existência de muitos documentos não demonstra automaticamente prestação de contas; os registros precisam permitir reconstruir de forma inteligível a atuação do responsável.
+- Não exigir que toda decisão possua um relatório independente.
+- Não confundir transparência pública com prestação de contas. A informação pode ser suficiente para accountability sem necessariamente ser destinada a divulgação externa.
+- RES-05 não exige reavaliar a adequação substantiva de cada decisão; verifica se existe base suficiente para que ela possa ser explicada e examinada.
+- A falta de registro necessário à prestação de contas constitui ausência ou insuficiência de evidência. Somente registrar inconsistência quando existirem registros incompatíveis.
+- Rastreabilidade é condição frequentemente necessária para este requisito, mas não suficiente: localizar registros não demonstra, por si só, que estejam vinculados ao responsável adequado.
+
+---
+
+### RES-06
+
+**Requisito:**
+Quando decisões ou ações produzem consequências relevantes, é possível associá-las aos responsáveis e aos registros necessários para sua prestação de contas?
+
+**Fonte normativa:**
+`FIAR-Saude/docs/avaliacao/responsabilizacao.md` — RES-06
+
+**O que o requisito busca verificar:**
+Verificar se consequências materialmente relevantes associadas a decisões ou ações podem, quando necessário, ser relacionadas às decisões ou ações correspondentes, aos responsáveis pertinentes e aos registros que sustentam sua prestação de contas.
+
+O requisito completa a cadeia de responsabilização ao permitir analisar não apenas quem decidiu ou agiu, mas também se existe base para compreender a relação entre essa atuação e consequências relevantes observadas.
+
+**Aspectos a considerar na aplicabilidade:**
+
+- Aplicável quando existirem consequências relevantes associáveis a decisões ou ações no escopo da tarefa.
+- Nem toda variação de resultado ou evento deve ser tratada como consequência relevante para este requisito.
+- A materialidade depende da Tarefa de IA, do Contexto de Uso e do tipo de decisão ou ação considerada.
+- Podem ser relevantes consequências sobre desempenho, riscos, limitações, grupos afetados, condições de uso ou operação.
+- Na Trilha Experimental, consequências podem estar relacionadas a resultados experimentais, limitações identificadas ou alterações subsequentes.
+- Na Trilha Produção, podem envolver incidentes, efeitos operacionais, ações corretivas ou mudanças nas condições de uso.
+- A existência de uma consequência não demonstra automaticamente causalidade, culpa ou inadequação do responsável.
+
+**Exemplos de evidências pertinentes:**
+
+- registros de resultados;
+- relatórios técnicos;
+- registros de incidentes;
+- registros de monitoramento;
+- Registros de Decisão Técnica;
+- decisões institucionais;
+- ações corretivas;
+- registros de mudanças;
+- documentação de limitações ou impactos;
+- relatórios de acompanhamento;
+
+Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências equivalentes podem ser utilizadas quando forem suficientes, consistentes, rastreáveis e adequadas ao contexto.
+
+**Mecanismos de verificação possíveis:**
+
+- rastreabilidade entre consequência, decisão ou ação e responsável;
+- consistência cruzada entre registros;
+- análise temporal;
+- verificação documental;
+- contextualização;
+- revisão de evidências operacionais, quando aplicável;
+
+**Observações metodológicas:**
+
+- Não inferir causalidade apenas porque uma consequência ocorreu depois de determinada decisão.
+- Não interpretar a associação entre responsável e consequência como atribuição automática de culpa, negligência ou responsabilidade jurídica.
+- O FIAR-Saúde avalia mecanismos de responsabilização no escopo metodológico; não substitui processos jurídicos, regulatórios, disciplinares ou profissionais.
+- A análise substantiva da consequência pode pertencer a Justiça, Segurança, Privacidade ou outra dimensão. RES-06 verifica se sua relação com decisões, ações e responsáveis pode ser estabelecida para fins de prestação de contas.
+- Se a cadeia `decisão/ação → consequência` puder ser reconstruída, mas o responsável não puder ser identificado, há lacuna de Responsabilização, não necessariamente de Rastreabilidade.
+- Se o responsável estiver identificado, mas não for possível reconstruir qual decisão ou ação está associada à consequência, pode haver também uma lacuna de Rastreabilidade.
+- Evitar transformar correlação temporal, autoria técnica ou participação no projeto em atribuição de responsabilidade.
+
+---
 
 ## Rastreabilidade
 
