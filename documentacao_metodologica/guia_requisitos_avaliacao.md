@@ -22,13 +22,12 @@ Fontes principais:
 
 - `FIAR-Saude/docs/dimensoes_avaliacao.md`
 - `FIAR-Saude/docs/avaliacao/governanca.md`
+- `FIAR-Saude/docs/avaliacao/seguranca.md`
 - `FIAR-Saude/docs/avaliacao/privacidade.md`
 - `FIAR-Saude/docs/avaliacao/responsabilizacao.md`
 - `FIAR-Saude/docs/avaliacao/rastreabilidade.md`
 - `FIAR-Saude/docs/avaliacao/justica.md`
 - `FIAR-Saude/docs/avaliacao/transparencia.md`
-
-
 
 As formulações identificadas como **Requisito** são reproduzidas da documentação canônica do FIAR-Saúde.
 
@@ -521,14 +520,376 @@ Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências 
 
 ## Segurança
 
-**Fonte normativa da dimensão:**
-`FIAR-Saude/docs/dimensoes_avaliacao.md`
+A dimensão de Segurança avalia se a Tarefa de IA e seus componentes relevantes estão protegidos, de forma proporcional ao contexto e aos riscos identificados, contra falhas, uso indevido, acesso ou alteração não autorizados, comprometimento e outras condições capazes de afetar sua integridade, disponibilidade, funcionamento esperado ou confiabilidade.
 
-A dimensão de Segurança é uma das sete dimensões canônicas do FIAR-Saúde. Na documentação vigente consultada, o arquivo detalhado de avaliação de Segurança ainda não foi criado. Portanto, este guia **não cria identificadores ou requisitos operacionais de Segurança**.
+Os requisitos canônicos vigentes são SEG-01 a SEG-06.
 
-Até a publicação dos requisitos canônicos, a avaliação deve usar apenas os aspectos orientadores já definidos pelo FIAR-Saúde — como registros de incidentes, controle de acesso a dados e ambientes, mecanismos de resposta a falhas e mecanismos de proteção, hardening ou isolamento quando aplicáveis — sem convertê-los em requisitos numerados não oficiais.
+A aplicação desta dimensão deve permanecer vinculada à Tarefa de IA, à Versão Avaliável, ao Contexto de Uso, à Trilha de Execução e aos riscos efetivamente pertinentes. A análise não constitui auditoria geral da infraestrutura de tecnologia da informação da organização.
 
-Quando a especificação canônica de Segurança for publicada, esta seção deverá ser atualizada preservando os identificadores, formulações e mecanismos oficiais.
+A dimensão deve ser distinguida de:
+
+- **Privacidade**, que avalia o tratamento e a proteção de dados pessoais ou sensíveis;
+- **Governança**, que avalia estruturas, competências, processos decisórios, supervisão, tratamento e escalonamento;
+- **Rastreabilidade**, que avalia se versões, eventos, mudanças e registros relevantes podem ser reconstruídos;
+- **Transparência**, que avalia se informações relevantes sobre a tarefa, seus riscos, limitações e condições estão adequadamente documentadas ou comunicadas;
+- **Responsabilização**, que avalia quem responde por decisões, ações e consequências e se existem elementos suficientes para prestação de contas.
+
+Uma mesma evidência pode contribuir para mais de uma dimensão, mas deve responder à pergunta específica do requisito em análise.
+
+Mecanismos como pentest, red teaming, hardening, isolamento, testes adversariais, monitoramento contínuo, logs operacionais ou rollback não devem ser presumidos como universais. Sua necessidade deve decorrer do risco que precisa ser tratado.
+
+---
+
+### SEG-01
+
+**Requisito:**
+Os ativos, componentes, ambientes e riscos de segurança relevantes para a Tarefa de IA estão identificados e documentados de forma compatível com seu Contexto de Uso e sua Trilha de Execução?
+
+**Fonte normativa:**
+`FIAR-Saude/docs/avaliacao/seguranca.md` — SEG-01
+
+**O que o requisito busca verificar:**
+Verificar se existe delimitação suficiente do que precisa ser protegido e dos riscos de segurança materialmente relevantes para a Tarefa de IA no escopo do ciclo.
+
+O requisito combina a identificação dos ativos e componentes relevantes com a identificação dos riscos associados a eles. Seu objetivo não é produzir um inventário completo da infraestrutura institucional, mas estabelecer uma base suficiente para compreender quais componentes da tarefa podem ser afetados por acesso indevido, alteração, comprometimento, indisponibilidade, falhas ou outros eventos relevantes.
+
+**Aspectos a considerar na aplicabilidade:**
+
+- O requisito é aplicável às tarefas avaliadas pelo FIAR-Saúde, inclusive na Trilha Experimental.
+- A extensão dos ativos e ambientes considerados depende da Tarefa de IA, da Versão Avaliável, do Contexto de Uso e da Trilha de Execução.
+- Podem ser pertinentes dados, modelos, código, configurações, pipelines, dependências, interfaces, serviços externos, credenciais e ambientes de desenvolvimento, avaliação ou produção.
+- Não é necessário inventariar componentes sem relação material com a tarefa.
+- O risco deve ser específico o suficiente para estabelecer o que pode ser afetado e por qual tipo de evento ou condição.
+- Riscos específicos de IA somente devem ser considerados quando a arquitetura ou o Contexto de Uso os tornarem materialmente plausíveis.
+- Uma tarefa experimental pode possuir riscos de Segurança mesmo sem integração a um sistema em produção.
+- A passagem para produção pode introduzir novos ativos, interfaces, dependências e riscos que não existiam no ciclo experimental.
+
+**Exemplos de evidências pertinentes:**
+
+- documentação técnica da tarefa;
+- Model Card ou documentação equivalente;
+- diagramas ou descrições de arquitetura;
+- documentação dos ambientes utilizados;
+- inventário ou descrição dos componentes materialmente relevantes;
+- documentação de dependências;
+- registros ou análises de riscos de segurança;
+- documentação de interfaces e serviços utilizados;
+- registros técnicos que permitam compreender os ativos e riscos considerados;
+
+Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências equivalentes podem ser utilizadas quando forem suficientes, consistentes, rastreáveis e adequadas ao contexto.
+
+**Mecanismos de verificação possíveis:**
+
+- verificação documental;
+- análise de suficiência;
+- contextualização;
+- consistência cruzada entre documentação da tarefa, arquitetura e riscos;
+- revisão técnica específica quando necessária.
+
+**Observações metodológicas:**
+
+- Não transformar o requisito em inventário geral de infraestrutura de TI.
+- Um ativo deve entrar no escopo quando sua perda, alteração, acesso indevido, indisponibilidade ou comprometimento puder afetar materialmente a tarefa ou seus resultados relevantes.
+- Não exigir categorias genéricas de ameaça sem relação demonstrável com a arquitetura ou o Contexto de Uso.
+- Não presumir riscos como poisoning, model extraction, adversarial examples, prompt injection ou jailbreak apenas porque se trata de IA.
+- Quando um risco materialmente pertinente não puder ser caracterizado por ausência de informação factual sobre a arquitetura ou ambiente, pode ser necessária uma pendência factual específica.
+- Ausência de documentação de um risco não constitui automaticamente inconsistência. Inconsistência exige conflito efetivo entre fontes ou informações que deveriam ser compatíveis.
+- A identificação e o escalonamento institucional do risco não devem ser avaliados aqui como processo de Governança; SEG-01 verifica a caracterização do risco de Segurança.
+
+---
+
+### SEG-02
+
+**Requisito:**
+Existem mecanismos proporcionais para restringir e controlar o acesso aos dados, modelos, artefatos e ambientes relevantes para a tarefa?
+
+**Fonte normativa:**
+`FIAR-Saude/docs/avaliacao/seguranca.md` — SEG-02
+
+**O que o requisito busca verificar:**
+Verificar se existem controles compatíveis com os riscos identificados para limitar o acesso aos componentes relevantes da tarefa às pessoas, sistemas ou funções que efetivamente necessitam desse acesso.
+
+O requisito abrange o acesso a ativos da Tarefa de IA de forma mais ampla e não se limita aos dados pessoais ou sensíveis.
+
+**Aspectos a considerar na aplicabilidade:**
+
+- O nível de controle esperado depende dos ativos, das funções envolvidas, dos ambientes utilizados e das consequências de acesso indevido.
+- Controles distintos podem ser adequados para desenvolvimento, avaliação e produção.
+- Dados, modelos, código, configurações, credenciais, interfaces e ambientes podem demandar controles diferentes.
+- Na Trilha Experimental, ainda podem existir restrições relevantes de acesso a dados, modelos ou ambientes.
+- Na Trilha Produção, podem ser necessários controles adicionais relacionados ao acesso operacional.
+- A existência de dados pessoais ou sensíveis também pode tornar a mesma evidência pertinente à dimensão de Privacidade.
+- Nenhuma tecnologia específica de autenticação ou autorização deve ser presumida como obrigatória.
+
+**Exemplos de evidências pertinentes:**
+
+- documentação de autenticação e autorização;
+- registros ou matrizes de permissões;
+- políticas de controle de acesso aplicáveis à tarefa;
+- documentação de segregação de funções;
+- documentação de gestão e proteção de credenciais;
+- configurações de acesso aos ambientes pertinentes;
+- registros de revisão de permissões;
+- evidências de restrição de interfaces ou serviços;
+- documentação institucional aplicável aos ativos considerados;
+
+Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências equivalentes podem ser utilizadas quando forem suficientes, consistentes, rastreáveis e adequadas ao contexto.
+
+**Mecanismos de verificação possíveis:**
+
+- verificação documental;
+- revisão técnica quando necessária;
+- contextualização;
+- consistência entre permissões declaradas e funções;
+- inspeção ou demonstração de controles específicos, quando pertinente e viável.
+
+**Observações metodológicas:**
+
+- Não confundir controle de acesso de Segurança com toda a avaliação de Privacidade. Em Segurança, a pergunta é se o ativo relevante da tarefa está adequadamente protegido contra acesso indevido.
+- Autenticação multifator, princípio de menor privilégio, segregação ou outros controles são mecanismos possíveis, não exigências universais.
+- A existência de uma política institucional geral não demonstra automaticamente que o controle está aplicado à tarefa concreta.
+- A ausência de logs de acesso não implica automaticamente descumprimento de SEG-02; primeiro deve ser determinado se esses logs são necessários para demonstrar o controle ou outro requisito.
+- Não inferir permissões a partir de autoria de repositórios, documentos ou participação no projeto.
+- Se a documentação declarar controles incompatíveis com a configuração efetivamente demonstrada, pode existir inconsistência.
+- Questões sobre quem possui competência institucional para autorizar determinado acesso pertencem principalmente a Governança ou Responsabilização, conforme o caso.
+
+---
+
+### SEG-03
+
+**Requisito:**
+Existem mecanismos proporcionais para proteger a integridade da tarefa e de seus componentes relevantes contra alteração, comprometimento ou uso indevido?
+
+**Fonte normativa:**
+`FIAR-Saude/docs/avaliacao/seguranca.md` — SEG-03
+
+**O que o requisito busca verificar:**
+Verificar se os componentes relevantes da tarefa possuem mecanismos adequados ao risco para reduzir a possibilidade de alteração não autorizada, corrupção, comprometimento ou utilização de forma capaz de afetar o funcionamento ou os resultados da Tarefa de IA.
+
+O requisito trata da proteção da integridade. Ele não exige, por si só, que todo histórico de mudanças seja reconstruível; essa questão pertence principalmente à Rastreabilidade.
+
+**Aspectos a considerar na aplicabilidade:**
+
+- Os componentes materialmente relevantes devem ser determinados a partir de SEG-01.
+- Podem ser pertinentes modelos, pesos, código, configurações, pipelines, dependências, artefatos técnicos e resultados.
+- O nível de proteção depende das consequências possíveis de uma alteração ou comprometimento.
+- Na Trilha Experimental, podem ser suficientes mecanismos diferentes dos necessários em operação ativa.
+- Na Trilha Produção, a proteção contra alterações não autorizadas de componentes implantados pode adquirir maior relevância.
+- Riscos de supply chain, dependências comprometidas ou manipulação adversarial devem ser considerados somente quando pertinentes.
+- Mecanismos de verificação de integridade podem ser manuais, procedimentais ou automatizados, conforme o contexto.
+
+**Exemplos de evidências pertinentes:**
+
+- documentação de controle de alterações;
+- controles de integridade de modelos, código ou artefatos;
+- documentação de configurações relevantes;
+- mecanismos de validação antes de uso ou implantação;
+- registros de proteção ou gestão de dependências;
+- evidências de segregação de permissões de alteração;
+- testes técnicos direcionados ao risco identificado, quando pertinentes;
+- registros técnicos equivalentes;
+
+Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências equivalentes podem ser utilizadas quando forem suficientes, consistentes, rastreáveis e adequadas ao contexto.
+
+**Mecanismos de verificação possíveis:**
+
+- revisão documental;
+- revisão técnica;
+- análise de suficiência;
+- consistência entre risco identificado e controle adotado;
+- inspeção ou teste técnico específico, quando necessário e proporcional.
+
+**Observações metodológicas:**
+
+- Versionamento pode fornecer evidência útil, mas versionamento por si só não demonstra proteção contra alteração indevida.
+- Não avaliar neste requisito a reconstrução completa do histórico de versões; isso pertence à Rastreabilidade.
+- Não exigir assinatura, hashing, attestation ou tecnologia equivalente como mecanismo universal.
+- Não exigir testes adversariais quando o risco correspondente não for materialmente pertinente.
+- A ausência de um artefato denominado “relatório de segurança” não constitui ausência de evidência se o controle estiver demonstrado em fontes adequadas.
+- Quando houver alegação de proteção sem evidência suficiente de implementação ou aplicação à Versão Avaliável, registrar insuficiência de evidência antes de concluir sobre conformidade.
+
+---
+
+### SEG-04
+
+**Requisito:**
+Quando a disponibilidade ou a continuidade forem relevantes ao Contexto de Uso, existem mecanismos proporcionais para lidar com falhas, indisponibilidade e recuperação da tarefa ou de seus componentes relevantes?
+
+**Fonte normativa:**
+`FIAR-Saude/docs/avaliacao/seguranca.md` — SEG-04
+
+**O que o requisito busca verificar:**
+Verificar se, quando falha ou indisponibilidade puder produzir consequência material para o Contexto de Uso, existem mecanismos proporcionais para lidar com interrupção, perda de componentes ou necessidade de recuperação.
+
+O requisito é explicitamente condicionado à relevância da disponibilidade e da continuidade para a tarefa avaliada.
+
+**Aspectos a considerar na aplicabilidade:**
+
+- A aplicabilidade deve ser determinada antes da análise dos mecanismos existentes.
+- Tarefas exclusivamente experimentais podem ter baixa dependência de disponibilidade contínua, mas isso não deve ser presumido sem considerar o contexto.
+- Tarefas em produção tendem a tornar disponibilidade e continuidade mais relevantes, especialmente quando integradas a fluxos assistenciais ou operacionais.
+- Deve-se considerar a consequência plausível da indisponibilidade, e não simplesmente a existência de infraestrutura.
+- Backup, redundância, fallback, contingência e rollback são mecanismos possíveis, não requisitos universais.
+- Recuperabilidade de artefatos experimentais pode ser demonstrada de forma diferente da continuidade de um serviço operacional.
+- O mecanismo adequado depende do componente que falha e da função desempenhada pela tarefa.
+
+**Exemplos de evidências pertinentes:**
+
+- documentação de recuperação;
+- procedimentos de contingência;
+- mecanismos ou registros de backup;
+- documentação de redundância, quando aplicável;
+- procedimentos de restauração;
+- mecanismos de fallback;
+- documentação de rollback, quando pertinente;
+- procedimentos diante de indisponibilidade;
+- testes ou registros de recuperação, quando necessários;
+
+Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências equivalentes podem ser utilizadas quando forem suficientes, consistentes, rastreáveis e adequadas ao contexto.
+
+**Mecanismos de verificação possíveis:**
+
+- verificação documental;
+- contextualização;
+- revisão técnica;
+- demonstração ou teste de recuperação, quando necessário e viável;
+- consistência entre consequência da falha e mecanismo de tratamento.
+
+**Observações metodológicas:**
+
+- Não considerar SEG-04 automaticamente aplicável apenas porque existe um sistema computacional.
+- Não transformar backup, redundância ou rollback em exigências universais.
+- Um mecanismo de backup pode proteger dados ou artefatos sem garantir continuidade operacional; verificar o que ele efetivamente demonstra.
+- GOV-10 pode tratar da capacidade governada de restringir, suspender ou descontinuar uma tarefa em produção; SEG-04 trata dos mecanismos de Segurança relacionados a falha, indisponibilidade e recuperação.
+- A existência de um plano não demonstra, por si só, que o mecanismo técnico necessário exista.
+- Quando a não aplicabilidade decorrer da ausência de dependência material de disponibilidade, registrar essa justificativa com base no Contexto de Uso.
+
+---
+
+### SEG-05
+
+**Requisito:**
+Os controles de segurança aplicáveis ao ambiente de desenvolvimento, avaliação ou execução são compatíveis com os riscos relevantes da tarefa?
+
+**Fonte normativa:**
+`FIAR-Saude/docs/avaliacao/seguranca.md` — SEG-05
+
+**O que o requisito busca verificar:**
+Verificar se características dos ambientes efetivamente utilizados pela Tarefa de IA possuem controles proporcionais aos riscos materialmente relevantes para a tarefa.
+
+O requisito não transforma o FIAR-Saúde em auditoria geral da infraestrutura institucional. Devem ser analisados apenas os controles do ambiente cuja ausência, falha ou configuração inadequada possa afetar materialmente a Segurança da Tarefa de IA no escopo avaliado.
+
+**Aspectos a considerar na aplicabilidade:**
+
+- Identificar primeiro quais ambientes participam efetivamente do desenvolvimento, avaliação ou execução da Versão Avaliável.
+- Avaliar somente controles relacionados aos riscos pertinentes identificados para esses ambientes.
+- Ambientes experimentais e ambientes de produção podem exigir níveis diferentes de proteção.
+- O fato de a tarefa utilizar infraestrutura compartilhada não torna toda essa infraestrutura objeto da avaliação.
+- Podem ser pertinentes dependências, serviços externos, armazenamento, credenciais, interfaces, segmentação ou configurações.
+- Hardening, isolamento, segregação de ambientes ou segmentação de rede somente devem ser exigidos quando houver relação demonstrável com o risco.
+- Controles institucionais gerais podem ser utilizados como evidência quando sua aplicação à tarefa estiver demonstrada.
+- Dependências externas devem ser consideradas apenas na medida em que sejam materialmente relevantes à Segurança da tarefa.
+
+**Exemplos de evidências pertinentes:**
+
+- documentação dos ambientes utilizados;
+- diagramas ou descrições técnicas pertinentes;
+- configurações de segurança relevantes;
+- documentação de segregação entre ambientes;
+- documentação de dependências e serviços utilizados;
+- controles de credenciais;
+- evidências de isolamento, quando necessário;
+- documentação de armazenamento;
+- registros técnicos de configuração;
+- políticas institucionais acompanhadas de evidência de aplicabilidade à tarefa;
+
+Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências equivalentes podem ser utilizadas quando forem suficientes, consistentes, rastreáveis e adequadas ao contexto.
+
+**Mecanismos de verificação possíveis:**
+
+- revisão documental;
+- revisão técnica direcionada;
+- contextualização;
+- análise de suficiência;
+- inspeção ou demonstração de configuração específica, quando necessária;
+- consistência entre risco do ambiente e controle adotado.
+
+**Observações metodológicas:**
+
+- Não auditar indiscriminadamente rede, servidores, sistema operacional, políticas corporativas ou demais componentes da infraestrutura.
+- A pergunta operacional deve permanecer: “este aspecto do ambiente é materialmente relevante para um risco da Tarefa de IA?”
+- Hardening não é requisito em si; pode ser mecanismo para responder a um risco específico.
+- Isolamento também não é universal. Sala segura, sandbox, containerização ou segregação física/lógica devem ser consideradas apenas quando pertinentes.
+- Não exigir certificação de segurança da infraestrutura como substituto da análise do requisito.
+- Uma certificação ou política institucional pode constituir evidência, mas deve ser verificada quanto à cobertura do ambiente efetivamente utilizado pela tarefa.
+- Não utilizar SEG-05 para avaliar quem decide sobre controles ou quem aceita risco residual; essas questões pertencem principalmente a Governança e Responsabilização.
+- Se não houver informação factual suficiente para saber em qual ambiente a Versão Avaliável foi executada, pode ser necessária complementação factual antes da conclusão da análise.
+
+---
+
+### SEG-06
+
+**Requisito:**
+Para tarefas em produção, ou quando o risco identificado justificar, existem mecanismos proporcionais para detectar, registrar e responder a eventos ou incidentes de segurança relevantes?
+
+**Fonte normativa:**
+`FIAR-Saude/docs/avaliacao/seguranca.md` — SEG-06
+
+**O que o requisito busca verificar:**
+Verificar se, quando o estágio da tarefa ou os riscos identificados exigirem capacidade de acompanhamento de eventos de Segurança, existem mecanismos proporcionais para detectar ocorrências relevantes, preservar registros suficientes e realizar resposta técnica adequada.
+
+O requisito não torna monitoramento contínuo ou gestão formal de incidentes obrigatórios para toda tarefa. Sua aplicabilidade e profundidade dependem da Trilha de Execução e do risco.
+
+**Aspectos a considerar na aplicabilidade:**
+
+- Em tarefas na Trilha Produção, o requisito tende a ser aplicável porque há operação ativa, mas seu nível de formalização continua dependente dos riscos concretos.
+- Em tarefas experimentais, o requisito pode ser aplicável quando riscos específicos justifiquem detecção, registro e resposta mesmo sem operação ativa.
+- A expressão “quando o risco identificado justificar” impede interpretar SEG-06 como requisito exclusivamente de produção.
+- Devem ser definidos quais eventos são materialmente relevantes para a tarefa antes de determinar mecanismo de monitoramento.
+- Monitoramento contínuo não é universal; monitoramento periódico, registros de execução ou mecanismos reativos podem ser suficientes em determinados contextos.
+- Logs operacionais são uma possível fonte de evidência, não requisito em si.
+- A necessidade de alerta, contenção, recuperação ou revisão depende do tipo de evento e de suas consequências.
+- Riscos específicos de IA devem ser incluídos somente quando materialmente relevantes à arquitetura ou à interface da tarefa.
+
+**Exemplos de evidências pertinentes:**
+
+- mecanismos ou registros de monitoramento pertinentes;
+- registros estruturados de incidentes;
+- logs técnicos ou operacionais, quando necessários;
+- mecanismos de alerta;
+- procedimentos técnicos de resposta;
+- documentação de contenção ou recuperação;
+- ações corretivas;
+- registros de revisão após incidentes;
+- resultados de simulações ou testes direcionados, quando pertinentes;
+- documentação equivalente de detecção e resposta;
+
+Esses exemplos não constituem uma lista obrigatória de artefatos. Evidências equivalentes podem ser utilizadas quando forem suficientes, consistentes, rastreáveis e adequadas ao contexto.
+
+**Mecanismos de verificação possíveis:**
+
+- análise de evidências operacionais;
+- verificação documental;
+- revisão técnica;
+- contextualização;
+- rastreabilidade entre evento e resposta quando houver incidente;
+- inspeção ou demonstração de mecanismos de detecção ou resposta, quando necessária e viável.
+
+**Observações metodológicas:**
+
+- A inexistência de incidentes registrados não demonstra que o requisito está atendido nem que está descumprido; deve-se avaliar o mecanismo aplicável.
+- Não exigir sistema dedicado de SIEM, SOC, monitoramento 24/7 ou ferramenta específica salvo quando o risco concreto exigir capacidade equivalente.
+- Não exigir red teaming, pentest ou teste adversarial simplesmente para satisfazer SEG-06.
+- Quando um incidente existe, distinguir:
+  - **Segurança:** mecanismos de detecção e resposta;
+  - **Rastreabilidade:** capacidade de reconstruir evento, versão e registros;
+  - **Responsabilização:** quem responde pelas ações e decisões decorrentes;
+  - **Governança:** processo de tratamento, escalonamento e eventual decisão institucional;
+  - **Transparência:** comunicação de informações relevantes aos públicos pertinentes, quando aplicável.
+- A definição de quem deve ser comunicado ou qual instância decide sobre continuidade da tarefa não deve ser criada dentro de SEG-06.
+- Se um registro menciona um incidente sem informação suficiente para caracterizá-lo, isso pode representar insuficiência de evidência ou pendência factual.
+- Se duas fontes descrevem de forma incompatível o mesmo incidente, período ou resposta, pode existir inconsistência, desde que o conflito esteja efetivamente demonstrado.
+- Ausência de um artefato denominado “Incident Report” não implica Não Conformidade quando os elementos necessários estiverem preservados por outras fontes adequadas.
 
 ---
 
@@ -2461,8 +2822,6 @@ Esses exemplos não constituem uma lista obrigatória de artefatos. A evidência
 
 ---
 
----
-
 ## Uso do guia durante a avaliação
 
 Para cada requisito canônico aplicável:
@@ -2472,7 +2831,7 @@ Para cada requisito canônico aplicável:
 3. determinar `Aplicável` ou `Não aplicável` antes da análise das evidências;
 4. registrar somente evidências efetivamente verificadas no ciclo;
 5. registrar somente mecanismos de verificação efetivamente utilizados;
-6. analisar suficiência, consistência, rastreabilidade e contextualização;
+6. analisar suficiência, consistência, rastreabilidade, pertinência, atualidade e contextualização;
 7. registrar achados, limitações, pendências, inconsistências e eventual sinal de governança conforme sustentado pelas evidências;
 8. não transformar ausência de artefato, evidência ainda não recebida ou estado administrativo em resultado automático de conformidade.
 
@@ -2486,8 +2845,12 @@ A conformidade é consolidada para a combinação **Tarefa de IA + Versão Avali
 
 - FIAR-Saúde. `docs/dimensoes_avaliacao.md`.
 - FIAR-Saúde. `docs/avaliacao/governanca.md`.
+- FIAR-Saúde. `docs/avaliacao/seguranca.md.`
 - FIAR-Saúde. `docs/avaliacao/privacidade.md`.
+- FIAR-Saúde. `docs/avaliacao/responsabilizacao.md`.
+- FIAR-Saúde. `docs/avaliacao/rastreabilidade.md`.
 - FIAR-Saúde. `docs/avaliacao/justica.md`.
+- FIAR-Saúde. `docs/avaliacao/transparencia.md`.
 
 ### Documentação operacional relacionada do FIAR-Audit-Template
 
