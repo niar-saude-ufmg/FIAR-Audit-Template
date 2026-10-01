@@ -1,764 +1,286 @@
-# Relatório Inicial de Justiça
+# Fairness Report — FIAR-Saúde
 
-## Controle do documento
+**Preenchimento pela equipe do projeto**
 
-| Campo                 | Preenchimento                                        |
-| --------------------- | ---------------------------------------------------- |
-| Versão do documento  | 0.1                                                  |
-| Status                | Em preenchimento pelo projeto                        |
-| Projeto               | [INFORMAÇÃO PENDENTE — preencher pelo projeto]    |
-| Tarefa de IA          | [INFORMAÇÃO PENDENTE — preencher pelo projeto]    |
-| Versão Avaliável    | [INFORMAÇÃO PENDENTE — preencher pelo projeto]    |
-| Contexto de Uso       | [INFORMAÇÃO PENDENTE — preencher pelo projeto]    |
-| Trilha                | [ENQUADRAMENTO PENDENTE — validar pelo NIAR-Saúde] |
-| Responsável técnico | [INFORMAÇÃO PENDENTE — preencher pelo projeto]    |
-| Data de referência   | [INFORMAÇÃO PENDENTE — preencher pelo projeto]    |
-| Última atualização | [INFORMAÇÃO PENDENTE — preencher pelo projeto]    |
+Este relatório registra as análises específicas de Justiça necessárias para a avaliação FIAR-Saúde. Ele deve reutilizar, por referência, informações factuais já documentadas em Data Cards, Model Cards e outros artefatos, evitando duplicação desnecessária.
 
-> Este documento registra as evidências disponíveis e as análises planejadas
-> para a avaliação de justiça da Tarefa de IA, da Versão Avaliável e do
-> Contexto de Uso identificados.
->
-> A existência deste relatório não demonstra, isoladamente, que a tarefa seja
-> justa ou que não existam disparidades.
->
-> Métricas globais de desempenho não devem ser utilizadas como conclusão sobre
-> justiça.
+A existência deste relatório não demonstra, isoladamente, que a Tarefa de IA seja justa ou que não existam disparidades.
+
+**Como preencher:** responda apenas ao que for pertinente à Tarefa e ao Contexto de Uso. Quando a informação já estiver no Data Card, Model Card ou outro documento, apenas indique a fonte. Quando a resposta depender de conhecimento técnico ou clínico específico, ela pode ser construída conjuntamente pela equipe.
 
 ---
 
-## 1. Objetivo da avaliação de justiça
+## 1. Identificação
 
-Descrever o objetivo específico da avaliação de justiça no contexto desta tarefa.
-
-A avaliação deve considerar:
-
-- quem pode ser beneficiado ou prejudicado;
-- quais decisões podem ser influenciadas;
-- quais tipos de erro são relevantes;
-- quais grupos ou unidades podem experimentar desempenho desigual;
-- quais desigualdades podem ser ampliadas pelo uso da tarefa.
-
-[ANÁLISE PENDENTE — não inferível a partir dos documentos fornecidos]
+| Campo                 | Preenchimento |
+| --------------------- | ------------- |
+| Projeto               |               |
+| Tarefa de IA          |               |
+| Versão Avaliável    |               |
+| Contexto de Uso       |               |
+| Trilha de Execução  |               |
+| Versão do relatório |               |
+| Data de referência   |               |
 
 ---
 
-## 2. Escopo da avaliação
+## 2. Escopo da análise de Justiça
 
-### 2.1 Incluído
+### 2.1 Escopo considerado
 
-Registrar:
+Descrever brevemente o que esta análise de Justiça cobre, incluindo a população pertinente, os dados e resultados considerados e o Contexto de Uso.
 
-- população considerada;
-- período;
-- dados;
-- modelo;
-- saídas;
-- grupos;
-- métricas;
-- Contexto de Uso;
-- versões avaliadas.
-- [INFORMAÇÃO PENDENTE — preencher pelo projeto]
+[Preencher]
 
 ### 2.2 Fora do escopo
 
-Registrar explicitamente grupos, condições, usos ou análises que não fazem parte desta avaliação.
+Registrar grupos, populações, condições, usos ou análises que não fazem parte deste relatório.
 
-- [INFORMAÇÃO PENDENTE — preencher pelo projeto]
+[Preencher]
 
-### 2.3 Limitações de escopo
+### 2.3 Limitações gerais de escopo
 
-- [INFORMAÇÃO PENDENTE — preencher pelo projeto]
+Registrar limitações que afetem a interpretação da análise.
 
----
-
-## 3. Estado atual da análise
-
-Selecionar uma opção e justificar:
-
-```text
-Análise de justiça não iniciada
-
-Plano de avaliação de justiça elaborado
-
-Análise parcial realizada
-
-Análise concluída pelo projeto
-
-Análise existente, mas ainda não fornecida
-
-Análise fornecida e em validação
-
-Não aplicável — justificativa obrigatória
-```
-
-### Estado
-
-[INFORMAÇÃO PENDENTE — preencher pelo projeto]
-
-### Justificativa
-
-[INFORMAÇÃO PENDENTE — preencher pelo projeto]
-
-Quando não houver análise suficiente, este documento deve funcionar como um plano de avaliação de justiça.
+[Preencher]
 
 ---
 
-## 4. Contexto de impacto
+## 3. RC01 — Grupos e populações
 
-### 4.1 População afetada
+**Requisito:** Identificar, de forma fundamentada, os grupos e populações que podem ser afetados de forma desigual pela Tarefa de IA ou excluídos de seus benefícios.
 
-[INFORMAÇÃO PENDENTE — preencher pelo projeto]
+### 3.1 Grupos considerados
 
-### 4.2 Usuários da tarefa
+| Grupo ou população | Por que este grupo pode ser afetado de forma diferente ou ter menos possibilidade de se beneficiar? | Está disponível nos dados? | Foi analisado?       | Fonte factual / referência | Limitações |
+| -------------------- | --------------------------------------------------------------------------------------------------- | ---------------------------- | -------------------- | --------------------------- | ------------ |
+|                      |                                                                                                     | Sim / Não / Parcial         | Sim / Não / Parcial |                             |              |
 
-[INFORMAÇÃO PENDENTE — preencher pelo projeto]
+Exemplos podem incluir sexo, idade, região, condição clínica ou outros grupos relevantes para a população atendida. Não é necessário incluir um grupo apenas porque essa informação existe nos dados.
 
-### 4.3 Decisões influenciadas
+### 3.2 Grupos relevantes não analisáveis
 
-[INFORMAÇÃO PENDENTE — preencher pelo projeto]
+Existem grupos potencialmente relevantes que não puderam ser analisados com os dados disponíveis?
 
-### 4.4 Consequências de erro
+[Preencher]
 
-| Tipo de erro ou resultado | Consequência possível                           | Grupos potencialmente afetados | Gravidade ou relevância |
-| ------------------------- | ------------------------------------------------- | ------------------------------ | ------------------------ |
-| Falso positivo            | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |                                |                          |
-| Falso negativo            | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |                                |                          |
-| Erro de priorização     | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |                                |                          |
-| Erro de classificação   | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |                                |                          |
-| Outro                     | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |                                |                          |
+### 3.3 Completude da seleção
 
-Não preencher tipos de erro que não se apliquem à tarefa.
+Existe algum grupo importante para esta Tarefa que ficou de fora da análise? Por quê?
 
----
+[Preencher]
 
-## 5. Grupos ou estratos mencionados nos documentos
+### 3.4 Limitações e incertezas
 
-| ID      | Grupo ou estrato                                  | Variável utilizada | Fonte | Disponível nos dados | Analisado  |
-| ------- | ------------------------------------------------- | ------------------- | ----- | --------------------- | ---------- |
-| GRP-001 | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |                     |       | Sim / Não / Parcial  | Sim / Não |
+Registrar incertezas na identificação ou seleção dos grupos.
 
-Exemplos possíveis, quando sustentados pelos documentos:
+[Preencher]
 
-* sexo;
-* faixa etária;
-* raça ou cor;
-* região;
-* estado;
-* tipo de unidade;
-* condição clínica;
-* comorbidade;
-* condição socioeconômica;
-* período;
-* equipamento;
-* origem institucional.
-
-Não incluir grupos apenas porque são comuns em avaliações de justiça.
+> A disponibilidade de um atributo nos dados não é, por si só, justificativa suficiente para sua inclusão. Da mesma forma, a indisponibilidade de um atributo potencialmente relevante deve ser registrada como limitação quando impedir a análise.
 
 ---
 
-## 6. Justificativa para os grupos
+## 4. RC02 — Diferenças nos efeitos
 
-Para cada grupo ou estrato, registrar a justificativa clínica, operacional, social, regulatória ou metodológica.
+**Requisito:** Avaliar se a Tarefa de IA produz, reproduz ou agrava diferenças injustificadas nos efeitos sobre os grupos e populações identificados.
 
-| Grupo ou estrato                                  | Justificativa | Fonte | Limitação |
-| ------------------------------------------------- | ------------- | ----- | ----------- |
-| [INFORMAÇÃO PENDENTE — preencher pelo projeto] |               |       |             |
+### 4.1 Resultados por grupo
 
-A disponibilidade de um atributo não é, isoladamente, justificativa suficiente para sua utilização.
+Registrar apenas métricas, comparações ou outros efeitos pertinentes à Tarefa e ao Contexto de Uso. Resultados já documentados em outro artefato podem ser referenciados, sem necessidade de repetição integral.
 
-A indisponibilidade de um atributo relevante deve ser registrada como limitação.
+| Grupo ou comparação | Métrica ou efeito | Resultado / diferença observada | Incerteza ou limitação | Interpretação clínica, técnica ou operacional | Há uma explicação aceitável para a diferença? | Fonte |
+| --------------------- | ------------------ | -------------------------------- | ------------------------ | ------------------------------------------------- | -------------------------------------------------- | ----- |
+|                       |                    |                                  |                          |                                                   | Sim/Não/Ainda não sabemos                        |       |
 
----
+### 4.2 Tipos de erro relevantes
 
-## 7. Grupos relevantes não disponíveis nos dados
+Foram analisados tipos de erro relevantes para os grupos considerados, como falsos positivos, falsos negativos ou outros erros pertinentes?
 
-| Grupo ou atributo                                 | Relevância para a tarefa | Motivo da indisponibilidade | Consequência para a análise |
-| ------------------------------------------------- | ------------------------- | --------------------------- | ----------------------------- |
-| [INFORMAÇÃO PENDENTE — preencher pelo projeto] |                           |                             |                               |
+[Preencher]
 
-Quando não houver informação suficiente:
+### 4.3 Critérios de interpretação
 
-```text
-[INFORMAÇÃO PENDENTE — preencher pelo projeto]
-```
+Como a equipe decidiu se uma diferença entre grupos é importante ou preocupante?
 
----
+Podem ser considerados, conforme pertinente:
 
-## 8. Interseccionalidade
+- magnitude da diferença;
+- incerteza estatística;
+- relevância clínica;
+- relevância técnica;
+- relevância operacional;
+- relevância social;
+- tamanho e estabilidade dos grupos;
+- literatura ou referência externa pertinente;
+- critério institucional ou regulatório aplicável.
 
-Registrar se foram consideradas combinações entre grupos.
+[Preencher]
 
-Exemplos:
+### 4.4 Como interpretar as diferenças encontradas
 
-* sexo e idade;
-* idade e região;
-* condição clínica e sexo;
-* região e tipo de unidade.
+Para cada diferença considerada relevante, explicar:
 
-### Análise realizada
+- existe uma razão clínica, técnica ou operacional conhecida para essa diferença?
+- essa razão é considerada aceitável no Contexto de Uso?
+- a diferença pode prejudicar algum grupo?
+- ainda faltam informações para chegar a uma conclusão?
+  [Preencher]
 
-[INFORMAÇÃO PENDENTE — preencher pelo projeto]
+### 4.5 Ações ou respostas consideradas
 
-### Limitações
+Registrar medidas consideradas ou realizadas em resposta a diferenças consideradas problemáticas, quando houver.
 
-[ANÁLISE PENDENTE — não inferível a partir dos documentos fornecidos]
+[Preencher]
 
-Não afirmar que não existem efeitos interseccionais quando a análise não tiver sido realizada.
+### 4.6 Riscos residuais
 
----
+Depois da análise e de eventuais ações, permanecem diferenças ou problemas que possam afetar algum grupo?
 
-## 9. Dados utilizados na análise
+[Preencher]
 
-| Campo                        | Preenchimento                                     |
-| ---------------------------- | ------------------------------------------------- |
-| Dataset                      | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-| Versão                      | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-| Partição                   | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-| Período                     | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-| Número de instâncias       | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-| Unidade de análise          | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-| Critérios de inclusão      | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-| Critérios de exclusão      | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-| Tratamento de dados ausentes | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-| Fonte ou execução          | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-
-### Correspondência com o Data Card
-
-[ANÁLISE PENDENTE — não inferível a partir dos documentos fornecidos]
+> Diferença numérica não equivale automaticamente a injustiça. A análise deve permanecer proporcional às evidências disponíveis e ao Contexto de Uso.
 
 ---
 
-## 10. Representação dos grupos
+## 5. RC03 — Dados, variáveis-alvo e padrões de referência
 
-| Grupo                                             | Número de instâncias | Percentual | Número de indivíduos ou unidades únicas | Observação |
-| ------------------------------------------------- | ---------------------: | ---------: | -----------------------------------------: | ------------ |
-| [INFORMAÇÃO PENDENTE — preencher pelo projeto] |                        |            |                                            |              |
+**Requisito:** Avaliar se os dados, as variáveis-alvo e os padrões de referência utilizados no desenvolvimento e na avaliação da Tarefa de IA são adequados para os grupos e populações identificados.
 
-Registrar, quando aplicável:
+Esta seção deve registrar as **implicações para Justiça**, e não repetir a descrição factual completa dos dados já presente no Data Card ou no Model Card.
 
-* grupos com baixa representação;
-* classes raras dentro de grupos;
-* grupos excluídos;
-* diferenças entre treino, validação e teste;
-* instâncias repetidas por indivíduo;
-* dados ausentes.
+**Para facilitar o preenchimento:**
 
----
+- **Dados**: informações usadas para desenvolver ou avaliar o modelo.
+- **O que o modelo tenta prever ou identificar**: aquilo que aparece tecnicamente como variável-alvo ou rótulo.
+- **Padrão de referência**: informação usada como referência para dizer se a resposta do modelo está correta, por exemplo diagnóstico ou avaliação de especialistas.
 
-## 11. Métricas globais disponíveis
+| Elemento               | Questão para Justiça                                                                                                                                                      | Análise | Limitação / incerteza | Fonte |
+| ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- | ----------------------- | ----- |
+| Dados                  | A origem ou o processo de seleção dos dados pode afetar alguns grupos de forma diferente?                                                                                 |          |                         |       |
+| Dados                  | Há razões para considerar os dados inadequados para algum dos grupos identificados?                                                                                       |          |                         |       |
+| Variável-alvo         | O que o modelo tenta prever ou identificar é definido de forma adequada para todos os grupos? Há algum grupo para o qual essa definição pode funcionar pior?            |          |                         |       |
+| Variável-alvo         | A forma como o resultado esperado foi definido pode refletir diferenças já existentes na assistência, no diagnóstico ou nos dados?                                      |          |                         |       |
+| Padrão de referência | A referência usada como “verdade” para avaliar o modelo é igualmente confiável para todos os grupos? Há algum grupo em que essa referência possa ser menos adequada? |          |                         |       |
+| Relação com RC02     | Alguma característica dos dados, da definição do resultado ou da referência utilizada pode ajudar a explicar as diferenças encontradas entre os grupos?                |          |                         |       |
 
-| Métrica                                          | Resultado | Conjunto | Fonte | Observação |
-| ------------------------------------------------- | --------: | -------- | ----- | ------------ |
-| [INFORMAÇÃO PENDENTE — preencher pelo projeto] |           |          |       |              |
+### Orientação
 
-As métricas globais servem como contexto.
+A análise pode considerar, conforme pertinente:
 
-Elas não devem ser interpretadas como evidência de igualdade de desempenho entre grupos.
+- cobertura e seleção dos dados;
+- diferenças de medição;
+- composição dos grupos;
+- processo de definição das variáveis-alvo;
+- processo de rotulagem;
+- concordância entre avaliadores;
+- validade do padrão de referência;
+- literatura clínica ou técnica;
+- mecanismos plausíveis de efeito diferenciado.
 
----
-
-## 12. Métricas por grupo disponíveis
-
-| Grupo                                             | Métrica | Resultado | Intervalo de confiança | Número de casos | Threshold | Fonte |
-| ------------------------------------------------- | -------- | --------: | ----------------------- | ---------------: | --------- | ----- |
-| [INFORMAÇÃO PENDENTE — preencher pelo projeto] |          |           |                         |                  |           |       |
-
-Podem ser consideradas, conforme a tarefa:
-
-* sensibilidade ou recall;
-* especificidade;
-* precisão;
-* valor preditivo positivo;
-* valor preditivo negativo;
-* taxa de falso positivo;
-* taxa de falso negativo;
-* F1;
-* AUROC;
-* AUPRC;
-* calibração;
-* erro absoluto;
-* erro percentual;
-* cobertura;
-* taxa de abstinência;
-* tempo de espera;
-* taxa de priorização;
-* outra métrica tecnicamente justificada.
-
-Não utilizar automaticamente as mesmas métricas para todos os Contextos de Uso.
+Não é exigido um método único de análise.
 
 ---
 
-## 13. Métricas por classe ou saída
+## 6. RC04 — Acesso e possibilidade de benefício
 
-Quando a tarefa possuir múltiplas classes ou saídas, registrar se a análise por grupo foi realizada para cada saída relevante.
+**Requisito:** Avaliar se a forma de disponibilização da Tarefa de IA produz, reproduz ou agrava desigualdades injustificadas entre os grupos e populações identificados quanto à possibilidade de se beneficiar de seu uso.
 
-| Classe ou saída                                  | Grupo | Métrica | Resultado | Fonte | Observação |
-| ------------------------------------------------- | ----- | -------- | --------: | ----- | ------------ |
-| [INFORMAÇÃO PENDENTE — preencher pelo projeto] |       |          |           |       |              |
+### 6.1 Aplicabilidade
 
-Métricas agregadas podem ocultar disparidades em classes específicas.
+No uso que está sendo avaliado agora, alguma pessoa, grupo ou serviço consegue utilizar ou se beneficiar desta Tarefa de IA?
 
----
+- [ ] Sim
+- [ ] Não
+- [ ] Não é possível determinar
 
-## 14. Thresholds e pontos operacionais
+**Justificativa:**
 
-| Campo                                 | Preenchimento                                     |
-| ------------------------------------- | ------------------------------------------------- |
-| Threshold global                      | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-| Threshold por classe                  | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-| Threshold por grupo                   | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-| Método de seleção                  | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-| Conjunto utilizado para seleção     | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-| Justificativa clínica ou operacional | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
+[Preencher]
 
-Resultados dependentes de threshold devem ser interpretados no ponto operacional correspondente.
+> Se a resposta for **Não**, não é necessário preencher as subseções 6.2 a 6.5. Um uso futuro pretendido que ainda não integra o Contexto de Uso atual não deve ser usado para tornar RC04 aplicável.
 
-Quando o Contexto de Uso ainda não possuir threshold definido:
+### 6.2 Forma de disponibilização
 
-```text
-[ANÁLISE PENDENTE — ponto operacional ainda não definido]
-```
+Como a Tarefa é disponibilizada no Contexto de Uso avaliado?
 
----
+[Preencher]
 
-## 15. Critérios de comparação
+### 6.3 Barreiras ou condições de acesso
 
-### Grupo de referência
+Existem condições como infraestrutura, conectividade, localização, custo, idioma, letramento, recursos institucionais ou outras que possam afetar diferentemente os grupos identificados?
 
-[INFORMAÇÃO PENDENTE — preencher pelo projeto]
+[Preencher]
 
-### Justificativa
+### 6.4 Diferenças na possibilidade de benefício
 
-[INFORMAÇÃO PENDENTE — preencher pelo projeto]
+Algum grupo possui menor possibilidade de acessar, utilizar ou se beneficiar da Tarefa?
 
-### Tipo de comparação
+[Preencher]
 
-* diferença absoluta;
-* diferença relativa;
-* razão;
-* comparação com critério clínico;
-* comparação com baseline;
-* comparação com desempenho mínimo;
-* outra.
+### 6.5 Medidas e riscos residuais
 
-[INFORMAÇÃO PENDENTE — preencher pelo projeto]
+Foram consideradas medidas para evitar, reduzir ou tratar barreiras? Permanecem desigualdades residuais?
 
-A escolha do grupo de referência deve ser justificada e não deve ser tratada como neutra por padrão.
+[Preencher]
 
 ---
 
-## 16. Critérios de relevância ou aceitabilidade
+## 7. Limitações e análises ainda necessárias
 
-Registrar se a equipe definiu critérios para interpretar diferenças entre grupos.
+Registrar apenas questões que permanecem abertas e que sejam necessárias para completar a análise de Justiça.
 
-| Critério                                         | Valor ou regra | Justificativa | Responsável pela definição | Fonte |
-| ------------------------------------------------- | -------------- | ------------- | ----------------------------- | ----- |
-| [INFORMAÇÃO PENDENTE — preencher pelo projeto] |                |               |                               |       |
-
-Distinguir:
-
-* significância estatística;
-* relevância clínica;
-* relevância operacional;
-* relevância social;
-* limite regulatório;
-* critério institucional.
-
-Ausência de significância estatística não demonstra ausência de impacto relevante.
+| O que ainda não sabemos? | Por que isso é importante? | O que precisa ser feito? | Quem pode responder? | Estado |
+| ------------------------- | --------------------------- | ------------------------ | -------------------- | ------ |
+|                           |                             |                          |                      |        |
 
 ---
 
-## 17. Incerteza estatística
+## 8. Evidências utilizadas e decisões relacionadas
 
-Registrar, quando aplicável:
+### 8.1 Evidências e fontes
 
-* intervalos de confiança;
-* tamanho amostral;
-* número de eventos;
-* variabilidade;
-* múltiplas comparações;
-* análise de sensibilidade;
-* instabilidade em grupos pequenos.
+Referenciar os artefatos efetivamente utilizados nesta análise.
 
-[ANÁLISE PENDENTE — não inferível a partir dos documentos fornecidos]
+| Evidência ou fonte                          | Versão / data | Utilização nesta análise |
+| -------------------------------------------- | -------------- | --------------------------- |
+| Data Card                                    |                |                             |
+| Model Card                                   |                |                             |
+| Resultados técnicos / notebook / relatório |                |                             |
+| Literatura ou referência externa            |                |                             |
+| Outra fonte                                  |                |                             |
 
----
+### 8.2 Decisões relacionadas
 
-## 18. Resultados disponíveis
+Registrar apenas decisões técnicas ou institucionais diretamente relacionadas a esta análise, quando existirem.
 
-### 18.1 Síntese dos resultados
-
-[INFORMAÇÃO PENDENTE — preencher pelo projeto]
-
-### 18.2 Tabela consolidada
-
-| Grupo                                             | Resultado principal | Comparação | Diferença observada | Incerteza | Interpretação permitida |
-| ------------------------------------------------- | ------------------: | ------------ | -------------------: | --------- | ------------------------- |
-| [INFORMAÇÃO PENDENTE — preencher pelo projeto] |                     |              |                      |           |                           |
-
-### 18.3 Resultados ausentes
-
-* [ANÁLISE PENDENTE — não inferível a partir dos documentos fornecidos]
+| ID / referência | Decisão | Relação com a análise de Justiça |
+| ---------------- | -------- | ------------------------------------ |
+|                  |          |                                      |
 
 ---
 
-## 19. Disparidades identificadas
+## 9. Síntese da equipe do projeto
 
-| ID      | Grupo ou comparação                             | Métrica | Disparidade observada | Relevância | Evidência |
-| ------- | ------------------------------------------------- | -------- | --------------------- | ----------- | ---------- |
-| DSP-001 | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |          |                       |             |            |
+### Principais achados
 
-Quando não houver análise suficiente, registrar:
+[Preencher]
 
-```text
-Não é possível concluir sobre a presença ou ausência de disparidades com as evidências atualmente disponíveis.
-```
+### Principais limitações
 
-Não registrar “nenhuma disparidade identificada” quando a análise por grupos não tiver sido realizada.
+[Preencher]
 
----
+### O que ainda não conseguimos concluir
 
-## 20. Interpretação dos resultados
+[Preencher]
 
-Registrar apenas conclusões sustentadas pelas evidências.
+### O que será feito a partir desta análise
 
-[ANÁLISE PENDENTE — não inferível a partir dos documentos fornecidos]
-
-A interpretação deve distinguir:
-
-* diferença observada;
-* incerteza;
-* possível causa;
-* hipótese;
-* impacto;
-* limite da análise.
-
-Não atribuir causalidade a uma associação observada sem análise correspondente.
+[Preencher]
 
 ---
 
-## 21. Possíveis fontes de disparidade
-
-Registrar como hipótese, quando aplicável:
-
-* composição dos dados;
-* prevalência;
-* qualidade do sinal;
-* qualidade do rótulo;
-* acesso ao serviço;
-* diferenças de equipamento;
-* características clínicas;
-* seleção da amostra;
-* ausência de atributos;
-* threshold;
-* procedimento de treinamento;
-* mudança temporal;
-* Contexto de Uso.
-
-| Hipótese                                                                 | Evidência disponível | Análise necessária | Estado |
-| ------------------------------------------------------------------------- | ---------------------- | -------------------- | ------ |
-| [ANÁLISE PENDENTE — não inferível a partir dos documentos fornecidos] |                        |                      |        |
-
-Não apresentar hipótese como causa comprovada.
-
----
-
-## 22. Mitigações realizadas
-
-| ID      | Mitigação                                       | Etapa | Grupo ou risco relacionado | Evidência | Resultado |
-| ------- | ------------------------------------------------- | ----- | -------------------------- | ---------- | --------- |
-| MIT-001 | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |       |                            |            |           |
-
-Exemplos, somente quando efetivamente realizados:
-
-* nova amostragem;
-* ponderação;
-* ajuste de threshold;
-* coleta adicional;
-* revisão de rótulos;
-* exclusão de uso;
-* restrição de escopo;
-* monitoramento;
-* supervisão humana;
-* comunicação de limitação.
-
-Não registrar uma recomendação futura como mitigação já implementada.
-
----
-
-## 23. Avaliação das mitigações
-
-### Método de avaliação
-
-[ANÁLISE PENDENTE — não inferível a partir dos documentos fornecidos]
-
-### Resultados
-
-[ANÁLISE PENDENTE — não inferível a partir dos documentos fornecidos]
-
-### Trade-offs
-
-| Mitigação                                       | Benefício observado | Possível impacto negativo | Grupo afetado | Evidência |
-| ------------------------------------------------- | -------------------- | -------------------------- | ------------- | ---------- |
-| [INFORMAÇÃO PENDENTE — preencher pelo projeto] |                      |                            |               |            |
-
-Uma mitigação pode melhorar uma métrica e piorar outra. Esses trade-offs devem permanecer explícitos.
-
----
-
-## 24. Riscos residuais
-
-| ID          | Risco residual                                                            | Grupo afetado | Contexto | Tratamento atual | Encaminhamento |
-| ----------- | ------------------------------------------------------------------------- | ------------- | -------- | ---------------- | -------------- |
-| RSK-JUS-001 | [ANÁLISE PENDENTE — não inferível a partir dos documentos fornecidos] |               |          |                  |                |
-
-Não declarar que o risco residual é aceitável sem a decisão correspondente, quando aplicável.
-
----
-
-## 25. Limitações da análise
-
-Registrar, conforme aplicável:
-
-* atributos indisponíveis;
-* grupos pequenos;
-* ausência de interseccionalidade;
-* ausência de validação externa;
-* ausência de análise prospectiva;
-* métricas agregadas;
-* análise restrita a poucas classes;
-* ausência de intervalo de confiança;
-* threshold indefinido;
-* diferença entre dados de pesquisa e operação;
-* ausência de critérios de aceitabilidade;
-* risco de múltiplas comparações;
-* mudança temporal.
-* [ANÁLISE PENDENTE — não inferível a partir dos documentos fornecidos]
-
----
-
-## 26. Análises ainda necessárias
-
-| ID          | Análise                                                                  | Objetivo | Dados necessários | Responsável | Prioridade | Estado |
-| ----------- | ------------------------------------------------------------------------- | -------- | ------------------ | ------------ | ---------- | ------ |
-| ANA-JUS-001 | [ANÁLISE PENDENTE — não inferível a partir dos documentos fornecidos] |          |                    |              |            |        |
-
-Possíveis análises, quando justificadas:
-
-* desempenho por grupo;
-* desempenho por classe e grupo;
-* taxas de erro;
-* calibração por grupo;
-* análise interseccional;
-* intervalos de confiança;
-* análise temporal;
-* análise por equipamento;
-* análise por unidade;
-* avaliação de mitigação;
-* avaliação no ponto operacional;
-* validação prospectiva.
-
----
-
-## 27. Plano de avaliação de justiça
-
-Preencher esta seção quando a análise ainda não tiver sido concluída.
-
-### 27.1 Pergunta de avaliação
-
-[ANÁLISE PENDENTE — não inferível a partir dos documentos fornecidos]
-
-### 27.2 Grupos
-
-[INFORMAÇÃO PENDENTE — preencher pelo projeto]
-
-### 27.3 Métricas
-
-[ANÁLISE PENDENTE — não inferível a partir dos documentos fornecidos]
-
-### 27.4 Critérios de interpretação
-
-[ANÁLISE PENDENTE — não inferível a partir dos documentos fornecidos]
-
-### 27.5 Dados
-
-[INFORMAÇÃO PENDENTE — preencher pelo projeto]
-
-### 27.6 Procedimento
-
-[ANÁLISE PENDENTE — não inferível a partir dos documentos fornecidos]
-
-### 27.7 Responsáveis
-
-[INFORMAÇÃO PENDENTE — preencher pelo projeto]
-
-### 27.8 Prazo
-
-[INFORMAÇÃO PENDENTE — preencher pelo projeto]
-
-### 27.9 Artefatos esperados
-
-* código;
-* configuração;
-* resultados;
-* tabelas;
-* relatório;
-* logs;
-* registro de decisão técnica, quando aplicável.
-
-[INFORMAÇÃO PENDENTE — preencher pelo projeto]
-
----
-
-## 28. Evidências e arquivos-fonte
-
-| ID          | Evidência                                        | Versão | Localização | Responsável | Utilização |
-| ----------- | ------------------------------------------------- | ------- | ------------- | ------------ | ------------ |
-| EVD-JUS-001 | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |         |               |              |              |
-
-Exemplos:
-
-* Data Card;
-* Model Card;
-* notebook;
-* script;
-* configuração;
-* arquivo de resultados;
-* relatório estatístico;
-* artigo;
-* log de execução;
-* decisão técnica.
-
----
-
-## 29. Rastreabilidade da execução
-
-| Campo                       | Preenchimento                                     |
-| --------------------------- | ------------------------------------------------- |
-| Repositório                | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-| Commit ou tag               | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-| Script ou notebook          | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-| Arquivo de configuração   | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-| Dataset e versão           | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-| Modelo e versão            | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-| Identificador da execução | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-| Ambiente                    | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-| Data de execução          | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-
----
-
-## 30. Relação com decisões técnicas
-
-| ID da decisão | Título                                           | Relação com a avaliação de justiça |
-| -------------- | ------------------------------------------------- | --------------------------------------- |
-| DTE-XXX        | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |                                         |
-
-Quando uma escolha metodológica relevante ainda não estiver formalizada, registrar a necessidade de criar ou atualizar um Registro de Decisão Técnica.
-
----
-
-## 31. Pendências
-
-| ID      | Pendência                                        | Tipo | Prioridade | Responsável | Evidência esperada | Estado |
-| ------- | ------------------------------------------------- | ---- | ---------- | ------------ | ------------------- | ------ |
-| PEN-XXX | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |      |            |              |                     |        |
-
-As pendências devem também ser incluídas em:
-
-```text
-documentacao_projeto/registro_de_pendencias.md
-```
-
----
-
-## 32. Pontos para possível avaliação institucional
-
-| ID           | Questão                                                                      | Motivo | Evidência necessária | Estado |
-| ------------ | ----------------------------------------------------------------------------- | ------ | ---------------------- | ------ |
-| INST-JUS-001 | [DECISÃO INSTITUCIONAL PENDENTE — requer análise da instância competente] |        |                        |        |
-
-Exemplos possíveis:
-
-* disparidade material em uso de alto impacto;
-* necessidade de restringir população;
-* necessidade de condicionante;
-* aceite de risco residual;
-* conflito entre desempenho e equidade;
-* continuidade de piloto.
-
-A identificação do ponto não constitui decisão institucional.
-
----
-
-## 33. Conclusão provisória
-
-Selecionar a formulação aplicável e justificar:
-
-```text
-Há evidências iniciais de avaliação de justiça, mas a análise permanece parcial.
-
-Há análise por grupos disponível, mas não é possível concluir sobre justiça no Contexto de Uso.
-
-Não foi identificada análise de justiça suficiente; este documento funciona como plano de avaliação.
-
-A análise existente não cobre grupos ou métricas relevantes para a tarefa.
-
-Não aplicável — justificativa obrigatória.
-```
-
-### Conclusão
-
-[ANÁLISE PENDENTE — não inferível a partir dos documentos fornecidos]
-
-### Interpretação permitida
-
-[ANÁLISE PENDENTE — não inferível a partir dos documentos fornecidos]
-
-### Interpretação não permitida
-
-Este relatório não permite afirmar, sem evidência adicional, que:
-
-* a tarefa é justa;
-* não existem disparidades;
-* os grupos possuem desempenho equivalente;
-* as mitigações são suficientes;
-* os riscos residuais são aceitáveis;
-* os resultados se generalizam para outros Contextos de Uso.
-
----
-
-## 34. Validação do relatório
-
-### Equipe do projeto
-
-A equipe confirma a correção factual dos dados, métodos, resultados e limitações registrados.
-
-| Campo            | Preenchimento |
-| ---------------- | ------------- |
-| Nome             |               |
-| Papel            |               |
-| Data             |               |
-| Versão validada |               |
-| Observações    |               |
-
-### NIAR-Saúde
-
-O NIAR-Saúde verifica a suficiência, a consistência e a rastreabilidade das evidências apresentadas.
-
-| Campo         | Preenchimento |
-| ------------- | ------------- |
-| Nome          |               |
-| Papel         |               |
-| Data          |               |
-| Observações |               |
-
-A validação factual do relatório não constitui resultado formal de conformidade.
-
----
-
-## 35. Histórico de versões
-
-| Versão | Data | Responsável      | Alteração                     | Status                        |
-| ------- | ---- | ----------------- | ------------------------------- | ----------------------------- |
-| 0.1     |      | Equipe do projeto | Criação do relatório inicial | Em preenchimento pelo projeto |
+## 10. Histórico de versões
+
+| Versão | Data | Responsável | Alteração             |
+| ------- | ---- | ------------ | ----------------------- |
+| 0.1     |      |              | Criação do relatório |
