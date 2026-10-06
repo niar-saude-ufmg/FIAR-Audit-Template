@@ -1,3 +1,5 @@
+> Material de apoio. Não é checklist nem etapa do ciclo. Use somente perguntas derivadas de pendências registradas.
+
 # Perguntas para a Entrevista Inicial
 
 ## Controle do documento
