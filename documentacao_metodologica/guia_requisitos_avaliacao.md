@@ -14,7 +14,7 @@ A aplicabilidade deve ser determinada individualmente para cada requisito, consi
 
 Um requisito deve ser considerado **Não aplicável** somente quando a condição objetiva pressuposta por sua formulação não estiver presente no objeto avaliado. A ausência de prática, mecanismo, capacidade, procedimento, registro ou evidência que o próprio requisito busca avaliar não constitui justificativa de não aplicabilidade e deve ser refletida posteriormente na análise e no resultado do requisito. Quando a presença da condição objetiva ainda não puder ser determinada, a aplicabilidade não deve ser presumida como Não aplicável.
 
-As orientações deste guia apoiam o preenchimento dos instrumentos de avaliação do NIAR-Saúde. O guia apresenta possibilidades de interpretação, evidências e verificação; a avaliação concreta deve registrar somente aquilo que for aplicável e efetivamente verificado no ciclo correspondente.
+As orientações deste guia apoiam o preenchimento de `ciclos/Cxx/avaliacao.md`. O fluxo, os resultados possíveis e as regras de pendência estão em `documentacao_metodologica/guia_fluxo.md`. O guia apresenta possibilidades de interpretação, evidências e verificação; a avaliação concreta deve registrar somente aquilo que for aplicável e efetivamente verificado no ciclo correspondente.
 
 Nas dimensões já consolidadas na revisão metodológica atual, as formulações dos requisitos devem ser reproduzidas sem alteração. As explicações, exemplos e cautelas deste guia têm função operacional e não criam requisitos adicionais.
 
@@ -118,6 +118,23 @@ O requisito não busca simplesmente listar atributos existentes nos dados. A sel
 - Populações explicitamente fora do escopo validado devem ser registradas como delimitação ou limitação de escopo, e não automaticamente como grupo para comparação de Justiça.
 - O uso futuro pretendido não deve ser utilizado para definir grupos do Contexto de Uso atual quando ainda não fizer parte da unidade avaliada.
 
+### Pergunta de aplicabilidade
+
+**A Tarefa, no Contexto de Uso avaliado, pode produzir efeitos ou benefícios que incidam sobre pessoas, grupos ou populações?**
+
+Se não for possível determinar, registrar pendência de aplicabilidade e resultado Inconclusivo. Não presumir Não aplicável.
+
+### Roteiro de perguntas
+
+Roteiro de apoio à análise. Não é checklist: responder só o pertinente.
+
+- Quais grupos ou populações podem ser afetados de forma diferente pela Tarefa?
+- Por que esses grupos ou populações foram considerados relevantes para esta Tarefa e este Contexto de Uso?
+- A identificação decorre do Contexto de Uso e da população pertinente à avaliação, e não apenas dos atributos disponíveis nos dados?
+- Existem grupos potencialmente relevantes que não podem ser analisados com os dados disponíveis?
+- Existem grupos potencialmente sujeitos a exclusão dos benefícios da Tarefa? (Apenas identificar; a análise de acesso é feita em RC04.)
+- Há limitações ou incertezas na identificação dos grupos e populações relevantes?
+
 ### Exemplos de evidências pertinentes
 
 - descrição da população relevante;
@@ -174,6 +191,28 @@ A análise não pressupõe uma métrica universal de fairness nem exige necessar
 - Em contexto experimental, podem ser observáveis principalmente diferenças de desempenho, erro, calibração ou outros resultados técnicos.
 - Em contexto operacional, podem também ser pertinentes diferenças em decisões, consequências ou resultados decorrentes do uso.
 - O uso futuro pretendido não deve ser usado como substituto de efeitos não observáveis no contexto atual.
+
+### Pergunta de aplicabilidade
+
+**Existem grupos ou populações identificados em RC01 sobre os quais a Tarefa possa produzir efeitos no Contexto de Uso avaliado?**
+
+Se não for possível determinar, registrar pendência de aplicabilidade e resultado Inconclusivo. Não presumir Não aplicável.
+
+A impossibilidade de realizar determinada comparação por ausência ou insuficiência de dados não torna RC02 não aplicável; o resultado é Inconclusivo.
+
+### Roteiro de perguntas
+
+Roteiro de apoio à análise. Não é checklist: responder só o pertinente.
+
+- O desempenho ou outros efeitos relevantes e observáveis no Contexto de Uso avaliado foram analisados para os grupos identificados em RC01?
+- Quais métricas, análises ou outros critérios foram utilizados?
+- Foram encontradas diferenças de desempenho, erro ou outros efeitos entre os grupos?
+- Foram analisados tipos de erro relevantes, como falsos positivos e falsos negativos, quando pertinentes à Tarefa?
+- Existem diferenças nas decisões ou consequências decorrentes dos resultados ou do uso da Tarefa, quando observáveis no Contexto de Uso avaliado?
+- As diferenças encontradas foram interpretadas considerando seu significado clínico, técnico ou operacional?
+- Quando foram encontradas diferenças, foi analisado se elas são justificadas ou injustificadas? Com base em quê?
+- Alguma ação para evitar, reduzir ou tratar diferenças consideradas problemáticas foi considerada ou realizada?
+- Permanecem diferenças ou riscos residuais relevantes para os grupos identificados?
 
 ### Exemplos de evidências pertinentes
 
@@ -241,6 +280,25 @@ RC03 não substitui a avaliação geral de qualidade de dados. Em Justiça, o fo
 - padrões de referência utilizados em cada etapa;
 - processo de rotulagem, adjudicação ou definição de referência;
 - limitações conhecidas relacionadas aos dados, targets ou referências.
+
+### Pergunta de aplicabilidade
+
+**O desenvolvimento ou a avaliação da Tarefa utiliza dados, variáveis-alvo ou padrões de referência cuja adequação possa ser relevante para os grupos identificados em RC01?**
+
+Se não for possível determinar, registrar pendência de aplicabilidade e resultado Inconclusivo. Não presumir Não aplicável.
+
+Ausência de informação sobre os dados, a variável-alvo ou o padrão de referência não justifica Não aplicável.
+
+### Roteiro de perguntas
+
+Roteiro de apoio à análise. Não é checklist: responder só o pertinente. As informações factuais estão na seção anterior; aqui ficam as perguntas de análise para Justiça.
+
+- A origem ou o processo de seleção dos dados pode afetar alguns dos grupos identificados de forma diferente?
+- Há razões para considerar os dados inadequados para algum dos grupos identificados?
+- A variável-alvo mede ou representa adequadamente o fenômeno de interesse para os diferentes grupos?
+- A variável-alvo pode incorporar ou refletir desigualdades preexistentes relevantes?
+- Há razões para que algum padrão de referência seja menos adequado ou válido para determinados grupos?
+- Alguma dessas condições pode plausivelmente contribuir para diferenças nos efeitos avaliados em RC02?
 
 ### Exemplos de evidências pertinentes
 
@@ -316,6 +374,27 @@ O requisito trata de desigualdades associadas à disponibilização da Tarefa, e
 - Ausência de análise de acesso não justifica Não aplicável quando a Tarefa já está efetivamente disponibilizada.
 - A forma de disponibilização pode envolver infraestrutura, conectividade, localização, idioma, custo, recursos institucionais, letramento, capacidade operacional ou outras condições pertinentes.
 
+### Pergunta de aplicabilidade
+
+**No Contexto de Uso avaliado, existe alguma forma de disponibilização da Tarefa pela qual pessoas, grupos ou populações possam acessar ou se beneficiar de seu uso?**
+
+Se não for possível determinar, registrar pendência de aplicabilidade e resultado Inconclusivo. Não presumir Não aplicável.
+
+Um uso futuro pretendido que ainda não integra o Contexto de Uso avaliado não torna RC04 aplicável ao ciclo atual.
+
+### Roteiro de perguntas
+
+Roteiro de apoio à análise. Não é checklist: responder só o pertinente.
+
+- Como a Tarefa é disponibilizada no Contexto de Uso avaliado?
+- Existem requisitos de infraestrutura, tecnologia ou recursos para acessar ou utilizar a Tarefa?
+- Idioma, conectividade, localização, custo, letramento ou outras condições podem limitar a possibilidade de algum grupo acessar ou se beneficiar da Tarefa?
+- Existem diferenças entre locais, serviços ou populações quanto à disponibilidade da Tarefa?
+- Algum grupo identificado em RC01 possui menor possibilidade de se beneficiar da disponibilização da Tarefa?
+- As desigualdades identificadas foram analisadas quanto à sua justificabilidade?
+- Foram consideradas medidas ou alternativas para evitar, reduzir ou tratar barreiras identificadas?
+- Permanecem limitações ou desigualdades residuais de acesso ou possibilidade de benefício?
+
 ### Exemplos de evidências pertinentes
 
 - documentação operacional;
@@ -359,21 +438,17 @@ O requisito trata de desigualdades associadas à disponibilização da Tarefa, e
 
 # Uso do guia durante a avaliação
 
-Para cada requisito aplicável:
+Para cada requisito, no bloco correspondente de `ciclos/Cxx/avaliacao.md`:
 
-1. utilizar este guia para compreender o objetivo, os aspectos de aplicabilidade, as evidências pertinentes e os mecanismos de verificação possíveis;
-2. determinar **Aplicável** ou **Não aplicável** antes da análise das evidências;
-3. registrar a justificativa da decisão de aplicabilidade;
-4. identificar o que precisa ser demonstrado;
-5. localizar as fontes ou artefatos que fornecem as evidências necessárias;
-6. distinguir informação factual já documentada de análise específica ainda necessária;
-7. registrar somente evidências efetivamente verificadas no ciclo;
-8. analisar suficiência, consistência, rastreabilidade, pertinência, atualidade e contextualização;
-9. registrar limitações, pendências e inconsistências somente quando sustentadas pelas evidências;
-10. não transformar ausência de artefato específico em resultado automático;
-11. não solicitar novamente ao projeto informação já disponível em artefatos adequados;
-12. quando a análise específica depender da equipe do projeto, solicitar somente o complemento necessário;
-13. quando a questão corresponder a decisão metodológica do NIAR-Saúde, registrá-la internamente e não transferi-la ao projeto como pendência factual.
+1. responder à pergunta de aplicabilidade antes de analisar as evidências e justificar;
+2. identificar o que precisa ser demonstrado;
+3. localizar as evidências nas fontes registradas na identificação do ciclo;
+4. distinguir informação factual já documentada de análise específica ainda necessária;
+5. usar o roteiro de perguntas como apoio, sem tratá-lo como checklist;
+6. analisar suficiência, consistência, rastreabilidade e pertinência;
+7. atribuir o resultado (Atendido, Não atendido, Inconclusivo com motivo, ou Não aplicável).
+
+Ausência de artefato não é resultado. Não solicitar novamente informação já disponível. Decisão metodológica do NIAR é registrada, não vira pendência. As regras de pendência estão no guia do fluxo.
 
 A avaliação é realizada para a combinação **Tarefa de IA + Versão Avaliável + Contexto de Uso**, considerando também a **Trilha de Execução**.
 
@@ -391,9 +466,9 @@ Para Justiça, a formulação dos quatro requisitos utilizada nesta versão corr
 
 ## Documentação operacional relacionada
 
-- `documentacao_metodologica/guia_operacional_pre_avaliacao_pilotos.md`
-- instrumentos de avaliação por requisito do NIAR-Saúde;
-- checklist operacional de Justiça;
+- `documentacao_metodologica/guia_fluxo.md`
+- `ciclos/Cxx/avaliacao.md`
+- `documentacao_metodologica/apoio_roteiro_entrevista.md` (material de apoio)
 - templates de artefatos do projeto, quando pertinentes.
 
 ---
