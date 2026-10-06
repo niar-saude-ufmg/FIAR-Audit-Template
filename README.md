@@ -52,7 +52,3 @@ Instâncias de projetos devem ser privadas. Antes de adicionar um arquivo, verif
 - se o histórico do Git pode preservar conteúdo que deveria ser removido.
 
 Dados brutos sensíveis, credenciais e segredos não devem ser armazenados neste repositório.
-EOF
-git add README.md
-git commit -m "Reescreve README para o novo fluxo"
-git push
