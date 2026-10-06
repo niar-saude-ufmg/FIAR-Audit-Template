@@ -291,19 +291,3 @@ Inclua questões que a equipe gostaria de discutir com o NIAR-Saúde ou informa�
 | Data                   | [PREENCHER PELO PROJETO]                 |
 | Versão preenchida     | 1.0                                      |
 | Observações          | [PREENCHER PELO PROJETO, SE NECESSÁRIO] |
-
----
-
-## 9. Uso interno do NIAR-Saúde
-
-> Esta seção deve ser preenchida somente após o recebimento do formulário. Ela não integra as respostas solicitadas à equipe do projeto.
-
-| Campo                                                   | Preenchimento                                       |
-| ------------------------------------------------------- | --------------------------------------------------- |
-| Data de recebimento                                     | [PREENCHER PELO NIAR-SAÚDE]                        |
-| Responsável pela triagem                               | [PREENCHER PELO NIAR-SAÚDE]                        |
-| Formulário suficientemente compreensível para triagem | [SIM / NÃO / PARCIALMENTE]                         |
-| Necessidade de esclarecimento escrito                   | [SIM / NÃO]                                        |
-| Necessidade de entrevista inicial                       | [SIM / NÃO]                                        |
-| Próximo documento a produzir                           | `documentacao_projeto/identificacao_avaliacao.md` |
-| Observações internas                                  | [PREENCHER PELO NIAR-SAÚDE]                        |

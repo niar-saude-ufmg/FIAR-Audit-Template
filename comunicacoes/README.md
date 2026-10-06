@@ -39,12 +39,9 @@ Exemplos:
 
 ## Registros relacionados
 
-Quando aplicável, manter a rastreabilidade também em:
+As respostas guardadas aqui são citadas como fonte em:
 
 ```text
-documentacao_projeto/historico_validacao.md
-documentacao_projeto/registro_de_pendencias.md
-avaliacao_niar/registro_de_inconsistencias.md
+ciclos/Cxx/identificacao.md
+ciclos/Cxx/avaliacao.md
 ```
-
-
