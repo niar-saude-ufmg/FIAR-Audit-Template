@@ -206,7 +206,7 @@ Não registrar causa como confirmada enquanto a investigação estiver inconclus
 | Versão anterior | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
 | Versão nova | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
 | Registro de mudança | [INFORMAÇÃO PENDENTE — preencher pelo projeto] |
-| Nova Versão Avaliável necessária | [ENQUADRAMENTO PENDENTE — validar pelo NIAR-Saúde] |
+| Nova Versão Avaliável necessária (proposta da equipe; o NIAR define o tratamento) |  |
 
 ---
 

@@ -323,7 +323,7 @@ Possíveis gatilhos:
 As pendências devem também ser registradas em:
 
 ```text
-documentacao_projeto/registro_de_pendencias.md
+ciclos/Cxx/avaliacao.md (pendências da avaliação, registradas pelo NIAR-Saúde)
 ```
 
 ---

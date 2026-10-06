@@ -139,13 +139,11 @@ Correção técnica sem alteração material do comportamento
 Mudança técnica com efeito limitado
 
 Mudança relevante
-
-[ENQUADRAMENTO PENDENTE — validar pelo NIAR-Saúde]
 ````
 
 ### Classificação
 
-[ENQUADRAMENTO PENDENTE — validar pelo NIAR-Saúde]
+Proposta da equipe. O tratamento da mudança é definido pelo NIAR-Saúde.
 
 ### Justificativa
 

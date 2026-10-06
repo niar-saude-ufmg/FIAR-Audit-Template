@@ -2,45 +2,41 @@
   "schema_version": "2.0",
   "template_name": "FIAR-Audit-Template",
   "description": "Estrutura operacional de referência para ciclos do FIAR-Saúde.",
-
   "required_root_files": [
     "README.md"
   ],
-
   "required_root_directories": {
-    "documentacao_projeto": {
+    "entrada": {
       "required_files": [
-        "README.md",
-        "identificacao_avaliacao.md",
-        "historico_validacao.md",
-        "registro_de_pendencias.md"
+        "formulario_entrada.md"
       ]
     },
-
-    "avaliacao_niar": {
+    "comunicacoes": {
       "required_files": [
-        "README.md",
-        "pre_avaliacao_documental.md",
-        "perguntas_para_entrevista_inicial.md",
-        "registro_de_inconsistencias.md"
-      ],
+        "README.md"
+      ]
+    },
+    "ciclos": {
       "required_directories": {
-        "avaliacao_por_dimensao": {
+        "C01": {
           "required_files": [
-            "README.md",
-            "template_avaliacao_dimensao.md"
-          ]
-        },
-        "avaliacao_formal": {
-          "required_files": [
-            "README.md",
-            "resultado_avaliacao.md"
+            "identificacao.md",
+            "avaliacao.md"
           ]
         }
       }
     },
-
-    "artefatos_projeto": {
+    "relatorios": {
+      "required_files": [
+        "RCG-001.md"
+      ]
+    },
+    "decisoes": {
+      "required_files": [
+        "DCG-001.md"
+      ]
+    },
+    "artefatos": {
       "required_files": [
         "README.md"
       ],
@@ -48,11 +44,9 @@
         "data_cards": {
           "required_files": []
         },
-
         "model_cards": {
           "required_files": []
         },
-
         "fairness_reports": {
           "required_files": [
             "fairness_report_inicial.md"
@@ -61,7 +55,6 @@
             "fairness_report_v1.md"
           ]
         },
-
         "explainability_reports": {
           "required_files": [
             "explainability_report_inicial.md"
@@ -70,13 +63,11 @@
             "explainability_report_v1.md"
           ]
         },
-
         "decision_records": {
           "required_files": [
             "DTE-001-template.md"
           ]
         },
-
         "consolidated_iar_report": {
           "required_files": [
             "consolidated_report_v1.md"
@@ -85,7 +76,6 @@
             "consolidated_report_v1.md"
           ]
         },
-
         "compliance": {
           "required_files": [
             "README.md"
@@ -102,7 +92,6 @@
             }
           }
         },
-
         "operational_artifacts": {
           "required_files": [
             "README.md"
@@ -136,27 +125,14 @@
         }
       }
     },
-
-    "decisao_institucional": {
+    "documentacao_metodologica": {
       "required_files": [
-        "README.md",
-        "registro_decisao_institucional_template.md",
-        "registro_de_condicionantes.md"
+        "guia_fluxo.md",
+        "guia_requisitos_avaliacao.md",
+        "prompts_avaliacao.md",
+        "apoio_roteiro_entrevista.md"
       ]
     },
-
-    "auditoria_final": {
-      "required_files": [
-        "README.md"
-      ],
-      "optional_files": [
-        "sintese_do_ciclo.md",
-        "referencias_da_avaliacao.md",
-        "indice_de_decisoes_e_condicionantes.md"
-      ],
-      "temporary_name": true
-    },
-
     "fiar_sync": {
       "required_files": [
         "fiar_structure.json",
@@ -164,35 +140,23 @@
         "validate_structure.py"
       ]
     },
-
     "pdf": {
       "required_files": [
         "package.json"
       ]
     }
   },
-
   "optional_root_directories": [
     ".github",
     "docs",
     "scripts"
   ],
-
   "legacy_paths": {
     "directories": {
-      "artefatos_operacionais": "artefatos_projeto/operational_artifacts",
-      "artefatos_projeto/historico_versoes": "artefatos_projeto/operational_artifacts/version_history",
-      "artefatos_projeto/incidentes": "artefatos_projeto/operational_artifacts/incidents",
-      "artefatos_projeto/monitoramento": "artefatos_projeto/operational_artifacts/monitoring",
-      "artefatos_projeto/revisao_periodica": "artefatos_projeto/operational_artifacts/periodic_review"
+      "artefatos_projeto": "artefatos",
+      "artefatos_operacionais": "artefatos/operational_artifacts"
     },
-
-    "files": {
-      "documentacao_projeto/identificacao_auditoria.md": "documentacao_projeto/identificacao_avaliacao.md",
-      "artefatos_projeto/decision_records/technical_decision_v1.md": "artefatos_projeto/decision_records/DTE-001-template.md",
-      "artefatos_projeto/fairness_reports/fairness_report_v1.md": "artefatos_projeto/fairness_reports/fairness_report_inicial.md",
-      "artefatos_projeto/explainability_reports/explainability_report_v1.md": "artefatos_projeto/explainability_reports/explainability_report_inicial.md"
-    }
+    "files": {}
   },
   "validation": {
     "allow_legacy_paths_during_transition": true,

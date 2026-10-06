@@ -14,10 +14,11 @@ Ele não contém novos dados ou decisões, apenas consolida os artefatos já val
 
 O relatório é construído a partir dos seguintes blocos:
 
-- documentacao_projeto/
-- artefatos_projeto/
-- avaliacao_niar/
-- auditoria_final/
+- entrada/
+- artefatos/
+- ciclos/
+- relatorios/
+- decisoes/
 
 A consolidação segue sempre essa ordem.
 

@@ -212,7 +212,7 @@ Esses estados não equivalem a resultado de conformidade do FIAR-Saúde.
 Quando faltar informação ou documento, registrar em:
 
 ```text
-documentacao_projeto/registro_de_pendencias.md
+ciclos/Cxx/avaliacao.md (pendências da avaliação, registradas pelo NIAR-Saúde)
 ```
 
 Utilizar, conforme aplicável:

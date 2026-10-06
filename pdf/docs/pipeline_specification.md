@@ -8,10 +8,11 @@ Este documento define as regras técnicas de construção do relatório PDF cons
 
 O pipeline percorre a estrutura do repositório e consolida documentos das seguintes pastas:
 
-1. documentacao_projeto/
-2. artefatos_projeto/
-3. avaliacao_niar/
-4. auditoria_final/
+1. entrada/
+2. artefatos/
+3. ciclos/
+4. relatorios/
+5. decisoes/
 
 ---
 
@@ -35,10 +36,11 @@ Arquivos ignorados:
 
 A ordem é sempre fixa e obrigatória:
 
-1. documentacao_projeto/
-2. artefatos_projeto/
-3. avaliacao_niar/
-4. auditoria_final/
+1. entrada/
+2. artefatos/
+3. ciclos/
+4. relatorios/
+5. decisoes/
 
 Dentro de cada diretório, a ordenação segue a hierarquia de caminhos.
 
@@ -65,7 +67,7 @@ Dentro de cada diretório, a ordenação segue a hierarquia de caminhos.
 O pipeline deve ignorar:
 
 - pastas fora da estrutura FIAR
-- relatórios duplicados ou legados fora de `artefatos_projeto`
+- relatórios duplicados ou legados fora de `artefatos`
 - arquivos temporários ou de sistema
 - artefatos não referenciados no fluxo de auditoria
 

@@ -11,11 +11,11 @@ const outputPdf = path.join(distDir, 'relatorio_final.pdf');
 const assetsDir = path.join(rootDir, 'pdf', 'assets');
 
 const orderedRoots = [
-  'documentacao_projeto',
-  'artefatos_projeto',
-  'avaliacao_niar',
-  'decisao_institucional',
-  'auditoria_final'
+  'entrada',
+  'artefatos',
+  'ciclos',
+  'relatorios',
+  'decisoes'
 ];
 
 const isSupported = (name) => /\.(pdf|docx)$/i.test(name);
@@ -100,21 +100,21 @@ function titleFromFilename(relPath) {
 function classifyToc(relPath) {
   const normalized = relPath.toLowerCase();
 
-  if (normalized.startsWith('documentacao_projeto/')) {
+  if (normalized.startsWith('entrada/')) {
     return {
-      section: 'Documentação do projeto',
+      section: 'Entrada do projeto',
       item: titleFromFilename(relPath)
     };
   }
 
-  if (normalized.startsWith('artefatos_projeto/operational_artifacts/')) {
+  if (normalized.startsWith('artefatos/operational_artifacts/')) {
     return {
       section: 'Artefatos operacionais',
       item: titleFromFilename(relPath)
     };
   }
 
-  if (normalized.startsWith('artefatos_projeto/')) {
+  if (normalized.startsWith('artefatos/')) {
     if (
       normalized.includes('/data_cards/')
       || normalized.includes('datacard')
@@ -160,23 +160,23 @@ function classifyToc(relPath) {
     };
   }
 
-  if (normalized.startsWith('avaliacao_niar/')) {
+  if (normalized.startsWith('ciclos/')) {
     return {
       section: 'Avaliação do NIAR-Saúde',
       item: titleFromFilename(relPath)
     };
   }
 
-  if (normalized.startsWith('decisao_institucional/')) {
+  if (normalized.startsWith('decisoes/')) {
     return {
-      section: 'Decisões institucionais',
+      section: 'Decisões do Comitê Gestor',
       item: titleFromFilename(relPath)
     };
   }
 
-  if (normalized.startsWith('auditoria_final/')) {
+  if (normalized.startsWith('relatorios/')) {
     return {
-      section: 'Resultado consolidado do ciclo',
+      section: 'Relatórios ao Comitê Gestor',
       item: titleFromFilename(relPath)
     };
   }

@@ -44,8 +44,8 @@ A existência de nomes em artigos, Data Cards, Model Cards, repositórios ou out
 
 Informações sobre responsabilidades podem já estar registradas em:
 
-* `documentacao_projeto/formulario_entrada.md`;
-* `documentacao_projeto/identificacao_avaliacao.md`;
+* `entrada/formulario_entrada.md`;
+* `ciclos/Cxx/identificacao.md`;
 * Data Cards;
 * Model Cards;
 * Registros de Decisão Técnica;
@@ -109,7 +109,7 @@ A equipe do projeto é responsável pela produção e manutenção das evidênci
 
 O NIAR-Saúde orienta, verifica suficiência, consistência e rastreabilidade das evidências e conduz a avaliação técnica.
 
-Decisões que exigem deliberação institucional devem ser registradas separadamente em `decisao_institucional/`.
+Decisões que exigem deliberação institucional devem ser registradas separadamente em `decisoes/`.
 
 Os registros desta pasta não substituem Registros de Decisão Técnica nem Registros de Decisão Institucional.
 

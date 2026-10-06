@@ -10,7 +10,7 @@
 | Tarefa de IA          | [INFORMAÇÃO PENDENTE — preencher pelo projeto]    |
 | Versão Avaliável    | [INFORMAÇÃO PENDENTE — preencher pelo projeto]    |
 | Contexto de Uso       | [INFORMAÇÃO PENDENTE — preencher pelo projeto]    |
-| Trilha                | [ENQUADRAMENTO PENDENTE — validar pelo NIAR-Saúde] |
+| Trilha                |  |
 | Responsável técnico | [INFORMAÇÃO PENDENTE — preencher pelo projeto]    |
 | Data de referência   | [INFORMAÇÃO PENDENTE — preencher pelo projeto]    |
 | Última atualização | [INFORMAÇÃO PENDENTE — preencher pelo projeto]    |
@@ -660,7 +660,7 @@ Quando uma escolha metodológica relevante ainda não estiver formalizada, regis
 As pendências devem também ser registradas em:
 
 ```text
-documentacao_projeto/registro_de_pendencias.md
+ciclos/Cxx/avaliacao.md (pendências da avaliação, registradas pelo NIAR-Saúde)
 ```
 
 ---

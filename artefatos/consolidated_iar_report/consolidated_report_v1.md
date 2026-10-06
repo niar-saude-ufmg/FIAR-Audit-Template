@@ -10,7 +10,7 @@
 | Tarefa de IA          | [INFORMAÇÃO PENDENTE — preencher pelo projeto]    |
 | Versão Avaliável    | [INFORMAÇÃO PENDENTE — preencher pelo projeto]    |
 | Contexto de Uso       | [INFORMAÇÃO PENDENTE — preencher pelo projeto]    |
-| Trilha                | [ENQUADRAMENTO PENDENTE — validar pelo NIAR-Saúde] |
+| Trilha                |  |
 | Elaborado por         | [INFORMAÇÃO PENDENTE — preencher pelo projeto]    |
 | Responsável técnico | [INFORMAÇÃO PENDENTE — preencher pelo projeto]    |
 | Data de referência   | [INFORMAÇÃO PENDENTE — preencher pelo projeto]    |
@@ -509,7 +509,7 @@ O relatório técnico não substitui decisões da instância institucional compe
 As inconsistências completas devem ser registradas em:
 
 ```text
-avaliacao_niar/registro_de_inconsistencias.md
+ciclos/Cxx/avaliacao.md (inconsistências, registradas pelo NIAR-Saúde)
 ```
 
 Não corrigir silenciosamente divergências entre Data Cards, Model Cards, relatórios e resultados.
@@ -599,7 +599,7 @@ Este relatório apenas referencia as decisões.
 O conteúdo integral deve permanecer em:
 
 ```text
-artefatos_projeto/decision_records/
+artefatos/decision_records/
 ```
 
 ---
@@ -613,7 +613,7 @@ artefatos_projeto/decision_records/
 As pendências devem também constar em:
 
 ```text
-documentacao_projeto/registro_de_pendencias.md
+ciclos/Cxx/avaliacao.md (pendências da avaliação, registradas pelo NIAR-Saúde)
 ```
 
 ---

@@ -86,7 +86,7 @@ O NIAR-Saúde não deve ser apresentado como autor das análises técnicas reali
 ## 3. Estrutura da pasta
 
 ```text
-artefatos_projeto/
+artefatos/
 ├── README.md
 ├── data_cards/
 ├── model_cards/
