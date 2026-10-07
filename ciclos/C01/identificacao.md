@@ -1,4 +1,3 @@
-
 # Identificação do ciclo
 
 Preenchido pelo NIAR-Saúde. Cada informação indica sua fonte (artefato ou comunicação).
@@ -16,32 +15,32 @@ Campo vazio não é pendência.
 | Avaliador(es) NIAR |                                                       |
 | Motivo do ciclo    | primeiro ciclo / nova versão / novo contexto / outro |
 
-## 2. Unidade avaliada
-
-| Elemento                        | Descrição                                                | Fonte |
-| ------------------------------- | ---------------------------------------------------------- | ----- |
-| Tarefa de IA                    |                                                            |       |
-| Versão Avaliável              | elementos que a identificam (modelo, dados, procedimentos) |       |
-| Limitações de identificação | o que não foi possível identificar                       |       |
-| Contexto de Uso avaliado | finalidade, usuários, população, ambiente; atual por padrão, ou uso pretendido com justificativa | |
-| Uso pretendido não incluído no ciclo | | |
-| Trilha                          | Experimental ou Produção, com justificativa              |       |
-
-## 3. Escopo
-
-- Incluído:
-- Fora do escopo:
-
-## 4. Contatos
-
-| Pessoa | Papel no ciclo | Fonte |
-| ------ | -------------- | ----- |
-
-## 5. Fontes disponíveis
+## 2. Fontes disponíveis
 
 | ID   | Fonte | Versão, commit ou data | Recebida em |
 | ---- | ----- | ----------------------- | ----------- |
 | F-01 |       |                         |             |
+
+## 3. Unidade avaliada
+
+| Elemento                               | Descrição                                                                                          | Fonte |
+| -------------------------------------- | ---------------------------------------------------------------------------------------------------- | ----- |
+| Tarefa de IA                           |                                                                                                      |       |
+| Versão Avaliável                     | elementos que a identificam (modelo, dados, procedimentos)                                           |       |
+| Limitações de identificação        | o que não foi possível identificar                                                                 |       |
+| Contexto de Uso avaliado               | finalidade, usuários, população, ambiente; atual por padrão, ou uso pretendido com justificativa |       |
+| Uso pretendido não incluído no ciclo |                                                                                                      |       |
+| Trilha                                 | Experimental ou Produção, com justificativa                                                        |       |
+
+## 4. Escopo
+
+- Incluído:
+- Fora do escopo:
+
+## 5. Contatos
+
+| Pessoa | Papel no ciclo | Fonte |
+| ------ | -------------- | ----- |
 
 ## 6. Pendências da delimitação
 
@@ -55,9 +54,9 @@ Só questões que impedem identificar a unidade avaliada.
 
 Só contradição confirmada, dentro de uma fonte ou entre fontes, sobre o mesmo fato, versão e contexto.
 
-| ID | Fonte 1 | Fonte 2 ou trecho da mesma fonte | Contradição | Estado |
-|---|---|---|---|---|
-| DI-01 | | | | |
+| ID    | Fonte 1 | Fonte 2 ou trecho da mesma fonte | Contradição | Estado |
+| ----- | ------- | -------------------------------- | ------------- | ------ |
+| DI-01 |         |                                  |               |        |
 
 ## 8. Decisão
 

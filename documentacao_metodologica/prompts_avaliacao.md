@@ -7,7 +7,7 @@ Antes de qualquer prompt, forneça ao assistente: guia_fluxo.md, guia_requisitos
 
 Preencha ciclos/Cxx/identificacao.md seguindo guia_fluxo.md.
 
-- Use só as fontes fornecidas neste ciclo. Registre cada uma na seção 5 (F-01, F-02...) e cite o ID em cada informação.
+- Use só as fontes fornecidas neste ciclo. Registre cada uma na seção 2 (F-01, F-02...) e cite o ID em cada informação.
 - Por padrão, o Contexto de Uso é o atual. Avalie um uso pretendido só se a delimitação o incluir explicitamente; registre à parte o uso pretendido que não for objeto do ciclo.
 - Inferência sem sustentação suficiente deve ser marcada como hipótese do NIAR, com base e limitação.
 - Não deduza responsabilidades técnicas. Se não estiverem documentadas, registre como não confirmadas.
