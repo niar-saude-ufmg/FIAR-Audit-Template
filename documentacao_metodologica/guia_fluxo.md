@@ -82,4 +82,3 @@ O Git guarda o histórico. Commits citam IDs (D-xx, RCxx-Px, RCG-xxx, DCG-xxx) q
 ## Material de apoio
 
 documentacao_metodologica/apoio_roteiro_entrevista.md: exemplos de perguntas. Não é checklist; perguntar só o que vier de uma pendência.
-EOF
