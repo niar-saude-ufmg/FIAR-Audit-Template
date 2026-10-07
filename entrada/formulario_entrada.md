@@ -2,115 +2,228 @@
 
 ## Controle do documento
 
-| Campo                          | Preenchimento                         |
-| ------------------------------ | ------------------------------------- |
-| Nome do projeto                | [PREENCHER PELO PROJETO]              |
-| Versão do formulário         | 1.0                                   |
-| Data de envio pelo NIAR-Saúde | [PREENCHER PELO NIAR-SAÚDE]          |
-| Prazo para devolução         | [PREENCHER PELO NIAR-SAÚDE]          |
-| Situação                     | Aguardando preenchimento pelo projeto |
+| Campo                            | Preenchimento                |
+| -------------------------------- | ---------------------------- |
+| Nome do projeto                  | [PREENCHER PELO PROJETO]     |
+| Versão do modelo do formulário | 2.0                          |
+| Data de abertura                 | [PREENCHER PELO NIAR-SAÚDE] |
+| Última atualização            |                              |
+| Atualizado por                   |                              |
+| O que mudou nesta atualização  |                              |
+
+Quem preencher ou atualizar o formulário deve registrar a data em “Última atualização”, seu nome em “Atualizado por” e uma breve descrição da alteração. No primeiro preenchimento, registre “Preenchimento inicial”.
 
 ---
 
 ## Orientações
 
-Este formulário é o primeiro contato estruturado entre a equipe do projeto e o NIAR-Saúde.
+Este formulário é o primeiro contato estruturado entre a equipe do projeto e o NIAR-Saúde. Ele é aberto na entrada e atualizado quando houver mudanças relevantes. Não é preciso preenchê-lo de novo a cada ciclo: ao atualizar, altere só o que mudou.
 
-Seu objetivo é permitir uma compreensão inicial da solução, do estágio atual e do contexto de uso. O formulário deve ser preenchido com base nas informações já conhecidas pela equipe. Não é necessário realizar novas análises técnicas para respondê-lo.
+Responda com o que a equipe já sabe. Não é necessário fazer novas análises nem conhecer os conceitos do FIAR-Saúde.
 
-Quando uma informação ainda não estiver definida ou não for conhecida, utilize:
+O formulário tem duas partes:
 
-```text
-[INFORMAÇÃO PENDENTE]
-```
+- **Parte A, projeto:** preenchida na entrada e atualizada quando houver mudanças relevantes.
+- **Parte B, Tarefa de IA:** um bloco para cada tarefa apresentada para avaliação, conforme a descrição inicial da equipe.
 
-Quando um campo não se aplicar ao projeto, utilize:
+A equipe descreve as tarefas com base no que conhece do projeto. O NIAR-Saúde utiliza essas informações para confirmar ou ajustar a delimitação das tarefas e das unidades de avaliação.
 
-```text
-[NÃO SE APLICA — JUSTIFICAR]
-```
+Responda aos campos com as informações disponíveis. Quando necessário, utilize:
 
-O formulário não substitui Data Card, Model Card, análise de riscos, aprovação ética, Relatório de Impacto à Proteção de Dados Pessoais ou outros artefatos técnicos. Documentos já existentes poderão ser indicados ou anexados, sem necessidade de repetir integralmente seu conteúdo neste formulário.
+- **Não sabemos:** a equipe não conhece a informação ou não sabe responder.
+- **Não realizado:** a prática ou ação ainda não foi realizada. Informe se está planejada, quando souber.
+- **Ainda não definido:** a escolha ou decisão ainda não foi tomada.
+- **Não se aplica:** o campo não se aplica à tarefa descrita. Explique brevemente o motivo.
 
----
+Essas respostas descrevem a situação informada pela equipe. Não constituem resultados da avaliação nem determinam a aplicabilidade dos requisitos do FIAR-Saúde.
 
-## 1. Identificação
-
-| Campo                                           | Preenchimento            |
-| ----------------------------------------------- | ------------------------ |
-| **Nome do projeto**                       | [PREENCHER PELO PROJETO] |
-| **Instituição e equipe**                | [PREENCHER PELO PROJETO] |
-| **Responsável pelo projeto**             | [PREENCHER PELO PROJETO] |
-| **Responsável técnico, se diferente**   | [PREENCHER PELO PROJETO] |
-| **Ponto focal junto ao NIAR-Saúde**      | [PREENCHER PELO PROJETO] |
-| **Contato**                               | [PREENCHER PELO PROJETO] |
-| **Página ou repositório, se existente** | [PREENCHER PELO PROJETO] |
+O formulário não substitui Data Card, Model Card, aprovação ética, RIPD ou outros documentos. Basta indicar onde eles estão.
 
 ---
 
-## 2. Descrição da solução
+## Parte A. Projeto
 
-### 2.1 O que a solução faz?
+### A1. Identificação
 
-Descreva brevemente, em linguagem não técnica.
+| Campo                                 | Preenchimento            |
+| ------------------------------------- | ------------------------ |
+| Nome do projeto                       | [PREENCHER PELO PROJETO] |
+| Instituição e equipe                | [PREENCHER PELO PROJETO] |
+| Responsável pelo projeto             | [PREENCHER PELO PROJETO] |
+| Ponto focal junto ao NIAR-Saúde      | [PREENCHER PELO PROJETO] |
+| Contato do ponto focal                | [PREENCHER PELO PROJETO] |
+| Página ou repositório, se existente | [PREENCHER PELO PROJETO] |
 
-```text
-[PREENCHER PELO PROJETO]
-```
+O ponto focal é a pessoa de contato para as comunicações com o NIAR-Saúde. Pode ser o próprio responsável pelo projeto.
 
-### 2.2 Qual problema busca resolver?
+Os responsáveis técnicos pelas tarefas apresentadas para avaliação devem ser informados em A4.
 
-Pode ser um problema clínico, assistencial, operacional, administrativo ou de pesquisa.
+### A2. Objetivo do projeto
 
-```text
-[PREENCHER PELO PROJETO]
-```
+Qual problema o projeto busca resolver? Pode ser clínico, assistencial, operacional, administrativo ou de pesquisa.
 
-### 2.3 Quais informações a solução recebe e o que ela produz?
+### A3. Tarefas de IA
 
-Não é necessário detalhar campos, formatos ou arquitetura.
+No FIAR-Saúde, uma Tarefa de IA reúne modelo, dados e procedimentos orientados a um objetivo específico, que pode ser clínico, assistencial, operacional ou de pesquisa.
 
-```text
-Entradas: [PREENCHER PELO PROJETO]
+Para preencher este formulário, descreva o que a IA faz e qual resultado produz. Exemplos:
 
-Saídas:[PREENCHER PELO PROJETO]
-```
+* gerar dados sintéticos a partir de uma base de dados;
+* classificar exames de imagem;
+* prever um desfecho, como internação ou óbito.
 
-### 2.4 O projeto possui mais de uma tarefa de IA?
+Liste as tarefas conforme a compreensão da equipe. Não é necessário definir a unidade formal de avaliação: o NIAR-Saúde poderá ajustar essa organização durante a delimitação.
 
-- [ ] Não
-- [ ] Sim
+Se uma tarefa utiliza o resultado de outra, indique essa relação na descrição da tarefa (em B1 ou na tabela de descrição breve abaixo).
+
+| ID no formulário | Tarefa de IA (nome curto) | Situação |
+| ----------------- | ------------------------- | ---------- |
+| T-01              |                           |            |
+
+Use identificadores sequenciais: T-01, T-02 etc. Eles servem para relacionar as informações dentro deste formulário; não representam, por si só, a delimitação formal das unidades de avaliação.
+
+Na coluna **Situação**, use uma das opções:
+
+- **Apresentada para avaliação:** tarefa incluída nesta solicitação de avaliação.
+- **Existente, fora do escopo desta avaliação:** tarefa que já existe, mas não está sendo apresentada neste momento.
+- **Apenas prevista:** tarefa futura que ainda não foi iniciada.
+
+Preencha um bloco da Parte B para cada tarefa **apresentada para avaliação**.
+
+Para as demais, basta uma descrição breve na tabela abaixo. Não é necessário detalhar dados, modelos ou procedimentos neste momento.
+
+| ID | Descrição breve | Previsão de início, se apenas prevista |
+| -- | ----------------- | ---------------------------------------- |
+|    |                   |                                          |
+
+### A4. Pessoas e responsabilidades
+
+Indique as pessoas e os papéis que exercem nas tarefas listadas em A3. Inclua explicitamente o responsável técnico por cada tarefa apresentada para avaliação, quando definido. Uma mesma pessoa pode responder por várias tarefas.
+
+Caso a responsabilidade técnica ainda não esteja definida ou a equipe não saiba informá-la, registre essa situação. Não deduza responsabilidades apenas pela autoria de artigos, código ou documentos.
+
+| Pessoa ou situação informada | Papel (ex.: responsável técnico, desenvolvimento, dados, uso) | Tarefas (T-xx ou "todas") |
+| ------------------------------ | --------------------------------------------------------------- | ------------------------- |
+|                                |                                                                 |                           |
+
+### A5. Aprovações e autorizações
+
+Informe as aprovações e autorizações relacionadas às tarefas ou aos dados utilizados. Exemplos: parecer de comitê de ética, autorização institucional e termo de uso de dados.
+
+Na coluna Situação, use: existe / em andamento / não existe / não se aplica / não sabemos. Para “não se aplica”, explique o motivo.
+
+| Aprovação ou autorização | Situação | Identificação ou localização, se houver | Tarefas ou dados a que se refere | Observação ou justificativa |
+| ---------------------------- | ---------- | ------------------------------------------- | -------------------------------- | ----------------------------- |
+|                              |            |                                             |                                  |                               |
+
+Se não houver aprovações ou autorizações, ou a equipe não souber informar, registre isso explicitamente.
+
+### A6. Documentos e materiais existentes
+
+Indique se cada material existe: sim / não / não sabemos. Quando existir, informe onde está ou como poderá ser disponibilizado e a quais tarefas se refere. Acrescente linhas quando houver mais de um documento do mesmo tipo.
+
+Esta lista é um levantamento dos materiais disponíveis. Não é necessário produzir os documentos listados para preencher o formulário. A ausência de um material não gera automaticamente uma pendência.
+
+| Material                                                  | Existe? | Onde está ou como poderá ser disponibilizado | Tarefas a que se refere |
+| --------------------------------------------------------- | ------- | ---------------------------------------------- | ----------------------- |
+| Descrição do projeto                                    |         |                                                |                         |
+| Data Card                                                 |         |                                                |                         |
+| Model Card                                                |         |                                                |                         |
+| Artigo ou relatório técnico                             |         |                                                |                         |
+| Código ou repositório                                   |         |                                                |                         |
+| Resultados de desempenho                                  |         |                                                |                         |
+| Análise de disparidades (Fairness Report ou equivalente) |         |                                                |                         |
+| Análise de explicabilidade                               |         |                                                |                         |
+| Registro de decisão técnica                             |         |                                                |                         |
+| Documentação de privacidade ou RIPD                     |         |                                                |                         |
+| Documentação de segurança                              |         |                                                |                         |
+| Documentação de governança                             |         |                                                |                         |
+| Outro — especificar                                      |         |                                                |                         |
+
+As aprovações e autorizações são informadas em A5. Restrições de acesso ou divulgação podem ser descritas em B8.
+
+### A7. Dúvidas ou observações
+
+Questões que a equipe gostaria de discutir com o NIAR-Saúde.
+
+---
+
+## Parte B. Tarefa de IA
+
+Copie este bloco para cada tarefa apresentada para avaliação. Use o ID da tabela A3.
+
+### Tarefa T-01: (nome curto)
+
+#### B1. O que a tarefa faz e para quê
+
+Descreva, em linguagem simples, o que a tarefa faz e qual é o seu objetivo.
+
+Diferencie o resultado produzido da finalidade pretendida.
+
+Exemplos:
+
+- “Gera registros sintéticos a partir de uma base de dados para uso em experimentos de pesquisa.”
+- “Classifica radiografias de tórax como normais ou alteradas, com a finalidade de apoiar a priorização da fila de laudos.”
+
+Informe em B5 se esse uso já acontece e em B6 se é apenas pretendido.
+
+#### B2. Entradas e saídas
+
+* Entradas (o que a tarefa recebe):
+* Saídas (o que ela produz):
+
+#### B3. Dados
+
+| Campo                                         | Resposta |
+| --------------------------------------------- | -------- |
+| Fontes de dados — nome, tipo ou origem geral |          |
+| Período coberto, se conhecido                |          |
+
+**Os dados utilizados incluem informações pessoais ou de saúde?**
+Marque todas as opções aplicáveis.
+
+- [ ] Não incluem informações pessoais nem de saúde
+- [ ] Incluem informações pessoais
+- [ ] Incluem informações de saúde
+- [ ] Incluem outras informações sensíveis — especificar:
 - [ ] Não sabemos
 
-Caso sim, descreva brevemente:
+**A equipe utiliza dados descritos como anonimizados ou pseudonimizados?**
+Marque todas as opções aplicáveis e indique a quais fontes se referem.
 
-```text
+- [ ] Anonimizados
+- [ ] Pseudonimizados
+- [ ] Nenhuma dessas situações
+- [ ] Não sabemos
+
+Fontes correspondentes e observações:
+
 [PREENCHER PELO PROJETO]
-```
 
-> O NIAR-Saúde utilizará estas informações para delimitar posteriormente a unidade de avaliação. A identificação formal da Tarefa de IA não precisa ser realizada pela equipe neste formulário.
+Não inclua registros individuais, dados pessoais das pessoas presentes nas bases, credenciais ou conteúdo sensível neste formulário.
 
----
+#### B4. Modelo e procedimentos
 
-## 3. Uso atual e uso pretendido
+Resuma apenas o que já foi realizado e as informações disponíveis. Se a informação estiver em um documento listado em A6, pode indicar o documento e a seção. Não é necessário realizar novos treinamentos,  testes ou cálculos para preencher estes campos.
 
-### 3.1 Como a solução é usada hoje?
+| Campo                                                                              | Resposta |
+| ---------------------------------------------------------------------------------- | -------- |
+| Modelo ou método de IA                                                            |          |
+| Como foi treinado ou ajustado (resumo)                                             |          |
+| Como foi avaliado (resumo e métricas, se houver)                                  |          |
+| Versão ou identificação do modelo e dos procedimentos descritos, se disponível |          |
 
-Descreva somente o que já acontece atualmente. Não inclua como uso atual atividades apenas planejadas.
+#### B5. Uso atual
 
-```text
-[PREENCHER PELO PROJETO]
-```
+Descreva somente o que já acontece hoje. Inclua o uso em pesquisa, quando for o caso.
 
-### 3.2 Como se pretende usar a solução no futuro?
+| Campo                                                  | Resposta |
+| ------------------------------------------------------ | -------- |
+| Como a tarefa é utilizada atualmente                  |          |
+| Quem utiliza seus resultados                           |          |
+| Ambiente em que é desenvolvida, avaliada ou utilizada |          |
 
-```text
-[PREENCHER PELO PROJETO]
-```
-
-### 3.3 Estágio atual
-
-Marque todas as opções aplicáveis:
+**Estágio atual — marque todas as opções aplicáveis:**
 
 - [ ] Pesquisa ou desenvolvimento
 - [ ] Validação retrospectiva
@@ -121,173 +234,77 @@ Marque todas as opções aplicáveis:
 - [ ] Operação em produção
 - [ ] Uso assistencial ou operacional
 - [ ] Não sabemos
-- [ ] Outro: [ESPECIFICAR]
+- [ ] Outro — especificar:
 
-### 3.4 As saídas já são visualizadas por profissionais ou influenciam decisões reais?
-
-- [ ] Não
-- [ ] Sim
-- [ ] Não sabemos
-
-Caso tenha respondido **Sim**, descreva quem visualiza as saídas, em qual fluxo e que tipo de decisão pode ser influenciada:
-
-```text
-[PREENCHER PELO PROJETO]
-```
-
----
-
-## 4. Pessoas, grupos e sistemas relacionados
-
-### 4.1 Quem pode utilizar ou ser afetado pela solução?
-
-Inclua usuários diretos, população atendida, profissionais, gestores ou outros grupos relacionados.
-
-```text
-[PREENCHER PELO PROJETO]
-```
-
-### 4.2 A solução está ou pretende ser integrada a algum sistema, plataforma ou fluxo de trabalho?
+**Os resultados já são visualizados por profissionais ou pesquisadores?**
 
 - [ ] Não
 - [ ] Sim
 - [ ] Não sabemos
 
-Caso tenha respondido **Sim**, indique qual sistema, plataforma ou fluxo e informe se a integração já existe ou é apenas pretendida:
+Se sim, indique quem visualiza e em qual contexto:
 
-```text
 [PREENCHER PELO PROJETO]
-```
 
----
+**Os resultados já são utilizados para apoiar ou influenciar decisões?**
 
-## 5. Dados, modelo e documentação disponível
-
-### 5.1 Quais dados ou fontes de dados são utilizados?
-
-Informe apenas os nomes, tipos ou a origem geral. Não inclua dados pessoais, credenciais ou informações sensíveis neste formulário.
-
-```text
-[PREENCHER PELO PROJETO]
-```
-
-### 5.2 Qual modelo ou componente de IA é utilizado?
-
-Uma descrição breve é suficiente.
-
-```text
-[PREENCHER PELO PROJETO]
-```
-
-### 5.3 Os dados incluem informações pessoais ou de saúde?
-
-Marque todas as opções aplicáveis:
+Considere decisões clínicas, assistenciais, operacionais, administrativas ou de pesquisa.
 
 - [ ] Não
-- [ ] Sim, dados pessoais
-- [ ] Sim, dados pessoais sensíveis ou de saúde
-- [ ] Dados anonimizados
-- [ ] Dados pseudonimizados
+- [ ] Sim
 - [ ] Não sabemos
 
-Inclua uma observação breve, quando necessário:
+Se sim, descreva quais decisões, quem decide e qual é o papel dos resultados:
 
-```text
 [PREENCHER PELO PROJETO]
-```
 
-### 5.4 Existe aprovação ética ou autorização institucional?
+**A tarefa está integrada a algum sistema, plataforma ou fluxo de trabalho?**
 
-* [ ] Não
-* [ ] Sim
-* [ ] Em andamento
-* [ ] Não se aplica
-* [ ] Não sabemos
+- [ ] Não
+- [ ] Sim
+- [ ] Não sabemos
 
-Caso exista, indique a identificação e/ou a localização do documento:
+Se sim, indique qual e como ocorre essa integração:
 
-```text
 [PREENCHER PELO PROJETO]
-```
 
-### 5.5 Quais materiais já existem?
+#### B6. Uso pretendido
 
-Marque somente o que já está disponível:
+O que se pretende fazer no futuro e ainda não acontece.
 
-- [ ] Descrição do projeto
-- [ ] Data Card
-- [ ] Model Card
-- [ ] Artigo
-- [ ] Relatório técnico
-- [ ] Código ou repositório
-- [ ] Resultados de desempenho
-- [ ] Fairness Report ou análise de disparidades
-- [ ] Explainability Report ou análise de explicabilidade
-- [ ] Registro de Decisão Técnica
-- [ ] Aprovação ética
-- [ ] Documentação de privacidade ou RIPD
-- [ ] Documentação de segurança
-- [ ] Documentação de governança
-- [ ] Outro: [ESPECIFICAR]
+| Campo                                                                                         | Resposta |
+| --------------------------------------------------------------------------------------------- | -------- |
+| Uso pretendido                                                                                |          |
+| Integração pretendida                                                                       |          |
+| Previsão, se houver                                                                          |          |
+| Que decisões a tarefa poderá apoiar ou influenciar e qual será seu papel nessas decisões? |          |
 
-Indique onde os materiais podem ser encontrados ou como serão enviados:
+#### B7. Pessoas e grupos que podem usar ou ser afetados
 
-```text
+Inclua usuários diretos, população atendida ou representada nos dados, profissionais, gestores ou outros grupos que possam ser afetados.
+
+Diferencie os grupos relacionados à situação atual daqueles relacionados apenas ao uso pretendido. Registre o que a equipe já conhece, sem necessidade de realizar nova análise.
+
 [PREENCHER PELO PROJETO]
-```
 
-A existência ou ausência desses materiais não determina, por si só, quais evidências serão exigidas no ciclo.
+#### B8. Riscos, limitações e restrições conhecidos
+
+Registre apenas o que a equipe já sabe. Não é preciso fazer nova análise.
+
+| Campo                                                                                                                                                  | Resposta |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------ | -------- |
+| Riscos ou limitações conhecidos                                                                                                                      |          |
+| Situações em que a tarefa não deve ser usada                                                                                                        |          |
+| Restrições de acesso ou divulgação de código, dados ou resultados: indique o material, o motivo e o prazo ou condição de liberação, se houver |          |
 
 ---
 
-## 6. Decisões, riscos ou limitações já conhecidos
+## Confirmação
 
-### 6.1 A solução pode influenciar alguma decisão?
-
-Pode ser uma decisão clínica, assistencial, operacional, administrativa ou de pesquisa.
-
-* [ ] Não
-* [ ] Sim
-* [ ] Não sabemos
-
-Caso tenha respondido **Sim**, descreva brevemente o tipo de decisão e o papel esperado da solução:
-
-```text
-[PREENCHER PELO PROJETO]
-```
-
-### 6.2 A equipe já conhece algum risco ou limitação importante?
-
-Não é necessário realizar uma nova análise. Registre apenas riscos, limitações ou condições de uso já conhecidos pela equipe.
-
-```text
-[PREENCHER PELO PROJETO]
-```
-
-### 6.3 Há alguma condição em que a solução não deve ser utilizada?
-
-```text
-[PREENCHER PELO PROJETO]
-```
+| Campo                               | Preenchimento |
+| ----------------------------------- | ------------- |
+| Nome de quem preencheu ou atualizou |               |
+| Papel no projeto                    |               |
+| Data                                |               |
 
 ---
-
-## 7. Dúvidas ou observações
-
-Inclua questões que a equipe gostaria de discutir com o NIAR-Saúde ou informações adicionais relevantes para a compreensão inicial do projeto.
-
-```text
-[PREENCHER PELO PROJETO]
-```
-
----
-
-## 8. Confirmação do preenchimento
-
-| Campo                  | Preenchimento                            |
-| ---------------------- | ---------------------------------------- |
-| Nome de quem preencheu | [PREENCHER PELO PROJETO]                 |
-| Papel no projeto       | [PREENCHER PELO PROJETO]                 |
-| Data                   | [PREENCHER PELO PROJETO]                 |
-| Versão preenchida     | 1.0                                      |
-| Observações          | [PREENCHER PELO PROJETO, SE NECESSÁRIO] |
