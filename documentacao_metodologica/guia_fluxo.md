@@ -49,9 +49,12 @@ Ausência de artefato não é resultado. A pergunta é sempre se há evidência 
 
 Divergência confirmada entre fontes sobre o mesmo fato, versão e contexto. Informação ausente não é inconsistência. Registrar no bloco do requisito afetado (RCxx-Ix); gera pendência se precisar de resposta da equipe.
 
-## Atribuições do NIAR
+## Decisões metodológicas e informações não confirmadas
 
-Quando o NIAR deduzir algo sem confirmação da equipe, registra "atribuído pelo NIAR" e a base da dedução.
+- Decisão metodológica já tomada: registrada no documento que afeta, com justificativa.
+- Informação factual: registrada com a fonte. Não se pede nova confirmação à equipe só para repetir o que a fonte já diz.
+- Inferência ainda não sustentada: marcada como hipótese do NIAR, com base e limitação. Não substitui fato demonstrado.
+- Responsabilidade técnica: não é deduzida. Sem documentação suficiente, fica como não confirmada. Só se pergunta à equipe quando for necessário à delimitação ou a um requisito.
 
 ## Encaminhamentos
 

@@ -2,7 +2,8 @@
 # Identificação do ciclo
 
 Preenchido pelo NIAR-Saúde. Cada informação indica sua fonte (artefato ou comunicação).
-O que o NIAR deduzir sem confirmação da equipe é marcado "atribuído pelo NIAR".
+Inferência ainda não sustentada é marcada como hipótese do NIAR, com sua base e limitação.
+Responsabilidade técnica não é deduzida: sem documentação suficiente, fica registrada como não confirmada.
 Campo vazio não é pendência.
 
 ## 1. Ciclo

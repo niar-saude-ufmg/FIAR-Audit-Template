@@ -9,7 +9,8 @@ Preencha ciclos/Cxx/identificacao.md seguindo guia_fluxo.md.
 
 - Use só as fontes fornecidas neste ciclo. Registre cada uma na seção 5 (F-01, F-02...) e cite o ID em cada informação.
 - Contexto de Uso é o uso atual. Registre o uso pretendido à parte.
-- O que for deduzido sem confirmação da equipe deve ser marcado "atribuído pelo NIAR", com a base da dedução.
+- Inferência sem sustentação suficiente deve ser marcada como hipótese do NIAR, com base e limitação.
+- Não deduza responsabilidades técnicas. Se não estiverem documentadas, registre como não confirmadas.
 - Falta de identificador exato da versão vai em "Limitações de identificação"; não é pendência.
 - Abra pendência D-xx só se ela impedir identificar a Tarefa de IA.
 - Campo vazio não é pendência.
@@ -38,7 +39,7 @@ Revise identificacao.md e avaliacao.md do ciclo e aponte apenas:
 - decisões do NIAR registradas como pendência;
 - inconsistências sem duas fontes conflitantes;
 - resultados sem evidência citada;
-- deduções não marcadas "atribuído pelo NIAR".
+- inferências não marcadas como hipótese do NIAR e responsabilidades técnicas deduzidas sem fonte.
 
 Não crie pendências novas nem altere resultados; liste os problemas para o avaliador decidir.
 
