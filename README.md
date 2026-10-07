@@ -12,7 +12,7 @@ O FIAR-Saúde não é certificação, validação clínica nem autorização de 
 
 - Equipe do projeto: produz e mantém os artefatos e responde às perguntas do NIAR.
 - NIAR-Saúde: delimita, avalia os requisitos e prepara o relatório ao Comitê. Não edita artefatos da equipe.
-- Comitê Gestor: decide sobre riscos e questões encaminhadas, inclusive condicionantes.
+- Comitê Gestor: valida os relatórios e delibera sobre riscos e questões encaminhadas, inclusive condicionantes.
 
 ## Estrutura
 
