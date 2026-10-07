@@ -122,7 +122,7 @@ O requisito não busca simplesmente listar atributos existentes nos dados. A sel
 
 **A Tarefa, no Contexto de Uso avaliado, pode produzir efeitos ou benefícios que incidam sobre pessoas, grupos ou populações?**
 
-Se não for possível determinar, registrar pendência de aplicabilidade e resultado Inconclusivo. Não presumir Não aplicável.
+Se não for possível determinar, registrar pendência de aplicabilidade e resultado Inconclusivo, com o motivo "aplicabilidade não determinada". Não presumir Não aplicável.
 
 ### Roteiro de perguntas
 
@@ -196,7 +196,7 @@ A análise não pressupõe uma métrica universal de fairness nem exige necessar
 
 **Existem grupos ou populações identificados em RC01 sobre os quais a Tarefa possa produzir efeitos no Contexto de Uso avaliado?**
 
-Se não for possível determinar, registrar pendência de aplicabilidade e resultado Inconclusivo. Não presumir Não aplicável.
+Se não for possível determinar, registrar pendência de aplicabilidade e resultado Inconclusivo, com o motivo "aplicabilidade não determinada". Não presumir Não aplicável.
 
 A impossibilidade de realizar determinada comparação por ausência ou insuficiência de dados não torna RC02 não aplicável; o resultado é Inconclusivo.
 
@@ -285,7 +285,7 @@ RC03 não substitui a avaliação geral de qualidade de dados. Em Justiça, o fo
 
 **O desenvolvimento ou a avaliação da Tarefa utiliza dados, variáveis-alvo ou padrões de referência cuja adequação possa ser relevante para os grupos identificados em RC01?**
 
-Se não for possível determinar, registrar pendência de aplicabilidade e resultado Inconclusivo. Não presumir Não aplicável.
+Se não for possível determinar, registrar pendência de aplicabilidade e resultado Inconclusivo, com o motivo "aplicabilidade não determinada". Não presumir Não aplicável.
 
 Ausência de informação sobre os dados, a variável-alvo ou o padrão de referência não justifica Não aplicável.
 
@@ -378,7 +378,7 @@ O requisito trata de desigualdades associadas à disponibilização da Tarefa, e
 
 **No Contexto de Uso avaliado, existe alguma forma de disponibilização da Tarefa pela qual pessoas, grupos ou populações possam acessar ou se beneficiar de seu uso?**
 
-Se não for possível determinar, registrar pendência de aplicabilidade e resultado Inconclusivo. Não presumir Não aplicável.
+Se não for possível determinar, registrar pendência de aplicabilidade e resultado Inconclusivo, com o motivo "aplicabilidade não determinada". Não presumir Não aplicável.
 
 Um uso futuro pretendido que ainda não integra o Contexto de Uso avaliado não torna RC04 aplicável ao ciclo atual.
 
@@ -440,7 +440,7 @@ Roteiro de apoio à análise. Não é checklist: responder só o pertinente.
 
 Para cada requisito, no bloco correspondente de `ciclos/Cxx/avaliacao.md`:
 
-1. responder à pergunta de aplicabilidade antes de analisar as evidências e justificar;
+1. responder à pergunta de aplicabilidade, com justificativa, consultando as informações factuais das fontes e antes de julgar o atendimento;
 2. identificar o que precisa ser demonstrado;
 3. localizar as evidências nas fontes registradas na identificação do ciclo;
 4. distinguir informação factual já documentada de análise específica ainda necessária;

@@ -10,15 +10,17 @@ O texto dos requisitos e o roteiro de análise estão no guia de requisitos; nã
 | Guia de requisitos usado (versão ou commit) | |
 | Dimensões avaliadas | Justiça |
 
-Resultados possíveis: Atendido | Não atendido | Inconclusivo (motivo: parcial, planejado ou não localizado) | Não aplicável.
+Resultados possíveis: Atendido | Não atendido | Inconclusivo (registrar o motivo) | Não aplicável.
+Atendimento parcial ou prática apenas planejada não levam automaticamente a Inconclusivo: com evidência suficiente de não atendimento, o resultado é Não atendido.
 
-Antes de abrir uma pendência, verificar: (1) é necessária para este requisito? (2) já está em alguma fonte? (3) já foi respondida? (4) é decisão do NIAR? Só abrir se (1) for sim e as demais forem não.
+Antes de abrir uma pendência, verificar: (1) é necessária para este requisito? (2) já está em alguma fonte? (3) já foi respondida? Só abrir se (1) for sim e as demais forem não.
+Pendência aberta só torna o requisito Inconclusivo quando impede a conclusão. Decisão metodológica ainda não tomada é pendência interna (destinatário NIAR).
 
 ---
 
 ## RC01 Grupos e populações
 
-**Aplicabilidade:** Aplicável / Não aplicável
+**Aplicabilidade:** Aplicável / Não aplicável / Não determinada (resultado Inconclusivo, motivo "aplicabilidade não determinada")
 **Justificativa:**
 
 **O que precisa ser demonstrado:**
@@ -38,7 +40,7 @@ Antes de abrir uma pendência, verificar: (1) é necessária para este requisito
 | ID | Questão | Destinatário (Equipe/NIAR) | Estado | Resolução e fonte |
 |---|---|---|---|---|
 
-**Inconsistências** (só divergência confirmada entre fontes)
+**Inconsistências** (só contradição confirmada, dentro de uma fonte ou entre fontes)
 
 | ID | Fonte 1 | Fonte 2 | Divergência | Estado |
 |---|---|---|---|---|
@@ -50,7 +52,7 @@ Antes de abrir uma pendência, verificar: (1) é necessária para este requisito
 
 ## RC02 Diferenças nos efeitos
 
-**Aplicabilidade:** Aplicável / Não aplicável
+**Aplicabilidade:** Aplicável / Não aplicável / Não determinada (resultado Inconclusivo, motivo "aplicabilidade não determinada")
 **Justificativa:**
 
 **O que precisa ser demonstrado:**
@@ -70,7 +72,7 @@ Antes de abrir uma pendência, verificar: (1) é necessária para este requisito
 | ID | Questão | Destinatário (Equipe/NIAR) | Estado | Resolução e fonte |
 |---|---|---|---|---|
 
-**Inconsistências** (só divergência confirmada entre fontes)
+**Inconsistências** (só contradição confirmada, dentro de uma fonte ou entre fontes)
 
 | ID | Fonte 1 | Fonte 2 | Divergência | Estado |
 |---|---|---|---|---|
@@ -82,7 +84,7 @@ Antes de abrir uma pendência, verificar: (1) é necessária para este requisito
 
 ## RC03 Dados, variáveis-alvo e padrões de referência
 
-**Aplicabilidade:** Aplicável / Não aplicável
+**Aplicabilidade:** Aplicável / Não aplicável / Não determinada (resultado Inconclusivo, motivo "aplicabilidade não determinada")
 **Justificativa:**
 
 **O que precisa ser demonstrado:**
@@ -102,7 +104,7 @@ Antes de abrir uma pendência, verificar: (1) é necessária para este requisito
 | ID | Questão | Destinatário (Equipe/NIAR) | Estado | Resolução e fonte |
 |---|---|---|---|---|
 
-**Inconsistências** (só divergência confirmada entre fontes)
+**Inconsistências** (só contradição confirmada, dentro de uma fonte ou entre fontes)
 
 | ID | Fonte 1 | Fonte 2 | Divergência | Estado |
 |---|---|---|---|---|
@@ -114,7 +116,7 @@ Antes de abrir uma pendência, verificar: (1) é necessária para este requisito
 
 ## RC04 Acesso e possibilidade de benefício
 
-**Aplicabilidade:** Aplicável / Não aplicável
+**Aplicabilidade:** Aplicável / Não aplicável / Não determinada (resultado Inconclusivo, motivo "aplicabilidade não determinada")
 **Justificativa:**
 
 **O que precisa ser demonstrado:**
@@ -134,7 +136,7 @@ Antes de abrir uma pendência, verificar: (1) é necessária para este requisito
 | ID | Questão | Destinatário (Equipe/NIAR) | Estado | Resolução e fonte |
 |---|---|---|---|---|
 
-**Inconsistências** (só divergência confirmada entre fontes)
+**Inconsistências** (só contradição confirmada, dentro de uma fonte ou entre fontes)
 
 | ID | Fonte 1 | Fonte 2 | Divergência | Estado |
 |---|---|---|---|---|

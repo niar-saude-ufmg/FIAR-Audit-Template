@@ -23,8 +23,8 @@ Campo vazio não é pendência.
 | Tarefa de IA                    |                                                            |       |
 | Versão Avaliável              | elementos que a identificam (modelo, dados, procedimentos) |       |
 | Limitações de identificação | o que não foi possível identificar                       |       |
-| Contexto de Uso atual           | finalidade, usuários, população, ambiente               |       |
-| Uso pretendido                  |                                                            |       |
+| Contexto de Uso avaliado | finalidade, usuários, população, ambiente; atual por padrão, ou uso pretendido com justificativa | |
+| Uso pretendido não incluído no ciclo | | |
 | Trilha                          | Experimental ou Produção, com justificativa              |       |
 
 ## 3. Escopo
@@ -51,8 +51,16 @@ Só questões que impedem identificar a unidade avaliada.
 | ---- | -------- | --------------------------- | ------ | ------------------- |
 | D-01 |          |                             |        |                     |
 
-## 7. Decisão
+## 7. Inconsistências da delimitação
+
+Só contradição confirmada, dentro de uma fonte ou entre fontes, sobre o mesmo fato, versão e contexto.
+
+| ID | Fonte 1 | Fonte 2 ou trecho da mesma fonte | Contradição | Estado |
+|---|---|---|---|---|
+| DI-01 | | | | |
+
+## 8. Decisão
 
 Pronto para avaliar: Sim / Não
 Justificativa:
-"Não" somente se não for possível identificar a Tarefa de IA.
+"Não" quando não for possível identificar a Tarefa de IA ou relacionar as evidências à tarefa, ao estado avaliado e ao contexto.
