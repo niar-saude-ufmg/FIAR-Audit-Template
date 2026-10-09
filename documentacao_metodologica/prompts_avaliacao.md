@@ -5,20 +5,21 @@ Antes de qualquer prompt, forneça ao assistente: guia_fluxo.md, guia_requisitos
 
 ## Prompt 0. Preparação do repositório
 
-Use uma vez, em repositórios de projetos criados antes do fluxo atual. Forneça também a estrutura do repositório (por exemplo, a saída de `tree -L 3`) e seus arquivos.
+Uso: uma vez, em repositórios criados antes do fluxo atual. Forneça o repositório do projeto (por exemplo, em ZIP) e o guia_fluxo.md.
 
+```text
 Compare o repositório do projeto com a estrutura atual do FIAR-Audit-Template e aponte:
 
-- o que precisa ser criado ou movido (entrada/, comunicacoes/, ciclos/Cxx/, relatorios/, decisoes/);
+- o que criar ou mover (entrada/, comunicacoes/, ciclos/Cxx/, relatorios/, decisoes/);
 - as fontes disponíveis: formulário, artefatos da equipe e comunicações;
-- os registros do fluxo anterior (pré-avaliação, registro de pendências, controle de artefatos, decisão institucional, avaliação por dimensão ou por requisito).
+- os registros do fluxo anterior (pré-avaliação, pendências, controle de artefatos, decisão institucional, avaliações por dimensão ou requisito).
 
-- Registros do fluxo anterior são material de referência, sujeito a revisão, e não avaliação válida no fluxo atual. Uma informação factual que contenham só sustenta a avaliação se estiver em uma fonte verificável.
-- Pendências antigas não são reabertas automaticamente. Só voltam se atenderem às regras de pendência do guia_fluxo.md.
-- Não preencha a identificação nem avalie requisitos nesta etapa. Não altere os artefatos da equipe.
+Registros do fluxo anterior servem só de referência. Uma informação que contenham só vale como evidência se estiver em uma fonte verificável. Pendências antigas não são reabertas automaticamente. Nesta etapa, não preencha a identificação, não avalie requisitos e não altere os artefatos da equipe.
+```
 
 ## Prompt 1. Delimitação
 
+```text
 Preencha ciclos/Cxx/identificacao.md seguindo guia_fluxo.md.
 
 - Use só as fontes fornecidas neste ciclo. Registre cada uma na seção 2 (F-01, F-02...) e cite o ID em cada informação.
@@ -29,9 +30,11 @@ Preencha ciclos/Cxx/identificacao.md seguindo guia_fluxo.md.
 - Abra pendência D-xx só se ela impedir identificar a Tarefa de IA ou relacionar as evidências a ela.
 - Campo vazio não é pendência.
 - Termine com a decisão "pronto para avaliar" e a justificativa.
+```
 
 ## Prompt 2. Avaliação de um requisito
 
+```text
 Preencha o bloco do requisito [RCxx] em ciclos/Cxx/avaliacao.md seguindo guia_requisitos_avaliacao.md.
 
 - Responda primeiro à pergunta de aplicabilidade, com justificativa, usando as informações factuais das fontes. Se não for possível determinar, abra pendência e marque Inconclusivo com o motivo "aplicabilidade não determinada".
@@ -43,9 +46,11 @@ Preencha o bloco do requisito [RCxx] em ciclos/Cxx/avaliacao.md seguindo guia_re
 - Antes de abrir uma pendência, verifique: é necessária para este requisito? já está em alguma fonte? já foi respondida? Só abra se a primeira for sim e as demais forem não. Indique o destinatário (Equipe, ou NIAR para verificação interna ou decisão metodológica ainda não tomada).
 - Inconsistência só com contradição confirmada, dentro de uma fonte ou entre fontes, sobre o mesmo fato, versão e contexto.
 - Não escreva nos artefatos da equipe.
+```
 
 ## Prompt 3. Revisão do ciclo
 
+```text
 Revise identificacao.md e avaliacao.md do ciclo e aponte apenas:
 
 - pendências sem vínculo com a delimitação ou com um requisito;
@@ -57,9 +62,11 @@ Revise identificacao.md e avaliacao.md do ciclo e aponte apenas:
 - inferências não marcadas como hipótese do NIAR e responsabilidades técnicas deduzidas sem fonte.
 
 Não crie pendências novas nem altere resultados; liste os problemas para o avaliador decidir.
+```
 
 ## Prompt 4. Relatório ao Comitê Gestor
 
+```text
 Preencha relatorios/RCG-xxx.md a partir das sínteses dos ciclos indicados.
 
 - Linguagem simples, para quem não é da área técnica.
@@ -68,3 +75,4 @@ Preencha relatorios/RCG-xxx.md a partir das sínteses dos ciclos indicados.
 - Não classifique gravidade e não diga se o risco é aceitável; isso cabe ao Comitê.
 - Recomendações do NIAR são não obrigatórias.
 - Na decisão solicitada, deixe claro que a aceitação vale para a versão e o contexto avaliados.
+```
