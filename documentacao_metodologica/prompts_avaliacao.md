@@ -32,6 +32,8 @@ Compare o repositório do projeto com a estrutura atual do FIAR-Audit-Template e
 - os registros do fluxo anterior (pré-avaliação, pendências, controle de artefatos, decisão institucional, avaliações por dimensão ou requisito).
 
 Registros do fluxo anterior servem só de referência. Uma informação que contenham só vale como evidência se estiver em uma fonte verificável. Pendências antigas não são reabertas automaticamente. Nesta etapa, não preencha a identificação, não avalie requisitos e não altere os artefatos da equipe.
+
+Se o repositório já estiver na estrutura atual, informe isso e pare. Não revise a identificação nem a avaliação existentes; para isso, use o Prompt 3.
 ```
 
 ## Prompt 1. Delimitação
