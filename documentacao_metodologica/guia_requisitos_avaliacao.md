@@ -213,7 +213,7 @@ Roteiro de apoio à análise. Não é checklist: responder só o pertinente.
 - Existem diferenças nas decisões ou consequências decorrentes dos resultados ou do uso da Tarefa, quando observáveis no Contexto de Uso avaliado?
 - As diferenças encontradas foram interpretadas considerando seu significado clínico, técnico ou operacional?
 - Quando foram encontradas diferenças, foi analisado se elas são justificadas ou injustificadas? Com base em quê?
-- Quais ações para evitar, reduzir ou tratar diferenças consideradas problemáticas foram consideradas? Quais chegaram a ser realizadas, se houver?
+- Foram consideradas ações para evitar, reduzir ou tratar diferenças consideradas problemáticas? Se sim, quais? Quais chegaram a ser realizadas, se houver?
 - Considerando as ações realizadas, se houver, permanecem diferenças ou riscos relevantes para os grupos identificados?
 
 ### Exemplos de evidências pertinentes
@@ -265,7 +265,7 @@ Verificar se características dos dados, das variáveis-alvo e dos padrões de r
 
 RC03 não substitui a avaliação geral de qualidade de dados. Em Justiça, o foco é verificar se existe mecanismo plausível de efeito diferenciado entre grupos.
 
-**Variável-alvo** é o resultado que o sistema procura prever. **Padrão de referência** é a informação ou o procedimento usado para estabelecer o resultado considerado correto no desenvolvimento ou na avaliação do sistema. Exemplos incluem diagnóstico confirmado por especialista, resultado de exame ou desfecho registrado, quando utilizados com essa finalidade. Não se refere à métrica nem à meta de desempenho do modelo.
+**Variável-alvo** é o resultado que a Tarefa procura prever. **Padrão de referência** é a informação ou o procedimento usado para estabelecer o resultado considerado correto no desenvolvimento ou na avaliação da Tarefa. Exemplos incluem diagnóstico confirmado por especialista, resultado de exame ou desfecho registrado, quando utilizados com essa finalidade. Não se refere à métrica nem à meta de desempenho do modelo.
 
 ### Aspectos a considerar na aplicabilidade
 
@@ -350,7 +350,7 @@ A avaliação não exige um método único de análise.
 
 - **Data Card** tende a fornecer composição, proveniência, seleção e limitações dos dados.
 - **Model Card** tende a fornecer informações sobre Tarefa, variável-alvo, desenvolvimento, avaliação e desempenho.
-- **Fairness Report** deve acrescentar as implicações desses elementos para os grupos considerados, sem repetir desnecessariamente a factualidade já documentada.
+- Quando utilizado o **Fairness Report** deve acrescentar as implicações desses elementos para os grupos considerados, sem repetir desnecessariamente a factualidade já documentada.
 - Problemas gerais de qualidade ou validade dos dados pertencem principalmente à dimensão Segurança quando não houver mecanismo plausível de efeito diferenciado entre grupos.
 - A pergunta “a variável-alvo mede ou representa adequadamente o fenômeno de interesse para os diferentes grupos?” exige fundamentação técnica ou clínica; não deve ser respondida apenas pela existência formal de uma variável-alvo.
 - Da mesma forma, a adequação do padrão de referência deve considerar se existem razões para sua validade ou confiabilidade variar entre grupos.
@@ -394,7 +394,7 @@ Roteiro de apoio à análise. Não é checklist: responder só o pertinente.
 
 - Como a Tarefa é disponibilizada aos usuários e serviços no Contexto de Uso avaliado: onde, por quais meios e para quem?
 - Existem requisitos de infraestrutura, tecnologia ou recursos para acessar ou utilizar a Tarefa?
-- Idioma, conectividade, localização, custo, letramento ou outras condições podem limitar a possibilidade de algum grupo acessar ou se beneficiar da Tarefa? Considere tanto as condições dos pacientes quanto as dos profissionais e serviços que utilizam o sistema.
+- Idioma, conectividade, localização, custo, letramento ou outras condições podem limitar a possibilidade de algum grupo acessar ou se beneficiar da Tarefa? Considere tanto as condições dos pacientes quanto as dos profissionais e serviços que utilizam a Tarefa.
 - Existem diferenças entre locais, serviços ou populações quanto à oferta da Tarefa, isto é, onde ou para quem ela está disponível?
 - Algum grupo identificado em RC01 possui menor possibilidade de se beneficiar da disponibilização da Tarefa?
 - Foi analisado se as desigualdades de acesso ou de possibilidade de benefício identificadas são justificadas ou injustificadas?
@@ -434,7 +434,7 @@ Roteiro de apoio à análise. Não é checklist: responder só o pertinente.
 
 ---
 
-## Transparência
+# Transparência
 
 > **Status:** requisitos em revisão metodológica.
 >
@@ -469,6 +469,8 @@ A documentação normativa vigente do FIAR-Saúde permanece como referência sup
 As referências específicas de cada dimensão deverão ser atualizadas à medida que os respectivos requisitos forem estabilizados no processo atual de revisão metodológica.
 
 Para Justiça, a formulação dos quatro requisitos utilizada nesta versão corresponde ao conjunto estabilizado na revisão metodológica atual da dimensão.
+
+A fundamentação de **RC01–RC04** está registrada em `mapeamento_referencias.md`, com as fontes principais por requisito e a distinção entre fundamentação substantiva, apoio técnico-operacional e literatura científica. Os IDs das fontes e a cadeia de derivação remetem à planilha de reconstrução de Justiça, especialmente às abas `04_Extracoes`, `06_Requisitos_Candidatos` e `07_Sintese_Corpus_Justica`. As fontes apoiam a fundamentação dos requisitos; não tornam métricas, métodos ou artefatos específicos obrigatórios.
 
 ## Documentação operacional relacionada
 
