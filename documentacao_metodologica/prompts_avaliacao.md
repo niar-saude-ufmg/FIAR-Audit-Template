@@ -3,6 +3,20 @@
 Uso opcional, com assistente de IA. O resultado é rascunho: o avaliador do NIAR revisa e responde por ele.
 Antes de qualquer prompt, forneça ao assistente: guia_fluxo.md, guia_requisitos_avaliacao.md e os arquivos do ciclo.
 
+## Prompt 0. Preparação do repositório
+
+Use uma vez, em repositórios de projetos criados antes do fluxo atual. Forneça também a estrutura do repositório (por exemplo, a saída de `tree -L 3`) e seus arquivos.
+
+Compare o repositório do projeto com a estrutura atual do FIAR-Audit-Template e aponte:
+
+- o que precisa ser criado ou movido (entrada/, comunicacoes/, ciclos/Cxx/, relatorios/, decisoes/);
+- as fontes disponíveis: formulário, artefatos da equipe e comunicações;
+- os registros do fluxo anterior (pré-avaliação, registro de pendências, controle de artefatos, decisão institucional, avaliação por dimensão ou por requisito).
+
+- Registros do fluxo anterior são material de referência, sujeito a revisão, e não avaliação válida no fluxo atual. Uma informação factual que contenham só sustenta a avaliação se estiver em uma fonte verificável.
+- Pendências antigas não são reabertas automaticamente. Só voltam se atenderem às regras de pendência do guia_fluxo.md.
+- Não preencha a identificação nem avalie requisitos nesta etapa. Não altere os artefatos da equipe.
+
 ## Prompt 1. Delimitação
 
 Preencha ciclos/Cxx/identificacao.md seguindo guia_fluxo.md.
