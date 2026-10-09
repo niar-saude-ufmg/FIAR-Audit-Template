@@ -1,11 +1,28 @@
 # Prompts de apoio à avaliação
 
 Uso opcional, com assistente de IA. O resultado é rascunho: o avaliador do NIAR revisa e responde por ele.
-Antes de qualquer prompt, forneça ao assistente: guia_fluxo.md, guia_requisitos_avaliacao.md e os arquivos do ciclo.
+Os guias ficam nos repositórios públicos do FIAR. O repositório do projeto é privado: envie-o em ZIP. No início de cada chat, cole a mensagem de contexto abaixo e, depois, o prompt da etapa.
+
+## Contexto (colar no início do chat)
+
+```text
+Referências do FIAR-Saúde (repositórios públicos, branch main):
+
+- Guia do fluxo: https://raw.githubusercontent.com/niar-saude-ufmg/FIAR-Audit-Template/main/documentacao_metodologica/guia_fluxo.md
+- Guia de requisitos: https://raw.githubusercontent.com/niar-saude-ufmg/FIAR-Audit-Template/main/documentacao_metodologica/guia_requisitos_avaliacao.md
+- Modelos do ciclo: https://raw.githubusercontent.com/niar-saude-ufmg/FIAR-Audit-Template/main/ciclos/C01/identificacao.md e https://raw.githubusercontent.com/niar-saude-ufmg/FIAR-Audit-Template/main/ciclos/C01/avaliacao.md
+- Modelo de relatório ao Comitê: https://raw.githubusercontent.com/niar-saude-ufmg/FIAR-Audit-Template/main/relatorios/RCG-001.md
+- Regras do ciclo: https://raw.githubusercontent.com/niar-saude-ufmg/FIAR-Saude/main/docs/ciclo_avaliacao.md
+- Requisitos de Justiça: https://raw.githubusercontent.com/niar-saude-ufmg/FIAR-Saude/main/docs/avaliacao/justica.md
+
+Use essas versões. Se não conseguir abrir algum link, avise e não use outra versão. Ao registrar o guia de requisitos usado, informe a data da consulta.
+
+O repositório do projeto [nome] está no ZIP anexado. Use só as fontes dele e as referências acima.
+```
 
 ## Prompt 0. Preparação do repositório
 
-Uso: uma vez, em repositórios criados antes do fluxo atual. Forneça o repositório do projeto (por exemplo, em ZIP) e o guia_fluxo.md.
+Uso: uma vez, em repositórios criados antes do fluxo atual. Cole antes a mensagem de contexto, com o ZIP do repositório anexado.
 
 ```text
 Compare o repositório do projeto com a estrutura atual do FIAR-Audit-Template e aponte:
