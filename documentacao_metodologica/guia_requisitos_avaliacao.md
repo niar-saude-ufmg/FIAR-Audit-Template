@@ -95,6 +95,8 @@ O **Fairness Report** é uma possível fonte para consolidar análises específi
 
 A ausência de um Fairness Report, isoladamente, não demonstra insuficiência. A questão é se as evidências necessárias para responder ao requisito estão disponíveis em fontes adequadas.
 
+Quando as fontes ou a equipe confirmarem que a identificação ou a avaliação pedida por um requisito não foi feita, há evidência suficiente de não atendimento, e o resultado é Não atendido. Enquanto isso não estiver confirmado, a ausência de análise é registrada como ausência ou insuficiência de evidência (Inconclusivo, com pendência quando necessária). Em nenhum dos casos se conclui, só por isso, que os dados, os efeitos ou o acesso sejam inadequados. Uma fundamentação técnica ou clínica pode constituir avaliação, pois a análise não exige método único.
+
 ---
 
 ## RC01 — Grupos e populações
@@ -354,7 +356,7 @@ A avaliação não exige um método único de análise.
 - Problemas gerais de qualidade ou validade dos dados pertencem principalmente à dimensão Segurança quando não houver mecanismo plausível de efeito diferenciado entre grupos.
 - A pergunta “a variável-alvo mede ou representa adequadamente o fenômeno de interesse para os diferentes grupos?” exige fundamentação técnica ou clínica; não deve ser respondida apenas pela existência formal de uma variável-alvo.
 - Da mesma forma, a adequação do padrão de referência deve considerar se existem razões para sua validade ou confiabilidade variar entre grupos.
-- Ausência de análise específica deve ser registrada como ausência ou insuficiência de evidência, e não como conclusão automática de inadequação dos dados, da variável-alvo ou do padrão de referência. Se a equipe confirmar que a avaliação pedida pelo requisito não foi feita, há evidência suficiente de não atendimento, e o resultado é Não atendido.
+- Ausência de análise específica não leva à conclusão automática de inadequação dos dados, da variável-alvo ou do padrão de referência. O resultado do requisito nesse caso segue a Orientação transversal para Justiça.
 
 ---
 
