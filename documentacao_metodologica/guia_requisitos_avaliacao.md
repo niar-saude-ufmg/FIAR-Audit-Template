@@ -350,7 +350,7 @@ A avaliação não exige um método único de análise.
 
 - **Data Card** tende a fornecer composição, proveniência, seleção e limitações dos dados.
 - **Model Card** tende a fornecer informações sobre Tarefa, variável-alvo, desenvolvimento, avaliação e desempenho.
-- Quando utilizado o **Fairness Report** deve acrescentar as implicações desses elementos para os grupos considerados, sem repetir desnecessariamente a factualidade já documentada.
+- Quando utilizado, o **Fairness Report** deve acrescentar as implicações desses elementos para os grupos considerados, sem repetir desnecessariamente a factualidade já documentada.
 - Problemas gerais de qualidade ou validade dos dados pertencem principalmente à dimensão Segurança quando não houver mecanismo plausível de efeito diferenciado entre grupos.
 - A pergunta “a variável-alvo mede ou representa adequadamente o fenômeno de interesse para os diferentes grupos?” exige fundamentação técnica ou clínica; não deve ser respondida apenas pela existência formal de uma variável-alvo.
 - Da mesma forma, a adequação do padrão de referência deve considerar se existem razões para sua validade ou confiabilidade variar entre grupos.
@@ -434,7 +434,7 @@ Roteiro de apoio à análise. Não é checklist: responder só o pertinente.
 
 ---
 
-# Transparência
+## Transparência
 
 > **Status:** requisitos em revisão metodológica.
 >
@@ -470,7 +470,7 @@ As referências específicas de cada dimensão deverão ser atualizadas à medid
 
 Para Justiça, a formulação dos quatro requisitos utilizada nesta versão corresponde ao conjunto estabilizado na revisão metodológica atual da dimensão.
 
-A fundamentação de **RC01–RC04** está registrada em `mapeamento_referencias.md`, com as fontes principais por requisito e a distinção entre fundamentação substantiva, apoio técnico-operacional e literatura científica. Os IDs das fontes e a cadeia de derivação remetem à planilha de reconstrução de Justiça, especialmente às abas `04_Extracoes`, `06_Requisitos_Candidatos` e `07_Sintese_Corpus_Justica`. As fontes apoiam a fundamentação dos requisitos; não tornam métricas, métodos ou artefatos específicos obrigatórios.
+A fundamentação de **RC01–RC04** está registrada em [`docs/mapeamento_referencias.md`](https://github.com/niar-saude-ufmg/FIAR-Saude/blob/main/docs/mapeamento_referencias.md) do FIAR-Saude, com as fontes principais por requisito e a distinção entre fundamentação substantiva, apoio técnico-operacional e literatura científica. Os IDs das fontes e a cadeia de derivação remetem à planilha de reconstrução de Justiça ([`docs/fontes/derivacao_requisitos_justica.xlsm`](https://github.com/niar-saude-ufmg/FIAR-Saude/blob/main/docs/fontes/derivacao_requisitos_justica.xlsm), no FIAR-Saude), especialmente às abas `04_Extracoes`, `06_Requisitos_Candidatos` e `07_Sintese_Corpus_Justica`. As fontes apoiam a fundamentação dos requisitos; não tornam métricas, métodos ou artefatos específicos obrigatórios.
 
 ## Documentação operacional relacionada
 

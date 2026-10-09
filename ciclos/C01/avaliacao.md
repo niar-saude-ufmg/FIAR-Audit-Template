@@ -3,12 +3,12 @@
 Preenchida pelo NIAR-Saúde. Um bloco por requisito.
 O texto dos requisitos e o roteiro de análise estão no guia de requisitos; não copiar aqui.
 
-| Campo | Preenchimento |
-|---|---|
-| ID do ciclo | |
-| Avaliador(es) NIAR | |
-| Guia de requisitos usado (versão ou commit) | |
-| Dimensões avaliadas | Justiça |
+| Campo                                        | Preenchimento |
+| -------------------------------------------- | ------------- |
+| ID do ciclo                                  |               |
+| Avaliador(es) NIAR                           |               |
+| Guia de requisitos usado (versão ou commit) |               |
+| Dimensões avaliadas                         | Justiça      |
 
 Resultados possíveis: Atendido | Não atendido | Inconclusivo (registrar o motivo) | Não aplicável.
 Atendimento parcial ou prática apenas planejada não levam automaticamente a Inconclusivo: com evidência suficiente de não atendimento, o resultado é Não atendido.
@@ -28,7 +28,7 @@ Pendência aberta só torna o requisito Inconclusivo quando impede a conclusão.
 **Evidências**
 
 | Evidência | Fonte (ID da identificação, seção) |
-|---|---|
+| ---------- | -------------------------------------- |
 
 **Análise:**
 
@@ -38,14 +38,14 @@ Pendência aberta só torna o requisito Inconclusivo quando impede a conclusão.
 **Pendências**
 
 | ID | Questão | Destinatário (Equipe/NIAR) | Estado | Resolução e fonte |
-|---|---|---|---|---|
+| -- | -------- | --------------------------- | ------ | ------------------- |
 
 **Inconsistências** (só contradição confirmada, dentro de uma fonte ou entre fontes)
 
 | ID | Fonte 1 | Fonte 2 | Divergência | Estado |
-|---|---|---|---|---|
+| -- | ------- | ------- | ------------ | ------ |
 
-**Encaminhamento:** nenhum / recomendação do NIAR / questão para o Comitê
+**Encaminhamento:** nenhum / recomendação do NIAR / questão para o Comitê (marcar todos os que se aplicam)
 **Descrição:**
 
 ---
@@ -60,7 +60,7 @@ Pendência aberta só torna o requisito Inconclusivo quando impede a conclusão.
 **Evidências**
 
 | Evidência | Fonte (ID da identificação, seção) |
-|---|---|
+| ---------- | -------------------------------------- |
 
 **Análise:**
 
@@ -70,14 +70,14 @@ Pendência aberta só torna o requisito Inconclusivo quando impede a conclusão.
 **Pendências**
 
 | ID | Questão | Destinatário (Equipe/NIAR) | Estado | Resolução e fonte |
-|---|---|---|---|---|
+| -- | -------- | --------------------------- | ------ | ------------------- |
 
 **Inconsistências** (só contradição confirmada, dentro de uma fonte ou entre fontes)
 
 | ID | Fonte 1 | Fonte 2 | Divergência | Estado |
-|---|---|---|---|---|
+| -- | ------- | ------- | ------------ | ------ |
 
-**Encaminhamento:** nenhum / recomendação do NIAR / questão para o Comitê
+**Encaminhamento:** nenhum / recomendação do NIAR / questão para o Comitê (marcar todos os que se aplicam)
 **Descrição:**
 
 ---
@@ -92,7 +92,7 @@ Pendência aberta só torna o requisito Inconclusivo quando impede a conclusão.
 **Evidências**
 
 | Evidência | Fonte (ID da identificação, seção) |
-|---|---|
+| ---------- | -------------------------------------- |
 
 **Análise:**
 
@@ -102,14 +102,14 @@ Pendência aberta só torna o requisito Inconclusivo quando impede a conclusão.
 **Pendências**
 
 | ID | Questão | Destinatário (Equipe/NIAR) | Estado | Resolução e fonte |
-|---|---|---|---|---|
+| -- | -------- | --------------------------- | ------ | ------------------- |
 
 **Inconsistências** (só contradição confirmada, dentro de uma fonte ou entre fontes)
 
 | ID | Fonte 1 | Fonte 2 | Divergência | Estado |
-|---|---|---|---|---|
+| -- | ------- | ------- | ------------ | ------ |
 
-**Encaminhamento:** nenhum / recomendação do NIAR / questão para o Comitê
+**Encaminhamento:** nenhum / recomendação do NIAR / questão para o Comitê (marcar todos os que se aplicam)
 **Descrição:**
 
 ---
@@ -124,7 +124,7 @@ Pendência aberta só torna o requisito Inconclusivo quando impede a conclusão.
 **Evidências**
 
 | Evidência | Fonte (ID da identificação, seção) |
-|---|---|
+| ---------- | -------------------------------------- |
 
 **Análise:**
 
@@ -134,14 +134,14 @@ Pendência aberta só torna o requisito Inconclusivo quando impede a conclusão.
 **Pendências**
 
 | ID | Questão | Destinatário (Equipe/NIAR) | Estado | Resolução e fonte |
-|---|---|---|---|---|
+| -- | -------- | --------------------------- | ------ | ------------------- |
 
 **Inconsistências** (só contradição confirmada, dentro de uma fonte ou entre fontes)
 
 | ID | Fonte 1 | Fonte 2 | Divergência | Estado |
-|---|---|---|---|---|
+| -- | ------- | ------- | ------------ | ------ |
 
-**Encaminhamento:** nenhum / recomendação do NIAR / questão para o Comitê
+**Encaminhamento:** nenhum / recomendação do NIAR / questão para o Comitê (marcar todos os que se aplicam)
 **Descrição:**
 
 ---
@@ -149,8 +149,8 @@ Pendência aberta só torna o requisito Inconclusivo quando impede a conclusão.
 ## Síntese do ciclo
 
 | Requisito | Resultado | Motivo | Encaminhamento |
-|---|---|---|---|
-| RC01 | | | |
-| RC02 | | | |
-| RC03 | | | |
-| RC04 | | | |
+| --------- | --------- | ------ | -------------- |
+| RC01      |           |        |                |
+| RC02      |           |        |                |
+| RC03      |           |        |                |
+| RC04      |           |        |                |
