@@ -109,6 +109,8 @@ Verificar se os grupos e populações relevantes para a análise de Justiça for
 
 O requisito não busca simplesmente listar atributos existentes nos dados. A seleção deve ser justificada pela possibilidade de efeitos diferenciados, exclusão de benefícios, limitações de representação, características clínicas, sociais, territoriais, institucionais ou outras condições relevantes para a Tarefa e o Contexto.
 
+A identificação dos grupos pode se apoiar no Contexto de Uso, na literatura, na documentação dos dados e no conhecimento clínico ou institucional. Não depende de uma análise prévia de desempenho. Quando relevante para o contexto, considere também combinações de características, como raça/cor e sexo. Os grupos relevantes devem ser identificados mesmo quando os dados disponíveis não permitirem analisá-los.
+
 ### Aspectos a considerar na aplicabilidade
 
 - RC01 é aplicável quando a Tarefa, no Contexto de Uso avaliado, pode produzir efeitos ou benefícios que incidam sobre pessoas, grupos ou populações.
@@ -204,15 +206,15 @@ A impossibilidade de realizar determinada comparação por ausência ou insufici
 
 Roteiro de apoio à análise. Não é checklist: responder só o pertinente.
 
-- O desempenho ou outros efeitos relevantes e observáveis no Contexto de Uso avaliado foram analisados para os grupos identificados em RC01?
+- Para os grupos identificados em RC01, foram analisados o desempenho da Tarefa ou outros efeitos relevantes observáveis no Contexto de Uso avaliado?
 - Quais métricas, análises ou outros critérios foram utilizados?
 - Foram encontradas diferenças de desempenho, erro ou outros efeitos entre os grupos?
 - Foram analisados tipos de erro relevantes, como falsos positivos e falsos negativos, quando pertinentes à Tarefa?
 - Existem diferenças nas decisões ou consequências decorrentes dos resultados ou do uso da Tarefa, quando observáveis no Contexto de Uso avaliado?
 - As diferenças encontradas foram interpretadas considerando seu significado clínico, técnico ou operacional?
 - Quando foram encontradas diferenças, foi analisado se elas são justificadas ou injustificadas? Com base em quê?
-- Alguma ação para evitar, reduzir ou tratar diferenças consideradas problemáticas foi considerada ou realizada?
-- Permanecem diferenças ou riscos residuais relevantes para os grupos identificados?
+- Quais ações para evitar, reduzir ou tratar diferenças consideradas problemáticas foram consideradas? Quais chegaram a ser realizadas, se houver?
+- Considerando as ações realizadas, se houver, permanecem diferenças ou riscos relevantes para os grupos identificados?
 
 ### Exemplos de evidências pertinentes
 
@@ -263,6 +265,8 @@ Verificar se características dos dados, das variáveis-alvo e dos padrões de r
 
 RC03 não substitui a avaliação geral de qualidade de dados. Em Justiça, o foco é verificar se existe mecanismo plausível de efeito diferenciado entre grupos.
 
+**Variável-alvo** é o resultado que o sistema procura prever. **Padrão de referência** é a informação ou o procedimento usado para estabelecer o resultado considerado correto no desenvolvimento ou na avaliação do sistema. Exemplos incluem diagnóstico confirmado por especialista, resultado de exame ou desfecho registrado, quando utilizados com essa finalidade. Não se refere à métrica nem à meta de desempenho do modelo.
+
 ### Aspectos a considerar na aplicabilidade
 
 - RC03 é aplicável quando o desenvolvimento ou a avaliação da Tarefa utiliza dados, variáveis-alvo ou padrões de referência cuja adequação possa ser relevante para os grupos identificados em RC01.
@@ -274,7 +278,7 @@ RC03 não substitui a avaliação geral de qualidade de dados. Em Justiça, o fo
 ### Informações factuais que podem ser necessárias
 
 - representação dos grupos nos dados de desenvolvimento e avaliação;
-- grupos com baixa representação ou informação ausente;
+- grupos com poucos registros ou com informações ausentes ou insuficientes para sua análise;
 - origem e processo de seleção dos dados;
 - variável ou variáveis-alvo;
 - padrões de referência utilizados em cada etapa;
@@ -298,7 +302,7 @@ Roteiro de apoio à análise. Não é checklist: responder só o pertinente. As 
 - A variável-alvo mede ou representa adequadamente o fenômeno de interesse para os diferentes grupos?
 - A variável-alvo pode incorporar ou refletir desigualdades preexistentes relevantes?
 - Há razões para que algum padrão de referência seja menos adequado ou válido para determinados grupos?
-- Alguma dessas condições pode plausivelmente contribuir para diferenças nos efeitos avaliados em RC02?
+- Alguma das limitações ou inadequações identificadas nos dados, nas variáveis-alvo ou nos padrões de referência pode contribuir para diferenças nos efeitos avaliados em RC02?
 
 ### Exemplos de evidências pertinentes
 
@@ -340,7 +344,7 @@ A resposta pode considerar, conforme pertinente:
 - cobertura e seleção dos dados;
 - mecanismos plausíveis pelos quais uma dessas condições poderia produzir efeitos diferenciados.
 
-A checklist não exige um método único de análise.
+A avaliação não exige um método único de análise.
 
 ### Observações metodológicas
 
@@ -366,6 +370,8 @@ Verificar se a forma concreta pela qual a Tarefa é disponibilizada no Contexto 
 
 O requisito trata de desigualdades associadas à disponibilização da Tarefa, e não de diferenças de desempenho já analisadas em RC02.
 
+Considere quem pode utilizar a Tarefa, onde e por quais meios, além das condições que podem limitar seus benefícios para as populações afetadas.
+
 ### Aspectos a considerar na aplicabilidade
 
 - RC04 é aplicável quando, no Contexto de Uso avaliado, existe alguma forma de disponibilização da Tarefa pela qual pessoas, grupos ou populações possam acessar ou se beneficiar de seu uso.
@@ -386,14 +392,14 @@ Um uso futuro pretendido que ainda não integra o Contexto de Uso avaliado não 
 
 Roteiro de apoio à análise. Não é checklist: responder só o pertinente.
 
-- Como a Tarefa é disponibilizada no Contexto de Uso avaliado?
+- Como a Tarefa é disponibilizada aos usuários e serviços no Contexto de Uso avaliado: onde, por quais meios e para quem?
 - Existem requisitos de infraestrutura, tecnologia ou recursos para acessar ou utilizar a Tarefa?
-- Idioma, conectividade, localização, custo, letramento ou outras condições podem limitar a possibilidade de algum grupo acessar ou se beneficiar da Tarefa?
-- Existem diferenças entre locais, serviços ou populações quanto à disponibilidade da Tarefa?
+- Idioma, conectividade, localização, custo, letramento ou outras condições podem limitar a possibilidade de algum grupo acessar ou se beneficiar da Tarefa? Considere tanto as condições dos pacientes quanto as dos profissionais e serviços que utilizam o sistema.
+- Existem diferenças entre locais, serviços ou populações quanto à oferta da Tarefa, isto é, onde ou para quem ela está disponível?
 - Algum grupo identificado em RC01 possui menor possibilidade de se beneficiar da disponibilização da Tarefa?
-- As desigualdades identificadas foram analisadas quanto à sua justificabilidade?
-- Foram consideradas medidas ou alternativas para evitar, reduzir ou tratar barreiras identificadas?
-- Permanecem limitações ou desigualdades residuais de acesso ou possibilidade de benefício?
+- Foi analisado se as desigualdades de acesso ou de possibilidade de benefício identificadas são justificadas ou injustificadas?
+- Foram consideradas medidas ou alternativas para evitar, reduzir ou tratar as barreiras de acesso ou de possibilidade de benefício identificadas?
+- Considerando as medidas adotadas, se houver, permanecem limitações ou desigualdades de acesso ou de possibilidade de benefício?
 
 ### Exemplos de evidências pertinentes
 
@@ -414,7 +420,7 @@ Roteiro de apoio à análise. Não é checklist: responder só o pertinente.
 - identificação de requisitos de acesso ou uso;
 - análise de barreiras entre grupos, serviços ou localidades;
 - comparação da possibilidade de benefício entre os grupos de RC01;
-- análise da justificabilidade de desigualdades de acesso;
+- análise da justificabilidade de desigualdades de acesso ou de possibilidade de benefício;
 - análise de medidas consideradas para reduzir barreiras;
 - análise de limitações ou desigualdades residuais.
 
