@@ -1,4 +1,3 @@
-
 # Comunicações do Projeto
 
 Este diretório registra comunicações formais ou relevantes entre o NIAR-Saúde e a equipe do projeto ao longo do ciclo FIAR-Saúde.
@@ -19,7 +18,7 @@ Podem ser registrados aqui, quando aplicável:
 - Não duplicar integralmente conteúdos já registrados em outros documentos quando uma referência for suficiente.
 - Quando uma comunicação estiver relacionada a uma pendência ou inconsistência, indicar o respectivo ID.
 - Respostas recebidas da equipe devem ser verificadas pelo NIAR-Saúde antes de serem consideradas suficientes para resolução de pendência.
-- Comunicações não substituem os registros específicos de pendências, inconsistências, identificação da avaliação ou histórico de validação.
+- Comunicações não substituem os registros do ciclo (`ciclos/Cxx/identificacao.md` e `ciclos/Cxx/avaliacao.md`), onde ficam pendências e inconsistências.
 
 ## Convenção de nomes
 

@@ -227,7 +227,7 @@ Se não for possível determinar, registrar pendência de aplicabilidade e resul
 
 ### Roteiro de perguntas/Checklist do avaliador
 
-Percorrer todos os itens e registrar a situação de cada um na tabela Checklist de `ciclos/Cxx/avaliacao.md`: Respondido (com a fonte), Não localizado ou Não pertinente (com o motivo). Os itens orientam a verificação: não são requisitos, não recebem pontuação, e um item Não localizado não gera pendência automaticamente; aplicam-se as regras de pendência. O resultado é atribuído ao requisito, não aos itens.
+Percorrer todos os itens e registrar a situação de cada um na tabela Checklist de `ciclos/Cxx/avaliacao.md`: Respondido (com a fonte), Não localizado ou Não pertinente (com o motivo). Os itens orientam a verificação: não são requisitos, não recebem pontuação, e um item Não localizado não gera pendência automaticamente; aplicam-se as regras de pendência. O resultado é atribuído ao requisito, não aos itens. Se o requisito for Não aplicável, a tabela não é preenchida; registra-se só a justificativa de não aplicabilidade.
 
 - **RC01.1** Quais grupos ou populações podem ser afetados de forma diferente pela Tarefa?
 - **RC01.2** Por que esses grupos ou populações foram considerados relevantes para esta Tarefa e este Contexto de Uso?
@@ -303,7 +303,7 @@ A impossibilidade de realizar determinada comparação por ausência ou insufici
 
 ### Roteiro de perguntas/Checklist do avaliador
 
-Percorrer todos os itens e registrar a situação de cada um na tabela Checklist de `ciclos/Cxx/avaliacao.md`: Respondido (com a fonte), Não localizado ou Não pertinente (com o motivo). Os itens orientam a verificação: não são requisitos, não recebem pontuação, e um item Não localizado não gera pendência automaticamente; aplicam-se as regras de pendência. O resultado é atribuído ao requisito, não aos itens.
+Percorrer todos os itens e registrar a situação de cada um na tabela Checklist de `ciclos/Cxx/avaliacao.md`: Respondido (com a fonte), Não localizado ou Não pertinente (com o motivo). Os itens orientam a verificação: não são requisitos, não recebem pontuação, e um item Não localizado não gera pendência automaticamente; aplicam-se as regras de pendência. O resultado é atribuído ao requisito, não aos itens. Se o requisito for Não aplicável, a tabela não é preenchida; registra-se só a justificativa de não aplicabilidade.
 
 - **RC02.1** Para os grupos identificados em RC01, foram analisados o desempenho da Tarefa ou outros efeitos relevantes observáveis no Contexto de Uso avaliado?
 - **RC02.2** Quais métricas, análises ou outros critérios foram utilizados?
@@ -394,7 +394,7 @@ Ausência de informação sobre os dados, a variável-alvo ou o padrão de refer
 
 ### Roteiro de perguntas/Checklist do avaliador
 
-Percorrer todos os itens e registrar a situação de cada um na tabela Checklist de `ciclos/Cxx/avaliacao.md`: Respondido (com a fonte), Não localizado ou Não pertinente (com o motivo). Os itens orientam a verificação: não são requisitos, não recebem pontuação, e um item Não localizado não gera pendência automaticamente; aplicam-se as regras de pendência. O resultado é atribuído ao requisito, não aos itens. As informações factuais estão na seção anterior; o primeiro item registra onde foram localizadas.
+Percorrer todos os itens e registrar a situação de cada um na tabela Checklist de `ciclos/Cxx/avaliacao.md`: Respondido (com a fonte), Não localizado ou Não pertinente (com o motivo). Os itens orientam a verificação: não são requisitos, não recebem pontuação, e um item Não localizado não gera pendência automaticamente; aplicam-se as regras de pendência. O resultado é atribuído ao requisito, não aos itens. Se o requisito for Não aplicável, a tabela não é preenchida; registra-se só a justificativa de não aplicabilidade. As informações factuais estão na seção anterior; o primeiro item registra onde foram localizadas.
 
 - **RC03.1** As informações factuais de RC03 listadas no guia foram localizadas? Indicar as fontes.
 - **RC03.2** A origem ou o processo de seleção dos dados pode afetar alguns dos grupos identificados de forma diferente?
@@ -491,7 +491,7 @@ Um uso futuro pretendido que ainda não integra o Contexto de Uso avaliado não 
 
 ### Roteiro de perguntas/Checklist do avaliador
 
-Percorrer todos os itens e registrar a situação de cada um na tabela Checklist de `ciclos/Cxx/avaliacao.md`: Respondido (com a fonte), Não localizado ou Não pertinente (com o motivo). Os itens orientam a verificação: não são requisitos, não recebem pontuação, e um item Não localizado não gera pendência automaticamente; aplicam-se as regras de pendência. O resultado é atribuído ao requisito, não aos itens.
+Percorrer todos os itens e registrar a situação de cada um na tabela Checklist de `ciclos/Cxx/avaliacao.md`: Respondido (com a fonte), Não localizado ou Não pertinente (com o motivo). Os itens orientam a verificação: não são requisitos, não recebem pontuação, e um item Não localizado não gera pendência automaticamente; aplicam-se as regras de pendência. O resultado é atribuído ao requisito, não aos itens. Se o requisito for Não aplicável, a tabela não é preenchida; registra-se só a justificativa de não aplicabilidade.
 
 - **RC04.1** Como a Tarefa é disponibilizada aos usuários e serviços no Contexto de Uso avaliado: onde, por quais meios e para quem?
 - **RC04.2** Existem requisitos de infraestrutura, tecnologia ou recursos para acessar ou utilizar a Tarefa?

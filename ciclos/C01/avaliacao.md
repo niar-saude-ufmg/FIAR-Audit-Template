@@ -30,7 +30,6 @@ Pendência aberta só torna o requisito Inconclusivo quando impede a conclusão.
 | Evidência | Fonte (ID da identificação, seção) |
 | ---------- | -------------------------------------- |
 
-
 **Checklist** (itens do guia; orientam a verificação, não recebem pontuação; Não localizado não gera pendência automaticamente)
 
 | Item   | Pergunta                                                                                                                                     | Situação | Fonte ou motivo |
@@ -42,7 +41,7 @@ Pendência aberta só torna o requisito Inconclusivo quando impede a conclusão.
 | RC01.5 | Existem grupos potencialmente sujeitos a exclusão dos benefícios da Tarefa? (Apenas identificar; a análise de acesso é feita em RC04.)   |            |                 |
 | RC01.6 | Há limitações ou incertezas na identificação dos grupos e populações relevantes?                                                      |            |                 |
 
-Situação: Respondido (com fonte) | Não localizado | Não pertinente (com motivo)
+Situação: Respondido (com fonte) | Não localizado | Não pertinente (com motivo). Se o requisito for Não aplicável, substitua a tabela pela linha: **Checklist:** não preenchido, porque o requisito é Não aplicável.
 
 **Análise:**
 
@@ -76,7 +75,6 @@ Situação: Respondido (com fonte) | Não localizado | Não pertinente (com moti
 | Evidência | Fonte (ID da identificação, seção) |
 | ---------- | -------------------------------------- |
 
-
 **Checklist** (itens do guia; orientam a verificação, não recebem pontuação; Não localizado não gera pendência automaticamente)
 
 | Item   | Pergunta                                                                                                                                                      | Situação | Fonte ou motivo |
@@ -91,7 +89,7 @@ Situação: Respondido (com fonte) | Não localizado | Não pertinente (com moti
 | RC02.8 | Foram consideradas ações para evitar, reduzir ou tratar diferenças consideradas problemáticas? Se sim, quais? Quais chegaram a ser realizadas, se houver? |            |                 |
 | RC02.9 | Considerando as ações realizadas, se houver, permanecem diferenças ou riscos relevantes para os grupos identificados?                                      |            |                 |
 
-Situação: Respondido (com fonte) | Não localizado | Não pertinente (com motivo)
+Situação: Respondido (com fonte) | Não localizado | Não pertinente (com motivo). Se o requisito for Não aplicável, substitua a tabela pela linha: **Checklist:** não preenchido, porque o requisito é Não aplicável.
 
 **Análise:**
 
@@ -125,7 +123,6 @@ Situação: Respondido (com fonte) | Não localizado | Não pertinente (com moti
 | Evidência | Fonte (ID da identificação, seção) |
 | ---------- | -------------------------------------- |
 
-
 **Checklist** (itens do guia; orientam a verificação, não recebem pontuação; Não localizado não gera pendência automaticamente)
 
 | Item   | Pergunta                                                                                                                                                                              | Situação | Fonte ou motivo |
@@ -139,7 +136,7 @@ Situação: Respondido (com fonte) | Não localizado | Não pertinente (com moti
 | RC03.7 | Alguma das limitações ou inadequações identificadas nos dados, nas variáveis-alvo ou nos padrões de referência pode contribuir para diferenças nos efeitos avaliados em RC02? |            |                 |
 | RC03.8 | Quando foram identificadas limitações ou inadequações relevantes para algum grupo, há decisão justificada sobre seu tratamento?                                                 |            |                 |
 
-Situação: Respondido (com fonte) | Não localizado | Não pertinente (com motivo)
+Situação: Respondido (com fonte) | Não localizado | Não pertinente (com motivo). Se o requisito for Não aplicável, substitua a tabela pela linha: **Checklist:** não preenchido, porque o requisito é Não aplicável.
 
 **Análise:**
 
@@ -173,7 +170,6 @@ Situação: Respondido (com fonte) | Não localizado | Não pertinente (com moti
 | Evidência | Fonte (ID da identificação, seção) |
 | ---------- | -------------------------------------- |
 
-
 **Checklist** (itens do guia; orientam a verificação, não recebem pontuação; Não localizado não gera pendência automaticamente)
 
 | Item   | Pergunta                                                                                                                                                                                                                                                                   | Situação | Fonte ou motivo |
@@ -187,7 +183,7 @@ Situação: Respondido (com fonte) | Não localizado | Não pertinente (com moti
 | RC04.7 | Foram consideradas medidas ou alternativas para evitar, reduzir ou tratar as barreiras de acesso ou de possibilidade de benefício identificadas?                                                                                                                          |            |                 |
 | RC04.8 | Considerando as medidas adotadas, se houver, permanecem limitações ou desigualdades de acesso ou de possibilidade de benefício?                                                                                                                                         |            |                 |
 
-Situação: Respondido (com fonte) | Não localizado | Não pertinente (com motivo)
+Situação: Respondido (com fonte) | Não localizado | Não pertinente (com motivo). Se o requisito for Não aplicável, substitua a tabela pela linha: **Checklist:** não preenchido, porque o requisito é Não aplicável.
 
 **Análise:**
 
