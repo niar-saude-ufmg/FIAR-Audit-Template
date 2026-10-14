@@ -97,6 +97,8 @@ A ausência de um Fairness Report, isoladamente, não demonstra insuficiência. 
 
 Quando as fontes ou a equipe confirmarem que a identificação ou a avaliação pedida por um requisito não foi feita, há evidência suficiente de não atendimento, e o resultado é Não atendido. Enquanto isso não estiver confirmado, a ausência de análise é registrada como ausência ou insuficiência de evidência (Inconclusivo, com pendência quando necessária). Em nenhum dos casos se conclui, só por isso, que os dados, os efeitos ou o acesso sejam inadequados. Uma fundamentação técnica ou clínica pode constituir avaliação, pois a análise não exige método único.
 
+A identificação de diferença injustificada ou de condição relevante não é suficiente para considerar RC02, RC03 ou RC04 atendido. Deve existir decisão justificada sobre o tratamento do achado, que pode ser técnico, processual ou institucional, envolver restrição de uso ou, quando pertinente, a decisão de não utilizar a Tarefa. (Derivação: 06_Requisitos_Candidatos, TRANSVERSAL-JUS; 07_Sintese_Corpus_Justica, Tratamento dos achados.)
+
 ---
 
 ## RC01 — Grupos e populações
@@ -305,6 +307,7 @@ Roteiro de apoio à análise. Não é checklist: responder só o pertinente. As 
 - A variável-alvo pode incorporar ou refletir desigualdades preexistentes relevantes?
 - Há razões para que algum padrão de referência seja menos adequado ou válido para determinados grupos?
 - Alguma das limitações ou inadequações identificadas nos dados, nas variáveis-alvo ou nos padrões de referência pode contribuir para diferenças nos efeitos avaliados em RC02?
+- Quando foram identificadas limitações ou inadequações relevantes para algum grupo, há decisão justificada sobre seu tratamento?
 
 ### Exemplos de evidências pertinentes
 
