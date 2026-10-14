@@ -8,8 +8,7 @@ Os guias ficam nos repositórios públicos do FIAR. O repositório do projeto é
 ```text
 Referências do FIAR-Saúde (repositórios públicos, branch main):
 
-- Guia do fluxo: https://raw.githubusercontent.com/niar-saude-ufmg/FIAR-Audit-Template/main/documentacao_metodologica/guia_fluxo.md
-- Guia de requisitos: https://raw.githubusercontent.com/niar-saude-ufmg/FIAR-Audit-Template/main/documentacao_metodologica/guia_requisitos_avaliacao.md
+- Guia de avaliação (fluxo e requisitos): https://raw.githubusercontent.com/niar-saude-ufmg/FIAR-Audit-Template/main/documentacao_metodologica/guia_requisitos_avaliacao.md
 - Modelos do ciclo: https://raw.githubusercontent.com/niar-saude-ufmg/FIAR-Audit-Template/main/ciclos/C01/identificacao.md e https://raw.githubusercontent.com/niar-saude-ufmg/FIAR-Audit-Template/main/ciclos/C01/avaliacao.md
 - Modelo de relatório ao Comitê: https://raw.githubusercontent.com/niar-saude-ufmg/FIAR-Audit-Template/main/relatorios/RCG-001.md
 - Regras do ciclo: https://raw.githubusercontent.com/niar-saude-ufmg/FIAR-Saude/main/docs/ciclo_avaliacao.md
@@ -39,7 +38,7 @@ Se o repositório já estiver na estrutura atual, informe isso e pare. Não revi
 ## Prompt 1. Delimitação
 
 ```text
-Preencha ciclos/Cxx/identificacao.md seguindo guia_fluxo.md.
+Preencha ciclos/Cxx/identificacao.md seguindo a parte "Fluxo do ciclo" de guia_requisitos_avaliacao.md.
 
 - Use só as fontes fornecidas neste ciclo. Registre cada uma na seção 2 (F-01, F-02...) e cite o ID em cada informação.
 - Por padrão, o Contexto de Uso é o atual. Avalie um uso pretendido só se a delimitação o incluir explicitamente; registre à parte o uso pretendido que não for objeto do ciclo.

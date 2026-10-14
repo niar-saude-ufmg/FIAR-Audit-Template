@@ -127,7 +127,6 @@
     },
     "documentacao_metodologica": {
       "required_files": [
-        "guia_fluxo.md",
         "guia_requisitos_avaliacao.md",
         "prompts_avaliacao.md",
         "apoio_roteiro_entrevista.md"
