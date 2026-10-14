@@ -225,16 +225,16 @@ A identificação dos grupos pode **se apoiar no Contexto de Uso, na literatura,
 
 Se não for possível determinar, registrar pendência de aplicabilidade e resultado Inconclusivo, com o motivo "aplicabilidade não determinada". Não presumir Não aplicável.
 
-### Roteiro de perguntas
+### Roteiro de perguntas/Checklist do avaliador
 
-Roteiro de apoio à análise. Não é checklist: responder só o pertinente.
+Percorrer todos os itens e registrar a situação de cada um na tabela Checklist de `ciclos/Cxx/avaliacao.md`: Respondido (com a fonte), Não localizado ou Não pertinente (com o motivo). Os itens orientam a verificação: não são requisitos, não recebem pontuação, e um item Não localizado não gera pendência automaticamente; aplicam-se as regras de pendência. O resultado é atribuído ao requisito, não aos itens.
 
-- Quais grupos ou populações podem ser afetados de forma diferente pela Tarefa?
-- Por que esses grupos ou populações foram considerados relevantes para esta Tarefa e este Contexto de Uso?
-- A identificação decorre do Contexto de Uso e da população pertinente à avaliação, e não apenas dos atributos disponíveis nos dados?
-- Existem grupos potencialmente relevantes que não podem ser analisados com os dados disponíveis?
-- Existem grupos potencialmente sujeitos a exclusão dos benefícios da Tarefa? (Apenas identificar; a análise de acesso é feita em RC04.)
-- Há limitações ou incertezas na identificação dos grupos e populações relevantes?
+- **RC01.1** Quais grupos ou populações podem ser afetados de forma diferente pela Tarefa?
+- **RC01.2** Por que esses grupos ou populações foram considerados relevantes para esta Tarefa e este Contexto de Uso?
+- **RC01.3** A identificação decorre do Contexto de Uso e da população pertinente à avaliação, e não apenas dos atributos disponíveis nos dados?
+- **RC01.4** Existem grupos potencialmente relevantes que não podem ser analisados com os dados disponíveis?
+- **RC01.5** Existem grupos potencialmente sujeitos a exclusão dos benefícios da Tarefa? (Apenas identificar; a análise de acesso é feita em RC04.)
+- **RC01.6** Há limitações ou incertezas na identificação dos grupos e populações relevantes?
 
 ### Exemplos de evidências pertinentes
 
@@ -301,19 +301,19 @@ Se não for possível determinar, registrar pendência de aplicabilidade e resul
 
 A impossibilidade de realizar determinada comparação por ausência ou insuficiência de dados não torna RC02 não aplicável; o resultado é Inconclusivo.
 
-### Roteiro de perguntas
+### Roteiro de perguntas/Checklist do avaliador
 
-Roteiro de apoio à análise. Não é checklist: responder só o pertinente.
+Percorrer todos os itens e registrar a situação de cada um na tabela Checklist de `ciclos/Cxx/avaliacao.md`: Respondido (com a fonte), Não localizado ou Não pertinente (com o motivo). Os itens orientam a verificação: não são requisitos, não recebem pontuação, e um item Não localizado não gera pendência automaticamente; aplicam-se as regras de pendência. O resultado é atribuído ao requisito, não aos itens.
 
-- Para os grupos identificados em RC01, foram analisados o desempenho da Tarefa ou outros efeitos relevantes observáveis no Contexto de Uso avaliado?
-- Quais métricas, análises ou outros critérios foram utilizados?
-- Foram encontradas diferenças de desempenho, erro ou outros efeitos entre os grupos?
-- Foram analisados tipos de erro relevantes, como falsos positivos e falsos negativos, quando pertinentes à Tarefa?
-- Existem diferenças nas decisões ou consequências decorrentes dos resultados ou do uso da Tarefa, quando observáveis no Contexto de Uso avaliado?
-- As diferenças encontradas foram interpretadas considerando seu significado clínico, técnico ou operacional?
-- Quando foram encontradas diferenças, foi analisado se elas são justificadas ou injustificadas? Com base em quê?
-- Foram consideradas ações para evitar, reduzir ou tratar diferenças consideradas problemáticas? Se sim, quais? Quais chegaram a ser realizadas, se houver?
-- Considerando as ações realizadas, se houver, permanecem diferenças ou riscos relevantes para os grupos identificados?
+- **RC02.1** Para os grupos identificados em RC01, foram analisados o desempenho da Tarefa ou outros efeitos relevantes observáveis no Contexto de Uso avaliado?
+- **RC02.2** Quais métricas, análises ou outros critérios foram utilizados?
+- **RC02.3** Foram encontradas diferenças de desempenho, erro ou outros efeitos entre os grupos?
+- **RC02.4** Foram analisados tipos de erro relevantes, como falsos positivos e falsos negativos, quando pertinentes à Tarefa?
+- **RC02.5** Existem diferenças nas decisões ou consequências decorrentes dos resultados ou do uso da Tarefa, quando observáveis no Contexto de Uso avaliado?
+- **RC02.6** As diferenças encontradas foram interpretadas considerando seu significado clínico, técnico ou operacional?
+- **RC02.7** Quando foram encontradas diferenças, foi analisado se elas são justificadas ou injustificadas? Com base em quê?
+- **RC02.8** Foram consideradas ações para evitar, reduzir ou tratar diferenças consideradas problemáticas? Se sim, quais? Quais chegaram a ser realizadas, se houver?
+- **RC02.9** Considerando as ações realizadas, se houver, permanecem diferenças ou riscos relevantes para os grupos identificados?
 
 ### Exemplos de evidências pertinentes
 
@@ -392,17 +392,18 @@ Se não for possível determinar, registrar pendência de aplicabilidade e resul
 
 Ausência de informação sobre os dados, a variável-alvo ou o padrão de referência não justifica Não aplicável.
 
-### Roteiro de perguntas
+### Roteiro de perguntas/Checklist do avaliador
 
-Roteiro de apoio à análise. Não é checklist: responder só o pertinente. As informações factuais estão na seção anterior; aqui ficam as perguntas de análise para Justiça.
+Percorrer todos os itens e registrar a situação de cada um na tabela Checklist de `ciclos/Cxx/avaliacao.md`: Respondido (com a fonte), Não localizado ou Não pertinente (com o motivo). Os itens orientam a verificação: não são requisitos, não recebem pontuação, e um item Não localizado não gera pendência automaticamente; aplicam-se as regras de pendência. O resultado é atribuído ao requisito, não aos itens. As informações factuais estão na seção anterior; o primeiro item registra onde foram localizadas.
 
-- A origem ou o processo de seleção dos dados pode afetar alguns dos grupos identificados de forma diferente?
-- Há razões para considerar os dados inadequados para algum dos grupos identificados?
-- A variável-alvo mede ou representa adequadamente o fenômeno de interesse para os diferentes grupos?
-- A variável-alvo pode incorporar ou refletir desigualdades preexistentes relevantes?
-- Há razões para que algum padrão de referência seja menos adequado ou válido para determinados grupos?
-- Alguma das limitações ou inadequações identificadas nos dados, nas variáveis-alvo ou nos padrões de referência pode contribuir para diferenças nos efeitos avaliados em RC02?
-- Quando foram identificadas limitações ou inadequações relevantes para algum grupo, há decisão justificada sobre seu tratamento?
+- **RC03.1** As informações factuais de RC03 listadas no guia foram localizadas? Indicar as fontes.
+- **RC03.2** A origem ou o processo de seleção dos dados pode afetar alguns dos grupos identificados de forma diferente?
+- **RC03.3** Há razões para considerar os dados inadequados para algum dos grupos identificados?
+- **RC03.4** A variável-alvo mede ou representa adequadamente o fenômeno de interesse para os diferentes grupos?
+- **RC03.5** A variável-alvo pode incorporar ou refletir desigualdades preexistentes relevantes?
+- **RC03.6** Há razões para que algum padrão de referência seja menos adequado ou válido para determinados grupos?
+- **RC03.7** Alguma das limitações ou inadequações identificadas nos dados, nas variáveis-alvo ou nos padrões de referência pode contribuir para diferenças nos efeitos avaliados em RC02?
+- **RC03.8** Quando foram identificadas limitações ou inadequações relevantes para algum grupo, há decisão justificada sobre seu tratamento?
 
 ### Exemplos de evidências pertinentes
 
@@ -488,18 +489,18 @@ Se não for possível determinar, registrar pendência de aplicabilidade e resul
 
 Um uso futuro pretendido que ainda não integra o Contexto de Uso avaliado não torna RC04 aplicável ao ciclo atual.
 
-### Roteiro de perguntas
+### Roteiro de perguntas/Checklist do avaliador
 
-Roteiro de apoio à análise. Não é checklist: responder só o pertinente.
+Percorrer todos os itens e registrar a situação de cada um na tabela Checklist de `ciclos/Cxx/avaliacao.md`: Respondido (com a fonte), Não localizado ou Não pertinente (com o motivo). Os itens orientam a verificação: não são requisitos, não recebem pontuação, e um item Não localizado não gera pendência automaticamente; aplicam-se as regras de pendência. O resultado é atribuído ao requisito, não aos itens.
 
-- Como a Tarefa é disponibilizada aos usuários e serviços no Contexto de Uso avaliado: onde, por quais meios e para quem?
-- Existem requisitos de infraestrutura, tecnologia ou recursos para acessar ou utilizar a Tarefa?
-- Idioma, conectividade, localização, custo, letramento ou outras condições podem limitar a possibilidade de algum grupo acessar ou se beneficiar da Tarefa? Considere tanto as condições dos pacientes quanto as dos profissionais e serviços que utilizam a Tarefa.
-- Existem diferenças entre locais, serviços ou populações quanto à oferta da Tarefa, isto é, onde ou para quem ela está disponível?
-- Algum grupo identificado em RC01 possui menor possibilidade de se beneficiar da disponibilização da Tarefa?
-- Foi analisado se as desigualdades de acesso ou de possibilidade de benefício identificadas são justificadas ou injustificadas?
-- Foram consideradas medidas ou alternativas para evitar, reduzir ou tratar as barreiras de acesso ou de possibilidade de benefício identificadas?
-- Considerando as medidas adotadas, se houver, permanecem limitações ou desigualdades de acesso ou de possibilidade de benefício?
+- **RC04.1** Como a Tarefa é disponibilizada aos usuários e serviços no Contexto de Uso avaliado: onde, por quais meios e para quem?
+- **RC04.2** Existem requisitos de infraestrutura, tecnologia ou recursos para acessar ou utilizar a Tarefa?
+- **RC04.3** Idioma, conectividade, localização, custo, letramento ou outras condições podem limitar a possibilidade de algum grupo acessar ou se beneficiar da Tarefa? Considere tanto as condições dos pacientes quanto as dos profissionais e serviços que utilizam a Tarefa.
+- **RC04.4** Existem diferenças entre locais, serviços ou populações quanto à oferta da Tarefa, isto é, onde ou para quem ela está disponível?
+- **RC04.5** Algum grupo identificado em RC01 possui menor possibilidade de se beneficiar da disponibilização da Tarefa?
+- **RC04.6** Foi analisado se as desigualdades de acesso ou de possibilidade de benefício identificadas são justificadas ou injustificadas?
+- **RC04.7** Foram consideradas medidas ou alternativas para evitar, reduzir ou tratar as barreiras de acesso ou de possibilidade de benefício identificadas?
+- **RC04.8** Considerando as medidas adotadas, se houver, permanecem limitações ou desigualdades de acesso ou de possibilidade de benefício?
 
 ### Exemplos de evidências pertinentes
 
@@ -550,7 +551,7 @@ Para cada requisito, no bloco correspondente de `ciclos/Cxx/avaliacao.md`:
 2. identificar o que precisa ser demonstrado;
 3. localizar as evidências nas fontes registradas na identificação do ciclo;
 4. distinguir informação factual já documentada de análise específica ainda necessária;
-5. usar o roteiro de perguntas como apoio, sem tratá-lo como checklist;
+5. percorrer o checklist do requisito e registrar a situação de cada item na tabela Checklist de `avaliacao.md`;
 6. analisar suficiência, consistência, rastreabilidade e pertinência;
 7. atribuir o resultado (Atendido, Não atendido, Inconclusivo com motivo, ou Não aplicável).
 
@@ -595,3 +596,5 @@ Quando uma dimensão for estabilizada:
 7. registrar a alteração no controle de versão do FIAR-Audit-Template.
 
 Quando um requisito for criado, alterado, removido ou renumerado, a mudança deve ser refletida neste guia antes de seu uso em novos ciclos de avaliação.
+
+Ao alterar o checklist de um requisito, atualizar também a tabela Checklist correspondente em `ciclos/C01/avaliacao.md`.

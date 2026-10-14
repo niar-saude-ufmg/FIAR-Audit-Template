@@ -56,7 +56,7 @@ Preencha ciclos/Cxx/identificacao.md seguindo a parte "Fluxo do ciclo" de guia_r
 Preencha o bloco do requisito [RCxx] em ciclos/Cxx/avaliacao.md seguindo guia_requisitos_avaliacao.md.
 
 - Responda primeiro à pergunta de aplicabilidade, com justificativa, usando as informações factuais das fontes. Se não for possível determinar, abra pendência e marque Inconclusivo com o motivo "aplicabilidade não determinada".
-- Use o roteiro de perguntas como apoio, não como checklist.
+- Preencha a tabela Checklist do requisito: Respondido (com fonte e seção), Não localizado ou Não pertinente (com motivo). O resultado é do requisito, não dos itens; item Não localizado não gera pendência automaticamente.
 - Cite as evidências pelo ID da fonte e pela seção.
 - Separe informação factual de análise específica de Justiça.
 - Resultado: Atendido, Não atendido, Inconclusivo (com motivo) ou Não aplicável. Atendimento parcial ou prática apenas planejada não levam automaticamente a Inconclusivo: com evidência suficiente de não atendimento, o resultado é Não atendido.
@@ -77,7 +77,7 @@ Revise identificacao.md e avaliacao.md do ciclo e aponte apenas:
 - requisitos marcados Inconclusivo quando a evidência já mostra não atendimento;
 - inconsistências sem duas fontes conflitantes;
 - resultados sem evidência citada;
-- inferências não marcadas como hipótese do NIAR e responsabilidades técnicas deduzidas sem fonte.
+- itens do checklist marcados Respondido sem fonte, ou Não pertinente sem motivo;
 
 Não crie pendências novas nem altere resultados; liste os problemas para o avaliador decidir.
 ```
