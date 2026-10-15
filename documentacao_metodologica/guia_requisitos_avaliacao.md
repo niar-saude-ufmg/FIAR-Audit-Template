@@ -304,7 +304,7 @@ A impossibilidade de realizar determinada comparação por ausência ou insufici
 
 ### Checklist do avaliador
 
-Percorrer todos os itens e registrar a situação de cada um na tabela Checklist de `ciclos/Cxx/avaliacao.md`: Respondido (com a fonte), Não localizado ou Não pertinente (com o motivo). Os itens orientam a verificação: não são requisitos, não recebem pontuação, e um item Não localizado não gera pendência automaticamente; aplicam-se as regras de pendência. O resultado é atribuído ao requisito, não aos itens. Se o requisito for Não aplicável, a tabela não é preenchida; registra-se só a justificativa de não aplicabilidade. Respondido vale quando as fontes respondem ao item; hipótese do NIAR não conta como Respondido: registrar Não localizado e descrever a hipótese.
+Para cada item, marque na tabela Checklist de `ciclos/Cxx/avaliacao.md`: **Respondido**, quando as fontes respondem (indique a fonte); **Não localizado**, quando as fontes não respondem (se houver hipótese do NIAR, descreva-a, mas ela não conta como resposta); ou **Não pertinente**, quando o item não se aplica a esta Tarefa (explique por quê). Os itens ajudam a verificar o requisito: não são requisitos e não valem pontos. O resultado é do requisito, não de cada item. Um item Não localizado não vira pendência por si só. Se o requisito for Não aplicável, não preencha a tabela; registre só a justificativa.
 
 - **RC02.1** Para os grupos identificados em RC01, foram analisados o desempenho da Tarefa ou outros efeitos relevantes observáveis no Contexto de Uso avaliado?
 - **RC02.2** Quais métricas, análises ou outros critérios foram utilizados?
@@ -395,7 +395,7 @@ Ausência de informação sobre os dados, a variável-alvo ou o padrão de refer
 
 ### Checklist do avaliador
 
-Percorrer todos os itens e registrar a situação de cada um na tabela Checklist de `ciclos/Cxx/avaliacao.md`: Respondido (com a fonte), Não localizado ou Não pertinente (com o motivo). Os itens orientam a verificação: não são requisitos, não recebem pontuação, e um item Não localizado não gera pendência automaticamente; aplicam-se as regras de pendência. O resultado é atribuído ao requisito, não aos itens. Se o requisito for Não aplicável, a tabela não é preenchida; registra-se só a justificativa de não aplicabilidade. Respondido vale quando as fontes respondem ao item; hipótese do NIAR não conta como Respondido: registrar Não localizado e descrever a hipótese. As informações factuais estão na seção anterior; o primeiro item registra onde foram localizadas.
+Para cada item, marque na tabela Checklist de `ciclos/Cxx/avaliacao.md`: **Respondido**, quando as fontes respondem (indique a fonte); **Não localizado**, quando as fontes não respondem (se houver hipótese do NIAR, descreva-a, mas ela não conta como resposta); ou **Não pertinente**, quando o item não se aplica a esta Tarefa (explique por quê). Os itens ajudam a verificar o requisito: não são requisitos e não valem pontos. O resultado é do requisito, não de cada item. Um item Não localizado não vira pendência por si só. Se o requisito for Não aplicável, não preencha a tabela; registre só a justificativa. As informações factuais estão na seção anterior; o primeiro item registra onde foram localizadas.
 
 - **RC03.1** As informações factuais de RC03 listadas no guia foram localizadas? Indicar as fontes.
 - **RC03.2** A origem ou o processo de seleção dos dados pode afetar alguns dos grupos identificados de forma diferente?
@@ -492,7 +492,7 @@ Um uso futuro pretendido que ainda não integra o Contexto de Uso avaliado não 
 
 ### Checklist do avaliador
 
-Percorrer todos os itens e registrar a situação de cada um na tabela Checklist de `ciclos/Cxx/avaliacao.md`: Respondido (com a fonte), Não localizado ou Não pertinente (com o motivo). Os itens orientam a verificação: não são requisitos, não recebem pontuação, e um item Não localizado não gera pendência automaticamente; aplicam-se as regras de pendência. O resultado é atribuído ao requisito, não aos itens. Se o requisito for Não aplicável, a tabela não é preenchida; registra-se só a justificativa de não aplicabilidade. Respondido vale quando as fontes respondem ao item; hipótese do NIAR não conta como Respondido: registrar Não localizado e descrever a hipótese.
+Para cada item, marque na tabela Checklist de `ciclos/Cxx/avaliacao.md`: **Respondido**, quando as fontes respondem (indique a fonte); **Não localizado**, quando as fontes não respondem (se houver hipótese do NIAR, descreva-a, mas ela não conta como resposta); ou **Não pertinente**, quando o item não se aplica a esta Tarefa (explique por quê). Os itens ajudam a verificar o requisito: não são requisitos e não valem pontos. O resultado é do requisito, não de cada item. Um item Não localizado não vira pendência por si só. Se o requisito for Não aplicável, não preencha a tabela; registre só a justificativa.
 
 - **RC04.1** Como a Tarefa é disponibilizada aos usuários e serviços no Contexto de Uso avaliado: onde, por quais meios e para quem?
 - **RC04.2** Existem requisitos de infraestrutura, tecnologia ou recursos para acessar ou utilizar a Tarefa?
