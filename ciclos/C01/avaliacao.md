@@ -32,14 +32,14 @@ Pendência aberta só torna o requisito Inconclusivo quando impede a conclusão.
 
 **Checklist** (itens do guia; orientam a verificação, não recebem pontuação; Não localizado não gera pendência automaticamente)
 
-| Item   | Pergunta                                                                                                                                     | Situação | Fonte ou motivo |
-| ------ | -------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | --------------- |
-| RC01.1 | Quais grupos ou populações a Tarefa pode afetar de forma diferente?                                                              |            |                 |
-| RC01.2 | Por que esses grupos importam para esta Tarefa e este Contexto de Uso?                                  |            |                 |
+| Item   | Pergunta                                                                                                                      | Situação | Fonte ou motivo |
+| ------ | ----------------------------------------------------------------------------------------------------------------------------- | ---------- | --------------- |
+| RC01.1 | Quais grupos ou populações a Tarefa pode afetar de forma diferente?                                                         |            |                 |
+| RC01.2 | Por que esses grupos importam para esta Tarefa e este Contexto de Uso?                                                        |            |                 |
 | RC01.3 | Os grupos foram escolhidos pensando em onde e para quem a Tarefa é usada, e não só porque a informação existe nos dados? |            |                 |
-| RC01.4 | Há grupos importantes que os dados não permitem analisar?                                            |            |                 |
-| RC01.5 | Há grupos que podem ficar sem o benefício da Tarefa? (Só identificar aqui; o acesso é analisado em RC04.)  |            |                 |
-| RC01.6 | Há dúvidas ou limites na escolha dos grupos?                                                     |            |                 |
+| RC01.4 | Há grupos importantes que os dados não permitem analisar?                                                                   |            |                 |
+| RC01.5 | Há grupos que podem ficar sem o benefício da Tarefa? (Só identificar aqui; o acesso é analisado em RC04.)                 |            |                 |
+| RC01.6 | Há dúvidas ou limites na escolha dos grupos?                                                                                |            |                 |
 
 **Situação**: Respondido (com fonte) | Não localizado | Não pertinente (com motivo). Se o requisito for Não aplicável, substitua a tabela pela linha: **Checklist:** não preenchido, porque o requisito é Não aplicável. Hipótese do NIAR não conta como Respondido: use Não localizado e descreva a hipótese.
 
@@ -77,17 +77,17 @@ Pendência aberta só torna o requisito Inconclusivo quando impede a conclusão.
 
 **Checklist** (itens do guia; orientam a verificação, não recebem pontuação; Não localizado não gera pendência automaticamente)
 
-| Item   | Pergunta                                                                                                                                                      | Situação | Fonte ou motivo |
-| ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | --------------- |
-| RC02.1 | Foi analisado como a Tarefa funciona, ou que efeitos tem, para cada grupo de RC01?          |            |                 |
-| RC02.2 | Que métricas, análises ou critérios foram usados?                                                                                             |            |                 |
-| RC02.3 | Foram encontradas diferenças entre os grupos (no desempenho, nos erros ou em outros efeitos)?                                                                          |            |                 |
-| RC02.4 | Foram analisados os tipos de erro que importam para esta Tarefa (por exemplo, falsos positivos e falsos negativos)?                                            |            |                 |
-| RC02.5 | Se a Tarefa já influencia decisões, há diferenças entre os grupos nessas decisões ou nas suas consequências?          |            |                 |
-| RC02.6 | Foi explicado o que as diferenças significam na prática (clínica, técnica ou operacional)?                                                |            |                 |
-| RC02.7 | As diferenças foram consideradas justificadas ou não? Com base em quê?                                            |            |                 |
+| Item   | Pergunta                                                                                                            | Situação | Fonte ou motivo |
+| ------ | ------------------------------------------------------------------------------------------------------------------- | ---------- | --------------- |
+| RC02.1 | Foi analisado como a Tarefa funciona, ou que efeitos tem, para cada grupo de RC01?                                  |            |                 |
+| RC02.2 | Que métricas, análises ou critérios foram usados?                                                                |            |                 |
+| RC02.3 | Foram encontradas diferenças entre os grupos (no desempenho, nos erros ou em outros efeitos)?                      |            |                 |
+| RC02.4 | Foram analisados os tipos de erro que importam para esta Tarefa (por exemplo, falsos positivos e falsos negativos)? |            |                 |
+| RC02.5 | Se a Tarefa já influencia decisões, há diferenças entre os grupos nessas decisões ou nas suas consequências?  |            |                 |
+| RC02.6 | Foi explicado o que as diferenças significam na prática (clínica, técnica ou operacional)?                      |            |                 |
+| RC02.7 | As diferenças foram consideradas justificadas ou não? Com base em quê?                                           |            |                 |
 | RC02.8 | Para as diferenças problemáticas, foram pensadas ações para evitar, reduzir ou tratar? Quais? Alguma foi feita? |            |                 |
-| RC02.9 | Depois das ações, se houve, ainda restam diferenças ou riscos importantes para os grupos?                                      |            |                 |
+| RC02.9 | Depois das ações, se houve, ainda restam diferenças ou riscos importantes para os grupos?                        |            |                 |
 
 Situação: Respondido (com fonte) | Não localizado | Não pertinente (com motivo). Se o requisito for Não aplicável, substitua a tabela pela linha: **Checklist:** não preenchido, porque o requisito é Não aplicável. Hipótese do NIAR não conta como Respondido: use Não localizado e descreva a hipótese.
 
@@ -125,18 +125,18 @@ Situação: Respondido (com fonte) | Não localizado | Não pertinente (com moti
 
 **Checklist** (itens do guia; orientam a verificação, não recebem pontuação; Não localizado não gera pendência automaticamente)
 
-| Item   | Pergunta                                                                                                                                                                              | Situação | Fonte ou motivo |
-| ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | --------------- |
-| RC03.1 | As informações factuais de RC03 listadas no guia foram localizadas? Indicar as fontes.                                                                                              |            |                 |
-| RC03.2 | A origem ou o processo de seleção dos dados pode afetar alguns dos grupos identificados de forma diferente?                                                                         |            |                 |
-| RC03.3 | Há razões para considerar os dados inadequados para algum dos grupos identificados?                                                                                                 |            |                 |
-| RC03.4 | A variável-alvo mede ou representa adequadamente o fenômeno de interesse para os diferentes grupos?                                                                                 |            |                 |
-| RC03.5 | A variável-alvo pode incorporar ou refletir desigualdades preexistentes relevantes?                                                                                                  |            |                 |
-| RC03.6 | Há razões para que algum padrão de referência seja menos adequado ou válido para determinados grupos?                                                                            |            |                 |
-| RC03.7 | Alguma das limitações ou inadequações identificadas nos dados, nas variáveis-alvo ou nos padrões de referência pode contribuir para diferenças nos efeitos avaliados em RC02? |            |                 |
-| RC03.8 | Quando foram identificadas limitações ou inadequações relevantes para algum grupo, há decisão justificada sobre seu tratamento?                                                 |            |                 |
+| Item   | Pergunta                                                                                                                                                | Situação | Fonte ou motivo |
+| ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | --------------- |
+| RC03.1 | As informações factuais de RC03 listadas no guia foram encontradas? Indique as fontes.                                                                |            |                 |
+| RC03.2 | A origem dos dados, ou a forma como foram selecionados, pode afetar algum grupo de RC01 de forma diferente?                                             |            |                 |
+| RC03.3 | Há motivos para achar que os dados não servem bem para algum grupo de RC01?                                                                           |            |                 |
+| RC03.4 | O que a Tarefa tenta prever (variável-alvo) mede bem o que interessa, para todos os grupos?                                                            |            |                 |
+| RC03.5 | A variável-alvo pode carregar desigualdades que já existiam antes (por exemplo, diferenças de acesso a serviços de saúde)?                         |            |                 |
+| RC03.6 | O padrão de referência (o que se usa como "resposta certa") pode ser menos confiável para algum grupo?                                               |            |                 |
+| RC03.7 | Algum problema encontrado nos dados, na variável-alvo ou no padrão de referência pode causar ou aumentar diferenças nos efeitos analisados em RC02? |            |                 |
+| RC03.8 | Para os problemas encontrados em algum grupo, há uma decisão justificada sobre o que fazer?                                                           |            |                 |
 
-**Situação:** Respondido (com fonte) | Não localizado | Não pertinente (com motivo). Se o requisito for Não aplicável, 
+**Situação:** Respondido (com fonte) | Não localizado | Não pertinente (com motivo). Se o requisito for Não aplicável,
 substitua a tabela pela linha: **Checklist:** não preenchido, porque o requisito é Não aplicável. Hipótese do NIAR não conta como Respondido: use Não localizado e descreva a hipótese.
 
 **Análise:**
@@ -209,10 +209,10 @@ Situação: Respondido (com fonte) | Não localizado | Não pertinente (com moti
 ## Síntese do ciclo
 
 | Requisito | Resultado | Motivo | Itens não localizados | Encaminhamento |
-| --------- | --------- | ------ | --------------------- | -------------- |
-| RC01      |           |        |                       |                |
-| RC02      |           |        |                       |                |
-| RC03      |           |        |                       |                |
-| RC04      |           |        |                       |                |
+| --------- | --------- | ------ | ---------------------- | -------------- |
+| RC01      |           |        |                        |                |
+| RC02      |           |        |                        |                |
+| RC03      |           |        |                        |                |
+| RC04      |           |        |                        |                |
 
 Itens não localizados: IDs dos itens do checklist marcados Não localizado (ex.: RC01.4, RC01.5). Em requisito Não aplicável, escrever "não se aplica". A coluna mostra onde estão as lacunas; não é pontuação e não determina o resultado.

@@ -361,6 +361,8 @@ Para cada item, marque na tabela Checklist de `ciclos/Cxx/avaliacao.md`: **Respo
 
 **Avaliar se os dados, as variáveis-alvo e os padrões de referência utilizados no desenvolvimento e na avaliação da Tarefa de IA são adequados para os grupos e populações identificados.**
 
+**Em palavras simples:** os dados usados para treinar e testar a IA, o que ela tenta prever e o que se usa como "resposta certa" servem bem para todos os grupos de RC01?
+
 ### O que o requisito busca verificar
 
 Verificar se características dos dados, das variáveis-alvo e dos padrões de referência podem produzir ou contribuir para diferenças relevantes entre os grupos identificados em RC01.
@@ -389,7 +391,7 @@ RC03 não substitui a avaliação geral de qualidade de dados. Em Justiça, o fo
 
 ### Pergunta de aplicabilidade
 
-**O desenvolvimento ou a avaliação da Tarefa utiliza dados, variáveis-alvo ou padrões de referência cuja adequação possa ser relevante para os grupos identificados em RC01?**
+**Para desenvolver ou avaliar a Tarefa, foram usados dados, variáveis-alvo ou padrões de referência que podem servir melhor para uns grupos de RC01 do que para outros?**
 
 Se não for possível determinar, registrar pendência de aplicabilidade e resultado Inconclusivo, com o motivo "aplicabilidade não determinada". Não presumir Não aplicável.
 
@@ -399,14 +401,14 @@ Ausência de informação sobre os dados, a variável-alvo ou o padrão de refer
 
 Para cada item, marque na tabela Checklist de `ciclos/Cxx/avaliacao.md`: **Respondido**, quando as fontes respondem (indique a fonte); **Não localizado**, quando as fontes não respondem (se houver hipótese do NIAR, descreva-a, mas ela não conta como resposta); ou **Não pertinente**, quando o item não se aplica a esta Tarefa (explique por quê). Os itens ajudam a verificar o requisito: não são requisitos e não valem pontos. O resultado é do requisito, não de cada item. Um item Não localizado não vira pendência por si só. Se o requisito for Não aplicável, não preencha a tabela; registre só a justificativa. As informações factuais estão na seção anterior; o primeiro item registra onde foram localizadas.
 
-- **RC03.1** As informações factuais de RC03 listadas no guia foram localizadas? Indicar as fontes.
-- **RC03.2** A origem ou o processo de seleção dos dados pode afetar alguns dos grupos identificados de forma diferente?
-- **RC03.3** Há razões para considerar os dados inadequados para algum dos grupos identificados?
-- **RC03.4** A variável-alvo mede ou representa adequadamente o fenômeno de interesse para os diferentes grupos?
-- **RC03.5** A variável-alvo pode incorporar ou refletir desigualdades preexistentes relevantes?
-- **RC03.6** Há razões para que algum padrão de referência seja menos adequado ou válido para determinados grupos?
-- **RC03.7** Alguma das limitações ou inadequações identificadas nos dados, nas variáveis-alvo ou nos padrões de referência pode contribuir para diferenças nos efeitos avaliados em RC02?
-- **RC03.8** Quando foram identificadas limitações ou inadequações relevantes para algum grupo, há decisão justificada sobre seu tratamento?
+- **RC03.1** As informações factuais de RC03 listadas no guia foram encontradas? Indique as fontes.
+- **RC03.2** A origem dos dados, ou a forma como foram selecionados, pode afetar algum grupo de RC01 de forma diferente?
+- **RC03.3** Há motivos para achar que os dados não servem bem para algum grupo de RC01?
+- **RC03.4** O que a Tarefa tenta prever (variável-alvo) mede bem o que interessa, para todos os grupos?
+- **RC03.5** A variável-alvo pode carregar desigualdades que já existiam antes (por exemplo, diferenças de acesso a serviços de saúde)?
+- **RC03.6** O padrão de referência (o que se usa como "resposta certa") pode ser menos confiável para algum grupo?
+- **RC03.7** Algum problema encontrado nos dados, na variável-alvo ou no padrão de referência pode causar ou aumentar diferenças nos efeitos analisados em RC02?
+- **RC03.8** Para os problemas encontrados em algum grupo, há uma decisão justificada sobre o que fazer?
 
 ### Exemplos de evidências pertinentes
 
