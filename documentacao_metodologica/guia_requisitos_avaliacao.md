@@ -201,7 +201,7 @@ A identificação de diferença injustificada ou de condição relevante não é
 ### Requisito
 
 **Identificar, de forma fundamentada, os grupos e populações que podem ser afetados de forma desigual pela Tarefa de IA ou excluídos de seus benefícios.**
-**Em palavras simples:** quem pode ser prejudicado pela IA ou ficar sem o benefício dela? E por que esses grupos?
+**Em palavras simples:** quais grupos podem ser prejudicados pela Tarefa ou ficar sem seus benefícios, e por quê?
 
 ### O que o requisito busca verificar
 
@@ -222,7 +222,7 @@ A identificação dos grupos pode **se apoiar no Contexto de Uso, na literatura,
 
 ### Pergunta de aplicabilidade
 
-**Do jeito que é usada hoje (Contexto de Uso avaliado), a Tarefa pode afetar ou beneficiar pessoas, grupos ou populações?**
+**No uso atual (Contexto de Uso avaliado), a Tarefa pode afetar ou beneficiar pessoas, grupos ou populações?**
 
 Se não for possível determinar, registrar pendência de aplicabilidade e resultado Inconclusivo, com o motivo "aplicabilidade não determinada". Não presumir Não aplicável.
 
@@ -231,11 +231,11 @@ Se não for possível determinar, registrar pendência de aplicabilidade e resul
 Para cada item, marque na tabela Checklist de `ciclos/Cxx/avaliacao.md`: **Respondido**, quando as fontes respondem (indique a fonte); **Não localizado**, quando as fontes não respondem (se houver hipótese do NIAR, descreva-a, mas ela não conta como resposta); ou **Não pertinente**, quando o item não se aplica a esta Tarefa (explique por quê). Os itens ajudam a verificar o requisito: não são requisitos e não valem pontos. O resultado é do requisito, não de cada item. Um item Não localizado não vira pendência por si só. Se o requisito for Não aplicável, não preencha a tabela; registre só a justificativa.
 
 - **RC01.1** Quais grupos ou populações a Tarefa pode afetar de forma diferente?
-- **RC01.2** Por que esses grupos importam para esta Tarefa e este Contexto de Uso?
-- **RC01.3** Os grupos foram escolhidos pensando em onde e para quem a Tarefa é usada, e não só porque a informação existe nos dados?
-- **RC01.4** Há grupos importantes que os dados não permitem analisar?
-- **RC01.5** Há grupos que podem ficar sem o benefício da Tarefa? (Só identificar aqui; o acesso é analisado em RC04.)
-- **RC01.6** Há dúvidas ou limites na escolha dos grupos?
+- **RC01.2** Por que esses grupos são relevantes para esta Tarefa e este Contexto de Uso?
+- **RC01.3** Os grupos foram escolhidos com base no Contexto de Uso e na população atendida, e não apenas porque a informação existe nos dados?
+- **RC01.4** Há grupos relevantes que os dados disponíveis não permitem analisar?
+- **RC01.5** Há grupos que podem ficar sem os benefícios da Tarefa? (Apenas identificar; o acesso é analisado em RC04.)
+- **RC01.6** Há limitações ou incertezas na escolha dos grupos?
 
 ### Exemplos de evidências pertinentes
 
@@ -279,7 +279,7 @@ Esses exemplos não constituem lista obrigatória de artefatos. Evidências equi
 
 **Avaliar se a Tarefa de IA produz, reproduz ou agrava diferenças injustificadas nos efeitos sobre os grupos e populações identificados.**
 
-**Em palavras simples:** a IA funciona pior, ou tem efeitos piores, para algum dos grupos de RC01? Se sim, isso tem justificativa?
+**Em palavras simples:** a Tarefa tem desempenho ou efeitos piores para algum grupo de RC01? Se tem, há justificativa?
 
 ### O que o requisito busca verificar
 
@@ -298,7 +298,7 @@ A análise não pressupõe uma métrica universal de fairness nem exige necessar
 
 ### Pergunta de aplicabilidade
 
-**Do jeito que é usada hoje (Contexto de Uso avaliado), a Tarefa pode ter efeitos sobre algum grupo identificado em RC01?**
+**No uso atual (Contexto de Uso avaliado), a Tarefa pode ter efeitos sobre algum grupo identificado em RC01?**
 
 Se não for possível determinar, registrar pendência de aplicabilidade e resultado Inconclusivo, com o motivo "aplicabilidade não determinada". Não presumir Não aplicável.
 
@@ -308,15 +308,15 @@ A impossibilidade de realizar determinada comparação por ausência ou insufici
 
 Para cada item, marque na tabela Checklist de `ciclos/Cxx/avaliacao.md`: **Respondido**, quando as fontes respondem (indique a fonte); **Não localizado**, quando as fontes não respondem (se houver hipótese do NIAR, descreva-a, mas ela não conta como resposta); ou **Não pertinente**, quando o item não se aplica a esta Tarefa (explique por quê). Os itens ajudam a verificar o requisito: não são requisitos e não valem pontos. O resultado é do requisito, não de cada item. Um item Não localizado não vira pendência por si só. Se o requisito for Não aplicável, não preencha a tabela; registre só a justificativa.
 
-- **RC02.1** Foi analisado como a Tarefa funciona, ou que efeitos tem, para cada grupo de RC01?
-- **RC02.2** Que métricas, análises ou critérios foram usados?
+- **RC02.1** Foram analisados o desempenho ou os efeitos da Tarefa para cada grupo de RC01?
+- **RC02.2** Quais métricas, análises ou critérios foram utilizados?
 - **RC02.3** Foram encontradas diferenças entre os grupos (no desempenho, nos erros ou em outros efeitos)?
 - **RC02.4** Foram analisados os tipos de erro que importam para esta Tarefa (por exemplo, falsos positivos e falsos negativos)?
-- **RC02.5** Se a Tarefa já influencia decisões, há diferenças entre os grupos nessas decisões ou nas suas consequências?
-- **RC02.6** Foi explicado o que as diferenças significam na prática (clínica, técnica ou operacional)?
-- **RC02.7** As diferenças foram consideradas justificadas ou não? Com base em quê?
-- **RC02.8** Para as diferenças problemáticas, foram pensadas ações para evitar, reduzir ou tratar? Quais? Alguma foi feita?
-- **RC02.9** Depois das ações, se houve, ainda restam diferenças ou riscos importantes para os grupos?
+- **RC02.5** Quando a Tarefa já influencia decisões, há diferenças entre os grupos nessas decisões ou em suas consequências?
+- **RC02.6** Foi analisado o significado prático das diferenças (clínico, técnico ou operacional)?
+- **RC02.7** As diferenças foram consideradas justificadas ou não? Com base em qual critério?
+- **RC02.8** Para as diferenças consideradas problemáticas, foram previstas ações para evitá-las, reduzi-las ou tratá-las? Quais? Alguma foi realizada?
+- **RC02.9** Após as ações realizadas, se houver, permanecem diferenças ou riscos relevantes para os grupos?
 
 ### Exemplos de evidências pertinentes
 
@@ -361,7 +361,7 @@ Para cada item, marque na tabela Checklist de `ciclos/Cxx/avaliacao.md`: **Respo
 
 **Avaliar se os dados, as variáveis-alvo e os padrões de referência utilizados no desenvolvimento e na avaliação da Tarefa de IA são adequados para os grupos e populações identificados.**
 
-**Em palavras simples:** os dados usados para treinar e testar a IA, o que ela tenta prever e o que se usa como "resposta certa" servem bem para todos os grupos de RC01?
+**Em palavras simples:** os dados de treino e de teste, o que a Tarefa procura prever e o que serve como resposta correta são adequados para todos os grupos de RC01?
 
 ### O que o requisito busca verificar
 
@@ -403,12 +403,12 @@ Para cada item, marque na tabela Checklist de `ciclos/Cxx/avaliacao.md`: **Respo
 
 - **RC03.1** As informações factuais de RC03 listadas no guia foram encontradas? Indique as fontes.
 - **RC03.2** A origem dos dados, ou a forma como foram selecionados, pode afetar algum grupo de RC01 de forma diferente?
-- **RC03.3** Há motivos para achar que os dados não servem bem para algum grupo de RC01?
-- **RC03.4** O que a Tarefa tenta prever (variável-alvo) mede bem o que interessa, para todos os grupos?
-- **RC03.5** A variável-alvo pode carregar desigualdades que já existiam antes (por exemplo, diferenças de acesso a serviços de saúde)?
-- **RC03.6** O padrão de referência (o que se usa como "resposta certa") pode ser menos confiável para algum grupo?
+- **RC03.3** Há motivos para considerar os dados inadequados para algum grupo de RC01?
+- **RC03.4** A variável-alvo (o que a Tarefa procura prever) mede adequadamente o fenômeno de interesse para todos os grupos?
+- **RC03.5** A variável-alvo pode refletir desigualdades já existentes (por exemplo, diferenças de acesso a serviços de saúde)?
+- **RC03.6** O padrão de referência (o que serve como resposta correta) pode ser menos confiável para algum grupo?
 - **RC03.7** Algum problema encontrado nos dados, na variável-alvo ou no padrão de referência pode causar ou aumentar diferenças nos efeitos analisados em RC02?
-- **RC03.8** Para os problemas encontrados em algum grupo, há uma decisão justificada sobre o que fazer?
+- **RC03.8** Para os problemas identificados em algum grupo, há decisão justificada sobre seu tratamento?
 
 ### Exemplos de evidências pertinentes
 
@@ -470,6 +470,8 @@ A avaliação não exige um método único de análise.
 
 **Avaliar se a forma de disponibilização da Tarefa de IA produz, reproduz ou agrava desigualdades injustificadas entre os grupos e populações identificados quanto à possibilidade de se beneficiar de seu uso.**
 
+**Em palavras simples:** a forma como a Tarefa é disponibilizada permite que todos os grupos de RC01 a utilizem e se beneficiem dela? Quando não permite, há justificativa?
+
 ### O que o requisito busca verificar
 
 Verificar se a forma concreta pela qual a Tarefa é disponibilizada no Contexto de Uso avaliado cria ou agrava diferenças entre grupos quanto à possibilidade de acessar, utilizar ou se beneficiar da Tarefa.
@@ -488,7 +490,7 @@ Considere quem pode utilizar a Tarefa, onde e por quais meios, além das condiç
 
 ### Pergunta de aplicabilidade
 
-**No Contexto de Uso avaliado, existe alguma forma de disponibilização da Tarefa pela qual pessoas, grupos ou populações possam acessar ou se beneficiar de seu uso?**
+**No uso atual (Contexto de Uso avaliado), a Tarefa já está disponível de alguma forma que permita a pessoas, grupos ou populações utilizá-la ou se beneficiar dela?**
 
 Se não for possível determinar, registrar pendência de aplicabilidade e resultado Inconclusivo, com o motivo "aplicabilidade não determinada". Não presumir Não aplicável.
 
@@ -498,14 +500,14 @@ Um uso futuro pretendido que ainda não integra o Contexto de Uso avaliado não 
 
 Para cada item, marque na tabela Checklist de `ciclos/Cxx/avaliacao.md`: **Respondido**, quando as fontes respondem (indique a fonte); **Não localizado**, quando as fontes não respondem (se houver hipótese do NIAR, descreva-a, mas ela não conta como resposta); ou **Não pertinente**, quando o item não se aplica a esta Tarefa (explique por quê). Os itens ajudam a verificar o requisito: não são requisitos e não valem pontos. O resultado é do requisito, não de cada item. Um item Não localizado não vira pendência por si só. Se o requisito for Não aplicável, não preencha a tabela; registre só a justificativa.
 
-- **RC04.1** Como a Tarefa é disponibilizada aos usuários e serviços no Contexto de Uso avaliado: onde, por quais meios e para quem?
-- **RC04.2** Existem requisitos de infraestrutura, tecnologia ou recursos para acessar ou utilizar a Tarefa?
-- **RC04.3** Idioma, conectividade, localização, custo, letramento ou outras condições podem limitar a possibilidade de algum grupo acessar ou se beneficiar da Tarefa? Considere tanto as condições dos pacientes quanto as dos profissionais e serviços que utilizam a Tarefa.
-- **RC04.4** Existem diferenças entre locais, serviços ou populações quanto à oferta da Tarefa, isto é, onde ou para quem ela está disponível?
-- **RC04.5** Algum grupo identificado em RC01 possui menor possibilidade de se beneficiar da disponibilização da Tarefa?
-- **RC04.6** Foi analisado se as desigualdades de acesso ou de possibilidade de benefício identificadas são justificadas ou injustificadas?
-- **RC04.7** Foram consideradas medidas ou alternativas para evitar, reduzir ou tratar as barreiras de acesso ou de possibilidade de benefício identificadas?
-- **RC04.8** Considerando as medidas adotadas, se houver, permanecem limitações ou desigualdades de acesso ou de possibilidade de benefício?
+- **RC04.1** Como a Tarefa é disponibilizada hoje aos usuários e serviços: onde, por quais meios e para quem?
+- **RC04.2** O uso da Tarefa exige alguma infraestrutura, tecnologia ou recurso?
+- **RC04.3** Idioma, conexão, localização, custo, letramento ou outras condições podem dificultar que algum grupo utilize a Tarefa ou se beneficie dela? Considere pacientes, profissionais e serviços.
+- **RC04.4** A Tarefa está disponível em alguns locais, serviços ou populações e em outros não?
+- **RC04.5** Pela forma como a Tarefa é disponibilizada, algum grupo de RC01 tem menos possibilidade de se beneficiar dela?
+- **RC04.6** Foi analisado se as diferenças de acesso ou de benefício são justificadas ou não?
+- **RC04.7** Foram previstas medidas ou alternativas para evitar, reduzir ou tratar essas barreiras de acesso ou de benefício?
+- **RC04.8** Após as medidas adotadas, se houver, permanecem limitações ou diferenças de acesso ou de benefício?
 
 ### Exemplos de evidências pertinentes
 

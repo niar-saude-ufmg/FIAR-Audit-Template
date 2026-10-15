@@ -32,14 +32,14 @@ Pendência aberta só torna o requisito Inconclusivo quando impede a conclusão.
 
 **Checklist** (itens do guia; orientam a verificação, não recebem pontuação; Não localizado não gera pendência automaticamente)
 
-| Item   | Pergunta                                                                                                                      | Situação | Fonte ou motivo |
-| ------ | ----------------------------------------------------------------------------------------------------------------------------- | ---------- | --------------- |
-| RC01.1 | Quais grupos ou populações a Tarefa pode afetar de forma diferente?                                                         |            |                 |
-| RC01.2 | Por que esses grupos importam para esta Tarefa e este Contexto de Uso?                                                        |            |                 |
-| RC01.3 | Os grupos foram escolhidos pensando em onde e para quem a Tarefa é usada, e não só porque a informação existe nos dados? |            |                 |
-| RC01.4 | Há grupos importantes que os dados não permitem analisar?                                                                   |            |                 |
-| RC01.5 | Há grupos que podem ficar sem o benefício da Tarefa? (Só identificar aqui; o acesso é analisado em RC04.)                 |            |                 |
-| RC01.6 | Há dúvidas ou limites na escolha dos grupos?                                                                                |            |                 |
+| Item   | Pergunta                                                                                                                                | Situação | Fonte ou motivo |
+| ------ | --------------------------------------------------------------------------------------------------------------------------------------- | ---------- | --------------- |
+| RC01.1 | Quais grupos ou populações a Tarefa pode afetar de forma diferente?                                                                   |            |                 |
+| RC01.2 | Por que esses grupos são relevantes para esta Tarefa e este Contexto de Uso?                                                           |            |                 |
+| RC01.3 | Os grupos foram escolhidos com base no Contexto de Uso e na população atendida, e não apenas porque a informação existe nos dados? |            |                 |
+| RC01.4 | Há grupos relevantes que os dados disponíveis não permitem analisar?                                                                 |            |                 |
+| RC01.5 | Há grupos que podem ficar sem os benefícios da Tarefa? (Apenas identificar; o acesso é analisado em RC04.)                           |            |                 |
+| RC01.6 | Há limitações ou incertezas na escolha dos grupos?                                                                                   |            |                 |
 
 **Situação**: Respondido (com fonte) | Não localizado | Não pertinente (com motivo). Se o requisito for Não aplicável, substitua a tabela pela linha: **Checklist:** não preenchido, porque o requisito é Não aplicável. Hipótese do NIAR não conta como Respondido: use Não localizado e descreva a hipótese.
 
@@ -77,17 +77,17 @@ Pendência aberta só torna o requisito Inconclusivo quando impede a conclusão.
 
 **Checklist** (itens do guia; orientam a verificação, não recebem pontuação; Não localizado não gera pendência automaticamente)
 
-| Item   | Pergunta                                                                                                            | Situação | Fonte ou motivo |
-| ------ | ------------------------------------------------------------------------------------------------------------------- | ---------- | --------------- |
-| RC02.1 | Foi analisado como a Tarefa funciona, ou que efeitos tem, para cada grupo de RC01?                                  |            |                 |
-| RC02.2 | Que métricas, análises ou critérios foram usados?                                                                |            |                 |
-| RC02.3 | Foram encontradas diferenças entre os grupos (no desempenho, nos erros ou em outros efeitos)?                      |            |                 |
-| RC02.4 | Foram analisados os tipos de erro que importam para esta Tarefa (por exemplo, falsos positivos e falsos negativos)? |            |                 |
-| RC02.5 | Se a Tarefa já influencia decisões, há diferenças entre os grupos nessas decisões ou nas suas consequências?  |            |                 |
-| RC02.6 | Foi explicado o que as diferenças significam na prática (clínica, técnica ou operacional)?                      |            |                 |
-| RC02.7 | As diferenças foram consideradas justificadas ou não? Com base em quê?                                           |            |                 |
-| RC02.8 | Para as diferenças problemáticas, foram pensadas ações para evitar, reduzir ou tratar? Quais? Alguma foi feita? |            |                 |
-| RC02.9 | Depois das ações, se houve, ainda restam diferenças ou riscos importantes para os grupos?                        |            |                 |
+| Item   | Pergunta                                                                                                                                         | Situação | Fonte ou motivo |
+| ------ | ------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- |
+| RC02.1 | Foram analisados o desempenho ou os efeitos da Tarefa para cada grupo de RC01?                                                                   |            |                 |
+| RC02.2 | Quais métricas, análises ou critérios foram utilizados?                                                                                       |            |                 |
+| RC02.3 | Foram encontradas diferenças entre os grupos (no desempenho, nos erros ou em outros efeitos)?                                                   |            |                 |
+| RC02.4 | Foram analisados os tipos de erro que importam para esta Tarefa (por exemplo, falsos positivos e falsos negativos)?                              |            |                 |
+| RC02.5 | Quando a Tarefa já influencia decisões, há diferenças entre os grupos nessas decisões ou em suas consequências?                            |            |                 |
+| RC02.6 | Foi analisado o significado prático das diferenças (clínico, técnico ou operacional)?                                                        |            |                 |
+| RC02.7 | As diferenças foram consideradas justificadas ou não? Com base em qual critério?                                                              |            |                 |
+| RC02.8 | Para as diferenças consideradas problemáticas, foram previstas ações para evitá-las, reduzi-las ou tratá-las? Quais? Alguma foi realizada? |            |                 |
+| RC02.9 | Após as ações realizadas, se houver, permanecem diferenças ou riscos relevantes para os grupos?                                              |            |                 |
 
 Situação: Respondido (com fonte) | Não localizado | Não pertinente (com motivo). Se o requisito for Não aplicável, substitua a tabela pela linha: **Checklist:** não preenchido, porque o requisito é Não aplicável. Hipótese do NIAR não conta como Respondido: use Não localizado e descreva a hipótese.
 
@@ -129,12 +129,12 @@ Situação: Respondido (com fonte) | Não localizado | Não pertinente (com moti
 | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | --------------- |
 | RC03.1 | As informações factuais de RC03 listadas no guia foram encontradas? Indique as fontes.                                                                |            |                 |
 | RC03.2 | A origem dos dados, ou a forma como foram selecionados, pode afetar algum grupo de RC01 de forma diferente?                                             |            |                 |
-| RC03.3 | Há motivos para achar que os dados não servem bem para algum grupo de RC01?                                                                           |            |                 |
-| RC03.4 | O que a Tarefa tenta prever (variável-alvo) mede bem o que interessa, para todos os grupos?                                                            |            |                 |
-| RC03.5 | A variável-alvo pode carregar desigualdades que já existiam antes (por exemplo, diferenças de acesso a serviços de saúde)?                         |            |                 |
-| RC03.6 | O padrão de referência (o que se usa como "resposta certa") pode ser menos confiável para algum grupo?                                               |            |                 |
+| RC03.3 | Há motivos para considerar os dados inadequados para algum grupo de RC01?                                                                              |            |                 |
+| RC03.4 | A variável-alvo (o que a Tarefa procura prever) mede adequadamente o fenômeno de interesse para todos os grupos?                                      |            |                 |
+| RC03.5 | A variável-alvo pode refletir desigualdades já existentes (por exemplo, diferenças de acesso a serviços de saúde)?                                 |            |                 |
+| RC03.6 | O padrão de referência (o que serve como resposta correta) pode ser menos confiável para algum grupo?                                                |            |                 |
 | RC03.7 | Algum problema encontrado nos dados, na variável-alvo ou no padrão de referência pode causar ou aumentar diferenças nos efeitos analisados em RC02? |            |                 |
-| RC03.8 | Para os problemas encontrados em algum grupo, há uma decisão justificada sobre o que fazer?                                                           |            |                 |
+| RC03.8 | Para os problemas identificados em algum grupo, há decisão justificada sobre seu tratamento?                                                          |            |                 |
 
 **Situação:** Respondido (com fonte) | Não localizado | Não pertinente (com motivo). Se o requisito for Não aplicável,
 substitua a tabela pela linha: **Checklist:** não preenchido, porque o requisito é Não aplicável. Hipótese do NIAR não conta como Respondido: use Não localizado e descreva a hipótese.
@@ -173,16 +173,16 @@ substitua a tabela pela linha: **Checklist:** não preenchido, porque o requisit
 
 **Checklist** (itens do guia; orientam a verificação, não recebem pontuação; Não localizado não gera pendência automaticamente)
 
-| Item   | Pergunta                                                                                                                                                                                                                                                                   | Situação | Fonte ou motivo |
-| ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | --------------- |
-| RC04.1 | Como a Tarefa é disponibilizada aos usuários e serviços no Contexto de Uso avaliado: onde, por quais meios e para quem?                                                                                                                                                 |            |                 |
-| RC04.2 | Existem requisitos de infraestrutura, tecnologia ou recursos para acessar ou utilizar a Tarefa?                                                                                                                                                                            |            |                 |
-| RC04.3 | Idioma, conectividade, localização, custo, letramento ou outras condições podem limitar a possibilidade de algum grupo acessar ou se beneficiar da Tarefa? Considere tanto as condições dos pacientes quanto as dos profissionais e serviços que utilizam a Tarefa. |            |                 |
-| RC04.4 | Existem diferenças entre locais, serviços ou populações quanto à oferta da Tarefa, isto é, onde ou para quem ela está disponível?                                                                                                                                  |            |                 |
-| RC04.5 | Algum grupo identificado em RC01 possui menor possibilidade de se beneficiar da disponibilização da Tarefa?                                                                                                                                                              |            |                 |
-| RC04.6 | Foi analisado se as desigualdades de acesso ou de possibilidade de benefício identificadas são justificadas ou injustificadas?                                                                                                                                           |            |                 |
-| RC04.7 | Foram consideradas medidas ou alternativas para evitar, reduzir ou tratar as barreiras de acesso ou de possibilidade de benefício identificadas?                                                                                                                          |            |                 |
-| RC04.8 | Considerando as medidas adotadas, se houver, permanecem limitações ou desigualdades de acesso ou de possibilidade de benefício?                                                                                                                                         |            |                 |
+| Item   | Pergunta                                                                                                                                                                                         | Situação | Fonte ou motivo |
+| ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- |
+| RC04.1 | Como a Tarefa é disponibilizada hoje aos usuários e serviços: onde, por quais meios e para quem?                                                                                              |            |                 |
+| RC04.2 | O uso da Tarefa exige alguma infraestrutura, tecnologia ou recurso?                                                                                                                              |            |                 |
+| RC04.3 | Idioma, conexão, localização, custo, letramento ou outras condições podem dificultar que algum grupo utilize a Tarefa ou se beneficie dela? Considere pacientes, profissionais e serviços. |            |                 |
+| RC04.4 | A Tarefa está disponível em alguns locais, serviços ou populações e em outros não?                                                                                                         |            |                 |
+| RC04.5 | Pela forma como a Tarefa é disponibilizada, algum grupo de RC01 tem menos possibilidade de se beneficiar dela?                                                                                  |            |                 |
+| RC04.6 | Foi analisado se as diferenças de acesso ou de benefício são justificadas ou não?                                                                                                            |            |                 |
+| RC04.7 | Foram previstas medidas ou alternativas para evitar, reduzir ou tratar essas barreiras de acesso ou de benefício?                                                                               |            |                 |
+| RC04.8 | Após as medidas adotadas, se houver, permanecem limitações ou diferenças de acesso ou de benefício?                                                                                         |            |                 |
 
 Situação: Respondido (com fonte) | Não localizado | Não pertinente (com motivo). Se o requisito for Não aplicável, substitua a tabela pela linha: **Checklist:** não preenchido, porque o requisito é Não aplicável. Hipótese do NIAR não conta como Respondido: use Não localizado e descreva a hipótese.
 
