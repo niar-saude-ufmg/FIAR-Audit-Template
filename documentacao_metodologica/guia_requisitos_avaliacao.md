@@ -234,8 +234,8 @@ Para cada item, marque na tabela Checklist de `ciclos/Cxx/avaliacao.md`: **Respo
 - **RC01.2** Por que esses grupos importam para esta Tarefa e este Contexto de Uso?
 - **RC01.3** Os grupos foram escolhidos pensando em onde e para quem a Tarefa é usada, e não só porque a informação existe nos dados?
 - **RC01.4** Há grupos importantes que os dados não permitem analisar?
-- **RC01.5** Existem grupos potencialmente sujeitos a exclusão dos benefícios da Tarefa? (Apenas identificar; a análise de acesso é feita em RC04.)
-- **RC01.6** Há limitações ou incertezas na identificação dos grupos e populações relevantes?
+- **RC01.5** Há grupos que podem ficar sem o benefício da Tarefa? (Só identificar aqui; o acesso é analisado em RC04.)
+- **RC01.6** Há dúvidas ou limites na escolha dos grupos?
 
 ### Exemplos de evidências pertinentes
 
