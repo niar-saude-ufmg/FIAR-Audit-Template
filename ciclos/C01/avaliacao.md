@@ -79,15 +79,15 @@ Pendência aberta só torna o requisito Inconclusivo quando impede a conclusão.
 
 | Item   | Pergunta                                                                                                                                                      | Situação | Fonte ou motivo |
 | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | --------------- |
-| RC02.1 | Para os grupos identificados em RC01, foram analisados o desempenho da Tarefa ou outros efeitos relevantes observáveis no Contexto de Uso avaliado?          |            |                 |
-| RC02.2 | Quais métricas, análises ou outros critérios foram utilizados?                                                                                             |            |                 |
-| RC02.3 | Foram encontradas diferenças de desempenho, erro ou outros efeitos entre os grupos?                                                                          |            |                 |
-| RC02.4 | Foram analisados tipos de erro relevantes, como falsos positivos e falsos negativos, quando pertinentes à Tarefa?                                            |            |                 |
-| RC02.5 | Existem diferenças nas decisões ou consequências decorrentes dos resultados ou do uso da Tarefa, quando observáveis no Contexto de Uso avaliado?          |            |                 |
-| RC02.6 | As diferenças encontradas foram interpretadas considerando seu significado clínico, técnico ou operacional?                                                |            |                 |
-| RC02.7 | Quando foram encontradas diferenças, foi analisado se elas são justificadas ou injustificadas? Com base em quê?                                            |            |                 |
-| RC02.8 | Foram consideradas ações para evitar, reduzir ou tratar diferenças consideradas problemáticas? Se sim, quais? Quais chegaram a ser realizadas, se houver? |            |                 |
-| RC02.9 | Considerando as ações realizadas, se houver, permanecem diferenças ou riscos relevantes para os grupos identificados?                                      |            |                 |
+| RC02.1 | Foi analisado como a Tarefa funciona, ou que efeitos tem, para cada grupo de RC01?          |            |                 |
+| RC02.2 | Que métricas, análises ou critérios foram usados?                                                                                             |            |                 |
+| RC02.3 | Foram encontradas diferenças entre os grupos (no desempenho, nos erros ou em outros efeitos)?                                                                          |            |                 |
+| RC02.4 | Foram analisados os tipos de erro que importam para esta Tarefa (por exemplo, falsos positivos e falsos negativos)?                                            |            |                 |
+| RC02.5 | Se a Tarefa já influencia decisões, há diferenças entre os grupos nessas decisões ou nas suas consequências?          |            |                 |
+| RC02.6 | Foi explicado o que as diferenças significam na prática (clínica, técnica ou operacional)?                                                |            |                 |
+| RC02.7 | As diferenças foram consideradas justificadas ou não? Com base em quê?                                            |            |                 |
+| RC02.8 | Para as diferenças problemáticas, foram pensadas ações para evitar, reduzir ou tratar? Quais? Alguma foi feita? |            |                 |
+| RC02.9 | Depois das ações, se houve, ainda restam diferenças ou riscos importantes para os grupos?                                      |            |                 |
 
 Situação: Respondido (com fonte) | Não localizado | Não pertinente (com motivo). Se o requisito for Não aplicável, substitua a tabela pela linha: **Checklist:** não preenchido, porque o requisito é Não aplicável. Hipótese do NIAR não conta como Respondido: use Não localizado e descreva a hipótese.
 
