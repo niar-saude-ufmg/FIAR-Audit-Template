@@ -208,9 +208,11 @@ Situação: Respondido (com fonte) | Não localizado | Não pertinente (com moti
 
 ## Síntese do ciclo
 
-| Requisito | Resultado | Motivo | Encaminhamento |
-| --------- | --------- | ------ | -------------- |
-| RC01      |           |        |                |
-| RC02      |           |        |                |
-| RC03      |           |        |                |
-| RC04      |           |        |                |
+| Requisito | Resultado | Motivo | Itens não localizados | Encaminhamento |
+| --------- | --------- | ------ | --------------------- | -------------- |
+| RC01      |           |        |                       |                |
+| RC02      |           |        |                       |                |
+| RC03      |           |        |                       |                |
+| RC04      |           |        |                       |                |
+
+Itens não localizados: IDs dos itens do checklist marcados Não localizado (ex.: RC01.4, RC01.5). Em requisito Não aplicável, escrever "não se aplica". A coluna mostra onde estão as lacunas; não é pontuação e não determina o resultado.

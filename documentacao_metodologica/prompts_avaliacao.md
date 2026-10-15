@@ -79,6 +79,7 @@ Revise identificacao.md e avaliacao.md do ciclo e aponte apenas:
 - resultados sem evidência citada;
 - itens do checklist marcados Respondido sem fonte, ou Não pertinente sem motivo;
 - itens marcados Respondido cujo conteúdo seja só hipótese do NIAR;
+- Síntese diferente dos blocos (resultado, motivo ou itens não localizados);
 
 Não crie pendências novas nem altere resultados; liste os problemas para o avaliador decidir.
 ```
