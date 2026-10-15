@@ -34,10 +34,10 @@ Pendência aberta só torna o requisito Inconclusivo quando impede a conclusão.
 
 | Item   | Pergunta                                                                                                                                     | Situação | Fonte ou motivo |
 | ------ | -------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | --------------- |
-| RC01.1 | Quais grupos ou populações podem ser afetados de forma diferente pela Tarefa?                                                              |            |                 |
-| RC01.2 | Por que esses grupos ou populações foram considerados relevantes para esta Tarefa e este Contexto de Uso?                                  |            |                 |
-| RC01.3 | A identificação decorre do Contexto de Uso e da população pertinente à avaliação, e não apenas dos atributos disponíveis nos dados? |            |                 |
-| RC01.4 | Existem grupos potencialmente relevantes que não podem ser analisados com os dados disponíveis?                                            |            |                 |
+| RC01.1 | Quais grupos ou populações a Tarefa pode afetar de forma diferente?                                                              |            |                 |
+| RC01.2 | Por que esses grupos importam para esta Tarefa e este Contexto de Uso?                                  |            |                 |
+| RC01.3 | Os grupos foram escolhidos pensando em onde e para quem a Tarefa é usada, e não só porque a informação existe nos dados? |            |                 |
+| RC01.4 | Há grupos importantes que os dados não permitem analisar?                                            |            |                 |
 | RC01.5 | Existem grupos potencialmente sujeitos a exclusão dos benefícios da Tarefa? (Apenas identificar; a análise de acesso é feita em RC04.)   |            |                 |
 | RC01.6 | Há limitações ou incertezas na identificação dos grupos e populações relevantes?                                                      |            |                 |
 

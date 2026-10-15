@@ -201,6 +201,7 @@ A identificação de diferença injustificada ou de condição relevante não é
 ### Requisito
 
 **Identificar, de forma fundamentada, os grupos e populações que podem ser afetados de forma desigual pela Tarefa de IA ou excluídos de seus benefícios.**
+**Em palavras simples:** quem pode ser prejudicado pela IA ou ficar sem o benefício dela? E por que esses grupos?
 
 ### O que o requisito busca verificar
 
@@ -221,18 +222,18 @@ A identificação dos grupos pode **se apoiar no Contexto de Uso, na literatura,
 
 ### Pergunta de aplicabilidade
 
-**A Tarefa, no Contexto de Uso avaliado, pode produzir efeitos ou benefícios que incidam sobre pessoas, grupos ou populações?**
+**Do jeito que é usada hoje (Contexto de Uso avaliado), a Tarefa pode afetar ou beneficiar pessoas, grupos ou populações?**
 
 Se não for possível determinar, registrar pendência de aplicabilidade e resultado Inconclusivo, com o motivo "aplicabilidade não determinada". Não presumir Não aplicável.
 
-### Roteiro de perguntas/Checklist do avaliador
+### Checklist do avaliador
 
-Percorrer todos os itens e registrar a situação de cada um na tabela Checklist de `ciclos/Cxx/avaliacao.md`: Respondido (com a fonte), Não localizado ou Não pertinente (com o motivo). Os itens orientam a verificação: não são requisitos, não recebem pontuação, e um item Não localizado não gera pendência automaticamente; aplicam-se as regras de pendência. O resultado é atribuído ao requisito, não aos itens. Se o requisito for Não aplicável, a tabela não é preenchida; registra-se só a justificativa de não aplicabilidade. Respondido vale quando as fontes respondem ao item; hipótese do NIAR não conta como Respondido: registrar Não localizado e descrever a hipótese.
+Para cada item, marque na tabela Checklist de `ciclos/Cxx/avaliacao.md`: **Respondido**, quando as fontes respondem (indique a fonte); **Não localizado**, quando as fontes não respondem (se houver hipótese do NIAR, descreva-a, mas ela não conta como resposta); ou **Não pertinente**, quando o item não se aplica a esta Tarefa (explique por quê). Os itens ajudam a verificar o requisito: não são requisitos e não valem pontos. O resultado é do requisito, não de cada item. Um item Não localizado não vira pendência por si só. Se o requisito for Não aplicável, não preencha a tabela; registre só a justificativa.
 
-- **RC01.1** Quais grupos ou populações podem ser afetados de forma diferente pela Tarefa?
-- **RC01.2** Por que esses grupos ou populações foram considerados relevantes para esta Tarefa e este Contexto de Uso?
-- **RC01.3** A identificação decorre do Contexto de Uso e da população pertinente à avaliação, e não apenas dos atributos disponíveis nos dados?
-- **RC01.4** Existem grupos potencialmente relevantes que não podem ser analisados com os dados disponíveis?
+- **RC01.1** Quais grupos ou populações a Tarefa pode afetar de forma diferente?
+- **RC01.2** Por que esses grupos importam para esta Tarefa e este Contexto de Uso?
+- **RC01.3** Os grupos foram escolhidos pensando em onde e para quem a Tarefa é usada, e não só porque a informação existe nos dados?
+- **RC01.4** Há grupos importantes que os dados não permitem analisar?
 - **RC01.5** Existem grupos potencialmente sujeitos a exclusão dos benefícios da Tarefa? (Apenas identificar; a análise de acesso é feita em RC04.)
 - **RC01.6** Há limitações ou incertezas na identificação dos grupos e populações relevantes?
 
@@ -301,7 +302,7 @@ Se não for possível determinar, registrar pendência de aplicabilidade e resul
 
 A impossibilidade de realizar determinada comparação por ausência ou insuficiência de dados não torna RC02 não aplicável; o resultado é Inconclusivo.
 
-### Roteiro de perguntas/Checklist do avaliador
+### Checklist do avaliador
 
 Percorrer todos os itens e registrar a situação de cada um na tabela Checklist de `ciclos/Cxx/avaliacao.md`: Respondido (com a fonte), Não localizado ou Não pertinente (com o motivo). Os itens orientam a verificação: não são requisitos, não recebem pontuação, e um item Não localizado não gera pendência automaticamente; aplicam-se as regras de pendência. O resultado é atribuído ao requisito, não aos itens. Se o requisito for Não aplicável, a tabela não é preenchida; registra-se só a justificativa de não aplicabilidade. Respondido vale quando as fontes respondem ao item; hipótese do NIAR não conta como Respondido: registrar Não localizado e descrever a hipótese.
 
@@ -392,7 +393,7 @@ Se não for possível determinar, registrar pendência de aplicabilidade e resul
 
 Ausência de informação sobre os dados, a variável-alvo ou o padrão de referência não justifica Não aplicável.
 
-### Roteiro de perguntas/Checklist do avaliador
+### Checklist do avaliador
 
 Percorrer todos os itens e registrar a situação de cada um na tabela Checklist de `ciclos/Cxx/avaliacao.md`: Respondido (com a fonte), Não localizado ou Não pertinente (com o motivo). Os itens orientam a verificação: não são requisitos, não recebem pontuação, e um item Não localizado não gera pendência automaticamente; aplicam-se as regras de pendência. O resultado é atribuído ao requisito, não aos itens. Se o requisito for Não aplicável, a tabela não é preenchida; registra-se só a justificativa de não aplicabilidade. Respondido vale quando as fontes respondem ao item; hipótese do NIAR não conta como Respondido: registrar Não localizado e descrever a hipótese. As informações factuais estão na seção anterior; o primeiro item registra onde foram localizadas.
 
@@ -489,7 +490,7 @@ Se não for possível determinar, registrar pendência de aplicabilidade e resul
 
 Um uso futuro pretendido que ainda não integra o Contexto de Uso avaliado não torna RC04 aplicável ao ciclo atual.
 
-### Roteiro de perguntas/Checklist do avaliador
+### Checklist do avaliador
 
 Percorrer todos os itens e registrar a situação de cada um na tabela Checklist de `ciclos/Cxx/avaliacao.md`: Respondido (com a fonte), Não localizado ou Não pertinente (com o motivo). Os itens orientam a verificação: não são requisitos, não recebem pontuação, e um item Não localizado não gera pendência automaticamente; aplicam-se as regras de pendência. O resultado é atribuído ao requisito, não aos itens. Se o requisito for Não aplicável, a tabela não é preenchida; registra-se só a justificativa de não aplicabilidade. Respondido vale quando as fontes respondem ao item; hipótese do NIAR não conta como Respondido: registrar Não localizado e descrever a hipótese.
 
