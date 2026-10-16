@@ -14,9 +14,9 @@ Referências do FIAR-Saúde (repositórios públicos, branch main):
 - Regras do ciclo: https://raw.githubusercontent.com/niar-saude-ufmg/FIAR-Saude/main/docs/ciclo_avaliacao.md
 - Requisitos de Justiça: https://raw.githubusercontent.com/niar-saude-ufmg/FIAR-Saude/main/docs/avaliacao/justica.md
 
-Use essas versões. Se não conseguir abrir algum link, avise e não use outra versão. Ao registrar o guia de requisitos usado, informe a data da consulta.
+Use essas versões. Se não conseguir abrir algum link, avise e não use outra versão. Não use cópias desses documentos anexadas ao chat ou ao Projeto, nem o PDF. Ao registrar o guia de requisitos usado, informe o commit ou, se não for possível obtê-lo, a data da consulta.
 
-O repositório do projeto [nome] está no ZIP anexado. Use só as fontes dele e as referências acima.
+O repositório do projeto [nome] está no ZIP anexado. Use só as fontes dele e as referências acima. Use os arquivos do ZIP no estado em que estão; o histórico do Git serve só para verificar versões. Ignore .history/ e arquivos de sistema.
 ```
 
 ## Prompt 0. Preparação do repositório
@@ -41,28 +41,33 @@ Se o repositório já estiver na estrutura atual, informe isso e pare. Não revi
 Preencha ciclos/Cxx/identificacao.md seguindo a parte "Fluxo do ciclo" de guia_requisitos_avaliacao.md.
 
 - Use só as fontes fornecidas neste ciclo. Registre cada uma na seção 2 (F-01, F-02...) e cite o ID em cada informação.
+- Registre como fonte só o que for pertinente à tarefa, à versão e ao contexto. Fontes de ciclos anteriores valem se continuarem pertinentes e atuais. Registros não verificados servem só como pistas.
 - Por padrão, o Contexto de Uso é o atual. Avalie um uso pretendido só se a delimitação o incluir explicitamente; registre à parte o uso pretendido que não for objeto do ciclo.
 - Inferência sem sustentação suficiente deve ser marcada como hipótese do NIAR, com base e limitação.
 - Não deduza responsabilidades técnicas. Se não estiverem documentadas, registre como não confirmadas.
 - Falta de identificador exato da versão vai em "Limitações de identificação"; não é pendência.
 - Abra pendência D-xx só se ela impedir identificar a Tarefa de IA ou relacionar as evidências a ela.
 - Campo vazio não é pendência.
-- Termine com a decisão "pronto para avaliar" e a justificativa.
+- Inconsistência (DI-xx) só com contradição confirmada, dentro de uma fonte ou entre fontes, sobre o mesmo fato, versão e contexto.
+- Termine com a decisão (pronto para avaliar: Sim ou Não) e a justificativa.
 ```
 
 ## Prompt 2. Avaliação de um requisito
 
 ```text
-Preencha o bloco do requisito [RCxx] em ciclos/Cxx/avaliacao.md seguindo guia_requisitos_avaliacao.md.
+Preencha o bloco do requisito [RCxx] em ciclos/Cxx/avaliacao.md seguindo guia_requisitos_avaliacao.md. Avalie RC01 antes dos demais requisitos.
 
 - Responda primeiro à pergunta de aplicabilidade, com justificativa, usando as informações factuais das fontes. Se não for possível determinar, abra pendência e marque Inconclusivo com o motivo "aplicabilidade não determinada".
-- Preencha a tabela Checklist do requisito: Respondido (com fonte e seção), Não localizado ou Não pertinente (com motivo). O resultado é do requisito, não dos itens; item Não localizado não gera pendência automaticamente.
+- Preencha a tabela Checklist do requisito: Respondido (com fonte e seção), Não localizado ou Não pertinente (com motivo). O resultado é do requisito, não dos itens; item Não localizado não gera pendência automaticamente. Se o requisito for Não aplicável, não preencha a tabela; registre só a justificativa.
+- Hipótese do NIAR não conta como Respondido: use Não localizado e descreva a hipótese.
 - Cite as evidências pelo ID da fonte e pela seção.
 - Separe informação factual de análise específica de Justiça.
 - Resultado: Atendido, Não atendido, Inconclusivo (com motivo) ou Não aplicável. Atendimento parcial ou prática apenas planejada não levam automaticamente a Inconclusivo: com evidência suficiente de não atendimento, o resultado é Não atendido.
 - Ausência de artefato não é resultado.
 - Antes de abrir uma pendência, verifique: é necessária para este requisito? já está em alguma fonte? já foi respondida? Só abra se a primeira for sim e as demais forem não. Indique o destinatário (Equipe, ou NIAR para verificação interna ou decisão metodológica ainda não tomada).
 - Inconsistência só com contradição confirmada, dentro de uma fonte ou entre fontes, sobre o mesmo fato, versão e contexto.
+- Encaminhamento: recomendação do NIAR é não obrigatória e não altera o resultado; condicionantes cabem só ao Comitê.
+- Atualize a linha do requisito na Síntese do ciclo.
 - Não escreva nos artefatos da equipe.
 ```
 
@@ -74,12 +79,16 @@ Revise identificacao.md e avaliacao.md do ciclo e aponte apenas:
 - pendências sem vínculo com a delimitação ou com um requisito;
 - pendências que pedem informação já disponível ou já respondida em comunicacoes/;
 - decisões metodológicas já tomadas registradas como pendência;
+- pendências enviadas à Equipe que dependem de verificação ou decisão do NIAR;
+- pendências encerradas sem fonte;
 - requisitos marcados Inconclusivo quando a evidência já mostra não atendimento;
+- requisitos marcados Não aplicável por ausência de prática, mecanismo ou evidência;
 - inconsistências sem duas fontes conflitantes;
 - resultados sem evidência citada;
 - itens do checklist marcados Respondido sem fonte, ou Não pertinente sem motivo;
 - itens marcados Respondido cujo conteúdo seja só hipótese do NIAR;
 - Síntese diferente dos blocos (resultado, motivo ou itens não localizados);
+- na identificação: hipótese registrada como fato, responsabilidade técnica deduzida ou fonte não pertinente à unidade.
 
 Não crie pendências novas nem altere resultados; liste os problemas para o avaliador decidir.
 ```
@@ -90,6 +99,7 @@ Não crie pendências novas nem altere resultados; liste os problemas para o ava
 Preencha relatorios/RCG-xxx.md a partir das sínteses dos ciclos indicados.
 
 - Linguagem simples, para quem não é da área técnica.
+- Indique o motivo do envio, conforme os gatilhos do guia, e os ciclos e unidades abrangidos.
 - Na cobertura, diga explicitamente quais dimensões não foram avaliadas.
 - Um risco para cada requisito Não atendido ou Inconclusivo: o risco, quem pode ser afetado, o requisito de origem e, se Inconclusivo, o que não se sabe.
 - Não classifique gravidade e não diga se o risco é aceitável; isso cabe ao Comitê.
