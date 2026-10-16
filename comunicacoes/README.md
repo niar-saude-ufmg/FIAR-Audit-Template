@@ -5,7 +5,7 @@ Este diretório registra comunicações formais ou relevantes entre o NIAR-Saúd
 Podem ser registrados aqui, quando aplicável:
 
 - solicitações de preenchimento ou correção do Formulário de Entrada;
-- pedidos de confirmação factual;
+- pedidos de confirmação factual, quando a informação não estiver em fonte verificável;
 - solicitações de esclarecimento;
 - solicitações de evidência adicional;
 - respostas formais da equipe do projeto;

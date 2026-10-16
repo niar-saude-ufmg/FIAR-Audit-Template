@@ -46,7 +46,7 @@ Nas dimensões já consolidadas na revisão metodológica atual, as formulaçõe
 1. **Entrada**: formulário do projeto (entrada/), aberto na entrada e atualizado quando houver mudanças relevantes, com um bloco por Tarefa de IA apresentada.
 2. **Delimitação:** ciclos/Cxx/identificacao.md. Termina com "pronto para avaliar". Só bloqueia se não for possível identificar a tarefa ou relacionar as evidências a ela.
 3. **Avaliação**: ciclos/Cxx/avaliacao.md, um bloco por requisito. RC01 antes dos demais.
-4. **Rodadas com a equipe**: uma mensagem por rodada, com as pendências destinadas à equipe. Recomendações podem seguir na mesma mensagem, em parte separada e identificadas como não obrigatórias. A equipe responde pelo canal que preferir; a resposta é guardada em comunicacoes/ e citada na avaliação. Não se exige atualizar um artefato só para transcrever uma resposta; pode ser necessário quando o requisito exigir documentação atualizada ou comunicação a um público.
+4. **Rodadas com a equipe**: uma mensagem por rodada, com as pendências destinadas à equipe. A mensagem cita o commit ou a versão dos arquivos a conferir. Recomendações podem seguir na mesma mensagem, em parte separada e identificadas como não obrigatórias. A equipe responde pelo canal que preferir; a resposta é guardada em comunicacoes/ e citada na avaliação. Não se exige atualizar um artefato só para transcrever uma resposta; pode ser necessário quando o requisito exigir documentação atualizada ou comunicação a um público.
 5. **Fechamento**: resultado de cada requisito e síntese. Se houver gatilho, segue o relatório ao Comitê.
 
 ## Resultados por requisito
