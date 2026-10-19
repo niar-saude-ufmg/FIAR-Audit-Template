@@ -65,6 +65,7 @@ Ausência de artefato não é resultado. A pergunta é sempre se há evidência 
 - Existe só ligada à delimitação (D-xx) ou a um requisito (RCxx-Px).
 - Serve para delimitar a avaliação, determinar a aplicabilidade ou concluir a análise.
 - Antes de abrir: (1) é necessária? (2) já está em alguma fonte? (3) já foi respondida? Só abrir se (1) for sim e as demais forem não.
+- Se a fonte responde em parte, a questão cita o que já está documentado e pergunta só o que falta.
 - **Destinatário**: Equipe (vai na rodada) ou NIAR (verificação interna ou decisão metodológica ainda não tomada).
 - Bloqueia só o que está ligado a ela.
 - **Estados**: aberta, respondida, encerrada, cancelada (com motivo). Resposta recebida é analisada e não encerra a pendência automaticamente. Só o NIAR encerra, citando a fonte.
