@@ -14,7 +14,7 @@ Referências do FIAR-Saúde (repositórios públicos, branch main):
 - Regras do ciclo: https://raw.githubusercontent.com/niar-saude-ufmg/FIAR-Saude/main/docs/ciclo_avaliacao.md
 - Requisitos de Justiça: https://raw.githubusercontent.com/niar-saude-ufmg/FIAR-Saude/main/docs/avaliacao/justica.md
 
-Use essas versões. Se não conseguir abrir algum link, avise e não use outra versão. Não use cópias desses documentos anexadas ao chat ou ao Projeto, nem o PDF. Ao registrar o guia de requisitos usado, informe o commit ou, se não for possível obtê-lo, a data da consulta.
+Use essas versões. Se não conseguir abrir algum link, avise e não use outra versão. Não use cópias desses documentos anexadas ao chat ou ao Projeto, nem o PDF. Ao registrar o guia de requisitos usado, informe o commit e data, se não for possível obtê-lo, a data da consulta.
 
 O repositório do projeto [nome] está no ZIP anexado. Use só as fontes dele e as referências acima. Use os arquivos do ZIP no estado em que estão; o histórico do Git serve só para verificar versões. Ignore .history/ e arquivos de sistema.
 ```
