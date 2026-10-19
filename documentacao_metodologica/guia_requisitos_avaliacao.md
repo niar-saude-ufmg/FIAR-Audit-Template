@@ -32,7 +32,7 @@ Nas dimensões já consolidadas na revisão metodológica atual, as formulaçõe
 ## Conceitos
 
 - **Projeto**: iniciativa responsável por uma ou mais Tarefas de IA; guarda o histórico dos ciclos.
-- **Tarefa de IA**: modelo, dados e procedimentos orientados a um objetivo clínico ou operacional. Nova tarefa quando mudam objetivo, tipo de resultado ou escopo essencial.
+- **Tarefa de IA**: modelo, dados e procedimentos orientados a um objetivo clínico ou operacional. Nova tarefa quando mudam objetivo, tipo de resultado ou escopo essencial. Modelo é um componente cujos parâmetros são ajustados ou aprendidos a partir de dados (por exemplo, aprendizado de máquina ou modelo estatístico, como o pareamento probabilístico de registros). Procedimento só com regras fixas definidas por pessoas não é Tarefa de IA; quando gera dados usados por uma Tarefa de IA, é examinado na avaliação dela (RC03).
 - **Versão Avaliável:** estado da tarefa avaliado no ciclo. Falta de identificador exato não impede automaticamente a avaliação, desde que as evidências possam ser relacionadas à tarefa, ao estado avaliado e ao contexto.
 - **Contexto de Uso**: condições em que a tarefa é desenvolvida, avaliada ou usada. Por padrão, o ciclo considera o contexto atual; um uso pretendido pode ser avaliado antes de sua implementação, se explicitamente delimitado e justificado. O uso pretendido que não for objeto do ciclo é registrado separadamente.
 - **Unidade de avaliação**: Tarefa + Versão Avaliável + Contexto de Uso.
