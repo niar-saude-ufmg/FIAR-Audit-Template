@@ -19,6 +19,7 @@ Podem ser registrados aqui, quando aplicável:
 - Quando uma comunicação estiver relacionada a uma pendência ou inconsistência, indicar o respectivo ID.
 - Respostas recebidas da equipe devem ser verificadas pelo NIAR-Saúde antes de serem consideradas suficientes para resolução de pendência.
 - Comunicações não substituem os registros do ciclo (`ciclos/Cxx/identificacao.md` e `ciclos/Cxx/avaliacao.md`), onde ficam pendências e inconsistências.
+- Mensagem ainda não enviada é marcada no cabeçalho como **Data:** não enviada (rascunho). Ao enviar, registrar a data.
 
 ## Convenção de nomes
 
