@@ -33,9 +33,9 @@ A presença de um modelo ou pasta não torna o artefato obrigatório. Modelo vaz
 ## Como usar
 
 1. Leia `documentacao_metodologica/guia_requisitos_avaliacao.md`: fluxo do ciclo (resultados, pendências, relatório) e requisitos.
-2. Para um projeto novo: **Use this template**, crie um repositório privado e defina os acessos.
+2. Para um projeto novo: **Use this template**, crie um repositório privado, defina os acessos e ajuste o título e a lista de pastas deste README ao projeto.
 3. Para cada novo ciclo, copie `ciclos/C01/` para `ciclos/C02/` e assim por diante.
-4. O histórico fica no Git; commits citam os IDs (D-xx, RCxx-Px, RCG-xxx, DCG-xxx) quando pertinente.
+4. O histórico fica no Git; commits citam os IDs (D-xx, RCxx-Px, RCG-xxx, DCG-xxx) quando pertinente. Antes do primeiro commit, configure seu nome e e-mail no Git (`git config --global user.name` e `git config --global user.email`), para que a autoria fique registrada.
 
 Validar a estrutura: `python3 fiar_sync/validate_structure.py`
 Gerar o PDF: ver `pdf/README.md`.
