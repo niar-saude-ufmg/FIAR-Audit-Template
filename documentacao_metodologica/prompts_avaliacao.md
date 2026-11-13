@@ -1,29 +1,32 @@
 # Prompts de apoio à avaliação
 
-Uso opcional, com assistente de IA. O resultado é rascunho: o avaliador do NIAR revisa e responde por ele. Quem pré-preenche o relatório de dimensão (Prompt 1b) e quem verifica (Prompt 2) são agentes separados: use chats diferentes.
-Os guias ficam nos repositórios públicos do FIAR. O repositório do projeto é privado: envie-o em ZIP. No início de cada chat, cole a mensagem de contexto abaixo e, depois, o prompt da etapa.
+Uso opcional, com assistente de IA. O resultado é rascunho: o avaliador do NIAR revisa e responde por ele. Quem pré-preenche o relatório de dimensão (Prompt 1b) e quem verifica (Prompt 2) são agentes separados: use sessões diferentes.
+As referências do FIAR são lidas online, nos repositórios públicos, na versão indicada pela tag. O repositório do projeto é privado e é lido localmente: abra o assistente de IA na pasta dele. No início de cada sessão, cole a mensagem de contexto abaixo e, depois, o prompt da etapa.
+
 
 ## Contexto (colar no início do chat)
 
 ```text
-Referências do FIAR-Saúde (repositórios públicos, branch main):
+Referências do FIAR-Saúde (repositórios públicos, versão [tag]):
 
-- Guia de avaliação (fluxo e requisitos): https://raw.githubusercontent.com/niar-saude-ufmg/FIAR-Audit-Template/main/documentacao_metodologica/guia_requisitos_avaliacao.md
-- Modelos do ciclo: https://raw.githubusercontent.com/niar-saude-ufmg/FIAR-Audit-Template/main/ciclos/C01/identificacao.md e https://raw.githubusercontent.com/niar-saude-ufmg/FIAR-Audit-Template/main/ciclos/C01/avaliacao.md
-- Modelo de relatório ao Comitê: https://raw.githubusercontent.com/niar-saude-ufmg/FIAR-Audit-Template/main/relatorios/RCG-001.md
-- Modelo do Fairness Report: https://raw.githubusercontent.com/niar-saude-ufmg/FIAR-Audit-Template/main/artefatos/fairness_reports/fairness_report.md
-- Regras do ciclo: https://raw.githubusercontent.com/niar-saude-ufmg/FIAR-Saude/main/docs/ciclo_avaliacao.md
-- Requisitos de Justiça: https://raw.githubusercontent.com/niar-saude-ufmg/FIAR-Saude/main/docs/avaliacao/justica.md
+- Guia de avaliação (fluxo e requisitos): https://raw.githubusercontent.com/niar-saude-ufmg/FIAR-Audit-Template/[tag]/documentacao_metodologica/guia_requisitos_avaliacao.md
+- Modelos do ciclo: https://raw.githubusercontent.com/niar-saude-ufmg/FIAR-Audit-Template/[tag]/ciclos/C01/identificacao.md e https://raw.githubusercontent.com/niar-saude-ufmg/FIAR-Audit-Template/[tag]/ciclos/C01/avaliacao.md
+- Modelo do Fairness Report: https://raw.githubusercontent.com/niar-saude-ufmg/FIAR-Audit-Template/[tag]/artefatos/fairness_reports/fairness_report.md
+- Modelo de relatório ao Comitê: https://raw.githubusercontent.com/niar-saude-ufmg/FIAR-Audit-Template/[tag]/relatorios/RCG-001.md
+- Regras do ciclo: https://raw.githubusercontent.com/niar-saude-ufmg/FIAR-Saude/[tag]/docs/ciclo_avaliacao.md
+- Requisitos de Justiça: https://raw.githubusercontent.com/niar-saude-ufmg/FIAR-Saude/[tag]/docs/avaliacao/justica.md
 
-Use essas versões. Se não conseguir abrir algum link, avise e não use outra versão. Não use cópias desses documentos anexadas ao chat ou ao Projeto, nem o PDF. Ao registrar o guia de requisitos usado, informe o commit e data, se não for possível obtê-lo, a data da consulta.
+Use essas versões, lidas online. Se não conseguir abrir algum link, avise e pare; não use outra versão. Não use cópias locais desses documentos, mesmo que existam nesta máquina, nem o PDF. Ao registrar o guia de requisitos usado, informe a tag.
 
-O repositório do projeto [nome] está no ZIP anexado. Use só as fontes dele e as referências acima. Use os arquivos do ZIP no estado em que estão; o histórico do Git serve só para verificar versões. Ignore .history/ e arquivos de sistema. O relatório de dimensão da equipe, quando houver, está em artefatos/ (Fairness Report em artefatos/fairness_reports/); informe a versão usada. Em ciclo que recomeçou, o avaliacao.md anterior não é fonte; as comunicações em comunicacoes/ continuam valendo.
+O repositório do projeto [nome] é a pasta local aberta no Assistente de IA. Antes de começar, informe a branch e o commit dele. Use só as fontes dele e as referências acima. Arquivos sem commit só contam como fonte se o avaliador confirmar. O histórico do Git serve para verificar versões. Ignore .history/ e arquivos de sistema. O relatório de dimensão da equipe, quando houver, está em artefatos/ (Fairness Report em artefatos/fairness_reports/); informe a versão usada. Em ciclo que recomeçou, o avaliacao.md anterior não é fonte; as comunicações em comunicacoes/ continuam valendo.
 
+Altere só o arquivo indicado no prompt da etapa. Não altere artefatos da equipe, não faça commit e não rode comandos que mudem o Git. O CLAUDE.md do projeto também vale.
 ```
+
 
 ## Prompt 0. Preparação do repositório
 
-Uso: uma vez, em repositórios criados antes do fluxo atual. Cole antes a mensagem de contexto, com o ZIP do repositório anexado.
+Uso: uma vez, em repositórios criados antes do fluxo atual. Cole antes a mensagem de contexto, com o Claude Code aberto na pasta do repositório do projeto.
 
 ```text
 Compare o repositório do projeto com a estrutura atual do FIAR-Audit-Template e aponte:
@@ -56,7 +59,7 @@ Preencha ciclos/Cxx/identificacao.md seguindo a parte "Fluxo do ciclo" de guia_r
 
 ## Prompt 1b. Pré-preenchimento do relatório de dimensão sem sala segura
 
-Uso: quando não houver execução na sala segura. O NIAR pré-preenche o relatório como rascunho para a equipe. Use um chat só para isto; a verificação (Prompt 2) é feita em outro chat.
+Uso: quando não houver execução na sala segura. O NIAR pré-preenche o relatório como rascunho para a equipe. Use uma sessão só para isto; a verificação (Prompt 2) é feita em outra sessão.
 
 ```text
 Pré-preencha o relatório de dimensão de [dimensão] do projeto, no modelo [para Justiça: artefatos/fairness_reports/fairness_report.md do FIAR-Audit-Template], seguindo a etapa 3 de "Etapas do ciclo" de guia_requisitos_avaliacao.md. Não houve execução na sala segura.
@@ -76,12 +79,10 @@ Pré-preencha o relatório de dimensão de [dimensão] do projeto, no modelo [pa
 - O resultado é rascunho para a equipe conferir, completar e assinar. Só depois de assinado ele é posição da equipe.
 ```
 
-
-
 ## Prompt 2. Avaliação de um requisito
 
 ```text
-Preencha o bloco do requisito [RCxx] em ciclos/Cxx/avaliacao.md seguindo guia_requisitos_avaliacao.md. Avalie RC01 antes dos demais requisitos. O relatório de dimensão assinado pela equipe, versão [x], é o ponto de partida. Use um chat diferente do que pré-preencheu o relatório.
+Preencha o bloco do requisito [RCxx] em ciclos/Cxx/avaliacao.md seguindo guia_requisitos_avaliacao.md. Avalie RC01 antes dos demais requisitos. O relatório de dimensão assinado pela equipe, versão [x], é o ponto de partida. Use uma sessão diferente da que pré-preencheu o relatório.
 
 - Responda primeiro à pergunta de aplicabilidade, com justificativa, usando as informações factuais das fontes. Se não for possível determinar, abra pendência de aplicabilidade e marque Inconclusivo com o motivo "aplicabilidade não determinada". Pendência de aplicabilidade não é lacuna. Em RC04, registre o que a equipe declarou na Seção 4 do Fairness Report e confirme ou não, com justificativa.
 - Para cada item do checklist, leia o campo do relatório indicado pelo código RCxx.y e confira com as evidências. Respondido: o campo responde e a evidência o sustenta (cite o campo e a fonte). Não localizado: campo vazio ou que não responde. Não pertinente: com motivo. O resultado é do requisito, não dos itens. Se o requisito for Não aplicável, não preencha a tabela; registre só a justificativa.
@@ -113,8 +114,6 @@ Prepare o pedido da rodada [n] a partir das lacunas abertas e das pendências de
 - Recomendações do NIAR vão em parte separada, identificadas como não obrigatórias.
 - Entregue como rascunho de comunicação para o avaliador revisar antes do envio.
 ```
-
-
 
 ## Prompt 3. Revisão do ciclo
 
