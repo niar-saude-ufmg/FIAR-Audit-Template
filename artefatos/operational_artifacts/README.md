@@ -242,19 +242,19 @@ A revisão periódica não substitui uma nova avaliação quando houver mudança
 
 Cada artefato operacional deve indicar, quando aplicável:
 
-| Campo                 | Conteúdo esperado                              |
-| --------------------- | ----------------------------------------------- |
-| Projeto               | Nome do projeto                                 |
-| Tarefa de IA          | Tarefa monitorada                               |
-| Versão Avaliável    | Versão relacionada                             |
-| Versão em operação | Versão efetivamente implantada                 |
-| Contexto de Uso       | Contexto operacional                            |
-| Ambiente              | Piloto, homologação ou produção             |
-| Unidade ou sistema    | Local de operação                             |
-| Período              | Intervalo coberto                               |
-| Responsável          | Pessoa ou equipe                                |
-| Fonte                 | Logs, sistemas, banco ou relatório             |
-| Estado                | Rascunho, em revisão, validado ou substituído |
+| Campo                 | Conteúdo esperado                  |
+| --------------------- | ----------------------------------- |
+| Projeto               | Nome do projeto                     |
+| Tarefa de IA          | Tarefa monitorada                   |
+| Versão Avaliável    | Versão relacionada                 |
+| Versão em operação | Versão efetivamente implantada     |
+| Contexto de Uso       | Contexto operacional                |
+| Ambiente              | Piloto, homologação ou produção |
+| Unidade ou sistema    | Local de operação                 |
+| Período              | Intervalo coberto                   |
+| Responsável          | Pessoa ou equipe                    |
+| Fonte                 | Logs, sistemas, banco ou relatório |
+| Estado                | Um dos estados da seção 14        |
 
 A versão implantada deve poder ser associada à versão avaliada.
 
