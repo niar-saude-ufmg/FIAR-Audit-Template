@@ -77,6 +77,8 @@ Pré-preencha o relatório de dimensão de [dimensão] do projeto, no modelo [pa
 - Não atribua resultado a requisito, não use Atendido, Não atendido, Inconclusivo ou Não aplicável e não aponte lacunas. Isso é da verificação.
 - Ao final, liste para o avaliador: campos [A] sem fonte, campos [J] vazios, campos [a confirmar] e divergências registradas.
 - O resultado é rascunho para a equipe conferir, completar e assinar. Só depois de assinado ele é posição da equipe.
+- Versão do relatório (Seção 0): 0.1.0. Entregue o rascunho ao avaliador para ser anexado ao pedido à equipe, em comunicacoes/anexos/. Não grave em artefatos/fairness_reports/: o relatório só entra lá como 1.0.0, depois de assinado pela equipe.
+
 ```
 
 ## Prompt 2. Avaliação de um requisito
