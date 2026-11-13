@@ -52,11 +52,11 @@ Só questões que impedem identificar a unidade avaliada.
 
 ## 7. Inconsistências da delimitação
 
-Só contradição confirmada, dentro de uma fonte ou entre fontes, sobre o mesmo fato, versão e contexto.
+Só contradição confirmada, dentro de uma fonte ou entre fontes, sobre o mesmo fato, versão e contexto. Inconsistência aberta no fechamento entra nas limitações.
 
-| ID    | Fonte 1 | Fonte 2 ou trecho da mesma fonte | Contradição | Estado |
-| ----- | ------- | -------------------------------- | ------------- | ------ |
-| DI-01 |         |                                  |               |        |
+| ID    | Fonte 1 | Fonte 2 ou trecho da mesma fonte | Contradição | Estado (aberta/resolvida/cancelada) | Resolução e fonte |
+| ----- | ------- | -------------------------------- | ----------- | ----------------------------------- | ----------------- |
+| DI-01 |         |                                  |             |                                     |                   |
 
 ## 8. Decisão
 

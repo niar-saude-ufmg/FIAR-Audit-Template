@@ -159,31 +159,24 @@ Os Model Cards devem registrar, quando aplicável:
 * condições de implantação.
 
 Um Model Card não substitui o registro da Tarefa de IA ou do Contexto de Uso.
-
+ 
 O mesmo modelo pode participar de mais de uma Tarefa de IA.
 
 ### `fairness_reports/`
 
-Contém os relatórios de justiça.
+Contém o Fairness Report, relatório de dimensão de Justiça. É obrigatório nas Trilhas Experimental e Produção e é a posição formal da equipe sobre RC01 a RC04 (ver `docs/avaliacao/justica.md` do FIAR-Saude e o guia de avaliação).
 
-Esses relatórios devem distinguir claramente:
+O modelo oficial é `FairnessReport_FIAR_Template.docx`, com o guia de preenchimento `FairnessReport_FIAR_Guia.docx`. O relatório assinado pela equipe fica nesta pasta, no repositório do projeto.
 
-* informações já existentes;
-* grupos ou estratos avaliados;
-* justificativa dos grupos;
-* métricas utilizadas;
-* resultados disponíveis;
-* disparidades identificadas;
-* mitigações realizadas;
-* riscos residuais;
-* limitações;
-* análises ainda necessárias.
+* O rascunho pré-preenchido (versão 0.1.0) não fica nesta pasta: vai anexado ao pedido à equipe, em `comunicacoes/anexos/`. O relatório entra aqui como 1.0.0, depois de assinado pela equipe.
+* Respostas a lacunas apontadas pelo NIAR-Saúde geram novas versões (MINOR), que listam na Seção 0 as lacunas a que respondem.
+* O relatório resume os fatos com fonte e versão e separa fatos [A] de julgamentos [J] da equipe.
 
 Métricas globais não devem ser usadas como conclusão sobre justiça.
 
 A ausência de análise por grupos não permite afirmar ausência de disparidade.
 
-Quando uma avaliação de justiça for aplicável e necessária, mas ainda não tiver sido executada, essa condição deve ser registrada como análise pendente no processo de avaliação. Um template não preenchido não deve ser considerado, por si só, evidência de avaliação nem pendência automática.
+Um modelo não preenchido não é evidência. Se o relatório não for entregue no prazo, os requisitos de Justiça ficam Inconclusivos, com o motivo "relatório de dimensão não entregue", salvo evidência suficiente de não atendimento.
 
 ### `explainability_reports/`
 
@@ -356,7 +349,7 @@ Cada artefato deve indicar, quando aplicável:
 | Data de referência  | Data das informações                              |
 | Responsável         | Pessoa ou equipe responsável                       |
 | Fontes               | Dados, código, execução ou documento relacionado |
-| Estado               | Rascunho, em validação, validado ou substituído  |
+| Estado               | Um dos estados da Seção 8                         |
 
 Quando a vinculação à Versão Avaliável for necessária para o requisito analisado e não puder ser estabelecida de forma suficiente, o NIAR-Saúde deve registrar a limitação e determinar se ela constitui uma pendência de rastreabilidade.
 
@@ -370,7 +363,7 @@ Os documentos podem utilizar o seguinte cabeçalho:
 ---
 documento:
 versao_documento:
-status:
+estado:
 projeto:
 tarefa:
 versao_avaliavel:
@@ -388,23 +381,23 @@ O uso do cabeçalho não substitui o histórico de versões.
 
 ## 8. Estados dos artefatos
 
-Os artefatos podem utilizar os seguintes estados:
+Os artefatos de desenvolvimento usam estes estados:
 
-* `Rascunho`
-* `Em preenchimento pelo projeto`
-* `Minuta para validação`
-* `Em revisão`
-* `Validado factualmente pelo projeto`
-* `Em avaliação pelo NIAR`
-* `Requer atualização`
-* `Substituído`
-* `Arquivado`
+* `Rascunho`: em preparação ou pré-preenchido, ainda não validado pela equipe. No relatório de dimensão, versão 0.x.
+* `Validado pela equipe`: conferido e confirmado pela equipe. No relatório de dimensão, assinado (versão 1.0.0 ou posterior).
+* `Requer atualização`: há lacuna aberta, mudança relevante ou informação desatualizada.
+* `Substituído`: há versão mais recente.
+* `Arquivado`: fora de uso, mantido no histórico.
 
-Esses estados não equivalem a resultado de conformidade.
+Os artefatos operacionais usam os estados do `operational_artifacts/README.md` (seção 14).
+
+Esses estados não equivalem a resultado de conformidade. O resultado dos requisitos é do NIAR-Saúde e fica no avaliacao.md do ciclo.
 
 ---
 
-## 9. Marcadores de lacunas
+## 9. Marcadores de informação faltante
+
+Estes marcadores não são lacunas no sentido do ciclo de avaliação (RCxx-Ly, apontadas pelo NIAR-Saúde no avaliacao.md). O relatório de dimensão não usa estes marcadores: usa campo vazio, "[a confirmar]" e a tabela "Divergências entre fontes".
 
 Quando a informação não estiver disponível:
 
@@ -513,6 +506,7 @@ A definição de uma nova Versão Avaliável deve seguir a documentação oficia
 
 O NIAR-Saúde pode:
 
+* verificar o relatório de dimensão e apontar lacunas, respondidas pela equipe em nova versão;
 * solicitar complementações;
 * identificar inconsistências;
 * pedir evidências adicionais;
