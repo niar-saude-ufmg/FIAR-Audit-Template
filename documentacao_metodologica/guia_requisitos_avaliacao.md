@@ -618,7 +618,7 @@ A fundamentação de **RC01–RC04** está registrada em [`docs/mapeamento_refer
 
 Este arquivo deve acompanhar o estado da revisão metodológica do FIAR-Saúde.
 
-**Vigência.** As mudanças da nova ordem do ciclo (relatórios de dimensão, Fairness Report obrigatório, lacunas, estados de inconsistência) valem para todos os ciclos a partir desta versão do guia, inclusive os que estão em andamento. Um ciclo em andamento recomeça a avaliação: a identificação é conferida e mantida, se continuar válida; a equipe entrega o relatório de dimensão; o avaliacao.md é refeito no modelo novo. A avaliação anterior (avaliacao.md) não é usada como fonte e fica só no histórico do Git. As comunicações com a equipe registradas em comunicacoes/ continuam valendo como fonte e podem apoiar o pré-preenchimento do relatório de dimensão. A decisão e o motivo ficam registrados no commit do projeto.
+**Vigência.** As mudanças da nova ordem do ciclo (relatórios de dimensão, Fairness Report obrigatório, lacunas, estados de inconsistência) valem para todos os ciclos a partir da tag v2.0 (13/11/2026), inclusive os que estão em andamento. Um ciclo em andamento recomeça a avaliação: a identificação é conferida e mantida, se continuar válida; a equipe entrega o relatório de dimensão; o avaliacao.md é refeito no modelo novo. A avaliação anterior (avaliacao.md) não é usada como fonte e fica só no histórico do Git. As comunicações com a equipe registradas em comunicacoes/ continuam valendo como fonte e podem apoiar o pré-preenchimento do relatório de dimensão. A decisão e o motivo ficam registrados no commit do projeto.
 
 Quando uma dimensão for estabilizada:
 
