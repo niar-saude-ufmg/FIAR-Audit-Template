@@ -11,7 +11,7 @@ Referências do FIAR-Saúde (repositórios públicos, versão [tag]):
 
 - Guia de avaliação (fluxo e requisitos): https://raw.githubusercontent.com/niar-saude-ufmg/FIAR-Audit-Template/[tag]/documentacao_metodologica/guia_requisitos_avaliacao.md
 - Modelos do ciclo: https://raw.githubusercontent.com/niar-saude-ufmg/FIAR-Audit-Template/[tag]/ciclos/C01/identificacao.md e https://raw.githubusercontent.com/niar-saude-ufmg/FIAR-Audit-Template/[tag]/ciclos/C01/avaliacao.md
-- Modelo do Fairness Report: https://raw.githubusercontent.com/niar-saude-ufmg/FIAR-Audit-Template/[tag]/artefatos/fairness_reports/fairness_report.md
+- Modelo do Fairness Report e guia de preenchimento: artefatos/fairness_reports/FairnessReport_FIAR_Template.docx e FairnessReport_FIAR_Guia.docx do FIAR-Audit-Template
 - Modelo de relatório ao Comitê: https://raw.githubusercontent.com/niar-saude-ufmg/FIAR-Audit-Template/[tag]/relatorios/RCG-001.md
 - Regras do ciclo: https://raw.githubusercontent.com/niar-saude-ufmg/FIAR-Saude/[tag]/docs/ciclo_avaliacao.md
 - Requisitos de Justiça: https://raw.githubusercontent.com/niar-saude-ufmg/FIAR-Saude/[tag]/docs/avaliacao/justica.md
@@ -62,7 +62,7 @@ Preencha ciclos/Cxx/identificacao.md seguindo a parte "Fluxo do ciclo" de guia_r
 Uso: quando não houver execução na sala segura. O NIAR pré-preenche o relatório como rascunho para a equipe. Use uma sessão só para isto; a verificação (Prompt 2) é feita em outra sessão.
 
 ```text
-Pré-preencha o relatório de dimensão de [dimensão] do projeto, no modelo [para Justiça: artefatos/fairness_reports/fairness_report.md do FIAR-Audit-Template], seguindo a etapa 3 de "Etapas do ciclo" de guia_requisitos_avaliacao.md. Não houve execução na sala segura.
+Pré-preencha o relatório de dimensão de [dimensão] do projeto, no modelo [para Justiça: FairnessReport_FIAR_Template.docx, com o guia FairnessReport_FIAR_Guia.docx], seguindo a etapa 3 de "Etapas do ciclo" de guia_requisitos_avaliacao.md. Não houve execução na sala segura.
 
 - Tarefa de IA, Versão Avaliável, Contexto de Uso e Trilha: copie de ciclos/Cxx/identificacao.md.
 - Use só estas fontes, registradas na identificação: Model Card, Data Card, publicações e comunicações em comunicacoes/. Não use o avaliacao.md de ciclos anteriores nem registros do fluxo anterior.
@@ -70,8 +70,9 @@ Pré-preencha o relatório de dimensão de [dimensão] do projeto, no modelo [pa
 - Fato é o que existe ou aconteceu: números, métricas, fontes dos dados, onde e como a Tarefa é usada. Fatos entram resumidos nos campos [A], com fonte. Não copie trechos longos.
 - Posição da equipe é julgamento, critério, decisão ou intenção (por exemplo, "não há critério de aceitabilidade", "a concordância não foi estratificada"). Posições tiradas de comunicações ou do Model Card entram nos campos [J] com [a confirmar] no início. Não as transforme em fato nem em decisão da equipe.
 - Não escreva julgamentos seus nos campos [J]. Se nenhuma fonte trouxer a posição da equipe, deixe o campo vazio.
-- Divergência entre fontes: registre na tabela "Divergências entre fontes" da Seção 0, com as duas fontes. Não escolha uma delas.
-- Seção 0, Execução na sala segura: escreva que não houve e indique as fontes dos resultados. "Lacunas a que esta versão responde": "não se aplica".
+- Divergência entre fontes: registre no campo "Divergências entre fontes" da Seção 0, com as duas fontes. Não escolha uma delas.
+- Seção 0, Execução na sala segura: escreva que não houve e indique as fontes dos resultados.
+- Entregue o texto de cada campo na ordem do modelo, com o nome do campo, para o avaliador colar no .docx.
 - Seção 4: registre os fatos sobre a disponibilização. Se as fontes indicarem que a Tarefa não está disponível no uso atual, registre isso com fonte, marcado [a confirmar]. A declaração é da equipe.
 - Seção 5: pode rascunhar os resumos, todos marcados [a confirmar]. Deixe as assinaturas em branco.
 - Não atribua resultado a requisito, não use Atendido, Não atendido, Inconclusivo ou Não aplicável e não aponte lacunas. Isso é da verificação.
@@ -112,7 +113,7 @@ Prepare o pedido da rodada [n] a partir das lacunas abertas e das pendências de
 - Cite a versão do relatório de dimensão verificada e o commit dos arquivos.
 - Para cada lacuna: ID (RCxx-Ly), campo do relatório e o que falta. Escreva em linguagem simples. Não antecipe resultados.
 - Pendências para a Equipe vão em parte separada, com o ID (RCxx-Px ou D-xx).
-- Indique o prazo [data]. Peça que a nova versão do relatório liste, na identificação, as lacunas a que responde.
+- Indique o prazo [data]. Peça que a nova versão do relatório liste, na Seção 6 (histórico), as lacunas a que responde.
 - Recomendações do NIAR vão em parte separada, identificadas como não obrigatórias.
 - Entregue como rascunho de comunicação para o avaliador revisar antes do envio.
 ```

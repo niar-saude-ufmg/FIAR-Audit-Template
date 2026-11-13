@@ -40,7 +40,7 @@ Nas dimensões já consolidadas na revisão metodológica atual, as formulaçõe
 - **Ciclo:** uma avaliação de uma unidade, da delimitação ao fechamento.
 - **Trilha**: Experimental ou Produção; orienta a aplicabilidade dos requisitos e a natureza das evidências.
 - **Evidência**: informação que responde ao requisito. Fonte: onde ela está (artefato ou comunicação).
-- **Relatório de dimensão**: artefato da equipe com sua posição formal e assinada sobre os requisitos de uma dimensão. Cada dimensão define se ele é obrigatório e qual é o modelo; em Justiça, é o Fairness Report (modelo em `artefatos/fairness_reports/fairness_report.md` do FIAR-Audit-Template; no repositório do projeto, o relatório fica em `artefatos/fairness_reports/`). Tarefa, Versão, Contexto e Trilha são os da identificação. Cada nova versão lista as lacunas a que responde.
+- **Relatório de dimensão**: artefato da equipe com sua posição formal e assinada sobre os requisitos de uma dimensão. Cada dimensão define se ele é obrigatório e qual é o modelo; em Justiça, é o Fairness Report (modelo em `artefatos/fairness_reports/FairnessReport_FIAR_Template.docx` do FIAR-Audit-Template, com o guia `FairnessReport_FIAR_Guia.docx`; no repositório do projeto, o relatório assinado fica em `artefatos/fairness_reports/`) . Tarefa, Versão, Contexto e Trilha são os da identificação. Cada nova versão lista as lacunas a que responde.
 - **Lacuna**: ponto do relatório de dimensão que impede concluir um requisito (ver Lacunas).
 - **Maturidade:** a definir em revisão posterior.
 
@@ -209,7 +209,7 @@ A avaliação de Justiça deve distinguir:
 - **decisão metodológica do NIAR-Saúde**, que não deve ser transferida ao projeto como se fosse ausência de evidência;
 - **decisão técnica ou institucional**, quando um achado exigir escolha, tratamento, aceitação de risco, restrição ou outro encaminhamento.
 
-O **Fairness Report** é o relatório de dimensão de Justiça. É obrigatório nesta dimensão, nas Trilhas Experimental e Produção, e é a posição formal da equipe. O modelo está em `artefatos/fairness_reports/fairness_report.md`. Os campos [A] resumem a informação factual, com fonte e versão: execução na sala segura, Data Card, Model Card ou outro documento. Sem execução na sala segura, os fatos vêm de publicações ou relatórios técnicos, indicados como fonte. Os campos [J] trazem a análise específica de Justiça e são assinados pela equipe. Cada campo indica o item do checklist a que responde (RCxx.y).
+O **Fairness Report** é o relatório de dimensão de Justiça. É obrigatório nesta dimensão, nas Trilhas Experimental e Produção, e é a posição formal da equipe. O modelo está em `artefatos/fairness_reports/FairnessReport_FIAR_Template.docx`, com o guia de preenchimento `FairnessReport_FIAR_Guia.docx`. Os campos [A] resumem a informação factual, com fonte e versão: execução na sala segura, Data Card, Model Card ou outro documento. Sem execução na sala segura, os fatos vêm de publicações ou relatórios técnicos, indicados como fonte. Os campos [J] trazem a análise específica de Justiça e são assinados pela equipe. Cada campo indica o item do checklist a que responde (RCxx.y).
 
 O avaliador lê o campo que responde a cada item e o confere com as evidências. O avaliacao.md aponta para o campo e não reescreve os fatos. Os estados do relatório são da equipe: Analisável Sim/Não; justificada, injustificada ou sem conclusão; considerada, realizada ou descartada; OBRIGATÓRIO/CONDICIONAL. O resultado do requisito e a situação do item são do NIAR e ficam só no avaliacao.md.
 
@@ -608,7 +608,7 @@ A fundamentação de **RC01–RC04** está registrada em [`docs/mapeamento_refer
 ## Documentação operacional relacionada
 
 - `ciclos/Cxx/avaliacao.md`
-- modelo do Fairness Report: `artefatos/fairness_reports/fairness_report.md` (a versão .docx para Word é gerada a partir dele)
+- modelo do Fairness Report e guia de preenchimento: `artefatos/fairness_reports/FairnessReport_FIAR_Template.docx` e `FairnessReport_FIAR_Guia.docx`
 - `documentacao_metodologica/apoio_roteiro_entrevista.md` (material de apoio)
 - templates de artefatos do projeto, quando pertinentes.
 

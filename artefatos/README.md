@@ -159,14 +159,14 @@ Os Model Cards devem registrar, quando aplicável:
 * condições de implantação.
 
 Um Model Card não substitui o registro da Tarefa de IA ou do Contexto de Uso.
-
+ 
 O mesmo modelo pode participar de mais de uma Tarefa de IA.
 
 ### `fairness_reports/`
 
 Contém o Fairness Report, relatório de dimensão de Justiça. É obrigatório nas Trilhas Experimental e Produção e é a posição formal da equipe sobre RC01 a RC04 (ver `docs/avaliacao/justica.md` do FIAR-Saude e o guia de avaliação).
 
-O modelo é `fairness_report.md`. A versão .docx para Word é gerada a partir dele. No repositório do projeto, o relatório preenchido fica nesta pasta, com as versões no Git.
+O modelo oficial é `FairnessReport_FIAR_Template.docx`, com o guia de preenchimento `FairnessReport_FIAR_Guia.docx`. O relatório assinado pela equipe fica nesta pasta, no repositório do projeto.
 
 * O rascunho pré-preenchido (versão 0.1.0) não fica nesta pasta: vai anexado ao pedido à equipe, em `comunicacoes/anexos/`. O relatório entra aqui como 1.0.0, depois de assinado pela equipe.
 * Respostas a lacunas apontadas pelo NIAR-Saúde geram novas versões (MINOR), que listam na Seção 0 as lacunas a que respondem.
