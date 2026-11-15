@@ -17,7 +17,7 @@ Atendimento parcial ou prática apenas planejada não levam automaticamente a In
 Sem Fairness Report entregue no prazo, o resultado é Inconclusivo, com o motivo "relatório de dimensão não entregue", salvo evidência suficiente de não atendimento.
 Os estados do Fairness Report (Analisável Sim/Não; justificada, injustificada ou sem conclusão; considerada, realizada ou descartada; OBRIGATÓRIO/CONDICIONAL) são da equipe. Não são resultado nem situação de item.
 
-Lacuna (RCxx-Ly): ponto do Fairness Report que impede concluir o requisito. Antes de abrir, verificar: (1) é necessária para concluir o requisito? (2) a resposta já está no relatório ou em outra fonte? (3) já foi apontada? Só abrir se (1) for sim e as demais forem não. Pergunta à equipe sobre o conteúdo do requisito é lacuna, não pendência.
+Lacuna (RCxx-Ly): ponto do Fairness Report que impede concluir ou atender o requisito. Antes de abrir, verificar: (1) é necessária para que o requisito possa ser atendido? (2) a resposta já está no relatório? (3) já foi apontada? Só abrir se (1) for sim e as demais forem não. Posição da equipe só em comunicação ou marcada [a confirmar] não conta como resposta. Pergunta à equipe sobre o conteúdo do requisito é lacuna, não pendência.
 Pendência (RCxx-Px): só para aplicabilidade, verificação interna do NIAR, decisão metodológica ainda não tomada ou pedido que não cabe no relatório. Mesmo teste de três perguntas antes de abrir. Pendência de aplicabilidade não é lacuna.
 Lacuna ou pendência aberta só torna o requisito Inconclusivo quando impede a conclusão.
 
@@ -47,7 +47,7 @@ Lacuna ou pendência aberta só torna o requisito Inconclusivo quando impede a c
 | RC01.5 | Há grupos que podem ficar sem os benefícios da Tarefa? (Apenas identificar; o acesso é analisado em RC04.)                           | 1.2 Grupos sujeitos a exclusão dos benefícios |            |                 |
 | RC01.6 | Há limitações ou incertezas na escolha dos grupos?                                                                                   | 1.2 Limitações na escolha dos grupos          |            |                 |
 
-**Situação:** Respondido (campo do relatório e fonte que o sustenta) | Não localizado (campo vazio ou que não responde) | Não pertinente (com motivo). Divergência entre o relatório e outra fonte vai para Inconsistências. Hipótese do NIAR não conta como Respondido: use Não localizado e descreva a hipótese. Se o requisito for Não aplicável, substitua a tabela pela linha: **Checklist:** não preenchido, porque o requisito é Não aplicável.
+**Situação:** Respondido (campo do relatório e fonte que o sustenta; em campo [A + J], só com a parte [J] preenchida) | Não localizado (campo vazio ou que não responde) | Não pertinente (com motivo). Divergência entre o relatório e outra fonte vai para Inconsistências. Hipótese do NIAR não conta como Respondido: use Não localizado e descreva a hipótese. Se o requisito for Não aplicável, substitua a tabela pela linha: **Checklist:** não preenchido, porque o requisito é Não aplicável.
 
 **Análise:** (aponte os campos do relatório; não reescreva os fatos)
 
@@ -101,7 +101,7 @@ Lacuna ou pendência aberta só torna o requisito Inconclusivo quando impede a c
 | RC02.8 | Para as diferenças consideradas problemáticas, foram previstas ações para evitá-las, reduzi-las ou tratá-las? Quais? Alguma foi realizada? | 2.5 Mitigação                                                            |            |                 |
 | RC02.9 | Após as ações realizadas, se houver, permanecem diferenças ou riscos relevantes para os grupos?                                              | 2.6 Diferenças residuais                                                  |            |                 |
 
-**Situação:** Respondido (campo do relatório e fonte que o sustenta) | Não localizado (campo vazio ou que não responde) | Não pertinente (com motivo). Divergência entre o relatório e outra fonte vai para Inconsistências. Hipótese do NIAR não conta como Respondido: use Não localizado e descreva a hipótese. Se o requisito for Não aplicável, substitua a tabela pela linha: **Checklist:** não preenchido, porque o requisito é Não aplicável.
+**Situação:** Respondido (campo do relatório e fonte que o sustenta; em campo [A + J], só com a parte [J] preenchida) | Não localizado (campo vazio ou que não responde) | Não pertinente (com motivo). Divergência entre o relatório e outra fonte vai para Inconsistências. Hipótese do NIAR não conta como Respondido: use Não localizado e descreva a hipótese. Se o requisito for Não aplicável, substitua a tabela pela linha: **Checklist:** não preenchido, porque o requisito é Não aplicável.
 
 **Análise:** (aponte os campos do relatório; não reescreva os fatos)
 
@@ -154,7 +154,7 @@ Lacuna ou pendência aberta só torna o requisito Inconclusivo quando impede a c
 | RC03.7 | Algum problema encontrado nos dados, na variável-alvo ou no padrão de referência pode causar ou aumentar diferenças nos efeitos analisados em RC02? | 3.2 Relação com a Seção 2          |            |                 |
 | RC03.8 | Para os problemas identificados em algum grupo, há decisão justificada sobre seu tratamento?                                                          | 3.2 Decisão sobre o tratamento        |            |                 |
 
-**Situação:** Respondido (campo do relatório e fonte que o sustenta) | Não localizado (campo vazio ou que não responde) | Não pertinente (com motivo). Divergência entre o relatório e outra fonte vai para Inconsistências. Hipótese do NIAR não conta como Respondido: use Não localizado e descreva a hipótese. Se o requisito for Não aplicável, substitua a tabela pela linha: **Checklist:** não preenchido, porque o requisito é Não aplicável.
+**Situação:** Respondido (campo do relatório e fonte que o sustenta; em campo [A + J], só com a parte [J] preenchida) | Não localizado (campo vazio ou que não responde) | Não pertinente (com motivo). Divergência entre o relatório e outra fonte vai para Inconsistências. Hipótese do NIAR não conta como Respondido: use Não localizado e descreva a hipótese. Se o requisito for Não aplicável, substitua a tabela pela linha: **Checklist:** não preenchido, porque o requisito é Não aplicável.
 
 **Análise:** (aponte os campos do relatório; não reescreva os fatos)
 
@@ -208,7 +208,7 @@ Lacuna ou pendência aberta só torna o requisito Inconclusivo quando impede a c
 | RC04.7 | Foram previstas medidas ou alternativas para evitar, reduzir ou tratar essas barreiras de acesso ou de benefício?                                                                               | 4.3 Medidas consideradas ou adotadas                               |            |                 |
 | RC04.8 | Após as medidas adotadas, se houver, permanecem limitações ou diferenças de acesso ou de benefício?                                                                                         | 4.3 Limitações residuais                                          |            |                 |
 
-**Situação:** Respondido (campo do relatório e fonte que o sustenta) | Não localizado (campo vazio ou que não responde) | Não pertinente (com motivo). Divergência entre o relatório e outra fonte vai para Inconsistências. Hipótese do NIAR não conta como Respondido: use Não localizado e descreva a hipótese. Se o requisito for Não aplicável, substitua a tabela pela linha: **Checklist:** não preenchido, porque o requisito é Não aplicável.
+**Situação:** Respondido (campo do relatório e fonte que o sustenta; em campo [A + J], só com a parte [J] preenchida) | Não localizado (campo vazio ou que não responde) | Não pertinente (com motivo). Divergência entre o relatório e outra fonte vai para Inconsistências. Hipótese do NIAR não conta como Respondido: use Não localizado e descreva a hipótese. Se o requisito for Não aplicável, substitua a tabela pela linha: **Checklist:** não preenchido, porque o requisito é Não aplicável.
 
 **Análise:** (aponte os campos do relatório; não reescreva os fatos)
 

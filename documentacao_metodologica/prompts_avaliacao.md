@@ -64,11 +64,16 @@ Pré-preencha o relatório de dimensão de [dimensão] do projeto, no modelo [pa
 
 - Tarefa de IA, Versão Avaliável, Contexto de Uso e Trilha: copie de ciclos/Cxx/identificacao.md.
 - Use só estas fontes, registradas na identificação: Model Card, Data Card, publicações e comunicações em comunicacoes/. Não use o avaliacao.md de ciclos anteriores nem registros do fluxo anterior.
-- Em cada campo, registre a fonte e a versão. Para comunicações, cite o arquivo e a data.
+- Em cada campo, registre a fonte e a versão. Para comunicações, cite remetente, data e item (ex.: e-mail de Petrus, 01/11/2026, item 1a), sem o caminho do arquivo.
 - Fato é o que existe ou aconteceu: números, métricas, fontes dos dados, onde e como a Tarefa é usada. Fatos entram resumidos nos campos [A], com fonte. Não copie trechos longos.
 - Posição da equipe é julgamento, critério, decisão ou intenção (por exemplo, "não há critério de aceitabilidade", "a concordância não foi estratificada"). Posições tiradas de comunicações ou do Model Card entram nos campos [J] com [a confirmar] no início. Não as transforme em fato nem em decisão da equipe.
 - Não escreva julgamentos seus nos campos [J]. Se nenhuma fonte trouxer a posição da equipe, deixe o campo vazio.
 - Divergência entre fontes: registre no campo "Divergências entre fontes" da Seção 0, com as duas fontes. Não escolha uma delas.
+- Em cada divergência, indique o requisito afetado (RCxx) ou "fora de [dimensão]".
+- Depois da Seção 0, inclua "Fontes citadas": cada ID de fonte usado no relatório, com o nome que a equipe reconhece e a versão ou data. Explique "identificação".
+- Antes de escrever que as fontes não informam algo, leia por inteiro o artigo e o material suplementar.
+- Em 1.2, populações fora do escopo validado (ex.: menores de 18 anos) são delimitação, não exclusão dos benefícios. Se a Tarefa não está em uso, registre [a confirmar] que não há benefício no uso atual.
+- Em 1.2, separe grupos sem dados de grupos analisáveis ainda não analisados.
 - Seção 0, Execução na sala segura: escreva que não houve e indique as fontes dos resultados.
 - Entregue o texto de cada campo na ordem do modelo, com o nome do campo, para o avaliador colar no .docx.
 - Seção 4: registre os fatos sobre a disponibilização. Se as fontes indicarem que a Tarefa não está disponível no uso atual, registre isso com fonte, marcado [a confirmar]. A declaração é da equipe.
@@ -77,7 +82,6 @@ Pré-preencha o relatório de dimensão de [dimensão] do projeto, no modelo [pa
 - Ao final, liste para o avaliador: campos [A] sem fonte, campos [J] vazios, campos [a confirmar] e divergências registradas.
 - O resultado é rascunho para a equipe conferir, completar e assinar. Só depois de assinado ele é posição da equipe.
 - Versão do relatório (Seção 0): 0.1.0. Entregue o rascunho ao avaliador para ser anexado ao pedido à equipe, em comunicacoes/anexos/. Não grave em artefatos/fairness_reports/: o relatório só entra lá como 1.0.0, depois de assinado pela equipe.
-
 ```
 
 ## Prompt 2. Avaliação de um requisito
@@ -88,10 +92,14 @@ Preencha o bloco do requisito [RCxx] em ciclos/Cxx/avaliacao.md seguindo guia_re
 - Responda primeiro à pergunta de aplicabilidade, com justificativa, usando as informações factuais das fontes. Se não for possível determinar, abra pendência de aplicabilidade e marque Inconclusivo com o motivo "aplicabilidade não determinada". Pendência de aplicabilidade não é lacuna. Em RC04, registre o que a equipe declarou na Seção 4 do Fairness Report e confirme ou não, com justificativa.
 - Para cada item do checklist, leia o campo do relatório indicado pelo código RCxx.y e confira com as evidências. Respondido: o campo responde e a evidência o sustenta (cite o campo e a fonte). Não localizado: campo vazio ou que não responde. Não pertinente: com motivo. O resultado é do requisito, não dos itens. Se o requisito for Não aplicável, não preencha a tabela; registre só a justificativa.
 - Hipótese do NIAR não conta como Respondido: use Não localizado e descreva a hipótese.
+- Campo marcado [a confirmar], ou posição da equipe que aparece só em comunicação ou no Model Card: Não localizado. Cite onde a posição aparece.
+- Campo [A + J]: Respondido só quando a parte [J] está preenchida.
+- Não se limite aos campos do relatório. Confira também os aspectos de aplicabilidade e as observações do requisito no guia. Registre hipóteses do NIAR e recomendações no bloco do requisito.
+- Divergência da Seção 0 que não afeta nenhum requisito da dimensão: registre como recomendação do NIAR.
 - Aponte o campo do relatório e o ID da fonte. Não reescreva os fatos do relatório.
 - Separe informação factual de análise específica de Justiça.
 - Divergência entre o relatório e outra fonte: registre inconsistência (RCxx-Ix), com estado.
-- Abra lacuna (RCxx-Ly) só se for necessária para concluir o requisito, se a resposta não estiver no relatório nem em outra fonte e se ainda não tiver sido apontada. Indique o campo do relatório e o que falta. Item Não localizado não vira lacuna por si só.
+- Abra lacuna (RCxx-Ly) só se for necessária para que o requisito possa ser atendido, se a resposta não estiver no relatório e se ainda não tiver sido apontada. Indique o campo do relatório e o que falta. Item Não localizado não vira lacuna por si só.
 - Pendência de requisito (RCxx-Px) só para verificação interna do NIAR, decisão metodológica ainda não tomada ou pedido que não cabe no relatório.
 - Resultado: Atendido, Não atendido, Inconclusivo (com motivo) ou Não aplicável. Atendimento parcial ou prática apenas planejada não levam automaticamente a Inconclusivo: com evidência suficiente de não atendimento, o resultado é Não atendido, mesmo com lacuna aberta.
 - Os estados do relatório (justificada, injustificada, sem conclusão; considerada, realizada, descartada) são da equipe. Não os altere e não os use como resultado.
