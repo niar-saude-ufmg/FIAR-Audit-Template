@@ -1,7 +1,7 @@
 # Prompts de apoio à avaliação
 
-Uso opcional, com assistente de IA. O resultado é rascunho: o avaliador do NIAR revisa e responde por ele. Quem pré-preenche o relatório de dimensão (Prompt 1b) e quem verifica (Prompt 2) são agentes separados: use sessões diferentes.
-As referências do FIAR são lidas online, nos repositórios públicos, na versão indicada pela tag. O repositório do projeto é privado e é lido localmente: abra o assistente de IA na pasta dele. No início de cada sessão, cole a mensagem de contexto abaixo e, depois, o prompt da etapa.
+Uso opcional, com agente de IA. O resultado é rascunho: o avaliador do NIAR revisa e responde por ele. Quem pré-preenche o relatório de dimensão (Prompt 1b) e quem verifica (Prompt 2) são agentes separados: use sessões diferentes.
+As referências do FIAR são lidas online, nos repositórios públicos, na versão indicada pela tag. O repositório do projeto é privado e é lido localmente: abra o agente de IA na pasta dele. No início de cada sessão, cole a mensagem de contexto abaixo e, depois, o prompt da etapa.
 
 ## Contexto (colar no início do chat)
 
@@ -17,7 +17,7 @@ Referências do FIAR-Saúde (repositórios públicos, versão [tag]):
 
 Use essas versões. Uma cópia local só vale se estiver exatamente na mesma tag (confira com git describe --tags) e sem alterações locais nos arquivos usados; informe isso no início. Se não conseguir abrir a versão da tag, avise e pare; não use outra versão nem o PDF.
 
-O repositório do projeto [nome] é a pasta local aberta no assistente de IA. Antes de começar, informe a branch e o commit dele. Use só as fontes dele e as referências acima. Arquivos sem commit só contam como fonte se o avaliador confirmar. O histórico do Git serve para verificar versões. Ignore .history/ e arquivos de sistema. O relatório de dimensão da equipe, quando houver, está em artefatos/ (Fairness Report em artefatos/fairness_reports/); informe a versão usada. Em ciclo que recomeçou, o avaliacao.md anterior não é fonte; as comunicações em comunicacoes/ continuam valendo.
+O repositório do projeto [nome] é a pasta local aberta no agente de IA. Antes de começar, informe a branch e o commit dele. Use só as fontes dele e as referências acima. Arquivos sem commit só contam como fonte se o avaliador confirmar. O histórico do Git serve para verificar versões. Ignore .history/ e arquivos de sistema. O relatório de dimensão da equipe, quando houver, está em artefatos/ (Fairness Report em artefatos/fairness_reports/); informe a versão usada. Em ciclo que recomeçou, o avaliacao.md anterior não é fonte; as comunicações em comunicacoes/ continuam valendo.
 
 Altere só o arquivo indicado no prompt da etapa. Não altere artefatos da equipe, não faça commit e não rode comandos que mudem o Git. O CLAUDE.md do projeto também vale.
 ```
@@ -68,9 +68,10 @@ Pré-preencha o relatório de dimensão de [dimensão] do projeto, no modelo [pa
 - Fato é o que existe ou aconteceu: números, métricas, fontes dos dados, onde e como a Tarefa é usada. Fatos entram resumidos nos campos [A], com fonte. Não copie trechos longos.
 - Posição da equipe é julgamento, critério, decisão ou intenção (por exemplo, "não há critério de aceitabilidade", "a concordância não foi estratificada"). Posições tiradas de comunicações ou do Model Card entram nos campos [J] com [a confirmar] no início. Não as transforme em fato nem em decisão da equipe.
 - Não escreva julgamentos seus nos campos [J]. Se nenhuma fonte trouxer a posição da equipe, deixe o campo vazio.
+- Em campo [A + J], o fato vem primeiro. A posição da equipe vem em parágrafo próprio, iniciado por "Equipe:", com [a confirmar]. Se nenhuma fonte trouxer a posição, escreva "Equipe: a preencher."
 - Divergência entre fontes: registre no campo "Divergências entre fontes" da Seção 0, com as duas fontes. Não escolha uma delas.
 - Em cada divergência, indique o requisito afetado (RCxx) ou "fora de [dimensão]".
-- Depois da Seção 0, inclua "Fontes citadas": cada ID de fonte usado no relatório, com o nome que a equipe reconhece e a versão ou data. Explique "identificação".
+- Preencha o campo "Fontes citadas" da Seção 0: cada ID de fonte usado no relatório, com o nome que a equipe reconhece e a versão ou data. Explique "identificação", com o commit.
 - Antes de escrever que as fontes não informam algo, leia por inteiro o artigo e o material suplementar.
 - Em 1.2, populações fora do escopo validado (ex.: menores de 18 anos) são delimitação, não exclusão dos benefícios. Se a Tarefa não está em uso, registre [a confirmar] que não há benefício no uso atual.
 - Em 1.2, separe grupos sem dados de grupos analisáveis ainda não analisados.
@@ -82,6 +83,7 @@ Pré-preencha o relatório de dimensão de [dimensão] do projeto, no modelo [pa
 - Ao final, liste para o avaliador: campos [A] sem fonte, campos [J] vazios, campos [a confirmar] e divergências registradas.
 - O resultado é rascunho para a equipe conferir, completar e assinar. Só depois de assinado ele é posição da equipe.
 - Versão do relatório (Seção 0): 0.1.0. Entregue o rascunho ao avaliador para ser anexado ao pedido à equipe, em comunicacoes/anexos/. Não grave em artefatos/fairness_reports/: o relatório só entra lá como 1.0.0, depois de assinado pela equipe.
+- Prepare também o rascunho do pedido à equipe, com prazo [data]. Separe o que é conferir fatos do que é decidir. Liste as decisões principais. Diga que "sem conclusão" é resposta válida, desde que venha com o que falta e o próximo passo.
 ```
 
 ## Prompt 2. Avaliação de um requisito
@@ -92,21 +94,22 @@ Preencha o bloco do requisito [RCxx] em ciclos/Cxx/avaliacao.md seguindo guia_re
 - Responda primeiro à pergunta de aplicabilidade, com justificativa, usando as informações factuais das fontes. Se não for possível determinar, abra pendência de aplicabilidade e marque Inconclusivo com o motivo "aplicabilidade não determinada". Pendência de aplicabilidade não é lacuna. Em RC04, registre o que a equipe declarou na Seção 4 do Fairness Report e confirme ou não, com justificativa.
 - Para cada item do checklist, leia o campo do relatório indicado pelo código RCxx.y e confira com as evidências. Respondido: o campo responde e a evidência o sustenta (cite o campo e a fonte). Não localizado: campo vazio ou que não responde. Não pertinente: com motivo. O resultado é do requisito, não dos itens. Se o requisito for Não aplicável, não preencha a tabela; registre só a justificativa.
 - Hipótese do NIAR não conta como Respondido: use Não localizado e descreva a hipótese.
-- Campo marcado [a confirmar], ou posição da equipe que aparece só em comunicação ou no Model Card: Não localizado. Cite onde a posição aparece.
+- Campo marcado [a confirmar], ou posição da equipe que aparece só em comunicação ou em outro artefato: Não localizado. Cite onde a posição aparece.
 - Campo [A + J]: Respondido só quando a parte [J] está preenchida.
 - Não se limite aos campos do relatório. Confira também os aspectos de aplicabilidade e as observações do requisito no guia. Registre hipóteses do NIAR e recomendações no bloco do requisito.
 - Divergência da Seção 0 que não afeta nenhum requisito da dimensão: registre como recomendação do NIAR.
 - Aponte o campo do relatório e o ID da fonte. Não reescreva os fatos do relatório.
 - Separe informação factual de análise específica de Justiça.
-- Divergência entre o relatório e outra fonte: registre inconsistência (RCxx-Ix), com estado.
+- Divergência entre o relatório e outra fonte: registre inconsistência (RCxx-Ix), com estado. Se passar no teste da lacuna, abra também lacuna no campo do relatório.
 - Abra lacuna (RCxx-Ly) só se for necessária para que o requisito possa ser atendido, se a resposta não estiver no relatório e se ainda não tiver sido apontada. Indique o campo do relatório e o que falta. Item Não localizado não vira lacuna por si só.
 - Pendência de requisito (RCxx-Px) só para verificação interna do NIAR, decisão metodológica ainda não tomada ou pedido que não cabe no relatório.
 - Resultado: Atendido, Não atendido, Inconclusivo (com motivo) ou Não aplicável. Atendimento parcial ou prática apenas planejada não levam automaticamente a Inconclusivo: com evidência suficiente de não atendimento, o resultado é Não atendido, mesmo com lacuna aberta.
-- Os estados do relatório (justificada, injustificada, sem conclusão; considerada, realizada, descartada) são da equipe. Não os altere e não os use como resultado.
+- Os estados do relatório (Analisável Sim/Não; justificada, injustificada, sem conclusão; considerada, realizada, descartada; OBRIGATÓRIO/CONDICIONAL) são da equipe. Não os altere e não os use como resultado.
 - Ausência de artefato não é resultado. Sem relatório de dimensão entregue no prazo, o resultado é Inconclusivo com o motivo "relatório de dimensão não entregue", salvo evidência suficiente de não atendimento.
 - Encaminhamento: recomendação do NIAR é não obrigatória e não altera o resultado; condicionantes cabem só ao Comitê.
 - Atualize a linha do requisito na Síntese do ciclo.
 - Não escreva no relatório de dimensão nem nos demais artefatos da equipe.
+- Confira se as divergências da Seção 0 estão completas frente às fontes.
 ```
 
 ## Prompt 2b. Pedido de lacunas à equipe
@@ -151,6 +154,8 @@ Revise identificacao.md e avaliacao.md do ciclo e aponte apenas:
 - uso do avaliacao.md de um ciclo recomeçado como fonte;
 - Síntese diferente dos blocos (resultado, motivo, itens não localizados ou lacunas abertas);
 - na identificação: hipótese registrada como fato, responsabilidade técnica deduzida ou fonte não pertinente à unidade.
+- campos [A + J] marcados Respondido sem a parte [J];
+- divergências da Seção 0 fora da dimensão sem recomendação do NIAR;
 
 Não crie pendências novas nem altere resultados; liste os problemas para o avaliador decidir.
 ```
