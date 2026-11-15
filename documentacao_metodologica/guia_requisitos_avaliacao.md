@@ -27,7 +27,7 @@ Nas dimensões já consolidadas na revisão metodológica atual, as formulaçõe
 - **Equipe do projeto:** produz e mantém os artefatos, confere, completa e assina os relatórios de dimensão e responde às lacunas e perguntas do NIAR.
 - **NIAR-Saúde**: delimita o ciclo, verifica os relatórios de dimensão com as demais evidências, aponta lacunas, avalia os requisitos, recomenda e prepara o relatório ao Comitê. Não edita artefatos da equipe.
 - **Comitê Gestor**: valida os relatórios de avaliação do NIAR-Saúde e delibera sobre riscos e questões encaminhadas, inclusive condicionantes e restrições de uso. Pode pedir esclarecimentos ou revisão ao NIAR-Saúde, sem refazer a análise técnica. A aceitação de risco não altera os resultados dos requisitos. Lê a síntese da equipe de cada relatório de dimensão, apresentada no relatório do NIAR-Saúde.
-- **Agentes**: o agente da sala segura pré-preenche os relatórios de dimensão; sem ele, o NIAR, ou um agente a seu serviço pode pré-preencher um rascunho (ver Etapas do ciclo). Outro agente pode rascunhar a verificação para o NIAR. Quem produz e quem verifica são agentes separados. Todo texto de agente é validado pela equipe ou pelo NIAR.
+- **Agentes**: o agente da sala segura pré-preenche os relatórios de dimensão; sem ele, o NIAR, ou um agente a seu serviço, pode pré-preencher um rascunho (ver Etapas do ciclo). Outro agente pode rascunhar a verificação para o NIAR. Quem produz e quem verifica são agentes separados. Todo texto de agente é validado pela equipe ou pelo NIAR.
 - O FIAR-Saúde não é certificação.
 
 ## Conceitos
@@ -40,7 +40,7 @@ Nas dimensões já consolidadas na revisão metodológica atual, as formulaçõe
 - **Ciclo:** uma avaliação de uma unidade, da delimitação ao fechamento.
 - **Trilha**: Experimental ou Produção; orienta a aplicabilidade dos requisitos e a natureza das evidências.
 - **Evidência**: informação que responde ao requisito. Fonte: onde ela está (artefato ou comunicação).
-- **Relatório de dimensão**: artefato da equipe com sua posição formal e assinada sobre os requisitos de uma dimensão. Cada dimensão define se ele é obrigatório e qual é o modelo; em Justiça, é o Fairness Report (modelo em `artefatos/fairness_reports/FairnessReport_FIAR_Template.docx` do FIAR-Audit-Template, com o guia `FairnessReport_FIAR_Guia.docx`; no repositório do projeto, o relatório assinado fica em `artefatos/fairness_reports/`) . Tarefa, Versão, Contexto e Trilha são os da identificação. Cada nova versão lista as lacunas a que responde.
+- **Relatório de dimensão**: artefato da equipe com sua posição formal e assinada sobre os requisitos de uma dimensão. Cada dimensão define se ele é obrigatório e qual é o modelo; em Justiça, é o Fairness Report (modelo em `artefatos/fairness_reports/FairnessReport_FIAR_Template.docx` do FIAR-Audit-Template, com o guia `FairnessReport_FIAR_Guia.docx`; no repositório do projeto, o relatório assinado fica em `artefatos/fairness_reports/`). Tarefa, Versão, Contexto e Trilha são os da identificação. Cada nova versão lista as lacunas a que responde.
 - **Lacuna**: ponto do relatório de dimensão que impede concluir um requisito (ver Lacunas).
 - **Maturidade:** a definir em revisão posterior.
 
@@ -508,7 +508,7 @@ Considere quem pode utilizar a Tarefa, onde e por quais meios, além das condiç
 - RC04 é aplicável quando, no Contexto de Uso avaliado, existe alguma forma de disponibilização da Tarefa pela qual pessoas, grupos ou populações possam acessar ou se beneficiar de seu uso.
 - Se não existe disponibilização da Tarefa no Contexto atual, RC04 pode ser considerado Não aplicável, com justificativa.
 - Uso futuro pretendido que ainda não integra o Contexto de Uso não deve ser usado para tornar RC04 aplicável.
-- A equipe registra na Seção 4 do Fairness Report (CONDICIONAL) se a Tarefa não está disponível no uso atual e por quê. O NIAR confirma ou não; o registro da equipe não define a aplicabilidade.
+- A equipe registra na Seção 4 do Fairness Report, em "Disponibilização no uso atual", se a Tarefa não está disponível no uso atual e por quê. Nesse caso, 4.1 a 4.3 (CONDICIONAL) não são preenchidos. O NIAR confirma ou não; o registro da equipe não define a aplicabilidade.
 - Ausência de análise de acesso não justifica Não aplicável quando a Tarefa já está efetivamente disponibilizada.
 - A forma de disponibilização pode envolver infraestrutura, conectividade, localização, idioma, custo, recursos institucionais, letramento, capacidade operacional ou outras condições pertinentes.
 
@@ -603,7 +603,7 @@ As referências específicas de cada dimensão deverão ser atualizadas à medid
 
 Para Justiça, a formulação dos quatro requisitos utilizada nesta versão corresponde ao conjunto estabilizado na revisão metodológica atual da dimensão.
 
-A fundamentação de **RC01–RC04** está registrada em [`docs/mapeamento_referencias.md`](https://github.com/niar-saude-ufmg/FIAR-Saude/blob/main/docs/mapeamento_referencias.md) do FIAR-Saude, com as fontes principais por requisito e a distinção entre fundamentação substantiva, apoio técnico-operacional e literatura científica. Os IDs das fontes e a cadeia de derivação remetem à planilha de reconstrução de Justiça ([`docs/fontes/derivacao_requisitos_justica.xlsm`](https://github.com/niar-saude-ufmg/FIAR-Saude/blob/main/docs/fontes/derivacao_requisitos_justica.xlsm), no FIAR-Saude), especialmente às abas `04_Extracoes`, `06_Requisitos_Candidatos` e `07_Sintese_Corpus_Justica`. As fontes apoiam a fundamentação dos requisitos; não tornam métricas, métodos ou artefatos específicos obrigatórios.
+A fundamentação de **RC01–RC04** está registrada em [`docs/mapeamento_referencias.md`](https://github.com/niar-saude-ufmg/FIAR-Saude/blob/v2.0/docs/mapeamento_referencias.md) do FIAR-Saude, com as fontes principais por requisito e a distinção entre fundamentação substantiva, apoio técnico-operacional e literatura científica. Os IDs das fontes e a cadeia de derivação remetem à planilha de reconstrução de Justiça ([`docs/fontes/derivacao_requisitos_justica.xlsm`](https://github.com/niar-saude-ufmg/FIAR-Saude/blob/v2.0/docs/fontes/derivacao_requisitos_justica.xlsm), no FIAR-Saude), especialmente às abas `04_Extracoes`, `06_Requisitos_Candidatos` e `07_Sintese_Corpus_Justica`. As fontes apoiam a fundamentação dos requisitos; não tornam métricas, métodos ou artefatos específicos obrigatórios.
 
 ## Documentação operacional relacionada
 

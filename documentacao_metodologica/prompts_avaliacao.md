@@ -3,7 +3,6 @@
 Uso opcional, com assistente de IA. O resultado é rascunho: o avaliador do NIAR revisa e responde por ele. Quem pré-preenche o relatório de dimensão (Prompt 1b) e quem verifica (Prompt 2) são agentes separados: use sessões diferentes.
 As referências do FIAR são lidas online, nos repositórios públicos, na versão indicada pela tag. O repositório do projeto é privado e é lido localmente: abra o assistente de IA na pasta dele. No início de cada sessão, cole a mensagem de contexto abaixo e, depois, o prompt da etapa.
 
-
 ## Contexto (colar no início do chat)
 
 ```text
@@ -11,18 +10,17 @@ Referências do FIAR-Saúde (repositórios públicos, versão [tag]):
 
 - Guia de avaliação (fluxo e requisitos): https://raw.githubusercontent.com/niar-saude-ufmg/FIAR-Audit-Template/[tag]/documentacao_metodologica/guia_requisitos_avaliacao.md
 - Modelos do ciclo: https://raw.githubusercontent.com/niar-saude-ufmg/FIAR-Audit-Template/[tag]/ciclos/C01/identificacao.md e https://raw.githubusercontent.com/niar-saude-ufmg/FIAR-Audit-Template/[tag]/ciclos/C01/avaliacao.md
-- Modelo do Fairness Report e guia de preenchimento: artefatos/fairness_reports/FairnessReport_FIAR_Template.docx e FairnessReport_FIAR_Guia.docx do FIAR-Audit-Template
+- Modelo do Fairness Report e guia de preenchimento: https://github.com/niar-saude-ufmg/FIAR-Audit-Template/raw/[tag]/artefatos/fairness_reports/FairnessReport_FIAR_Template.docx e https://github.com/niar-saude-ufmg/FIAR-Audit-Template/raw/[tag]/artefatos/fairness_reports/FairnessReport_FIAR_Guia.docx
 - Modelo de relatório ao Comitê: https://raw.githubusercontent.com/niar-saude-ufmg/FIAR-Audit-Template/[tag]/relatorios/RCG-001.md
 - Regras do ciclo: https://raw.githubusercontent.com/niar-saude-ufmg/FIAR-Saude/[tag]/docs/ciclo_avaliacao.md
 - Requisitos de Justiça: https://raw.githubusercontent.com/niar-saude-ufmg/FIAR-Saude/[tag]/docs/avaliacao/justica.md
 
-Use essas versões, lidas online. Se não conseguir abrir algum link, avise e pare; não use outra versão. Não use cópias locais desses documentos, mesmo que existam nesta máquina, nem o PDF. Ao registrar o guia de requisitos usado, informe a tag.
+Use essas versões. Uma cópia local só vale se estiver exatamente na mesma tag (confira com git describe --tags) e sem alterações locais nos arquivos usados; informe isso no início. Se não conseguir abrir a versão da tag, avise e pare; não use outra versão nem o PDF.
 
-O repositório do projeto [nome] é a pasta local aberta no Assistente de IA. Antes de começar, informe a branch e o commit dele. Use só as fontes dele e as referências acima. Arquivos sem commit só contam como fonte se o avaliador confirmar. O histórico do Git serve para verificar versões. Ignore .history/ e arquivos de sistema. O relatório de dimensão da equipe, quando houver, está em artefatos/ (Fairness Report em artefatos/fairness_reports/); informe a versão usada. Em ciclo que recomeçou, o avaliacao.md anterior não é fonte; as comunicações em comunicacoes/ continuam valendo.
+O repositório do projeto [nome] é a pasta local aberta no assistente de IA. Antes de começar, informe a branch e o commit dele. Use só as fontes dele e as referências acima. Arquivos sem commit só contam como fonte se o avaliador confirmar. O histórico do Git serve para verificar versões. Ignore .history/ e arquivos de sistema. O relatório de dimensão da equipe, quando houver, está em artefatos/ (Fairness Report em artefatos/fairness_reports/); informe a versão usada. Em ciclo que recomeçou, o avaliacao.md anterior não é fonte; as comunicações em comunicacoes/ continuam valendo.
 
 Altere só o arquivo indicado no prompt da etapa. Não altere artefatos da equipe, não faça commit e não rode comandos que mudem o Git. O CLAUDE.md do projeto também vale.
 ```
-
 
 ## Prompt 0. Preparação do repositório
 
