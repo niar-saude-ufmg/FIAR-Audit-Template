@@ -21,6 +21,15 @@ Lacuna (RCxx-Ly): ponto do Fairness Report que impede concluir ou atender o requ
 Pendência (RCxx-Px): só para aplicabilidade, verificação interna do NIAR, decisão metodológica ainda não tomada ou pedido que não cabe no relatório. (1) é necessária? (2) já está em alguma fonte? (3) já foi respondida? Pendência de aplicabilidade não é lacuna.
 Lacuna ou pendência aberta só torna o requisito Inconclusivo quando impede a conclusão. Divergência da Seção 0 que não afeta nenhum requisito da dimensão: recomendação do NIAR.
 
+## Decisões metodológicas do NIAR
+
+Decisões que valem para o ciclo, com justificativa. Em ciclo recomeçado, as decisões da avaliação anterior são revistas, e as mantidas são copiadas aqui.
+
+| ID | Requisito ou item | Decisão | Justificativa e fonte |
+| -- | ----------------- | -------- | --------------------- |
+
+---
+
 ---
 
 ## RC01 Grupos e populações
@@ -47,7 +56,7 @@ Lacuna ou pendência aberta só torna o requisito Inconclusivo quando impede a c
 | RC01.5 | Há grupos que podem ficar sem os benefícios da Tarefa? (Apenas identificar; o acesso é analisado em RC04.)                           | 1.2 Grupos sujeitos a exclusão dos benefícios |            |                 |
 | RC01.6 | Há limitações ou incertezas na escolha dos grupos?                                                                                   | 1.2 Limitações na escolha dos grupos          |            |                 |
 
-**Situação:** Respondido (campo do relatório e fonte que o sustenta; em campo [A + J], só com a parte [J] preenchida) | Não localizado (campo vazio ou que não responde) | Não pertinente (com motivo). Divergência entre o relatório e outra fonte vai para Inconsistências; se passar no teste da lacuna, abre também lacuna. Hipótese do NIAR não conta como Respondido: use Não localizado e descreva a hipótese. Se o requisito for Não aplicável, substitua a tabela pela linha: **Checklist:** não preenchido, porque o requisito é Não aplicável.
+**Situação:** Respondido (campo do relatório e fonte que o sustenta; em campo [A + J], só com a parte [J] preenchida) | Não localizado (campo vazio ou que não responde) | Não pertinente (com motivo ou DM-xx). Divergência entre o relatório e outra fonte vai para Inconsistências; se passar no teste da lacuna, abre também lacuna. Hipótese do NIAR não conta como Respondido: use Não localizado e descreva a hipótese. Se o requisito for Não aplicável, substitua a tabela pela linha: **Checklist:** não preenchido, porque o requisito é Não aplicável.
 
 **Análise:** (aponte os campos do relatório; não reescreva os fatos)
 
@@ -91,11 +100,11 @@ Lacuna ou pendência aberta só torna o requisito Inconclusivo quando impede a c
 
 | Item   | Pergunta                                                                                                                                         | Campo do Fairness Report                                                   | Situação | Fonte ou motivo |
 | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------- | ---------- | --------------- |
-| RC02.1 | Foram analisados o desempenho ou os efeitos da Tarefa para cada grupo de RC01?  | 2.2 Resultados por Grupo; 1.2 Grupos analisáveis não analisados    |    |   |
+| RC02.1 | Foram analisados o desempenho ou os efeitos da Tarefa para cada grupo de RC01?                                                                   | 2.2 Resultados por Grupo; 1.2 Grupos analisáveis não analisados          |            |                 |
 | RC02.2 | Quais métricas, análises ou critérios foram utilizados?                                                                                       | 2.1 Métricas e justificativa; Grupo de referência; Limiar de disparidade |            |                 |
 | RC02.3 | Foram encontradas diferenças entre os grupos (no desempenho, nos erros ou em outros efeitos)?                                                   | 2.2 Diferenças encontradas                                                |            |                 |
 | RC02.4 | Foram analisados os tipos de erro que importam para esta Tarefa (por exemplo, falsos positivos e falsos negativos)?                              | 2.2 Erros no ponto de corte operacional; 2.1 Métricas e justificativa     |            |                 |
-| RC02.5 | Quando a Tarefa já influencia decisões, há diferenças entre os grupos nessas decisões ou em suas consequências?| 2.3 Se a Tarefa não influencia decisões no uso atual |   |    |
+| RC02.5 | Quando a Tarefa já influencia decisões, há diferenças entre os grupos nessas decisões ou em suas consequências?                            | 2.3 Se a Tarefa não influencia decisões no uso atual                     |            |                 |
 | RC02.6 | Foi analisado o significado prático das diferenças (clínico, técnico ou operacional)?                                                        | 2.4 Interpretação                                                        |            |                 |
 | RC02.7 | As diferenças foram consideradas justificadas ou não? Com base em qual critério?                                                              | 2.4 Justificada, injustificada ou sem conclusão                          |            |                 |
 | RC02.8 | Para as diferenças consideradas problemáticas, foram previstas ações para evitá-las, reduzi-las ou tratá-las? Quais? Alguma foi realizada? | 2.5 Mitigação                                                            |            |                 |
@@ -235,6 +244,16 @@ Lacuna ou pendência aberta só torna o requisito Inconclusivo quando impede a c
 
 ---
 
+## Recomendações fora dos requisitos
+
+Divergências da Seção 0 do relatório que não afetam requisito da dimensão.
+
+| Item da Seção 0 | Fontes | Recomendação |
+| --------------- | ------ | ------------ |
+
+
+---
+
 ## Síntese do ciclo
 
 | Requisito | Resultado | Motivo | Itens não localizados | Lacunas abertas | Encaminhamento |
@@ -244,5 +263,5 @@ Lacuna ou pendência aberta só torna o requisito Inconclusivo quando impede a c
 | RC03      |           |        |                        |                 |                |
 | RC04      |           |        |                        |                 |                |
 
-Itens não localizados: IDs dos itens do checklist marcados Não localizado (ex.: RC01.4, RC01.5). Em requisito Não aplicável, escrever "não se aplica". A coluna mostra onde faltou evidência; não é pontuação e não determina o resultado.
+Itens não localizados: IDs dos itens do checklist marcados Não localizado (ex.: RC01.4, RC01.5). Em requisito Não aplicável, escrever "não se aplica". A coluna mostra onde faltou evidência; não é pontuação e não determina o resultado. Marque com * os itens cuja posição da equipe aparece só em comunicação.
 Lacunas abertas: IDs RCxx-Ly ainda abertos no fechamento.

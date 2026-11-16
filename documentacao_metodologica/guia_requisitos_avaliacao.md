@@ -27,7 +27,7 @@ Nas dimensões já consolidadas na revisão metodológica atual, as formulaçõe
 - **Equipe do projeto:** produz e mantém os artefatos, confere, completa e assina os relatórios de dimensão e responde às lacunas e perguntas do NIAR.
 - **NIAR-Saúde**: delimita o ciclo, verifica os relatórios de dimensão com as demais evidências, aponta lacunas, avalia os requisitos, recomenda e prepara o relatório ao Comitê. Não edita artefatos da equipe.
 - **Comitê Gestor**: valida os relatórios de avaliação do NIAR-Saúde e delibera sobre riscos e questões encaminhadas, inclusive condicionantes e restrições de uso. Pode pedir esclarecimentos ou revisão ao NIAR-Saúde, sem refazer a análise técnica. A aceitação de risco não altera os resultados dos requisitos. Lê a síntese da equipe de cada relatório de dimensão, apresentada no relatório do NIAR-Saúde.
-- **Agentes**: o agente da sala segura pré-preenche os relatórios de dimensão; sem ele, o NIAR, ou um agente a seu serviço, pode pré-preencher um rascunho (ver Etapas do ciclo). Outro agente pode rascunhar a verificação para o NIAR. Quem produz e quem verifica são agentes separados. Todo texto de agente é validado pela equipe ou pelo NIAR.
+- **Agentes**: o agente da sala segura pré-preenche os relatórios de dimensão; sem ele, o NIAR, ou um agente a seu serviço, pode pré-preencher um rascunho (ver Etapas do ciclo). Outro agente pode rascunhar a verificação para o NIAR. Quem produz e quem verifica são agentes separados. Todo texto de agente é validado pela equipe ou pelo NIAR. Quando houver duas avaliadoras, quem valida o rascunho pré-preenchido não valida a verificação.
 
 O FIAR-Saúde não é certificação.
 
@@ -100,7 +100,7 @@ Estados: aberta; resolvida (com a fonte que a resolve); cancelada (com motivo, e
 
 ## Decisões metodológicas e informações não confirmadas
 
-- Decisão metodológica já tomada: registrada no documento que afeta, com justificativa.
+- Decisão metodológica já tomada: registrada no documento que afeta, com justificativa. As que valem para a avaliação ficam em "Decisões metodológicas do NIAR", no avaliacao.md, com ID DM-xx.
 - Informação factual: registrada com a fonte. Não se pede nova confirmação à equipe só para repetir o que a fonte já diz.
 - Inferência ainda não sustentada: marcada como hipótese do NIAR, com base e limitação. Não substitui fato demonstrado.
 - Responsabilidade técnica: não é deduzida. Sem documentação suficiente, fica como não confirmada. Só se pergunta à equipe quando for necessário à delimitação ou a um requisito.
@@ -111,6 +111,7 @@ Estados: aberta; resolvida (com a fonte que a resolve); cancelada (com motivo, e
 - Questão para o Comitê: aceite de risco, restrição de uso, responsabilidades ou conflitos que ultrapassam a avaliação técnica.
 - Condicionantes só são definidas pelo Comitê (decisoes/).
 - Divergência entre fontes que não afeta nenhum requisito da dimensão: recomendação do NIAR, com as fontes.
+- Fica na seção "Recomendações fora dos requisitos" do avaliacao.md
 
 ## Relatório ao Comitê Gestor
 
@@ -130,7 +131,7 @@ Quatro tratamentos: só registrar; reavaliar os requisitos afetados; abrir novo 
 
 ## Histórico
 
-O Git guarda o histórico. Commits citam IDs (D-xx, RCxx-Px, RCxx-Ly, DI-xx, RCxx-Ix, RCG-xxx, DCG-xxx) quando pertinente.
+O Git guarda o histórico. Commits citam IDs (D-xx, RCxx-Px, RCxx-Ly, DI-xx, RCxx-Ix, DM-xx, RCG-xxx, DCG-xxx) quando pertinente.
 
 ## Material de apoio
 
@@ -217,7 +218,9 @@ O avaliador lê o campo que responde a cada item e o confere com as evidências.
 
 Quando as fontes ou o Fairness Report confirmarem que a identificação ou a avaliação pedida por um requisito não foi feita, há evidência suficiente de não atendimento, e o resultado é Não atendido. Enquanto isso não estiver confirmado, a ausência de análise é registrada como ausência ou insuficiência de evidência (Inconclusivo, com lacuna quando necessária). Em nenhum dos casos se conclui, só por isso, que os dados, os efeitos ou o acesso sejam inadequados. Uma fundamentação técnica ou clínica pode constituir avaliação, pois a análise não exige método único.
 
-A identificação de diferença injustificada ou de condição relevante não é suficiente para considerar RC02, RC03 ou RC04 atendido. Deve existir decisão justificada sobre o tratamento do achado, que pode ser técnico, processual ou institucional, envolver restrição de uso ou, quando pertinente, a decisão de não utilizar a Tarefa. Uma diferença ou barreira classificada como sem conclusão também exige decisão sobre o que fazer, por exemplo nova análise ou monitoramento. (Derivação: 06_Requisitos_Candidatos, TRANSVERSAL-JUS; 07_Sintese_Corpus_Justica, Tratamento dos achados.)
+A identificação de diferença injustificada ou de condição relevante não é suficiente para considerar RC02, RC03 ou RC04 atendido. Deve existir decisão justificada sobre o tratamento do achado, que pode ser técnico, processual ou institucional, envolver restrição de uso ou, quando pertinente, a decisão de não utilizar a Tarefa. Uma diferença ou barreira classificada como sem conclusão também exige decisão sobre o que fazer, por exemplo nova análise ou monitoramento. (Derivação: 06_Requisitos_Candidatos, TRANSVERSAL-JUS; 07_Sintese_Corpus_Justica, Tratamento dos achados.) 
+
+**Tarefa que gera dados.** Quando a Tarefa gera dados (por exemplo, dados sintéticos), não há ponto de corte nem falsos positivos e negativos. Os erros relevantes são distorções dos dados gerados em cada grupo, como categorias raras pouco reproduzidas ou correlações perdidas. A variável-alvo é a distribuição conjunta das variáveis geradas, e o padrão de referência são os dados reais usados na comparação. O NIAR registra essa leitura como decisão metodológica (DM-xx).
 
 ---
 
@@ -606,7 +609,7 @@ As referências específicas de cada dimensão deverão ser atualizadas à medid
 
 Para Justiça, a formulação dos quatro requisitos utilizada nesta versão corresponde ao conjunto estabilizado na revisão metodológica atual da dimensão.
 
-A fundamentação de **RC01–RC04** está registrada em [`docs/mapeamento_referencias.md`](https://github.com/niar-saude-ufmg/FIAR-Saude/blob/v2.0.3/docs/mapeamento_referencias.md) do FIAR-Saude, com as fontes principais por requisito e a distinção entre fundamentação substantiva, apoio técnico-operacional e literatura científica. Os IDs das fontes e a cadeia de derivação remetem à planilha de reconstrução de Justiça ([`docs/fontes/derivacao_requisitos_justica.xlsm`](https://github.com/niar-saude-ufmg/FIAR-Saude/blob/v2.0.3/docs/fontes/derivacao_requisitos_justica.xlsm), no FIAR-Saude), especialmente às abas `04_Extracoes`, `06_Requisitos_Candidatos` e `07_Sintese_Corpus_Justica`. As fontes apoiam a fundamentação dos requisitos; não tornam métricas, métodos ou artefatos específicos obrigatórios.
+A fundamentação de **RC01–RC04** está registrada em [`docs/mapeamento_referencias.md`](https://github.com/niar-saude-ufmg/FIAR-Saude/blob/v2.0.4/docs/mapeamento_referencias.md) do FIAR-Saude, com as fontes principais por requisito e a distinção entre fundamentação substantiva, apoio técnico-operacional e literatura científica. Os IDs das fontes e a cadeia de derivação remetem à planilha de reconstrução de Justiça ([`docs/fontes/derivacao_requisitos_justica.xlsm`](https://github.com/niar-saude-ufmg/FIAR-Saude/blob/v2.0.4/docs/fontes/derivacao_requisitos_justica.xlsm), no FIAR-Saude), especialmente às abas `04_Extracoes`, `06_Requisitos_Candidatos` e `07_Sintese_Corpus_Justica`. As fontes apoiam a fundamentação dos requisitos; não tornam métricas, métodos ou artefatos específicos obrigatórios.
 
 ## Documentação operacional relacionada
 
@@ -621,7 +624,7 @@ A fundamentação de **RC01–RC04** está registrada em [`docs/mapeamento_refer
 
 Este arquivo deve acompanhar o estado da revisão metodológica do FIAR-Saúde.
 
-**Vigência.** As mudanças da nova ordem do ciclo (relatórios de dimensão, Fairness Report obrigatório, lacunas, estados de inconsistência) valem para todos os ciclos a partir da tag v2.0 (13/11/2026), inclusive os que estão em andamento. Um ciclo em andamento recomeça a avaliação: a identificação é conferida e mantida, se continuar válida; a equipe entrega o relatório de dimensão; o avaliacao.md é refeito no modelo novo. A avaliação anterior (avaliacao.md) não é usada como fonte e fica só no histórico do Git. As comunicações com a equipe registradas em comunicacoes/ continuam valendo como fonte e podem apoiar o pré-preenchimento do relatório de dimensão. A decisão e o motivo ficam registrados no commit do projeto.
+**Vigência.** As mudanças da nova ordem do ciclo (relatórios de dimensão, Fairness Report obrigatório, lacunas, estados de inconsistência) valem para todos os ciclos a partir da tag v2.0 (13/11/2026), inclusive os que estão em andamento. Um ciclo em andamento recomeça a avaliação: a identificação é conferida e mantida, se continuar válida; a equipe entrega o relatório de dimensão; o avaliacao.md é refeito no modelo novo. A avaliação anterior (avaliacao.md) não é usada como fonte e fica só no histórico do Git. As comunicações com a equipe registradas em comunicacoes/ continuam valendo como fonte e podem apoiar o pré-preenchimento do relatório de dimensão. A decisão e o motivo ficam registrados no commit do projeto. As decisões metodológicas da avaliação anterior são revistas, e as mantidas são copiadas para "Decisões metodológicas do NIAR" no novo avaliacao.md, com justificativa.
 
 Quando uma dimensão for estabilizada:
 

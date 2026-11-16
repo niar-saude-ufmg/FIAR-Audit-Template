@@ -73,6 +73,11 @@ Pré-preencha o relatório de dimensão de [dimensão] do projeto, no modelo [pa
 - Em cada divergência, indique o requisito afetado (RCxx) ou "fora de [dimensão]".
 - Preencha o campo "Fontes citadas" da Seção 0: cada ID de fonte usado no relatório, com o nome que a equipe reconhece e a versão ou data. Explique "identificação", com o commit.
 - Antes de escrever que as fontes não informam algo, leia por inteiro o artigo e o material suplementar.
+- Confira também tabelas e resultados. Dado de outro recorte ou período entra como parcial, com a diferença indicada, e não como ausência.
+- Numa divergência, cite todo o trecho da fonte que trata do ponto.
+- Campo vazio ou com "-" numa fonte é falta de informação, não divergência.
+- Delimitação e notas de escopo vão em parágrafo próprio, iniciado por "Nota do NIAR:". Etapa fora do escopo do ciclo não entra como ação em 2.5 nem como decisão em 3.2.
+- Ao copiar fatos da identificação, confira-os com as fontes. Se achar erro, avise a avaliadora em vez de copiar.
 - Em 1.2, populações fora do escopo validado (ex.: menores de 18 anos) são delimitação, não exclusão dos benefícios. Se a Tarefa não está em uso, registre [a confirmar] que não há benefício no uso atual.
 - Em 1.2, separe grupos sem dados de grupos analisáveis ainda não analisados.
 - Seção 0, Execução na sala segura: escreva que não houve e indique as fontes dos resultados.
@@ -97,7 +102,9 @@ Preencha o bloco do requisito [RCxx] em ciclos/Cxx/avaliacao.md seguindo guia_re
 - Campo marcado [a confirmar], ou posição da equipe que aparece só em comunicação ou em outro artefato: Não localizado. Cite onde a posição aparece.
 - Campo [A + J]: Respondido só quando a parte [J] está preenchida.
 - Não se limite aos campos do relatório. Confira também os aspectos de aplicabilidade e as observações do requisito no guia. Registre hipóteses do NIAR e recomendações no bloco do requisito.
-- Divergência da Seção 0 que não afeta nenhum requisito da dimensão: registre como recomendação do NIAR.
+- Divergência da Seção 0 que não afeta nenhum requisito da dimensão: registre em "Recomendações fora dos requisitos".
+- Registre as decisões metodológicas em "Decisões metodológicas do NIAR" (DM-xx) e cite-as nos itens. Em ciclo recomeçado, revise as da avaliação anterior.
+- Confira com as fontes os fatos que o relatório copiou da identificação. Erro na identificação vai como problema para a avaliadora, fora do bloco do requisito.
 - Aponte o campo do relatório e o ID da fonte. Não reescreva os fatos do relatório.
 - Separe informação factual de análise específica de Justiça.
 - Divergência entre o relatório e outra fonte: registre inconsistência (RCxx-Ix), com estado. Se passar no teste da lacuna, abra também lacuna no campo do relatório.
@@ -153,6 +160,8 @@ Revise identificacao.md e avaliacao.md do ciclo e aponte apenas:
 - inconsistências sem estado (aberta, resolvida ou cancelada);
 - uso do avaliacao.md de um ciclo recomeçado como fonte;
 - Síntese diferente dos blocos (resultado, motivo, itens não localizados ou lacunas abertas);
+- decisões metodológicas usadas nos itens sem registro em "Decisões metodológicas do NIAR";
+- divergências fora da dimensão sem registro em "Recomendações fora dos requisitos";
 - na identificação: hipótese registrada como fato, responsabilidade técnica deduzida ou fonte não pertinente à unidade.
 - campos [A + J] marcados Respondido sem a parte [J];
 - divergências da Seção 0 fora da dimensão sem recomendação do NIAR;
